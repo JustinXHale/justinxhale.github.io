@@ -23,8 +23,8 @@ This repository hosts my GitHub Pages site: **justinxhale.github.io**. The portf
 - **Technical Projects**: Links to code repositories where I contribute UX solutions directly.  
 
 ## **Key Highlights**
-- [BulkPrompting](https://github.com/JustinXHale/bulkprompting): A Python script for efficient CLI bulk input.  
 - [InstructLab Interactive Mode](https://github.com/JustinXHale/instructlab-interactivemode): Improved onboarding and usability for CLI workflows.  
+- [BulkPrompting](https://github.com/JustinXHale/bulkprompting): A Python script for efficient CLI bulk input.  
 - [CLI Guidelines](https://www.uxd-hub.com/entries/design/cli-guidelines): Comprehensive guidelines for designing user-friendly command-line interfaces.  
 
 ## **Live Site**
