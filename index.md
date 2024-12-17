@@ -24,7 +24,7 @@ I'm **Justin X. Hale**, a UX Designer and **Command-Line Interface (CLI)** speci
 - **Quay.io Redesign**: Led design efforts, introducing **PatternFly** for consistent UI/UX.  
 
 ## **Portfolio Highlights**
-### [InstructLab Interactive Mode](https://github.com/JustinXHale/instructlab-knowledge-docs)  
+### [InstructLab Interactive Mode](https://github.com/JustinXHale/instructlab-interactivemode)  
 - **Challenge**: Enhance the CLI experience for developers interacting with InstructLab.  
 - **Solution**: Created a structured, user-friendly interactive mode, improving onboarding and tool adoption.  
 
@@ -33,7 +33,7 @@ I'm **Justin X. Hale**, a UX Designer and **Command-Line Interface (CLI)** speci
 - **Solution**: Designed and implemented a Python script for automating bulk input, improving usability.  
 - **Tech**: Python, Shell scripting.  
 
-### [CLI Guidelines: Designing for the Command Line](https://www.uxd-hub.com/entries/design/cli-guidelines)  
+### [CLI Guidelines: Designing for the Command Line](https://www.uxd-hub.com/entries/design/cli-guidelines){targe}  
 - **Purpose**: Establish clear, actionable guidelines for designing user-friendly and consistent CLI interfaces.  
 - **Impact**: Supports developers and UX teams in delivering seamless command-line experiences.
 
