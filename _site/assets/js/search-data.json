@@ -1,0 +1,324 @@
+{"0": {
+    "doc": "About Me",
+    "title": "About Me",
+    "content": "Hi, I’m Justin X. Hale, a UX designer passionate about crafting thoughtful, user-centered experiences. My journey into UX has been anything but traditional. It started with a love for problem-solving and a curiosity for how design can make life easier—whether that’s creating seamless workflows for developers or simplifying complex systems. I currently work at Red Hat, where I focus on improving developer tools, particularly in the Command Line Interface (CLI) space. I love digging into how people interact with technology and finding ways to make those interactions smoother and more intuitive. For me, it’s about understanding the user’s perspective and turning that into designs that truly empower them. When I’m not immersed in the world of UX, you can often find me on the rugby pitch as a referee. Rugby is one of my greatest passions, and being a referee gives me a unique perspective on leadership, quick decision-making, and respect for teamwork—all of which tie back to how I approach design. Outside of work and rugby, I’m a husband and a dad to a wonderful daughter. Family is at the heart of everything I do, and they inspire me to keep pushing boundaries in both my personal and professional life. If I had to sum myself up: I’m a curious problem-solver, a team player, and someone who thrives on collaboration and growth. Whether it’s working on a new UX challenge or officiating a high-stakes rugby match, I’m all about bringing my best to the table. ",
+    "url": "/about/",
+    
+    "relUrl": "/about/"
+  },"1": {
+    "doc": "Blog Posts",
+    "title": "Blog Posts",
+    "content": " ",
+    "url": "/blog/",
+    
+    "relUrl": "/blog/"
+  },"2": {
+    "doc": "Bulk Prompting Script",
+    "title": "Bulk Prompting for Command Line Interfaces",
+    "content": " ",
+    "url": "/portfolio/bulk-prompting-script/bulk-prompting-script/#bulk-prompting-for-command-line-interfaces",
+    
+    "relUrl": "/portfolio/bulk-prompting-script/bulk-prompting-script/#bulk-prompting-for-command-line-interfaces"
+  },"3": {
+    "doc": "Bulk Prompting Script",
+    "title": "GIF",
+    "content": ". ",
+    "url": "/portfolio/bulk-prompting-script/bulk-prompting-script/#gif",
+    
+    "relUrl": "/portfolio/bulk-prompting-script/bulk-prompting-script/#gif"
+  },"4": {
+    "doc": "Bulk Prompting Script",
+    "title": "Problem Description",
+    "content": "Navigating in Command Line Interfaces (CLIs) often requires users to either use a series of flags or sequential prompts to complete their configuration, which is time-consuming and inefficient. For example, when creating ROSA Classic Clusters, a user must navigate 30 or more prompts to create a cluster, even when using default and recommended settings. This cumbersome method hampers productivity and the user’s experience. There is a pressing need for a more user-friendly and efficient method for executing commands in the CLI environment to streamline setup processes and reduce complexity. ",
+    "url": "/portfolio/bulk-prompting-script/bulk-prompting-script/#problem-description",
+    
+    "relUrl": "/portfolio/bulk-prompting-script/bulk-prompting-script/#problem-description"
+  },"5": {
+    "doc": "Bulk Prompting Script",
+    "title": "Solution",
+    "content": "My solution not only enhances the current Red Hat ROSA CLI process, but it can also be broadly applied to other CLIs and processes. This innovation introduces a bulk prompting method for CLIs, allowing users to see and provide all required inputs at once rather than sequentially. It improves the user experience by displaying a single interface where users can fill and modify all the necessary/optional details and make changes interactively before executing the configuration. This approach ensures that users can review and adjust their inputs comprehensively, reducing the time and effort needed to complete complex configurations. ",
+    "url": "/portfolio/bulk-prompting-script/bulk-prompting-script/#solution",
+    
+    "relUrl": "/portfolio/bulk-prompting-script/bulk-prompting-script/#solution"
+  },"6": {
+    "doc": "Bulk Prompting Script",
+    "title": "Advantages",
+    "content": ". | Interactive bulk input collection: Users can input/change multiple configurations. | Enhanced user experience: Single interface for input. | Easy adjustments: Ability to go backwards and adjust previous inputs easily. | Dynamic configuration: Implements loop to allow user to select and configure dynamically. | Summary review: Provides a summary of selected options before final execution. | Visual feedback: Enhanced visual feedback by using colors and symbols for better distinction and user feedback. | Extensible: Script allows users to easily add other configuration options. | User-friendly: Designed to cater to both new and experienced users. | . ",
+    "url": "/portfolio/bulk-prompting-script/bulk-prompting-script/#advantages",
+    
+    "relUrl": "/portfolio/bulk-prompting-script/bulk-prompting-script/#advantages"
+  },"7": {
+    "doc": "Bulk Prompting Script",
+    "title": "How It Compares to Current Process",
+    "content": ". | Interactive configuration: Allows the user to customize their cluster settings as a whole. | Default settings: Reduces setup time with pre-configured options. | Progress indication: Clear progress indication during creation. | Final review: Review of configuration before finalizing and executing. | . ",
+    "url": "/portfolio/bulk-prompting-script/bulk-prompting-script/#how-it-compares-to-current-process",
+    
+    "relUrl": "/portfolio/bulk-prompting-script/bulk-prompting-script/#how-it-compares-to-current-process"
+  },"8": {
+    "doc": "Bulk Prompting Script",
+    "title": "How Did I Get Here?",
+    "content": "There is a need to create a user-friendly CLI tool for cluster creation. My focus was on ROSA, aiming to provide users with the ability to see/select multiple options efficiently. ",
+    "url": "/portfolio/bulk-prompting-script/bulk-prompting-script/#how-did-i-get-here",
+    
+    "relUrl": "/portfolio/bulk-prompting-script/bulk-prompting-script/#how-did-i-get-here"
+  },"9": {
+    "doc": "Bulk Prompting Script",
+    "title": "Installation",
+    "content": "To use this CLI tool, clone the repository and follow the setup instructions provided in the repository. ```bash git clone https://github.com/JustinXHale/bulkprompting.git cd bulkprompting . ",
+    "url": "/portfolio/bulk-prompting-script/bulk-prompting-script/#installation",
+    
+    "relUrl": "/portfolio/bulk-prompting-script/bulk-prompting-script/#installation"
+  },"10": {
+    "doc": "Bulk Prompting Script",
+    "title": "Follow additional setup instructions in the repository",
+    "content": " ",
+    "url": "/portfolio/bulk-prompting-script/bulk-prompting-script/#follow-additional-setup-instructions-in-the-repository",
+    
+    "relUrl": "/portfolio/bulk-prompting-script/bulk-prompting-script/#follow-additional-setup-instructions-in-the-repository"
+  },"11": {
+    "doc": "Bulk Prompting Script",
+    "title": "Bulk Prompting Script",
+    "content": " ",
+    "url": "/portfolio/bulk-prompting-script/bulk-prompting-script/",
+    
+    "relUrl": "/portfolio/bulk-prompting-script/bulk-prompting-script/"
+  },"12": {
+    "doc": "Create GitHub Portfolio Website",
+    "title": "Create your own GitHub Portfolio Website from Scratch",
+    "content": "This guide will walk you through creating a personal portfolio website hosted on GitHub Pages. We’ll do everything through the Terminal, assuming you have nothing but a Mac with its default Terminal app installed. Let’s get started! . ",
+    "url": "/how-to/create_gh_portfolio/#create-your-own-github-portfolio-website-from-scratch",
+    
+    "relUrl": "/how-to/create_gh_portfolio/#create-your-own-github-portfolio-website-from-scratch"
+  },"13": {
+    "doc": "Create GitHub Portfolio Website",
+    "title": "Install Prerequisites",
+    "content": "Before you can create your GitHub website, you need to install some tools. Install Xcode Command Line Tools . Xcode Command Line Tools provides basic development utilities like git and make. xcode-select --install . Verify install: . git --version . Install Homebrew . Homebrew is a package manager for macOS, making it easy to install tools. /bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\" . verify installation . brew --version . Install Ruby . GitHub Pages uses Jekyll, which requires Ruby. Install Ruby using Homebrew: . brew install ruby . verify rugby . ruby -v . Install Bundler . Bundler is a Ruby dependency manager, required for Jekyll themes. gem install bundler . Install GitHub CLI . ",
+    "url": "/how-to/create_gh_portfolio/#install-prerequisites",
+    
+    "relUrl": "/how-to/create_gh_portfolio/#install-prerequisites"
+  },"14": {
+    "doc": "Create GitHub Portfolio Website",
+    "title": "Creating and Configuring GitHub",
+    "content": "GitHub Account Setup . | Visit GitHub and create a free account if you don’t already have one. | Create New Repository using format .github.io (e.g, justinxhale.github.io) | Set to Public | Create Create Repository | . Setup GitHub Pages . | Navigate to Your Repositories | Select your .io repository | Under the Code and automation section select Pages | Use check these settings . | Source: Deploy from a branch | Branch: Main, Root . | if its already on main, change it to none &gt; save, then change back to main, Save | . | . | . Clone Your Repository Locally . In the Terminal, navigate to the directory you will be using and clone the repository to your local machine: . git clone https://github.com/&lt;your-username&gt;/&lt;your-username&gt;.github.io cd &lt;your-username&gt;.github.io . Configuring Gemfile . The Gemfile specifies dependencies for your site. touch Gemfile . Open the ‘Gemfile’ through your finder or prompt . code gemfile . add these lines to the ‘Gemfile’ and save . source \"https://rubygems.org\" gem \"github-pages\", group: :jekyll_plugins . Install dependencies . bundle install . ",
+    "url": "/how-to/create_gh_portfolio/#creating-and-configuring-github",
+    
+    "relUrl": "/how-to/create_gh_portfolio/#creating-and-configuring-github"
+  },"15": {
+    "doc": "Create GitHub Portfolio Website",
+    "title": "Create a Jekyll Configuration File",
+    "content": "Create a Jekyll configuration file . touch _config.yml . Add the following content to the ‘_config.yml’ . title: \"My UX Portfolio\" description: \"A showcase of my UX work and projects\" theme: jekyll-theme-leap-day . ",
+    "url": "/how-to/create_gh_portfolio/#create-a-jekyll-configuration-file",
+    
+    "relUrl": "/how-to/create_gh_portfolio/#create-a-jekyll-configuration-file"
+  },"16": {
+    "doc": "Create GitHub Portfolio Website",
+    "title": "Add Homepage",
+    "content": "Create an ‘index.md’ for your homepage . touch index.md . Add this content . --- layout: default title: \"Welcome to My UX Portfolio\" --- # Welcome to My UX Portfolio Hi, I’m [Your Name], a UX Designer passionate about creating intuitive and engaging experiences. - Explore my [Case Studies](#) - Read my [Blog Posts](#) . ",
+    "url": "/how-to/create_gh_portfolio/#add-homepage",
+    
+    "relUrl": "/how-to/create_gh_portfolio/#add-homepage"
+  },"17": {
+    "doc": "Create GitHub Portfolio Website",
+    "title": "Test your site locally",
+    "content": "Run this command to serve your site locally: . bundle exec jekyll serve . Open a browser and navigate to: http://localhost:4000 . ",
+    "url": "/how-to/create_gh_portfolio/#test-your-site-locally",
+    
+    "relUrl": "/how-to/create_gh_portfolio/#test-your-site-locally"
+  },"18": {
+    "doc": "Create GitHub Portfolio Website",
+    "title": "Push Your Site to GitHub via VSCode",
+    "content": ". | Click Source Control in the left navigation bar. | Click the + icon next to Changes to stage all files. | Type a commit message (e.g., Initial commit of portfolio site). | Click the ✓ Commit button. | Click Sync Changes to push your changes to GitHub. | . ",
+    "url": "/how-to/create_gh_portfolio/#push-your-site-to-github-via-vscode",
+    
+    "relUrl": "/how-to/create_gh_portfolio/#push-your-site-to-github-via-vscode"
+  },"19": {
+    "doc": "Create GitHub Portfolio Website",
+    "title": "Viewing progress on Github",
+    "content": ". | Navigate to your repository on GitHub. | Go to Actions to ensure the workflow is processing. | Once completed: . | Under Deployments (on the right menu), click the deployment link. | Your live site will be available at https://.github.io. | . | . ",
+    "url": "/how-to/create_gh_portfolio/#viewing-progress-on-github",
+    
+    "relUrl": "/how-to/create_gh_portfolio/#viewing-progress-on-github"
+  },"20": {
+    "doc": "Create GitHub Portfolio Website",
+    "title": "Create GitHub Portfolio Website",
+    "content": " ",
+    "url": "/how-to/create_gh_portfolio/",
+    
+    "relUrl": "/how-to/create_gh_portfolio/"
+  },"21": {
+    "doc": "Get In Touch",
+    "title": "Get in Touch",
+    "content": ". | Email: JustinXHale@gmail.com | GitHub: JustinXHale | LinkedIn: linkedin.com/in/justinxhale | . ",
+    "url": "/get-in-touch/#get-in-touch",
+    
+    "relUrl": "/get-in-touch/#get-in-touch"
+  },"22": {
+    "doc": "Get In Touch",
+    "title": "Get In Touch",
+    "content": " ",
+    "url": "/get-in-touch/",
+    
+    "relUrl": "/get-in-touch/"
+  },"23": {
+    "doc": "Awards/Honors",
+    "title": "Awards/Honors",
+    "content": "Community College Innovation Challenge . OASIS uses machine learning to identify signs of acute stress during officer-civilian interactions and automates the footage review process. Press Release . Finalist &amp; Best Storyteller (24hr Design Challenge) . Built out the onboarding process for a smart collar solution for dog owners. Final Submission (YouTube) . 1st Place - Austin Design-A-Thon . Address low student engagement &amp; rising failure rates by gamifying AISD’s online learning portal while improving its information architecture. ",
+    "url": "/about-me/honors/",
+    
+    "relUrl": "/about-me/honors/"
+  },"24": {
+    "doc": "How To",
+    "title": "How To",
+    "content": " ",
+    "url": "/how-to/",
+    
+    "relUrl": "/how-to/"
+  },"25": {
+    "doc": "Justin X. Hale",
+    "title": "👋 Welcome to Justin X. Hale’s UX Portfolio",
+    "content": "I’m Justin X. Hale, a UX Designer (Red Hat) and Command-Line Interface (CLI) specialist passionate about bridging the gap between developers and intuitive user experiences. With a focus on developer tools, open-source projects, and cross-functional collaboration, I design solutions that empower technical teams to work efficiently. ",
+    "url": "/#-welcome-to-justin-x-hales-ux-portfolio",
+    
+    "relUrl": "/#-welcome-to-justin-x-hales-ux-portfolio"
+  },"26": {
+    "doc": "Justin X. Hale",
+    "title": "Table of Contents",
+    "content": ". | What I Do | Current Role | Portfolio Highlights | Skills | Blog and Case Studies | Get in Touch | . ",
+    "url": "/#table-of-contents",
+    
+    "relUrl": "/#table-of-contents"
+  },"27": {
+    "doc": "Justin X. Hale",
+    "title": "What I Do/Have Done",
+    "content": ". | Interaction Design: Simplifying workflows for CLI tools, automation scripts, and developer platforms. | Open Source Contribution: Actively shaping design systems and usability for tools like Red Hat’s ROSA CLI and Quay.io. | Cross-Functional Collaboration: Partnering with developers, product teams, and stakeholders to ship high-impact designs. | User-Centered Solutions: Leading research, prototyping, and testing for user-centric results. | CLI Guidelines: Authoring best practices for CLI design to create consistent and developer-friendly interfaces. | . ",
+    "url": "/#what-i-dohave-done",
+    
+    "relUrl": "/#what-i-dohave-done"
+  },"28": {
+    "doc": "Justin X. Hale",
+    "title": "Current Role: Interaction Designer at Red Hat",
+    "content": "Highlights: . | ROSA CLI: Created guidelines and streamlined CLI user experiences across Red Hat products. | MTA/Konveyor: Designed key features for Migration Toolkit for Applications (MTA), enhancing developer efficiency. | Quay.io Redesign: Led design efforts, introducing PatternFly for consistent UI/UX. | . ",
+    "url": "/#current-role-interaction-designer-at-red-hat",
+    
+    "relUrl": "/#current-role-interaction-designer-at-red-hat"
+  },"29": {
+    "doc": "Justin X. Hale",
+    "title": "Portfolio Highlights",
+    "content": "InstructLab Interactive Mode . | Challenge: Enhance the CLI experience for developers interacting with InstructLab. | Solution: Created a structured, user-friendly interactive mode, improving onboarding and tool adoption. | . BulkPrompting: Streamlining CLI Bulk Input . | Challenge: Repetitive CLI workflows caused inefficiency. | Solution: Designed and implemented a Python script for automating bulk input, improving usability. | Tech: Python, Shell scripting. | . CLI Guidelines: Designing for the Command Line . | Purpose: Establish clear, actionable guidelines for designing user-friendly and consistent CLI interfaces. | Impact: Supports developers and UX teams in delivering seamless command-line experiences. | . ",
+    "url": "/#portfolio-highlights",
+    
+    "relUrl": "/#portfolio-highlights"
+  },"30": {
+    "doc": "Justin X. Hale",
+    "title": "Skills",
+    "content": "Professional: Strategic Design Thinking | Open Source UX | Agile Collaboration | Mentorship Technical: GitHub | CLI Tools | Figma | PatternFly | Design Systems | Markdown | Jira . ",
+    "url": "/#skills",
+    
+    "relUrl": "/#skills"
+  },"31": {
+    "doc": "Justin X. Hale",
+    "title": "Blog and Case Studies",
+    "content": "I write about: . | My Design Process: Documenting how I simplify complex workflows for developers. | Case Studies: Real-world UX solutions for technical tools. | UX for CLI: Improving command-line interfaces for developer efficiency. | . Start Reading → (Coming Soon!) . “I design experiences that keep developers in their flow.” . ",
+    "url": "/#blog-and-case-studies",
+    
+    "relUrl": "/#blog-and-case-studies"
+  },"32": {
+    "doc": "Justin X. Hale",
+    "title": "Justin X. Hale",
+    "content": " ",
+    "url": "/",
+    
+    "relUrl": "/"
+  },"33": {
+    "doc": "Installing Jekyll for GitHub Pages",
+    "title": "Installing Jekyll for GitHub Pages",
+    "content": "clone your repo . git clone https://github.com/JustinXHale/justinxhale.github.io.git cd justinxhale.github.io tocuh index.md touch _config.yml . top of _config.yaml add . --- layout: default title: \"Justin X. Hale's Portfolio\" theme: jekyll-theme-leap-day --- . push &amp; commit to github . create _posts create assets create assets/css touch assets/css/styles.css . test locally steps creat Gemfile gem install bundler add to gemfile . source \"https://rubygems.org\" gem \"github-pages\", group: :jekyll_plugins . bundle install . | Before you can use Jekyll to create a GitHub Pages site, you must install Jekyll and Git. For more information, see Installation in the Jekyll documentation and Set up Git. ``` git clone https://github.com/git/git . | Need to install Ruby to work with Jekyll | https://www.ruby-lang.org/en/documentation/installation/ | . ruby -v . ",
+    "url": "/how-to/install-jekyll-steps/",
+    
+    "relUrl": "/how-to/install-jekyll-steps/"
+  },"34": {
+    "doc": "Portfolio",
+    "title": "Portfolio Highlights",
+    "content": "InstructLab Interactive Mode &amp; Script . | Challenge: Enhance the CLI experience for developers interacting with InstructLab. | Solution: Created a structured, user-friendly interactive mode, improving onboarding and tool adoption. | . BulkPrompting Script: Streamlining CLI Bulk Input . | Challenge: Repetitive CLI workflows caused inefficiency. | Solution: Designed and implemented a Python script for automating bulk input, improving usability. | Tech: Python, Shell scripting. | . CLI Guidelines: Designing for the Command Line . | Purpose: Establish clear, actionable guidelines for designing user-friendly and consistent CLI interfaces. | Impact: Supports developers and UX teams in delivering seamless command-line experiences.h_ | . ",
+    "url": "/portfolio/#portfolio-highlights",
+    
+    "relUrl": "/portfolio/#portfolio-highlights"
+  },"35": {
+    "doc": "Portfolio",
+    "title": "Portfolio",
+    "content": " ",
+    "url": "/portfolio/",
+    
+    "relUrl": "/portfolio/"
+  },"36": {
+    "doc": "Introducing “Rapid” Design Thinking to Brainstorm",
+    "title": "📚 Table of Contents",
+    "content": ". | Case Study: Introducing “Rapid” Design Thinking to Brainstorm . | Overview | Background | Problems | Solution | My Role | Workshop Breakdown . | Part 1: Challenge Statement: 7 minutes of Rapid Ideation | Part 2: Presentation: 10 minutes | Part 3: Vote &amp; Organize: 4 minutes | Part 4: How Might We (HMW): 7 minutes | Part 5: Back to Ideation &amp; Voting: 7 minutes | Part 6: Prioritization: 3 minutes | Part 7: Effort/Impact Scale: 5 minutes | Part 8: Actionable Items: 10 minutes | . | Project Learnings | . | . ",
+    "url": "/portfolio/rapid-design-thinking/rapid-design-thinking/#-table-of-contents",
+    
+    "relUrl": "/portfolio/rapid-design-thinking/rapid-design-thinking/#-table-of-contents"
+  },"37": {
+    "doc": "Introducing “Rapid” Design Thinking to Brainstorm",
+    "title": "Case Study: Introducing “Rapid” Design Thinking to Brainstorm",
+    "content": "Read time: 5–8 minutes . ",
+    "url": "/portfolio/rapid-design-thinking/rapid-design-thinking/#case-study-introducing-rapid-design-thinking-to-brainstorm",
+    
+    "relUrl": "/portfolio/rapid-design-thinking/rapid-design-thinking/#case-study-introducing-rapid-design-thinking-to-brainstorm"
+  },"38": {
+    "doc": "Introducing “Rapid” Design Thinking to Brainstorm",
+    "title": "Overview",
+    "content": ". | Project Scope: 1 hour | Project Type: Brainstorming, Teaching | Role: UX Researcher, Presenter, Facilitator | Tools: Miro, Microsoft Teams, Timer | UX Techniques: How Might We (HMW), Rapid Ideation, Effort/Impact Scale | Participants: Integral Staff Communications Division (12 People), including the Chief Strategist (CSO) and Director of Communications. | . ",
+    "url": "/portfolio/rapid-design-thinking/rapid-design-thinking/#overview",
+    
+    "relUrl": "/portfolio/rapid-design-thinking/rapid-design-thinking/#overview"
+  },"39": {
+    "doc": "Introducing “Rapid” Design Thinking to Brainstorm",
+    "title": "Background",
+    "content": "The inaugural conference, held in November 2000, was the first in Texas and only the third in the United States to focus on the healthcare needs of African Americans. The event was created to confront systemic and cultural biases that have historically limited healthcare access for African Americans. Hosted by Integral Care, Travis County’s Local Mental Health and Intellectual and Developmental Disability Authority, the conference aims to provide tools and resources to build well-being and create a foundation for physical and mental health, enabling individuals to reach their full potential. ",
+    "url": "/portfolio/rapid-design-thinking/rapid-design-thinking/#background",
+    
+    "relUrl": "/portfolio/rapid-design-thinking/rapid-design-thinking/#background"
+  },"40": {
+    "doc": "Introducing “Rapid” Design Thinking to Brainstorm",
+    "title": "Problems",
+    "content": "Staff members were tasked with leading a department meeting on any topic that might benefit or interest the team. While the team was mostly extroverted, this created challenges in brainstorming, as introverts often felt less comfortable speaking up. The extroverts tended to dominate discussions, overshadowing quieter participants. To address this, I focused on a brainstorming activity that introduced design thinking principles and asynchronous software (Miro) to provide equal participation opportunities. ",
+    "url": "/portfolio/rapid-design-thinking/rapid-design-thinking/#problems",
+    
+    "relUrl": "/portfolio/rapid-design-thinking/rapid-design-thinking/#problems"
+  },"41": {
+    "doc": "Introducing “Rapid” Design Thinking to Brainstorm",
+    "title": "Solution",
+    "content": "Introduce design thinking techniques and tools like Miro to facilitate brainstorming and ideation, ensuring all voices are heard. ",
+    "url": "/portfolio/rapid-design-thinking/rapid-design-thinking/#solution",
+    
+    "relUrl": "/portfolio/rapid-design-thinking/rapid-design-thinking/#solution"
+  },"42": {
+    "doc": "Introducing “Rapid” Design Thinking to Brainstorm",
+    "title": "My Role",
+    "content": "I conceptualized and facilitated the workshop, guiding the team through each phase of the design-thinking process. ",
+    "url": "/portfolio/rapid-design-thinking/rapid-design-thinking/#my-role",
+    
+    "relUrl": "/portfolio/rapid-design-thinking/rapid-design-thinking/#my-role"
+  },"43": {
+    "doc": "Introducing “Rapid” Design Thinking to Brainstorm",
+    "title": "Workshop Breakdown",
+    "content": "Part 1: Challenge Statement: 7 minutes of Rapid Ideation . The team brainstormed problems and challenges for the Central Texas African-American Family Support Conference (CTAAFSC), which would be virtual for the first time. Participants used sticky notes to generate as many ideas as possible without discussion. | Outcome: . | 70 ideas were generated. | Encouraged the team to think from a user experience perspective. | . | . Part 2: Presentation: 10 minutes . – “You have 5 seconds!” Each participant had 5–10 seconds to present their ideas. This format allowed extroverts to share freely while minimizing pressure on introverts. | Outcome: . | Opened the floor for diverse perspectives. | Prevented premature problem-solving. | . | . Part 3: Vote &amp; Organize: 4 minutes . Participants were given two red dots to vote for their favorite ideas. After voting, the top four ideas were organized. | Outcome: . | Focused the team on key challenges without discussion. | . | . Part 4: How Might We (HMW): 7 minutes . The team reframed the top challenges into How Might We (HMW) questions to shift the focus from problems to solutions. | Outcome: . | Generated actionable questions, e.g., “How might we educate users on the platform?” | . | . Part 5: Back to Ideation &amp; Voting: 7 minutes . Using the HMW questions, the team brainstormed solutions. Each participant had 5–10 seconds to present their ideas, followed by voting. | Outcome: . | 35 solutions generated. | . | . Part 6: Prioritization: 3 minutes . Solutions were grouped and prioritized using an affinity mapping approach. | Outcome: . | Top 5 solutions identified. | . | . Part 7: Effort/Impact Scale: 5 minutes . The team evaluated the top solutions on an effort/impact matrix to determine feasibility and effectiveness. | Outcome: . | Clear understanding of viable solutions. | . | . Part 8: Actionable Items: 10 minutes . The final step involved creating actionable tasks for the selected solutions. | Outcome: . | A live chatbox was implemented, addressing: . | Help desk functionality. | FAQs. | Live tutorials. | . | . | . ",
+    "url": "/portfolio/rapid-design-thinking/rapid-design-thinking/#workshop-breakdown",
+    
+    "relUrl": "/portfolio/rapid-design-thinking/rapid-design-thinking/#workshop-breakdown"
+  },"44": {
+    "doc": "Introducing “Rapid” Design Thinking to Brainstorm",
+    "title": "Project Learnings",
+    "content": ". | Inclusivity in brainstorming: Some of the best solutions came from quieter team members. Providing structured activities ensures everyone’s ideas are heard. | Time management: Design thinking workshops can run over time. Building in buffer time is critical for success. | . ",
+    "url": "/portfolio/rapid-design-thinking/rapid-design-thinking/#project-learnings",
+    
+    "relUrl": "/portfolio/rapid-design-thinking/rapid-design-thinking/#project-learnings"
+  },"45": {
+    "doc": "Introducing “Rapid” Design Thinking to Brainstorm",
+    "title": "Introducing “Rapid” Design Thinking to Brainstorm",
+    "content": " ",
+    "url": "/portfolio/rapid-design-thinking/rapid-design-thinking/",
+    
+    "relUrl": "/portfolio/rapid-design-thinking/rapid-design-thinking/"
+  }
+}

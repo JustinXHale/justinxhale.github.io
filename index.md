@@ -1,6 +1,13 @@
-# 👋 Welcome to Justin X. Hale's UX Portfolio  
+---
+layout: default
+title: "Justin X. Hale"
+nav_order: 1
+has_children: true
+---
 
-I'm **Justin X. Hale**, a UX Designer and **Command-Line Interface (CLI)** specialist passionate about bridging the gap between developers and intuitive user experiences. With a focus on developer tools, open-source projects, and cross-functional collaboration, I design solutions that empower technical teams to work efficiently.
+# 👋 Welcome to Justin X. Hale's UX Portfolio
+
+I'm **Justin X. Hale**, a UX Designer (Red Hat) and **Command-Line Interface (CLI)** specialist passionate about bridging the gap between developers and intuitive user experiences. With a focus on developer tools, open-source projects, and cross-functional collaboration, I design solutions that empower technical teams to work efficiently.
 
 ## Table of Contents
 - [What I Do](#what-i-do)
@@ -48,11 +55,6 @@ I write about:
 3. **UX for CLI**: Improving command-line interfaces for developer efficiency.  
 
 [Start Reading →](#) _(Coming Soon!)_
-
-## Get in Touch
-- Email: [JustinXHale@gmail.com](mailto:JustinXHale@gmail.com)  
-- GitHub: [JustinXHale](https://github.com/JustinXHale)  
-- LinkedIn: [linkedin.com/in/justinxhale](https://www.linkedin.com/in/justinxhale/)
 
 ---  
 **"I design experiences that keep developers in their flow."** 
