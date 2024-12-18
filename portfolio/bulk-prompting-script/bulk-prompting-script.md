@@ -8,7 +8,7 @@ nav_order: 1
 # Bulk Prompting for Command Line Interfaces
 
 ## GIF
-![Example](justinxhale.github.io/portfolio/bulk-prompting-script/assets/july31-readme-gif.gif)
+![Bulk Prompting Demo Gif](/portfolio/bulk-prompting-script/assets/july31-readme-gif.gif)
 
 ## Problem Description
 
