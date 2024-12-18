@@ -2,7 +2,9 @@
 
 Welcome to my personal **UX Portfolio** repository! This site showcases my work as a **UX Designer specializing in Command-Line Interfaces (CLI)** and developer-focused tools. I focus on bridging design and development, ensuring seamless user experiences for technical tools.
 
-<!-- This section will include my Table of Contents. In the terminal run npx markdown-toc -i README.md to update -->
+Access my portfolio and blog here: [justinxhale.github.io](https://justinxhale.github.io)
+
+<!-- This section will include my Table of Contents. In the terminal run [npx markdown-toc -i README.md] to update -->
 
 ## 📚 Table of Contents
 
@@ -10,8 +12,7 @@ Welcome to my personal **UX Portfolio** repository! This site showcases my work 
 
 - [**About the Portfolio**](#about-the-portfolio)
 - [**Key Highlights**](#key-highlights)
-- [**Live Site**](#live-site)
-- [**Case Studies**](#case-studies)
+- [**Case Studies/Projects**](#case-studiesprojects)
 - [**Contact**](#contact)
 
 <!-- tocstop -->
@@ -26,10 +27,6 @@ This repository hosts my GitHub Pages site: **justinxhale.github.io**. The portf
 - [InstructLab Interactive Mode](https://github.com/JustinXHale/instructlab-interactivemode): Improved onboarding and usability for CLI workflows.  
 - [BulkPrompting](https://github.com/JustinXHale/bulkprompting): A Python script for efficient CLI bulk input.  
 - [CLI Guidelines](https://www.uxd-hub.com/entries/design/cli-guidelines): Comprehensive guidelines for designing user-friendly command-line interfaces.  
-
-## **Live Site**
-Access my portfolio and blog here:  
-[justinxhale.github.io](https://justinxhale.github.io)
 
 ## **Case Studies/Projects**
 Explore detailed case studies of my work:  
