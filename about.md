@@ -15,3 +15,5 @@ When I’m not immersed in the world of UX, you can often find me on the rugby p
 Outside of work and rugby, I’m a husband and a dad to a wonderful daughter. Family is at the heart of everything I do, and they inspire me to keep pushing boundaries in both my personal and professional life.
 
 If I had to sum myself up: I’m a curious problem-solver, a team player, and someone who thrives on collaboration and growth. Whether it's working on a new UX challenge or officiating a high-stakes rugby match, I’m all about bringing my best to the table.
+
+![Justin, his wife, and daughter](/justinxhale.github.io/about-me/family-photo-2024.jpg) "Problems and Challenges Brainstorm Board")

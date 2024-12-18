@@ -44,7 +44,8 @@ There is a need to create a user-friendly CLI tool for cluster creation. My focu
 
 To use this CLI tool, clone the repository and follow the setup instructions provided in the repository.
 
-```bash
+```
 git clone https://github.com/JustinXHale/bulkprompting.git
 cd bulkprompting
+```
 # Follow additional setup instructions in the repository
