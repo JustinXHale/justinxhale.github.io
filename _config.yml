@@ -1,0 +1,15 @@
+# This tells GitHub what to use 
+# =============================
+title: "Justin X. Hale's Portfolio"
+description: "A UX Designer specializing in CLI and developer tools"
+theme: jekyll-theme-leap-day
+# =============================
+
+# Social Links
+# =============================
+author: Justin X. Hale
+social_links:
+  - https://github.com/JustinXHale
+  - https://linkedin.com/in/justinxhale
+# =============================
+
