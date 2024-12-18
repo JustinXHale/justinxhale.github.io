@@ -1,7 +1,7 @@
 # This tells GitHub what to use 
 title: "Justin X. Hale's Portfolio"
 description: "A UX Designer specializing in CLI and developer tools"
-theme: "just-the-docs"
+remote_theme: "just-the-docs/just-the-docs"
 
 # Enable navigation
 permalink: pretty
