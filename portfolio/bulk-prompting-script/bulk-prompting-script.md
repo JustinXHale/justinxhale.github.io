@@ -8,7 +8,8 @@ nav_order: 1
 # Bulk Prompting for Command Line Interfaces
 
 ## GIF
-![Bulk Prompting Demo Gif](/portfolio/bulk-prompting-script/assets/july31-readme-gif.gif)
+![GIF of Bulk Prompting Script](/portfolio/bulk-prompting-script/assets/july31-readme-gif.gif)
+*A bulk prompting script automates the process of creating a cluster with predefined settings, minimizing errors and improving efficiency for users navigating CLI workflows.*
 
 ## Problem Description
 
