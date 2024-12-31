@@ -6,6 +6,7 @@ has_children: true
 back_to_top: true
 back_to_top_text: "Back to top"
 ---
+<a id="back-to-top"></a>
 
 # 👋 Welcome to Justin X. Hale's UX Portfolio
 
@@ -52,3 +53,5 @@ I'm **Justin X. Hale**, a UX Designer (Red Hat) and **Command-Line Interface (CL
 
 ---  
 **"I design experiences that keep developers in their flow."** 
+
+<a href="#top" id="back-to-top">^ Back to Top</a>

@@ -16,3 +16,22 @@ aux_links:
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: true
+
+# back to top button
+back_to_top: true
+back_to_top_text: "Back to top"
+#back-to-top {
+    color: #4f46e5; /* Adjust color as needed */
+    text-decoration: none; /* Removes underline */
+}
+
+#back-to-top:hover {
+    text-decoration: underline; /* Adds underline on hover */
+}
+
+# Generate footer
+just_the_docs:
+  footer:
+    links:
+      - text: "Privacy Policy"
+        url: "/privacy-policy/"
