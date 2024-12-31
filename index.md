@@ -3,6 +3,8 @@ layout: default
 title: "Justin X. Hale"
 nav_order: 1
 has_children: true
+back_to_top: true
+back_to_top_text: "Back to top"
 ---
 
 # 👋 Welcome to Justin X. Hale's UX Portfolio
