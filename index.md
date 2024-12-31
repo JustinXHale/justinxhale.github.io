@@ -48,13 +48,5 @@ I'm **Justin X. Hale**, a UX Designer (Red Hat) and **Command-Line Interface (CL
 **Professional**: Strategic Design Thinking | Open Source UX | Agile Collaboration | Mentorship  
 **Technical**: GitHub | CLI Tools | Figma | PatternFly | | Design Systems | Markdown | Jira 
 
-## Blog and Case Studies
-I write about:  
-1. **My Design Process**: Documenting how I simplify complex workflows for developers.  
-2. **Case Studies**: Real-world UX solutions for technical tools.  
-3. **UX for CLI**: Improving command-line interfaces for developer efficiency.  
-
-[Start Reading →](#) _(Coming Soon!)_
-
 ---  
 **"I design experiences that keep developers in their flow."** 

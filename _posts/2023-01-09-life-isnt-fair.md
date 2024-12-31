@@ -1,6 +1,8 @@
 ---
-layout: default
+layout: post
 title: I hate the phase Life isn’t fair...
+date: 2023-01-09
+tags: [rugby,sport, leadership]
 ---
 
 # I hate the phase Life isn’t fair when are speaking in the context or sport.
