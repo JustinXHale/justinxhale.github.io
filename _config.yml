@@ -12,22 +12,14 @@ include:
 # Aux links for the upper right navigation
 aux_links:
   "Justin X. Hale GitHub Repo":
-    - "//github.com/justinxhale"
+    url: "//github.com/justinxhale"
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: true
 
-# back to top button
+# Back to top button
 back_to_top: true
 back_to_top_text: "Back to top"
-#back-to-top {
-    color: #4f46e5; /* Adjust color as needed */
-    text-decoration: none; /* Removes underline */
-}
-
-#back-to-top:hover {
-    text-decoration: underline; /* Adds underline on hover */
-}
 
 # Generate footer
 just_the_docs:
