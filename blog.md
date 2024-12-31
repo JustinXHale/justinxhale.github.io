@@ -15,8 +15,8 @@ Whether you are here for some professional tips, personal stories, or a mix of b
 <ul>
   {% for post in site.posts %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
       <small>{{ post.date | date: "%B %d, %Y" }}</small>
+      <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
   {% endfor %}
 </ul>
