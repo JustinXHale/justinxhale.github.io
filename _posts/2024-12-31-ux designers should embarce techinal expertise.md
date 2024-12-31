@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why UX Designers Should Embrace Technical Expertise to Enhance Open Source Contributions
-date: 2023-01-09
+date: 2024-12-31
 tags: [ux design,cli]
 excerpt: The benefits of technical expertise extend far beyond improving the user experience. It has fundamentally changed how I collaborate with developers, sysadmins, the open-source community, and other technical stakeholders. Conversations that once felt like trying to bridge two separate languages, have evolved into fluid dialogues grounded in a shared understanding of the tools, challenges, and opportunities.
 ---
@@ -30,7 +30,7 @@ This hands-on approach wasn’t just about seeing a product in action or learnin
 Stepping into the technical realm transformed my skills and reshaped the impact I've been able to have on both the users I design for and the teams I collaborate with. It's allowed me to engage with the tools and workflows that matter most to our users, designing solutions that meet them where they are rather than expecting them to adapt to my perspective. For instance, my work within InstructLab has given me the opportunity to transform a complex CLI onboarding process into a streamlined, user friendly experience, particularly for novice users <a href="https://github.com/JustinXHale/instructlab-interactivemode" target="_blank">InstructLab Interactive Mode</a>
 | <a href="https://github.com/instructlab/instructlab/issues/2814" target="_blank">GitHub Issue 2814</a>. This effort saves users time and also gives them confidence to navigate a tool that might have otherwise felt intimidating.
 
-![Interactive Mode Welcome Screen](path/to/image/Intro-screen-to-interactive-mode.png)
+![Interactive Mode Welcome Screen](/justinxhale.github.io/_posts/Assets/Intro-screen-to-interactive-mode.png)
 *The interactive mode in InstructLab guides users step-by-step through installation, ensuring all prerequisites and configurations are completed smoothly.*
 
 The benefits of technical expertise extend far beyond improving the user experience. It has fundamentally changed how I collaborate with developers, sysadmins, the open-source community, and other technical stakeholders. Conversations that once felt like trying to bridge two separate languages, have evolved into fluid dialogues grounded in a shared understanding of the tools, challenges, and opportunities. This mutual knowledge enables us to address technical pain points more effectively from pre-requisite checks to setup to daily usage, flows resulting in better products and smoother processes. By integrating technical insights into my design practice, I’ve not only elevated the user experience but also strengthened the collaboration that drives our work forward faster and more efficiently.

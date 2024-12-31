@@ -9,3 +9,10 @@ permalink: pretty
 include:
   - portfolio/rapid-design-thinking/assets
 
+# Aux links for the upper right navigation
+aux_links:
+  "Justin X. Hale GitHub Repo":
+    - "//github.com/justinxhale"
+
+# Makes Aux links open in a new tab. Default is false
+aux_links_new_tab: true
