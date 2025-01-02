@@ -8,7 +8,7 @@
   },"1": {
     "doc": "Life & Work (Blog)",
     "title": "Life & Work (Blog)",
-    "content": "Hello, I’m Justin X. Hale, and welcome to Life &amp; Work, where I share stories, ideas, and reflections from all facets of my journey. From professional insights as a UX designer to experiences on the rugby pitch as a referee, or personal thoughts on navigating life, family, and growth—you’ll find it here. This blog isn’t locked to one topic because, for the most part, neither is life. A collection of things learned, conquered, and/or moments continuing to fuel my inspiration—appreciated instances in my career and beyond, from deep dives into design and technology to rugby and leadership—the reflective commonplace, Life &amp; Work will be about embracing it all. Whether you are here for some professional tips, personal stories, or a mix of both, I hope something will resonate, inspire, or maybe even plant a new idea in you. Thanks for stopping by—I’m glad you’re here! . | August 24, 2024 From Player to Referee Navigating Rugbytown 7s Two Worlds | January 09, 2023 I hate the phase Life isn’t fair... | . ",
+    "content": "Hello, I’m Justin X. Hale, and welcome to Life &amp; Work, where I share stories, ideas, and reflections from all facets of my journey. From professional insights as a UX designer to experiences on the rugby pitch as a referee, or personal thoughts on navigating life, family, and growth—you’ll find it here. This blog isn’t locked to one topic because, for the most part, neither is life. A collection of things learned, conquered, and/or moments continuing to fuel my inspiration—appreciated instances in my career and beyond, from deep dives into design and technology to rugby and leadership—the reflective commonplace, Life &amp; Work will be about embracing it all. Whether you are here for some professional tips, personal stories, or a mix of both, I hope something will resonate, inspire, or maybe even plant a new idea in you. Thanks for stopping by—I’m glad you’re here! . | December 31, 2024 Why UX Designers Should Embrace Technical Expertise to Enhance Open Source Contributions | August 24, 2024 From Player to Referee Navigating Rugbytown 7s Two Worlds | January 09, 2023 I hate the phase Life isn’t fair... | . ",
     "url": "/blog/",
     
     "relUrl": "/blog/"
@@ -161,250 +161,264 @@
     "relUrl": "/get-in-touch/"
   },"23": {
     "doc": "Awards/Honors",
-    "title": "Awards/Honors",
+    "title": "Design Contest",
     "content": "3rd Place - Community College Innovation Challenge . OASIS uses machine learning to identify signs of acute stress during officer-civilian interactions and automates the footage review process. Press Release OASIS Presentation . Finalist &amp; Best Storyteller (24hr Design Challenge) . Built out the onboarding process for a smart collar solution for dog owners. Final Submission (YouTube) . 1st Place - Austin Design-A-Thon . Address low student engagement &amp; rising failure rates by gamifying AISD’s online learning portal while improving its information architecture. Final Presentation (Youtube) . ",
+    "url": "/about-me/honors/#design-contest",
+    
+    "relUrl": "/about-me/honors/#design-contest"
+  },"24": {
+    "doc": "Awards/Honors",
+    "title": "Peer Recognition (Red Hat Rewards)",
+    "content": "Red Hat Multiplier (Collaborate) . “Thanks so much for sharing the command line design work you did, and for taking the time to walk through it with me 1:1. It was a real inspiration and eye opener for me to see that someone had dove in wholeheartedly to the extent that you did. Thanks again! You inspired me to get my hands dirty with the RHEL Lightspeed command line assistant work, and I appreciate it!” - John Carr . ### . ",
+    "url": "/about-me/honors/#peer-recognition-red-hat-rewards",
+    
+    "relUrl": "/about-me/honors/#peer-recognition-red-hat-rewards"
+  },"25": {
+    "doc": "Awards/Honors",
+    "title": "Awards/Honors",
+    "content": " ",
     "url": "/about-me/honors/",
     
     "relUrl": "/about-me/honors/"
-  },"24": {
+  },"26": {
     "doc": "Justin X. Hale",
     "title": "👋 Welcome to Justin X. Hale’s UX Portfolio",
     "content": "I’m Justin X. Hale, a UX Designer (Red Hat) and Command-Line Interface (CLI) specialist passionate about bridging the gap between developers and intuitive user experiences. With a focus on developer tools, open-source projects, and cross-functional collaboration, I design solutions that empower technical teams to work efficiently. ",
     "url": "/#-welcome-to-justin-x-hales-ux-portfolio",
     
     "relUrl": "/#-welcome-to-justin-x-hales-ux-portfolio"
-  },"25": {
+  },"27": {
     "doc": "Justin X. Hale",
     "title": "Table of Contents",
     "content": ". | What I Do | Current Role | Portfolio Highlights | Skills | Blog and Case Studies | Get in Touch | . ",
     "url": "/#table-of-contents",
     
     "relUrl": "/#table-of-contents"
-  },"26": {
+  },"28": {
     "doc": "Justin X. Hale",
     "title": "What I Do/Have Done",
     "content": ". | Interaction Design: Simplifying workflows for CLI tools, automation scripts, and developer platforms. | Open Source Contribution: Actively shaping design systems and usability for tools like Red Hat’s ROSA CLI and Quay.io. | Cross-Functional Collaboration: Partnering with developers, product teams, and stakeholders to ship high-impact designs. | User-Centered Solutions: Leading research, prototyping, and testing for user-centric results. | CLI Guidelines: Authoring best practices for CLI design to create consistent and developer-friendly interfaces. | . ",
     "url": "/#what-i-dohave-done",
     
     "relUrl": "/#what-i-dohave-done"
-  },"27": {
+  },"29": {
     "doc": "Justin X. Hale",
     "title": "Current Role: Interaction Designer at Red Hat",
     "content": "Highlights: . | ROSA CLI: Created guidelines and streamlined CLI user experiences across Red Hat products. | MTA/Konveyor: Designed key features for Migration Toolkit for Applications (MTA), enhancing developer efficiency. | Quay.io Redesign: Led design efforts, introducing PatternFly for consistent UI/UX. | . ",
     "url": "/#current-role-interaction-designer-at-red-hat",
     
     "relUrl": "/#current-role-interaction-designer-at-red-hat"
-  },"28": {
+  },"30": {
     "doc": "Justin X. Hale",
     "title": "Portfolio Highlights",
     "content": "InstructLab Interactive Mode . | Challenge: Enhance the CLI experience for developers interacting with InstructLab. | Solution: Created a structured, user-friendly interactive mode, improving onboarding and tool adoption. | . BulkPrompting: Streamlining CLI Bulk Input . | Challenge: Repetitive CLI workflows caused inefficiency. | Solution: Designed and implemented a Python script for automating bulk input, improving usability. | Tech: Python, Shell scripting. | . CLI Guidelines: Designing for the Command Line . | Purpose: Establish clear, actionable guidelines for designing user-friendly and consistent CLI interfaces. | Impact: Supports developers and UX teams in delivering seamless command-line experiences. | . ",
     "url": "/#portfolio-highlights",
     
     "relUrl": "/#portfolio-highlights"
-  },"29": {
+  },"31": {
     "doc": "Justin X. Hale",
     "title": "Skills",
     "content": "Professional: Strategic Design Thinking | Open Source UX | Agile Collaboration | Mentorship Technical: GitHub | CLI Tools | Figma | PatternFly | Design Systems | Markdown | Jira . “I design experiences that keep developers in their flow.” . ^ Back to Top . ",
     "url": "/#skills",
     
     "relUrl": "/#skills"
-  },"30": {
+  },"32": {
     "doc": "Justin X. Hale",
     "title": "Justin X. Hale",
     "content": ". ",
     "url": "/",
     
     "relUrl": "/"
-  },"31": {
+  },"33": {
     "doc": "Installing Jekyll for GitHub Pages",
     "title": "Installing Jekyll for GitHub Pages",
     "content": "clone your repo . git clone https://github.com/JustinXHale/justinxhale.github.io.git cd justinxhale.github.io tocuh index.md touch _config.yml . top of _config.yaml add . --- layout: default title: \"Justin X. Hale's Portfolio\" theme: jekyll-theme-leap-day --- . push &amp; commit to github . create _posts create assets create assets/css touch assets/css/styles.css . test locally steps creat Gemfile gem install bundler add to gemfile . source \"https://rubygems.org\" gem \"github-pages\", group: :jekyll_plugins . bundle install . | Before you can use Jekyll to create a GitHub Pages site, you must install Jekyll and Git. For more information, see Installation in the Jekyll documentation and Set up Git. ``` git clone https://github.com/git/git . | Need to install Ruby to work with Jekyll | https://www.ruby-lang.org/en/documentation/installation/ | . ruby -v . ",
     "url": "/how-to/install-jekyll-steps/",
     
     "relUrl": "/how-to/install-jekyll-steps/"
-  },"32": {
+  },"34": {
     "doc": "It’s Just an Email",
     "title": "📚 Table of Contents",
     "content": ". | It’s Just an Email . | Overview | Background | Problem(s) | Solution | My Role | Interviews | Define | Ideate | Prototype | Test &amp; Iterate | Project Learnings | Deliverables | . | . ",
     "url": "/portfolio/just-an-email/just-an-email/#-table-of-contents",
     
     "relUrl": "/portfolio/just-an-email/just-an-email/#-table-of-contents"
-  },"33": {
+  },"35": {
     "doc": "It’s Just an Email",
     "title": "It’s Just an Email",
     "content": "Case study read time: 6–10 minutes . ",
     "url": "/portfolio/just-an-email/just-an-email/#its-just-an-email",
     
     "relUrl": "/portfolio/just-an-email/just-an-email/#its-just-an-email"
-  },"34": {
+  },"36": {
     "doc": "It’s Just an Email",
     "title": "Overview",
     "content": ". | Project Scope: 4 weeks | Project Type: Assignment | Role: UX Design, UI Design, Copywriter, Light HTML Coder | Tools: Paper, Pencil, Figma, Miro, Photoshop, Brackets, WebAIM Contrast Checker | UX Techniques: Stakeholder interviews, Secondary Research, Customer Flow, Sketching, Wireframing | Participants: Integral Staff, Application Development | . ",
     "url": "/portfolio/just-an-email/just-an-email/#overview",
     
     "relUrl": "/portfolio/just-an-email/just-an-email/#overview"
-  },"35": {
+  },"37": {
     "doc": "It’s Just an Email",
     "title": "Background",
     "content": "Integral Care supports the health and well-being of adults and children living with mental illness, substance use disorder, and intellectual and developmental disabilities. This non-profit supported over half a million people in 2020, and as it expanded its telehealth services, they wanted to improve customer retention and satisfaction with their emails. ",
     "url": "/portfolio/just-an-email/just-an-email/#background",
     
     "relUrl": "/portfolio/just-an-email/just-an-email/#background"
-  },"36": {
+  },"38": {
     "doc": "It’s Just an Email",
     "title": "Problem(s)",
     "content": "Clients receive a lot of information in their initial and only email. Feedback from Integral staff revealed the following issues: . | Email is long and complicated | Content is confusing to understand | Difficulty retrieving email before/during appointments | . ",
     "url": "/portfolio/just-an-email/just-an-email/#problems",
     
     "relUrl": "/portfolio/just-an-email/just-an-email/#problems"
-  },"37": {
+  },"39": {
     "doc": "It’s Just an Email",
     "title": "Solution",
     "content": "Developed a responsive HTML email template that integrates with the client’s mail client, allowing users to save appointments and reminders directly to their native calendar. ",
     "url": "/portfolio/just-an-email/just-an-email/#solution",
     
     "relUrl": "/portfolio/just-an-email/just-an-email/#solution"
-  },"38": {
+  },"40": {
     "doc": "It’s Just an Email",
     "title": "My Role",
     "content": "Emphasize . I managed most aspects of the project, from initial stakeholder interviews to ideation, prototyping, user testing, and coding, before handing it off to the application developer for final implementation. ",
     "url": "/portfolio/just-an-email/just-an-email/#my-role",
     
     "relUrl": "/portfolio/just-an-email/just-an-email/#my-role"
-  },"39": {
+  },"41": {
     "doc": "It’s Just an Email",
     "title": "Interviews",
     "content": "During the discovery phase, I conducted interviews with the Director of Clinical Services and the Program Manager Supervisor of the Call Center to better understand the problem. Guiding Questions . | What is the process your user goes through before receiving an email? | What is the purpose of the email? | What do you want to accomplish with the email? | Who receives the email? | Is there a follow-up email? | What have customers told you about the email? | Demographics of clients | . ",
     "url": "/portfolio/just-an-email/just-an-email/#interviews",
     
     "relUrl": "/portfolio/just-an-email/just-an-email/#interviews"
-  },"40": {
+  },"42": {
     "doc": "It’s Just an Email",
     "title": "Define",
     "content": "Client Journey . To visualize how clients find and interact with the service, I created a Customer Journey Map to understand their pain points and provide a bird’s-eye view for stakeholders. ",
     "url": "/portfolio/just-an-email/just-an-email/#define",
     
     "relUrl": "/portfolio/just-an-email/just-an-email/#define"
-  },"41": {
+  },"43": {
     "doc": "It’s Just an Email",
     "title": "Ideate",
     "content": "Initial Sketches . I started with hand-drawn sketches to brainstorm ideas before transitioning to digital tools. I also conducted desktop research to analyze email templates used by other organizations. . ",
     "url": "/portfolio/just-an-email/just-an-email/#ideate",
     
     "relUrl": "/portfolio/just-an-email/just-an-email/#ideate"
-  },"42": {
+  },"44": {
     "doc": "It’s Just an Email",
     "title": "Prototype",
     "content": "Color Visualization . To better understand the number of touchpoints in the email, I created a color-coded visualization of the content. This helped stakeholders see the distribution of information at a glance. Color Decoder: . | Grey: Text | Dark Blue: Notice | Light Blue: H1 or Link | Red: H1 | Purple: Link | . Figma Board . Wireframes . Based on sketches, I created high-fidelity wireframes for desktop and mobile views. Required Components: . | Microsoft Teams meeting information | Help video | Crisis helpline phone number | . Recommended Additions: . | Shorten email content from 2,220+ characters to under 600 | Add-to-calendar feature | Call-to-reschedule button | Helpline button with direct dial prompts | . Solicit Opinion . After I completed the mockup I connected with the Senior Creative Designer asked a trusted co-worker about their option of the layout. Together we decided on some element and layout changes that saved space and highlighted some key areas. (You’ll see in the next section 🙂 ) . ",
     "url": "/portfolio/just-an-email/just-an-email/#prototype",
     
     "relUrl": "/portfolio/just-an-email/just-an-email/#prototype"
-  },"43": {
+  },"45": {
     "doc": "It’s Just an Email",
     "title": "Test &amp; Iterate",
     "content": "Coding the Email . Given the tight 4-week deadline, I coded the email in HTML using VSCode to expedite the process. This saved time for the MIS team and allowed faster implementation. Feedback: “This is great. This saves a lot of time!” – Andrew, Applications Developer . Using my code, the application developer completed a project that would have taken one week in just 30 minutes. Dynamic Microsoft Teams links and calendar integration streamlined the user experience. We’re almost done. Using my code, the application developer was able to take a project that would have taken at least one week and pushed it out in 30 minutes! Using dynamic Microsoft Teams links and the client’s native email client for their appointment, allowed us to remove another button, giving the client choices to click on. Thanks, Hick Hyman! . ",
     "url": "/portfolio/just-an-email/just-an-email/#test--iterate",
     
     "relUrl": "/portfolio/just-an-email/just-an-email/#test--iterate"
-  },"44": {
+  },"46": {
     "doc": "It’s Just an Email",
     "title": "Project Learnings",
     "content": "Key Takeaways . | Less Is More: Simplicity improves user engagement. | Accessibility Matters: Font sizes, color contrast, and alt text were prioritized. | Collaboration is Key: Working closely with stakeholders enhanced the final product. | . ",
     "url": "/portfolio/just-an-email/just-an-email/#project-learnings",
     
     "relUrl": "/portfolio/just-an-email/just-an-email/#project-learnings"
-  },"45": {
+  },"47": {
     "doc": "It’s Just an Email",
     "title": "Deliverables",
     "content": "Before . The original email was lengthy, unclear, and not user-friendly. After . The redesigned email was concise, accessible, and responsive, featuring dynamic functionality like calendar integration and direct-dial buttons. Dark Mode . ",
     "url": "/portfolio/just-an-email/just-an-email/#deliverables",
     
     "relUrl": "/portfolio/just-an-email/just-an-email/#deliverables"
-  },"46": {
+  },"48": {
     "doc": "It’s Just an Email",
     "title": "It’s Just an Email",
     "content": " ",
     "url": "/portfolio/just-an-email/just-an-email/",
     
     "relUrl": "/portfolio/just-an-email/just-an-email/"
-  },"47": {
+  },"49": {
     "doc": "Portfolio",
     "title": "Portfolio Highlights",
     "content": "InstructLab Interactive Mode &amp; Script . | Challenge: Enhance the CLI experience for developers interacting with InstructLab. | Solution: Created a structured, user-friendly interactive mode, improving onboarding and tool adoption. | . BulkPrompting Script: Streamlining CLI Bulk Input . | Challenge: Repetitive CLI workflows caused inefficiency. | Solution: Designed and implemented a Python script for automating bulk input, improving usability. | Tech: Python, Shell scripting. | . CLI Guidelines: Designing for the Command Line . | Purpose: Establish clear, actionable guidelines for designing user-friendly and consistent CLI interfaces. | Impact: Supports developers and UX teams in delivering seamless command-line experiences.h_ | . ",
     "url": "/portfolio/#portfolio-highlights",
     
     "relUrl": "/portfolio/#portfolio-highlights"
-  },"48": {
+  },"50": {
     "doc": "Portfolio",
     "title": "Portfolio",
     "content": " ",
     "url": "/portfolio/",
     
     "relUrl": "/portfolio/"
-  },"49": {
+  },"51": {
     "doc": "Introducing “Rapid” Design Thinking to Brainstorm",
     "title": "📚 Table of Contents",
     "content": ". | Case Study: Introducing “Rapid” Design Thinking to Brainstorm . | Overview | Background | Problems | Solution | My Role | Workshop Breakdown . | Part 1: Challenge Statement: 7 minutes of Rapid Ideation | Part 2: Presentation: 10 minutes | Part 3: Vote &amp; Organize: 4 minutes | Part 4: How Might We (HMW): 7 minutes | Part 5: Back to Ideation &amp; Voting: 7 minutes | Part 6: Prioritization: 3 minutes | Part 7: Effort/Impact Scale: 5 minutes | Part 8: Actionable Items: 10 minutes | . | Project Learnings | . | . ",
     "url": "/portfolio/rapid-design-thinking/rapid-design-thinking/#-table-of-contents",
     
     "relUrl": "/portfolio/rapid-design-thinking/rapid-design-thinking/#-table-of-contents"
-  },"50": {
+  },"52": {
     "doc": "Introducing “Rapid” Design Thinking to Brainstorm",
     "title": "Case Study: Introducing “Rapid” Design Thinking to Brainstorm",
     "content": "Read time: 5–8 minutes . ",
     "url": "/portfolio/rapid-design-thinking/rapid-design-thinking/#case-study-introducing-rapid-design-thinking-to-brainstorm",
     
     "relUrl": "/portfolio/rapid-design-thinking/rapid-design-thinking/#case-study-introducing-rapid-design-thinking-to-brainstorm"
-  },"51": {
+  },"53": {
     "doc": "Introducing “Rapid” Design Thinking to Brainstorm",
     "title": "Overview",
     "content": ". | Project Scope: 1 hour | Project Type: Brainstorming, Teaching | Role: UX Researcher, Presenter, Facilitator | Tools: Miro, Microsoft Teams, Timer | UX Techniques: How Might We (HMW), Rapid Ideation, Effort/Impact Scale | Participants: Integral Staff Communications Division (12 People), including the Chief Strategist (CSO) and Director of Communications. | . ",
     "url": "/portfolio/rapid-design-thinking/rapid-design-thinking/#overview",
     
     "relUrl": "/portfolio/rapid-design-thinking/rapid-design-thinking/#overview"
-  },"52": {
+  },"54": {
     "doc": "Introducing “Rapid” Design Thinking to Brainstorm",
     "title": "Background",
     "content": "The inaugural conference, held in November 2000, was the first in Texas and only the third in the United States to focus on the healthcare needs of African Americans. The event was created to confront systemic and cultural biases that have historically limited healthcare access for African Americans. Hosted by Integral Care, Travis County’s Local Mental Health and Intellectual and Developmental Disability Authority, the conference aims to provide tools and resources to build well-being and create a foundation for physical and mental health, enabling individuals to reach their full potential. ",
     "url": "/portfolio/rapid-design-thinking/rapid-design-thinking/#background",
     
     "relUrl": "/portfolio/rapid-design-thinking/rapid-design-thinking/#background"
-  },"53": {
+  },"55": {
     "doc": "Introducing “Rapid” Design Thinking to Brainstorm",
     "title": "Problems",
     "content": "Staff members were tasked with leading a department meeting on any topic that might benefit or interest the team. While the team was mostly extroverted, this created challenges in brainstorming, as introverts often felt less comfortable speaking up. The extroverts tended to dominate discussions, overshadowing quieter participants. To address this, I focused on a brainstorming activity that introduced design thinking principles and asynchronous software (Miro) to provide equal participation opportunities. ",
     "url": "/portfolio/rapid-design-thinking/rapid-design-thinking/#problems",
     
     "relUrl": "/portfolio/rapid-design-thinking/rapid-design-thinking/#problems"
-  },"54": {
+  },"56": {
     "doc": "Introducing “Rapid” Design Thinking to Brainstorm",
     "title": "Solution",
     "content": "Introduce design thinking techniques and tools like Miro to facilitate brainstorming and ideation, ensuring all voices are heard. ",
     "url": "/portfolio/rapid-design-thinking/rapid-design-thinking/#solution",
     
     "relUrl": "/portfolio/rapid-design-thinking/rapid-design-thinking/#solution"
-  },"55": {
+  },"57": {
     "doc": "Introducing “Rapid” Design Thinking to Brainstorm",
     "title": "My Role",
     "content": "I conceptualized and facilitated the workshop, guiding the team through each phase of the design-thinking process. ",
     "url": "/portfolio/rapid-design-thinking/rapid-design-thinking/#my-role",
     
     "relUrl": "/portfolio/rapid-design-thinking/rapid-design-thinking/#my-role"
-  },"56": {
+  },"58": {
     "doc": "Introducing “Rapid” Design Thinking to Brainstorm",
     "title": "Workshop Breakdown",
     "content": "Part 1: Challenge Statement: 7 minutes of Rapid Ideation . The team brainstormed problems and challenges for the Central Texas African-American Family Support Conference (CTAAFSC), which would be virtual for the first time. Participants used sticky notes to generate as many ideas as possible without discussion. | Outcome: . | 70 ideas were generated. | Encouraged the team to think from a user experience perspective. | . | . Part 2: Presentation: 10 minutes . – “You have 5 seconds!” Each participant had 5–10 seconds to present their ideas. This format allowed extroverts to share freely while minimizing pressure on introverts. | Outcome: . | Opened the floor for diverse perspectives. | Prevented premature problem-solving. | . | . Part 3: Vote &amp; Organize: 4 minutes . Participants were given two red dots to vote for their favorite ideas. After voting, the top four ideas were organized. | Outcome: . | Focused the team on key challenges without discussion. | . | . Part 4: How Might We (HMW): 7 minutes . The team reframed the top challenges into How Might We (HMW) questions to shift the focus from problems to solutions. | Outcome: . | Generated actionable questions, e.g., “How might we educate users on the platform?” | . | . Part 5: Back to Ideation &amp; Voting: 7 minutes . Using the HMW questions, the team brainstormed solutions. Each participant had 5–10 seconds to present their ideas, followed by voting. | Outcome: . | 35 solutions generated. | . | . Part 6: Prioritization: 3 minutes . Solutions were grouped and prioritized using an affinity mapping approach. | Outcome: . | Top 5 solutions identified. | . | . Part 7: Effort/Impact Scale: 5 minutes . The team evaluated the top solutions on an effort/impact matrix to determine feasibility and effectiveness. | Outcome: . | Clear understanding of viable solutions. | . | . Part 8: Actionable Items: 10 minutes . The final step involved creating actionable tasks for the selected solutions. | Outcome: . | A live chatbox was implemented, addressing: . | Help desk functionality. | FAQs. | Live tutorials. | . | . | . ",
     "url": "/portfolio/rapid-design-thinking/rapid-design-thinking/#workshop-breakdown",
     
     "relUrl": "/portfolio/rapid-design-thinking/rapid-design-thinking/#workshop-breakdown"
-  },"57": {
+  },"59": {
     "doc": "Introducing “Rapid” Design Thinking to Brainstorm",
     "title": "Project Learnings",
     "content": ". | Inclusivity in brainstorming: Some of the best solutions came from quieter team members. Providing structured activities ensures everyone’s ideas are heard. | Time management: Design thinking workshops can run over time. Building in buffer time is critical for success. | . ",
     "url": "/portfolio/rapid-design-thinking/rapid-design-thinking/#project-learnings",
     
     "relUrl": "/portfolio/rapid-design-thinking/rapid-design-thinking/#project-learnings"
-  },"58": {
+  },"60": {
     "doc": "Introducing “Rapid” Design Thinking to Brainstorm",
     "title": "Introducing “Rapid” Design Thinking to Brainstorm",
     "content": " ",
