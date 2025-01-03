@@ -7,7 +7,14 @@ has_children: true
 Welcome to Life & Work, where I share stories from my journey as a UX designer, rugby referee, and lifelong learner. From professional insights to personal reflections, this blog explores the lessons, ideas, and moments that inspire growth. I hope you find something here that resonates or sparks new ideas—thanks for visiting!
 
 ---
+## External Mentions
 
+- **[UX Alumni Share Job Hunting Advice](https://admc.austincc.edu/viscom/2023/09/19/ux-alumni-share-job-hunting-advice/)**  
+  Published on *Austin Community College Visual Communication Blog - September 19, 2023*.  
+  In this article, I share job-hunting advice and insights from my experience transitioning into a UX career.
+
+
+## Personal Blog
 <ul>
   {% for post in site.posts %}
     <li>
