@@ -41,3 +41,5 @@ Feel free to connect with me:
 - **LinkedIn**: [linkedin.com/in/justinxhale](#)
 
 **"I design experiences that keep developers in their flow."**
+
+![Page Views](https://komarev.com/ghpvc/?username=yourusername&color=blue)
