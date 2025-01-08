@@ -11,8 +11,11 @@ back_to_top_text: "Back to top"
 # 👋 Welcome to Justin X. Hale's UX Portfolio
 
 I'm a **UX Designer** at Red Hat specializing in **Command-Line Interfaces (CLI)** and developer tools. Passionate about bridging the gap between design and 
-technology, I create intuitive solutions that empower technical teams and enhance workflows in open-source environments.
-[View My Portfolio](#portfolio-highlights) | [Read My Blog](./blog) | [Get in Touch](#contact)
+technology, I create intuitive solutions that empower technical teams and enhance workflows in open-source environments.  
+
+[View My Portfolio](./portfolio.md) | [Read My Blog](./blog.md) | [Get in Touch](#contact)  
+
+> **"I design experiences that keep developers in their flow."** 
 
 ---
 
@@ -31,12 +34,12 @@ technology, I create intuitive solutions that empower technical teams and enhanc
 - Purpose: Establish clear, actionable guidelines for designing user-friendly and consistent CLI interfaces.
 - Impact: Supports developers and UX teams in delivering seamless command-line experiences.
 
-[View Full Portfolio →](https://justinxhale.github.io/portfolio/)
+[View Full Portfolio →](./portfolio.md)
 
 ---
 
 ## Skills
-- **Professional**: Strategic Design Thinking | Open Source UX | Agile Collaboration | Mentorship  
+- **Professional**: Strategic Design Thinking | Open Source UX | Agile Collaboration | Mentorship
 - **Technical**: GitHub | CLI Tools | Figma | PatternFly | Markdown | Jira
 
 ---
@@ -45,6 +48,6 @@ technology, I create intuitive solutions that empower technical teams and enhanc
 Feel free to reach out—I’d love to connect!  
 [Email Me](mailto:justinxhale@gmail.com) | [LinkedIn](https://www.linkedin.com/in/justinxhale) | [GitHub](https://github.com/justinxhale)
 
-**"I design experiences that keep developers in their flow."** 
+---
 
 <a href="#top" id="back-to-top">^ Back to Top</a>
