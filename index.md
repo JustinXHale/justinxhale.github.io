@@ -17,18 +17,10 @@ technology, I create intuitive solutions that empower technical teams and enhanc
 ---
 
 ## Portfolio Highlights
-
-<div style="display: flex; align-items: flex-start; gap: 20px;">
-  <img src="/portfolio/instructlab-interactive-mode/assets/Intro screen to interactive mode.png" alt="InstructLab Interactive Mode Screenshot" style="max-width:300px; height:auto; border-radius: 8px;">
-
-  <div>
-    ### [InstructLab Interactive Mode](https://github.com/JustinXHale/instructlab-interactivemode)
-    - **Challenge**: Enhance the CLI experience for developers interacting with InstructLab.
-    - **Solution**: Created a structured, user-friendly interactive mode, improving onboarding and tool adoption.
-    - **Tech**: Python, Shell scripting, Figma
-  </div>
-</div>
-
+### [InstructLab Interactive Mode](https://github.com/JustinXHale/instructlab-interactivemode)
+- Challenge: Enhance the CLI experience for developers interacting with InstructLab.
+- Solution: Created a structured, user-friendly interactive mode, improving onboarding and tool adoption.
+- Tech: Python, Shell scripting, Figma
 
 ### [BulkPrompting: Streamlining CLI Bulk Input](https://github.com/JustinXHale/bulkprompting)  
 - Challenge: Repetitive CLI workflows caused inefficiency.
