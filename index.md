@@ -10,48 +10,43 @@ back_to_top_text: "Back to top"
 
 # 👋 Welcome to Justin X. Hale's UX Portfolio
 
-I'm **Justin X. Hale**, a UX Designer (Red Hat) and **Command-Line Interface (CLI)** specialist passionate about bridging the gap between developers and intuitive user experiences. With a focus on developer tools, open-source projects, and cross-functional collaboration, I design solutions that empower technical teams to work efficiently.
+I'm a **UX Designer** at Red Hat specializing in **Command-Line Interfaces (CLI)** and developer tools. Passionate about bridging the gap between design and 
+technology, I create intuitive solutions that empower technical teams and enhance workflows in open-source environments.
+[View My Portfolio](#portfolio-highlights) | [Read My Blog](./blog) | [Get in Touch](#contact)
 
-## Table of Contents
-- [What I Do](#what-i-do)
-- [Current Role](#current-role-interaction-designer-at-red-hat)
-- [Portfolio Highlights](#portfolio-highlights)
-- [Skills](#skills)
-- [Blog and Case Studies](#blog-and-case-studies)
-- [Get in Touch](#get-in-touch)
-
-## What I Do/Have Done
-- **Interaction Design**: Simplifying workflows for CLI tools, automation scripts, and developer platforms.  
-- **Open Source Contribution**: Actively shaping design systems and usability for tools like Red Hat’s [ROSA CLI](https://github.com/redhat-developer) and Quay.io.  
-- **Cross-Functional Collaboration**: Partnering with developers, product teams, and stakeholders to ship high-impact designs.  
-- **User-Centered Solutions**: Leading research, prototyping, and testing for user-centric results.
-- **CLI Guidelines**: Authoring [best practices for CLI design](https://www.uxd-hub.com/entries/design/cli-guidelines) to create consistent and developer-friendly interfaces.  
-
-## Current Role: Interaction Designer at Red Hat
-**Highlights**:  
-- **ROSA CLI**: Created guidelines and streamlined CLI user experiences across Red Hat products.  
-- **MTA/Konveyor**: Designed key features for **Migration Toolkit for Applications (MTA)**, enhancing developer efficiency.  
-- **Quay.io Redesign**: Led design efforts, introducing **PatternFly** for consistent UI/UX.  
+---
 
 ## Portfolio Highlights
-### [InstructLab Interactive Mode](https://github.com/JustinXHale/instructlab-interactivemode)  
-- **Challenge**: Enhance the CLI experience for developers interacting with InstructLab.  
-- **Solution**: Created a structured, user-friendly interactive mode, improving onboarding and tool adoption.  
+### [InstructLab Interactive Mode](https://github.com/JustinXHale/instructlab-interactivemode)
+<img src="/portfolio/instructlab-interactive-mode/assets/Intro screen to interactive mode.png" alt="InstructLab Interactive Mode Screenshot" class="portfolio-image">
+
+- Challenge: Enhance the CLI experience for developers interacting with InstructLab.
+- Solution: Created a structured, user-friendly interactive mode, improving onboarding and tool adoption.
+- Tech: Python, Shell scripting, Figma
 
 ### [BulkPrompting: Streamlining CLI Bulk Input](https://github.com/JustinXHale/bulkprompting)  
-- **Challenge**: Repetitive CLI workflows caused inefficiency.  
-- **Solution**: Designed and implemented a Python script for automating bulk input, improving usability.  
-- **Tech**: Python, Shell scripting.  
+- Challenge: Repetitive CLI workflows caused inefficiency.
+- Solution: Designed and implemented a Python script for automating bulk input, improving usability.
+- Tech: Python, Shell scripting.
 
 ### [CLI Guidelines: Designing for the Command Line](https://www.uxd-hub.com/entries/design/cli-guidelines)  
-- **Purpose**: Establish clear, actionable guidelines for designing user-friendly and consistent CLI interfaces.  
-- **Impact**: Supports developers and UX teams in delivering seamless command-line experiences.
+- Purpose: Establish clear, actionable guidelines for designing user-friendly and consistent CLI interfaces.
+- Impact: Supports developers and UX teams in delivering seamless command-line experiences.
+
+[View Full Portfolio →](#portfolio-highlights)
+
+---
 
 ## Skills
-**Professional**: Strategic Design Thinking | Open Source UX | Agile Collaboration | Mentorship  
-**Technical**: GitHub | CLI Tools | Figma | PatternFly | | Design Systems | Markdown | Jira 
+- **Professional**: Strategic Design Thinking | Open Source UX | Agile Collaboration | Mentorship  
+- **Technical**: GitHub | CLI Tools | Figma | PatternFly | Markdown | Jira
 
----  
+---
+
+## Contact
+Feel free to reach out—I’d love to connect!  
+[Email Me](mailto:justinxhale@gmail.com) | [LinkedIn](https://www.linkedin.com/in/justinxhale) | [GitHub](https://github.com/justinxhale)
+
 **"I design experiences that keep developers in their flow."** 
 
 <a href="#top" id="back-to-top">^ Back to Top</a>
