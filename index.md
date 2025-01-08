@@ -8,11 +8,6 @@ back_to_top_text: "Back to top"
 ---
 <a id="back-to-top"></a>
 
-<div id="theme-toggle">
-  <button id="toggle-button">Switch Theme</button>
-</div>  
-
-
 # 👋 Welcome to Justin X. Hale's UX Portfolio
 
 I'm a **UX Designer** at Red Hat specializing in **Command-Line Interfaces (CLI)** and developer tools. Passionate about bridging the gap between design and 
@@ -44,8 +39,8 @@ technology, I create intuitive solutions that empower technical teams and enhanc
 ---
 
 ## Skills
-- **Professional**: Strategic Design Thinking | Open Source UX | Agile Collaboration | Mentorship
-- **Technical**: GitHub | CLI Tools | Figma | PatternFly | Markdown | Jira
+**Professional**: Strategic Design Thinking | Open Source UX | Agile Collaboration | Mentorship
+**Technical**: GitHub | CLI Tools | Figma | PatternFly | Markdown | Jira
 
 ---
 
@@ -56,6 +51,4 @@ Feel free to reach out—I’d love to connect!
 ---
 
 <a href="#top" id="back-to-top">^ Back to Top</a>
-
-<script src="assets/scripts/script.js"></script>
 
