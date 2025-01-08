@@ -31,7 +31,7 @@ technology, I create intuitive solutions that empower technical teams and enhanc
 - Purpose: Establish clear, actionable guidelines for designing user-friendly and consistent CLI interfaces.
 - Impact: Supports developers and UX teams in delivering seamless command-line experiences.
 
-[View Full Portfolio →](#portfolio-highlights)
+[View Full Portfolio →](https://justinxhale.github.io/portfolio/)
 
 ---
 
