@@ -1,5 +1,5 @@
 .portfolio-image {
-    max-width: 300px; /* Limits image width */
+    max-width: 25%; /* Limits image width */
     height: auto; /* Maintains aspect ratio */
     margin: 10px auto; /* Centers the image */
     display: block; /* Ensures images are block elements */
