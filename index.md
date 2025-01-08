@@ -18,7 +18,7 @@ technology, I create intuitive solutions that empower technical teams and enhanc
 
 ## Portfolio Highlights
 ### [InstructLab Interactive Mode](https://github.com/JustinXHale/instructlab-interactivemode)
-<img src="/portfolio/instructlab-interactive-mode/assets/Intro screen to interactive mode.png" alt="InstructLab Interactive Mode Screenshot" class="portfolio-image">
+<img src="/portfolio/instructlab-interactive-mode/assets/Intro screen to interactive mode.png" alt="InstructLab Interactive Mode Screenshot" style="max-width:300px; height:auto;">
 
 - Challenge: Enhance the CLI experience for developers interacting with InstructLab.
 - Solution: Created a structured, user-friendly interactive mode, improving onboarding and tool adoption.
