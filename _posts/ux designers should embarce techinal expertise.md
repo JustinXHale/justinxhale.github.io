@@ -25,6 +25,9 @@ By immersing myself in the user perspective, I uncovered pain points such as gap
 
 This hands-on approach wasn’t just about seeing a product in action or learning new technical skills; it was about typing with a user's keyboard. By bridging the gap between usability and functionality, I found ways to make the CLI more approachable and efficient for everyone.
 
+![GIF of Bulk Prompting Script](/portfolio/bulk-prompting-script/assets/july31-readme-gif.gif)
+*A bulk prompting script automates the process of creating a cluster with predefined settings, minimizing errors and improving efficiency for users navigating CLI workflows.*
+
 ## Why technical expertise matters
 Stepping into the technical realm transformed my skills and reshaped the impact I've been able to have on both the users I design for and the teams I collaborate with. It's allowed me to engage with the tools and workflows that matter most to our users, designing solutions that meet them where they are rather than expecting them to adapt to my perspective. For instance, my work within InstructLab has given me the opportunity to transform a complex CLI onboarding process into a streamlined, user friendly experience, particularly for novice users <a href="https://github.com/JustinXHale/instructlab-interactivemode" target="_blank">InstructLab Interactive Mode</a>
 | <a href="https://github.com/instructlab/instructlab/issues/2814" target="_blank">GitHub Issue 2814</a>. This effort saves users time and also gives them confidence to navigate a tool that might have otherwise felt intimidating.
@@ -41,8 +44,7 @@ It might seem like a daunting task to develop technical expertise as a UX design
 - **Utilize Resources**: Take advantage of online tutorials, documentation, and any learning tools you can access, like LinkedIn Learning. Platforms like GitHub are great starting points, and AI tools can also provide support for tackling technical challenges.
 - **Embrace the Open Source Mindset**: Open source is all about collaboration and continuous improvement. Contributing to projects like Konveyor/MTA, PatternFly, and InstructLab allowed me to learn hands-on while giving back to the community, a win-win for growth and collaboration.
 
-![GIF of Bulk Prompting Script](/portfolio/bulk-prompting-script/assets/july31-readme-gif.gif)
-*A bulk prompting script automates the process of creating a cluster with predefined settings, minimizing errors and improving efficiency for users navigating CLI workflows.*
+
 
 ## Closing
 As I look on my journey at Red Hat, I never would have imagined becoming a subject matter expert in command line interfaces or writing custom scripts to highlight user pain points. As I start to think about the rest of 2025, I'm reflecting on how stepping outside my comfort zone has shaped not only my career but also the experiences of the users I design for. 
