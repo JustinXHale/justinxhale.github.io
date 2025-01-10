@@ -17,6 +17,10 @@ technology, I create intuitive solutions that empower technical teams and enhanc
 
 > **"I design experiences that keep developers in their flow."** 
 
+<h2>My GitHub Contributions</h2>
+<img src="https://ghchart.rshah.org/JustinXHale" alt="GitHub Contributions Chart">
+
+
 ---
 
 ## Portfolio Highlights
@@ -52,3 +56,45 @@ Feel free to reach out—I’d love to connect!
 
 <a href="#top" id="back-to-top">^ Back to Top</a>
 
+<h2>My GitHub Issues and Pull Requests</h2>
+<ul id="gh-issues"></ul>
+
+<script>
+  const username = "JustinXHale"; // Your GitHub username
+
+  fetch(`https://api.github.com/search/issues?q=author:${username}`, {
+    headers: {
+      Accept: "application/vnd.github.v3+json",
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      const issueList = document.getElementById("gh-issues");
+      data.items.forEach((issue) => {
+        const repoName = issue.repository_url.split('/').slice(-2).join('/');
+        const listItem = document.createElement("li");
+        listItem.innerHTML = `
+          <a href="${issue.html_url}" target="_blank">${issue.title}</a>
+          <br><small>Repository: ${repoName}</small>
+        `;
+        issueList.appendChild(listItem);
+      });
+    })
+    .catch((error) => console.error("Error fetching issues:", error));
+</script>
+
+<style>
+  #gh-issues li {
+    margin-bottom: 10px;
+  }
+
+  #gh-issues a {
+    font-weight: bold;
+    color: #0073e6;
+    text-decoration: none;
+  }
+
+  #gh-issues a:hover {
+    text-decoration: underline;
+  }
+</style>
