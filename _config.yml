@@ -22,3 +22,7 @@ just_the_docs:
     links:
       - text: "Privacy Policy"
         url: "/privacy-policy/"
+
+# Plugins
+plugins:
+  - jekyll-github-metadata
