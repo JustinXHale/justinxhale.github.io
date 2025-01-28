@@ -4,6 +4,7 @@ title: Why UX Designers Should Embrace Technical Expertise to Enhance Open Sourc
 date: 2024-12-31
 tags: [ux design,cli]
 excerpt: The benefits of technical expertise extend far beyond improving the user experience. It has fundamentally changed how I collaborate with developers, sysadmins, the open-source community, and other technical stakeholders. Conversations that once felt like trying to bridge two separate languages, have evolved into fluid dialogues grounded in a shared understanding of the tools, challenges, and opportunities.
+published: false
 ---
 
 # Why UX designers should embrace technical expertise to enhance open source contributions
