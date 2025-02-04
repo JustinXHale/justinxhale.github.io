@@ -6,6 +6,8 @@ nav_order: 1
 ---
 # About Me
 
+## Testing a line Feb 4
+
 Hi, I’m Justin X. Hale, a UX designer at Red Hat passionate about crafting thoughtful, user-centered experiences. My journey into UX has been anything but traditional. It started with a love for problem-solving and a curiosity for how design can make life easier—whether that’s creating seamless workflows for developers or simplifying complex systems.
 
 I currently work at Red Hat, where I focus on improving developer tools, particularly in the Command Line Interface (CLI) space. I love digging into how people interact with technology and finding ways to make those interactions smoother and more intuitive. For me, it’s about understanding the user’s perspective and turning that into designs that truly empower them.
