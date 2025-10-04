@@ -1,28 +1,35 @@
-# This tells GitHub what to use 
-title: "Justin X. Hale's Portfolio"
-description: "A UX Designer specializing in CLI and developer tools"
+# Site basics
+title: "RefereeIQ"
+description: "Rugby laws, explained in seconds."
 remote_theme: "just-the-docs/just-the-docs"
 
-# Enable navigation
+# IMPORTANT for project pages (your repo is not a user/org site)
+url: "https://justinxhale.github.io"
+baseurl: "/refereeiq-site"
+
+# Look & feel (optional)
+logo: "/assets/icon-512.png"     # optional; appears in the header
+favicon_ico: "/assets/icon-512.png"
+
+# Navigation / behavior
 permalink: pretty
-
-include:
-  - portfolio/rapid-design-thinking/assets
-
-# Makes Aux links open in a new tab. Default is false
+aux_links:
+  "Get the app (Play Store)":
+    - "#"
 aux_links_new_tab: true
-
-# Back to top button
 back_to_top: true
 back_to_top_text: "Back to top"
 
-# Generate footer
+# Footer links (optional)
 just_the_docs:
   footer:
     links:
       - text: "Privacy Policy"
-        url: "/privacy-policy/"
+        url: "/refereeiq-site/privacy.html"
+      - text: "Support"
+        url: "/refereeiq-site/support.html"
 
 # Plugins
 plugins:
   - jekyll-github-metadata
+  - jekyll-remote-theme

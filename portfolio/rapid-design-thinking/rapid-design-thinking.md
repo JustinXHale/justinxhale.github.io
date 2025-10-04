@@ -132,3 +132,4 @@ The final step involved creating actionable tasks for the selected solutions.
 ## Project Learnings  
 - **Inclusivity in brainstorming:** Some of the best solutions came from quieter team members. Providing structured activities ensures everyone’s ideas are heard.  
 - **Time management:** Design thinking workshops can run over time. Building in buffer time is critical for success.
+

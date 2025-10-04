@@ -22,6 +22,12 @@ technology, I create intuitive solutions that empower technical teams and enhanc
 ---
 
 ## Portfolio Highlights
+
+### [RefLog — Designing for Speed, Focus, and Flow](./portfolio/reflog/reflog.md)
+- Challenge: Rugby referees needed a faster, more efficient way to log match events.
+- Solution: Developed RefLog, a mobile app that reduces review time from hours to minutes, emphasizing speed and usability with offline-first functionality.
+- Tech: Flutter.
+
 ### [InstructLab Interactive Mode](https://github.com/JustinXHale/instructlab-interactivemode)
 - Challenge: Enhance the CLI experience for developers interacting with InstructLab.
 - Solution: Created a structured, user-friendly interactive mode, improving onboarding and tool adoption.
