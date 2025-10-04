@@ -2,7 +2,7 @@
 layout: default
 title: It’s Just an Email
 parent: Portfolio
-nav_order: 1
+nav_order: 5
 ---
 <!-- This section will include my Table of Contents. In the terminal run [npx markdown-toc -i README.md] to update must be in correct directory. -->
 
@@ -11,18 +11,31 @@ nav_order: 1
 <!-- toc -->
 
 - [It’s Just an Email](#its-just-an-email)
-  * [Overview](#overview)
-  * [Background](#background)
-  * [Problem(s)](#problems)
-  * [Solution](#solution)
-  * [My Role](#my-role)
-  * [Interviews](#interviews)
-  * [Define](#define)
-  * [Ideate](#ideate)
-  * [Prototype](#prototype)
-  * [Test & Iterate](#test--iterate)
-  * [Project Learnings](#project-learnings)
-  * [Deliverables](#deliverables)
+  - [Overview](#overview)
+  - [Background](#background)
+  - [Problem(s)](#problems)
+  - [Solution](#solution)
+  - [My Role](#my-role)
+    - [Emphasize](#emphasize)
+  - [Interviews](#interviews)
+    - [Guiding Questions](#guiding-questions)
+  - [Define](#define)
+    - [Client Journey](#client-journey)
+  - [Ideate](#ideate)
+    - [Initial Sketches](#initial-sketches)
+  - [Prototype](#prototype)
+    - [Color Visualization](#color-visualization)
+    - [Wireframes](#wireframes)
+      - [Solicit Opinion](#solicit-opinion)
+  - [Test \& Iterate](#test--iterate)
+    - [Coding the Email](#coding-the-email)
+    - [We’re almost done.](#were-almost-done)
+  - [Project Learnings](#project-learnings)
+    - [Key Takeaways](#key-takeaways)
+  - [Deliverables](#deliverables)
+    - [Before](#before)
+    - [After](#after)
+    - [Dark Mode](#dark-mode)
 
 <!-- tocstop -->
 
