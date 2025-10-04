@@ -10,7 +10,7 @@ nav_order: 1
 When I first started building RefLog, I wasn’t thinking about publishing to the App Store. I was thinking about time.
 
 <figure style="float: right; margin-left: 20px;">
-  <img src="../reflog/assets/reflog-original-match-screen.png" width="200px" alt="Placeholder Image">
+  <img src="/portfolio/reflog/assets/reflog-original-match-screen.png" width="200px" alt="Placeholder Image">
   <figcaption>First iteration of RefLog</figcaption>
 </figure>
 
@@ -19,7 +19,6 @@ As a rugby referee, I spend hours after games rewatching film, coding events, an
 RefLog started as an experiment to answer one question:
 
 > *What if I could code a match faster?*
->
 ---
 
 ## The Spark
@@ -58,7 +57,7 @@ Every micro‑interaction was tested by asking: does this remove a decision, or 
 ## Building with LLMs
 
 <figure style="float: left; margin-right: 20px;">
-  <img src="../reflog/assets/add-event-error.png" width="200" alt="Error handling">
+  <img src="/portfolio/reflog/assets/add-event-error.png" width="200" alt="Error handling">
   <figcaption>Error handling</figcaption>
 </figure>
 
@@ -82,7 +81,7 @@ I gave myself one month to take RefLog from idea to store‑ready proof of conce
 I didn’t build a roadmap; I built what the next match told me to build. Each day, I’d use RefLog live, note what broke my focus, and fix that first.
 
 <figure style="width: 100%; text-align: center; margin-top: 20px;">
-  <img src="../reflog/assets/featureflags.png" alt="Feature Flags">
+  <img src="/portfolio/reflog/assets/featureflags.png" alt="Feature Flags">
   <figcaption>Firestore Feature Flags</figcaption>
 </figure>
 
@@ -103,7 +102,7 @@ These insights didn’t just inform new features, they reinforced an idea I’ve
 RefLog launched on both iOS and Android after about four weeks of building.
 
 <figure style="margin-top: 20px;">
-  <img src="../reflog/assets/denied-on-apple.png" width="100%" alt="Denied on Apple">
+  <img src="/portfolio/reflog/assets/denied-on-apple.png" width="100%" alt="Denied on Apple">
   <figcaption>Denied on Apple for saying Android in the What's New update.</figcaption>
 </figure>
 
@@ -145,11 +144,11 @@ RefLog reminded me that good design isn’t about adding, it’s about removing 
 - [RefLog Site](https://justinxhale.github.io/reflog-site)
 
 <figure style="width: 100%; text-align: center;">
-  <img src="../reflog/assets/playstore.png" alt="Play Store">
+  <img src="/portfolio/reflog/assets/playstore.png" alt="Play Store">
   <figcaption>Play Store</figcaption>
 </figure>
 
 <figure style="width: 100%; text-align: center; margin-top: 20px;">
-  <img src="../reflog/assets/appstore.png" alt="App Store">
+  <img src="/portfolio/reflog/assets/appstore.png" alt="App Store">
   <figcaption>App Store</figcaption>
 </figure>

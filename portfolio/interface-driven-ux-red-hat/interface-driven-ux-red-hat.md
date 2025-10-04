@@ -24,7 +24,7 @@ I led UX for the migration across multiple core flows—repository management, o
 
 **Deck:**  
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRXHjnoprZXroTW_-goQuvL5k3TaLyQ9ly4NJarGp9R9u-G4wAaLUpvZFr223OJZtyT8dauFLtQn7pM/pubembed?start=false&loop=true&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-[View Slides](https://docs.google.com/presentation/d/1mBRQ5eea7by95GPIpBiW2i9sNIanDwJkp3cccUEbxcI/preview)
+[View Slides](https://docs.google.com/presentation/d/1mBRQ5eea7by95GPIpBiW2i9sNIanDwJkp3cccUEbxcI/preview){:target="_blank"}
 
 ---
 
