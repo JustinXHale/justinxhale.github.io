@@ -2,7 +2,7 @@
 layout: default
 title: Bulk Prompting Script
 parent: "Portfolio"
-nav_order: 1
+nav_order: 3
 ---
 
 # Bulk Prompting for Command Line Interfaces

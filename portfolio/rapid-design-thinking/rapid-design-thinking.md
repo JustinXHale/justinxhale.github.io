@@ -2,7 +2,7 @@
 layout: default
 title: Introducing “Rapid” Design Thinking to Brainstorm
 parent: Portfolio
-nav_order: 1
+nav_order: 4
 ---
 <!-- This section will include my Table of Contents. In the terminal run [npx markdown-toc -i README.md] to update must be in correct directory. -->
 
@@ -11,21 +11,21 @@ nav_order: 1
 <!-- toc -->
 
 - [Case Study: Introducing “Rapid” Design Thinking to Brainstorm](#case-study-introducing-rapid-design-thinking-to-brainstorm)
-  * [Overview](#overview)
-  * [Background](#background)
-  * [Problems](#problems)
-  * [Solution](#solution)
-  * [My Role](#my-role)
-  * [Workshop Breakdown](#workshop-breakdown)
-    + [**Part 1: Challenge Statement: 7 minutes of Rapid Ideation**](#part-1-challenge-statement-7-minutes-of-rapid-ideation)
-    + [**Part 2: Presentation: 10 minutes**](#part-2-presentation-10-minutes)
-    + [**Part 3: Vote & Organize: 4 minutes**](#part-3-vote--organize-4-minutes)
-    + [**Part 4: How Might We (HMW): 7 minutes**](#part-4-how-might-we-hmw-7-minutes)
-    + [**Part 5: Back to Ideation & Voting: 7 minutes**](#part-5-back-to-ideation--voting-7-minutes)
-    + [**Part 6: Prioritization: 3 minutes**](#part-6-prioritization-3-minutes)
-    + [**Part 7: Effort/Impact Scale: 5 minutes**](#part-7-effortimpact-scale-5-minutes)
-    + [**Part 8: Actionable Items: 10 minutes**](#part-8-actionable-items-10-minutes)
-  * [Project Learnings](#project-learnings)
+  - [Overview](#overview)
+  - [Background](#background)
+  - [Problems](#problems)
+  - [Solution](#solution)
+  - [My Role](#my-role)
+  - [Workshop Breakdown](#workshop-breakdown)
+    - [**Part 1: Challenge Statement: 7 minutes of Rapid Ideation**](#part-1-challenge-statement-7-minutes-of-rapid-ideation)
+    - [**Part 2: Presentation: 10 minutes**](#part-2-presentation-10-minutes)
+    - [**Part 3: Vote \& Organize: 4 minutes**](#part-3-vote--organize-4-minutes)
+    - [**Part 4: How Might We (HMW): 7 minutes**](#part-4-how-might-we-hmw-7-minutes)
+    - [**Part 5: Back to Ideation \& Voting: 7 minutes**](#part-5-back-to-ideation--voting-7-minutes)
+    - [**Part 6: Prioritization: 3 minutes**](#part-6-prioritization-3-minutes)
+    - [**Part 7: Effort/Impact Scale: 5 minutes**](#part-7-effortimpact-scale-5-minutes)
+    - [**Part 8: Actionable Items: 10 minutes**](#part-8-actionable-items-10-minutes)
+  - [Project Learnings](#project-learnings)
 
 <!-- tocstop -->
 

@@ -2,7 +2,7 @@
 layout: default
 title: "Interface-Driven UX at Red Hat"
 parent: Portfolio
-nav_order: 1
+nav_order: 2
 ---
 
 ## Interface-Driven UX at Red Hat
