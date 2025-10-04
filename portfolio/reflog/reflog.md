@@ -144,11 +144,11 @@ RefLog reminded me that good design isn’t about adding, it’s about removing 
 - [RefLog Site](https://justinxhale.github.io/reflog-site)
 
 <figure style="width: 100%; text-align: center;">
-  <img src="/portfolio/reflog/assets/playstore.png" alt="Play Store">
+  <img src="/portfolio/reflog/assets/playStore.png" alt="Play Store">
   <figcaption>Play Store</figcaption>
 </figure>
 
 <figure style="width: 100%; text-align: center; margin-top: 20px;">
-  <img src="/portfolio/reflog/assets/appstore.png" alt="App Store">
+  <img src="/portfolio/reflog/assets/appStore.png" alt="App Store">
   <figcaption>App Store</figcaption>
 </figure>
