@@ -1,11 +1,11 @@
 # Site basics
-title: "RefereeIQ"
-description: "Rugby laws, explained in seconds."
+title: "Justin X. Hale's Portfolio"
+description: "A UX Designer specializing in CLI and developer tools"
 remote_theme: "just-the-docs/just-the-docs"
 
 # IMPORTANT for project pages (your repo is not a user/org site)
 url: "https://justinxhale.github.io"
-baseurl: "/refereeiq-site"
+baseurl: ""
 
 # Look & feel (optional)
 logo: "/assets/icon-512.png"     # optional; appears in the header
@@ -13,10 +13,9 @@ favicon_ico: "/assets/icon-512.png"
 
 # Navigation / behavior
 permalink: pretty
-aux_links:
-  "Get the app (Play Store)":
-    - "#"
 aux_links_new_tab: true
+
+# Back to top button
 back_to_top: true
 back_to_top_text: "Back to top"
 
@@ -25,11 +24,10 @@ just_the_docs:
   footer:
     links:
       - text: "Privacy Policy"
-        url: "/refereeiq-site/privacy.html"
+        url: "/privacy-policy/"
       - text: "Support"
-        url: "/refereeiq-site/support.html"
+        url: "/support/"
 
 # Plugins
 plugins:
   - jekyll-github-metadata
-  - jekyll-remote-theme
