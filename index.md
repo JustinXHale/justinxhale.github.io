@@ -23,12 +23,12 @@ technology, I create intuitive solutions that empower technical teams and enhanc
 
 ## Portfolio Highlights
 
-### [RefLog — Designing for Speed, Focus, and Flow](./portfolio/reflog/reflog.md)
+### [RefLog](./portfolio/reflog/reflog.md)
 - Challenge: Rugby referees needed a faster, more efficient way to log match events.
 - Solution: Developed RefLog, a mobile app that reduces review time from hours to minutes, emphasizing speed and usability with offline-first functionality.
 - Tech: Flutter.
 
-### [RefereeIQ — A Conversational AI Coach for Rugby Referees](./portfolio/refereeiq/refereeiq.md)
+### [RefereeIQ](./portfolio/refereeiq/refereeiq.md)
 - Challenge: Rugby referees needed a mentor-like assistant to navigate complex laws and clarifications.
 - Solution: Built RefereeIQ, a conversational AI coach that provides grounded answers and clarifications, enhancing decision-making and trust.
 - Tech: Flutter, OpenAI API, Firestore.
