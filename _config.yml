@@ -31,3 +31,5 @@ just_the_docs:
 # Plugins
 plugins:
   - jekyll-github-metadata
+
+# trigger rebuilds on changes to these files
