@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "RefereeIQ"
+title: "RefereeIQ-Sofía Chatbot"
 parent: Portfolio
 nav_order: 1
 ---
