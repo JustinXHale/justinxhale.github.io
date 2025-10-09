@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Interface-Driven UX at Red Hat"
+title: "SaaS Design (at Red Hat)"
 parent: Portfolio
 nav_order: 2
 ---

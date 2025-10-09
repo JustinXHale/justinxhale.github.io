@@ -28,6 +28,11 @@ technology, I create intuitive solutions that empower technical teams and enhanc
 - Solution: Developed RefLog, a mobile app that reduces review time from hours to minutes, emphasizing speed and usability with offline-first functionality.
 - Tech: Flutter.
 
+### [RefereeIQ — A Conversational AI Coach for Rugby Referees](./portfolio/refereeiq/refereeiq.md)
+- Challenge: Rugby referees needed a mentor-like assistant to navigate complex laws and clarifications.
+- Solution: Built RefereeIQ, a conversational AI coach that provides grounded answers and clarifications, enhancing decision-making and trust.
+- Tech: Flutter, OpenAI API, Firestore.
+
 ### [InstructLab Interactive Mode](https://github.com/JustinXHale/instructlab-interactivemode)
 - Challenge: Enhance the CLI experience for developers interacting with InstructLab.
 - Solution: Created a structured, user-friendly interactive mode, improving onboarding and tool adoption.

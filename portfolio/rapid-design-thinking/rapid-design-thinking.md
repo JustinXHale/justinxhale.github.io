@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Introducing “Rapid” Design Thinking to Brainstorm
+title: Rapid Design Thinking
 parent: Portfolio
 nav_order: 4
 ---

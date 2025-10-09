@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "RefLog — Designing for Speed, Focus, and Flow"
+title: "RefLog"
 parent: Portfolio
 nav_order: 1
 ---
