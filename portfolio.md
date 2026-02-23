@@ -12,10 +12,16 @@ has_children: true
 - **Solution**: Developed RefLog, a mobile app that reduces review time from hours to minutes, emphasizing speed and usability with offline-first functionality.  
 - **Tech**: Flutter.  
 
-### [RefereeIQ — A Conversational AI Coach for Rugby Referees](./portfolio/refereeiq/refereeiq.md)  
-- **Challenge**: Rugby referees needed a mentor-like assistant to navigate complex laws and clarifications.  
-- **Solution**: Built RefereeIQ, a conversational AI coach that provides grounded answers and clarifications, enhancing decision-making and trust.  
-- **Tech**: Flutter, OpenAI API, Firestore.  
+### [RefereeIQ — A Conversational AI Coach for Rugby Referees](./portfolio/refereeiq/refereeiq.md)
+- **Challenge**: Rugby referees needed a mentor-like assistant to navigate complex laws and clarifications.
+- **Solution**: Built RefereeIQ, a conversational AI coach that provides grounded answers and clarifications, enhancing decision-making and trust.
+- **Tech**: Flutter, OpenAI API, Firestore.
+
+### [vLLM CLI UX Enhancement](./portfolio/vllm-cli-ux/vllm-cli-ux.md)
+- **Challenge**: vLLM CLI exposed 200+ configuration options with overwhelming help output.
+- **Solution**: Designed and championed enhanced help navigation with progressive disclosure, keyword search, and group-based exploration. Merged upstream via RFC process.
+- **Impact**: Cross-org collaboration (Red Hat + Hugging Face), merged into major open-source LLM serving framework.
+- **Tech**: CLI UX, Miro, GitHub RFC, Open Source.
 
 ### [InstructLab Interactive Mode & Script](https://github.com/JustinXHale/instructlab-interactivemode)  
 - **Challenge**: Enhance the CLI experience for developers interacting with InstructLab.  
