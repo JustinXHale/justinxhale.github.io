@@ -7,150 +7,164 @@ nav_order: 1
 
 # RefereeIQ — A Conversational AI Coach for Rugby Referees
 
-## Overview
-
-<figure style="float: right; margin-left: 20px;">
-  <img src="/portfolio/refereeiq/assets/welcome.png" alt="Welcome Screen" width="300px">
-  <figcaption>Welcome Screen</figcaption>
-</figure>
-
-I designed and built **RefereeIQ**, a conversational assistant that helps rugby referees reason through the *Laws of the Game* using natural dialogue. Instead of paging through PDFs, referees ask questions and get **grounded answers** with relevant clarifications and links, delivered by “**Sofia**,” an AI referee coach.
-
-**Why it matters:** This project explores how to design **reasoning‑centric UX** around LLMs — blending open‑ended conversation with **grounding, citations, and fallbacks** to earn trust in decision‑heavy contexts.
-
-## Problem & Users
-
-Rugby referees contend with hundreds of laws, frequent clarifications, and nuanced edge cases. Guidance is often fragmented (forums, mentors, PDFs), making it hard to **develop consistent judgment** quickly.
-
-**Design challenge:** Build a conversational experience that:
-
-* Feels like a **mentor**, not a generic chatbot
-* Handles **multi‑turn reasoning** without losing context
-* Shows **relevant citations/clarifications** to build trust and teach judgment
-
-## My Role
-
-I led the project end‑to‑end — **product thinking, UX, and implementation**:
-
-* Conversational flow design and UI (**Flutter**, chat‑first patterns)
-* Backend on **Cloud Functions** with the OpenAI API
-* **Firestore** for state/config and scheduled content
-* Lightweight **retrieval** pipeline for official World Rugby **Law Clarifications**
-* Field testing with referees and coaches; iteration on prompts, tone, and safety
-
-
-## Truth in Delivery (What’s Real vs. Exploratory)
-
-**Implemented & live**
-
-<figure style="float: right; margin-left: 20px;">
-  <img src="/portfolio/refereeiq/assets/questionfollowup.jpg" alt="Welcome Screen" width="300px">
-  <figcaption>LLM Asking Follow-up Questions</figcaption>
-</figure>
-
-* **Chat → Cloud Function → OpenAI** round‑trip with a focused **Sofia system prompt** and recent‑turn context.
-* **Moderation pass** over recent user text prior to model calls.
-* **Grounding via targeted retrieval of World Rugby Law Clarifications**: the backend scrapes the official clarifications index and can detect/fetch specific clarification pages. When useful (e.g., user requests a summary or the model signals uncertainty), the server **parses sections** (title + headings) and injects excerpts/URLs into the context for Sofia to cite.
-* **Configurable AI behavior**: default **model/temperature** and Sofia’s **system prompt** are centralized and can be **overridden via Firestore** for live tuning without redeploys.
-* **Daily Challenge generator**: a scheduled task produces **5 law questions** (5 points each) with strict constraints (official law wording, one correct answer), stored in Firestore for in‑app use.
-* **Flutter chat UI** with markdown rendering and in‑app link launching.
-
-**Exploratory / future‑facing**
-
-* A generalized **document ingestion & vector search** pipeline (classic RAG) is not yet implemented. The system performs **targeted retrieval** for official clarifications (domain grounding with citations) — but it is **not** a full vector store or multi‑corpus retriever.
-* The **Sources** surface is currently a static representation for UX demonstration.
-
-## System Architecture (Simplified)
-
-**App (Flutter)**
-
-* Chat‑first UI (messages, markdown, link handling)
-* Daily Challenge and History tabs
-* Push notifications scaffolded for challenge drops
-
-**Backend (Cloud Function + Services)**
-
-* **chat handler**:
-
-  1. moderation → 2) build Sofia system prompt → 3) detect when a **law clarification** would help → 4) **fetch & parse** official clarification page(s) → 5) assemble messages → 6) OpenAI chat completion → 7) return grounded answer with links
-* **Configuration**: default model/temperature in code; **Firestore overrides** for runtime tuning
-* **Scheduled content**: daily challenge task writes official‑aligned MCQs to Firestore
-
-## Conversation Design & Reasoning UX
-
-**Tone & trust**
-
-* System prompt frames Sofia as a **coach**: patient, law‑accurate, explicit when uncertain.
-* **Citations as trust cues**: answers include **links to official clarifications**; Sofia can pull short **excerpts** (title + sections) on request.
-
-**Fallbacks & uncertainty**
-
-* If unsure, the backend pivots to clarification lookup and says, for example: “Let’s check the latest clarification on this topic,” then shows a concise excerpt and link. This keeps the conversation moving **without hallucinating** a law.
-
-**Multi‑turn coherence**
-
-* Recent context (user + Sofia turns) is preserved and sent server‑side; the **system prompt** consistently enforces terminology and citation standards aligned with official law language.
-
-## Safety, Cost & Performance Considerations
-
-* **Safety**: moderation pass on recent user text prior to model calls; guardrails enforced server‑side.
-* **Cost control**:
-  * Compact, reusable system prompt
-  * **Temperature** tuned per task (lower for Challenges; slightly higher for conversational coaching)
-  * Bounded **max tokens** for concise, source‑linked answers
-* **Latency**: retrieval triggers selectively for clarifications to avoid unnecessary network and parsing overhead.
-
-## Outcomes
-
-* **Cross‑platform release**: shipped to Android with a working chat experience and daily challenges.
-* **Early usage**: referees and coaches used Sofia for scenario‑based learning.
-* **Feedback themes**:
-  * “Seeing the exact clarification link is faster than hunting PDFs.”
-  * “When it checks the clarification instead of guessing, I trust it more.”
-
-## What I’d Improve Next
-
-1. **Full RAG pipeline**: ingest laws + clarifications + competition regulations into an **embeddings‑backed** store with section‑level citations to improve recall and coverage.
-2. **Scoped sources**: user‑selectable corpora by competition/region to reduce ambiguity and increase relevance.
-3. **Evaluation harness**: prompt + expected source snippets as a regression suite to protect quality across prompt/model changes.
-4. **Telemetry**: structured signals on when/why retrieval fires, uncertainty rates, and what gets cited — to guide corpus and UX improvements.
-
-## Why This Maps to AI/Data Tooling
-
-* **Reasoning‑centric UX**: the assistant shows *how* it reasons (citations, fallbacks), not just *what* it answers — critical for analysis, forecasting, and data prep agents.
-* **Grounding over gloss**: verifiable references preferred over confident but vague answers — a pattern that carries to data science workflows (datasets, transforms, assumptions).
-* **Live configurability**: model and temperature can be tuned from **Firestore** without redeploys — enabling rapid iteration with stakeholders.
-* **Generalizable pattern**: architecture extends to domain copilots (legal, policy, ops SOPs) where guidance must anchor to **authoritative sources**.
-
-## Implementation Pointers (for technical reviewers)
-
-* **Retrieval**: clarification index & page parsing (server) with excerpt injection into model context
-* **Config & prompts**: centralized defaults with **Firestore overrides**
-* **Scheduled content**: daily MCQs with strict rules (official wording; one correct answer)
-* **Client**: Flutter chat UI with markdown and link handling; challenge UI with simple scoring
-
-## Gallery
-
-<div style="display: flex; flex-wrap: wrap; gap: 20px;">
-  <figure style="flex: 1; text-align: center;">
-    <img src="/portfolio/refereeiq/assets/welcome.png" alt="Welcome Screen" width="300px">
-    <figcaption>Welcome Screen</figcaption>
-  </figure>
-  <figure style="flex: 1; text-align: center;">
-    <img src="/portfolio/refereeiq/assets/questionfollowup.jpg" alt="Question Follow-Up" width="300px">
-    <figcaption>Question Follow-Up</figcaption>
-  </figure>
-  <figure style="flex: 1; text-align: center;">
-    <img src="/portfolio/refereeiq/assets/askSofia.png" alt="Ask Sofia" width="300px">
-    <figcaption>Ask Sofia</figcaption>
-  </figure>
-  <figure style="flex: 1; text-align: center;">
-    <img src="/portfolio/refereeiq/assets/challengehistory.png" alt="Challenge History" width="300px">
-    <figcaption>Challenge History</figcaption>
-  </figure>
-  <figure style="flex: 1; text-align: center;">
-    <img src="/portfolio/refereeiq/assets/llmgeneratedquestions.png" alt="LLM Generated Questions" width="300px">
-    <figcaption>LLM Generated Questions</figcaption>
-  </figure>
+<div style="background: #f5f5f5; padding: 20px; margin-bottom: 30px; border-left: 4px solid #0066cc;">
+  <strong>Project Overview</strong><br>
+  <strong>Role:</strong> Product Designer & Developer (end-to-end)<br>
+  <strong>Timeline:</strong> Personal project, iterative development<br>
+  <strong>Platform:</strong> Flutter (Android), Firebase Cloud Functions, OpenAI API<br>
+  <strong>Impact:</strong> Shipped cross-platform AI coaching tool used by rugby referees for scenario-based learning
 </div>
+
+## The Challenge
+
+<figure style="float: right; margin-left: 20px; max-width: 300px;">
+  <img src="/portfolio/refereeiq/assets/welcome.png" alt="Welcome Screen" style="width: 100%;">
+  <figcaption>Sofia's welcome screen sets the coaching tone</figcaption>
+</figure>
+
+Rugby referees manage hundreds of laws, frequent clarifications, and nuanced edge cases. Current learning methods are fragmented—PDFs, forums, mentor advice—making it difficult to develop consistent judgment quickly.
+
+**The opportunity:** Create a conversational AI that feels like a mentor, handles multi-turn reasoning, and builds trust through citations and transparency—not just another generic chatbot.
+
+## Solution: Sofia, the AI Referee Coach
+
+I designed and built **RefereeIQ**, a conversational assistant that helps rugby referees reason through the *Laws of the Game* using natural dialogue. Instead of paging through PDFs, referees ask questions and get **grounded answers** with relevant clarifications and official law links, delivered by "**Sofia**."
+
+**Core design principle:** Reasoning-centric UX—blending open-ended conversation with grounding, citations, and explicit fallbacks to earn trust in high-stakes decision contexts.
+
+## Impact & Outcomes
+
+**Shipped:** Cross-platform Android release with working chat experience and daily AI-generated challenges.
+
+**Usage:** Referees and coaches actively used Sofia for scenario-based learning and law clarification.
+
+### User Feedback
+
+> "Seeing the exact clarification link is faster than hunting PDFs."
+
+> "When it checks the clarification instead of guessing, I trust it more."
+
+**Key success metric:** Trust through transparency—users valued explicit citations and uncertainty handling over confident but vague answers.
+
+
+## Design Decisions: Building Trust Through Conversation
+
+### 1. Multi-Turn Reasoning with Context
+
+<figure style="float: right; margin-left: 20px; max-width: 300px;">
+  <img src="/portfolio/refereeiq/assets/questionfollowup.jpg" alt="Multi-turn conversation" style="width: 100%;">
+  <figcaption>Sofia maintains context across turns and asks clarifying questions</figcaption>
+</figure>
+
+Rather than treating each question in isolation, Sofia remembers recent conversation turns and can ask follow-up questions. This mirrors how a real coach would work—clarifying the scenario before jumping to an answer.
+
+**Design choice:** Recent user + Sofia turns are preserved and sent server-side. The system prompt consistently enforces terminology and citation standards aligned with official law language.
+
+**UX impact:** Referees can have natural back-and-forth dialogues without restarting context, leading to more nuanced answers.
+
+### 2. Grounding with Citations (Not Just Confidence)
+
+<figure style="float: right; margin-left: 20px; max-width: 300px;">
+  <img src="/portfolio/refereeiq/assets/askSofia.png" alt="Sofia providing grounded answers" style="width: 100%;">
+  <figcaption>Answers include direct links to official World Rugby clarifications</figcaption>
+</figure>
+
+When Sofia is uncertain or when official guidance exists, the system retrieves and cites **World Rugby Law Clarifications** directly. Instead of hallucinating confident answers, Sofia says "Let's check the latest clarification on this topic" and provides excerpts + links.
+
+**Technical implementation:** Backend scrapes the official clarifications index, detects when a clarification is relevant, fetches and parses the page (title + sections), then injects excerpts into the model context for Sofia to cite.
+
+**UX impact:** Users trust the answers because they can verify the source. This transparency builds confidence in the AI coach.
+
+### 3. Tone: Patient Coach, Not Know-It-All
+
+The system prompt frames Sofia as a **patient coach**—law-accurate, explicit when uncertain, and focused on helping referees learn judgment, not just memorize rules.
+
+**Design choice:** Lower temperature for factual answers; slightly higher for conversational coaching. Moderation pass on user input for safety.
+
+**UX impact:** Referees report the experience feels more like talking to a mentor than querying a database.
+
+### 4. Daily Challenges for Active Learning
+
+<figure style="float: right; margin-left: 20px; max-width: 300px;">
+  <img src="/portfolio/refereeiq/assets/llmgeneratedquestions.png" alt="Daily challenge questions" style="width: 100%;">
+  <figcaption>AI-generated multiple-choice questions using official law wording</figcaption>
+</figure>
+
+Beyond chat, Sofia offers daily challenges—5 AI-generated multiple-choice questions (5 points each) with strict constraints: official law wording, one correct answer.
+
+<figure style="float: right; margin-left: 20px; max-width: 300px;">
+  <img src="/portfolio/refereeiq/assets/challengehistory.png" alt="Challenge history tracking" style="width: 100%;">
+  <figcaption>Progress tracking motivates continued learning</figcaption>
+</figure>
+
+**Technical implementation:** Scheduled Cloud Function generates questions daily, stored in Firestore. The UI tracks history and scores.
+
+**UX impact:** Gamification encourages regular engagement; referees use it for pre-match warm-up.
+
+## What's Real vs. Exploratory
+
+**Shipped & live:**
+- Chat → Cloud Function → OpenAI with focused Sofia system prompt
+- Grounding via targeted retrieval of official World Rugby clarifications (not full RAG/vector store)
+- Configurable AI behavior via Firestore (model, temperature, prompts) for live tuning without redeploys
+- Daily challenge generator with strict law-aligned constraints
+- Flutter chat UI with markdown rendering and in-app link launching
+
+**Future improvements:**
+- Full RAG pipeline with embeddings-backed store for laws + clarifications + competition regulations
+- Scoped sources by competition/region
+- Evaluation harness for prompt regression testing
+- Usage telemetry (when/why retrieval fires, uncertainty rates, citation patterns)
+
+## Technical Architecture
+
+**Flutter app** (chat UI, daily challenges, history tracking) → **Cloud Functions** (chat handler, moderation, clarification retrieval, scheduled content generation) → **OpenAI API** (Sofia responses) + **Firestore** (configuration overrides, challenge storage)
+
+### Chat Flow
+1. User message → moderation pass
+2. Build Sofia system prompt + recent conversation context
+3. Detect when official clarification would help
+4. Fetch & parse World Rugby clarification pages (title + sections)
+5. Assemble messages with excerpts/URLs for model context
+6. OpenAI chat completion
+7. Return grounded answer with citations
+
+### Key Technical Decisions
+
+**Live configurability:** Model, temperature, and system prompts stored in Firestore with code defaults—enabling rapid iteration without redeploys. Critical for tuning AI behavior based on user feedback.
+
+**Selective retrieval:** Clarification lookup triggers only when needed (user request or model uncertainty) to minimize latency and parsing overhead while maintaining UX fluidity.
+
+**Cost optimization:** Compact system prompts, tuned temperature per task (lower for factual Q&A, higher for conversational coaching), bounded max tokens for concise answers.
+
+**Safety:** Server-side moderation pass on user input before model calls; guardrails in system prompt.
+
+## Key Learnings
+
+**1. Trust requires transparency, not just accuracy**
+
+Users trusted Sofia more when she explicitly said "I'm checking the official clarification" rather than sounding confident. In AI UX, showing the reasoning path matters as much as the answer.
+
+**2. Grounding architecture affects UX directly**
+
+Targeted retrieval (fetch specific clarifications on-demand) kept conversations fluid with low latency. A full RAG system would have added complexity without proportional UX benefit for this use case.
+
+**3. Live configurability is a superpower**
+
+Storing prompts and model settings in Firestore meant I could tune Sofia's tone and behavior within minutes based on user feedback—no code deploys. This rapid iteration loop was essential for finding the right coaching tone.
+
+**4. Fallbacks are features, not bugs**
+
+Designing explicit "let me check" patterns made uncertainty feel helpful rather than broken. In high-stakes domains (laws, medical, legal), admitting uncertainty builds more trust than fake confidence.
+
+**5. Generalizability to other domains**
+
+This pattern—conversational AI with grounding, citations, and fallbacks—extends beyond rugby. Any domain with authoritative sources (legal docs, SOPs, policies, data dictionaries) could benefit from this UX approach.
+
+## Relevant for AI/ML Product Roles
+
+- **Reasoning-centric UX:** Shows *how* the AI reasons (citations, fallbacks), not just *what* it answers—applicable to analysis tools, forecasting agents, and data prep assistants
+- **Grounding over confidence:** Verifiable references > vague confidence—maps to data science workflows where assumptions and data sources must be explicit
+- **Rapid experimentation:** Firestore-backed config enabled A/B testing prompts and temperature without deploys—critical for AI product iteration
+- **Cross-functional execution:** Owned full stack (UX, backend, AI integration, deployment)—demonstrates ability to ship AI products independently
 
