@@ -23,6 +23,12 @@ has_children: true
 - **Impact**: Cross-org collaboration (Red Hat + Hugging Face), merged into major open-source LLM serving framework.
 - **Tech**: CLI UX, Miro, GitHub RFC, Open Source.
 
+### [Red Hat Packages Catalog Redesign](./portfolio/ui-packages-redhat/ui-packages-redhat.md)
+- **Challenge**: Fragmented package discovery across two separate ecosystems (Trusted Libraries + AI Components) with limited filtering and poor metadata visibility.
+- **Solution**: Designed and implemented a unified catalog with faceted filtering (7+ metadata dimensions), PatternFly 6 semantic tokens, and design version toggle for gradual rollout.
+- **Impact**: Transformed information architecture from 2 separate pages to 1 unified catalog; improved developer experience with advanced filtering (SLSA provenance, Python version, license, release stage, category).
+- **Tech**: React, TypeScript, PatternFly 6, Enterprise Design Systems, Information Architecture.
+
 ### [InstructLab Interactive Mode & Script](https://github.com/JustinXHale/instructlab-interactivemode)  
 - **Challenge**: Enhance the CLI experience for developers interacting with InstructLab.  
 - **Solution**: Created a structured, user-friendly interactive mode, improving onboarding and tool adoption.  
