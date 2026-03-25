@@ -1,0 +1,70 @@
+/* Screen: optional layout tweaks for the resume page */
+.resume-page .resume-only-screen {
+  margin-bottom: 1.5rem;
+  padding: 0.75rem 1rem;
+  background: var(--jtd-theme-sidebar-color, #f5f6fa);
+  border-left: 3px solid var(--jtd-theme-link-color, #0d47a1);
+  font-size: 0.9rem;
+}
+
+.resume-page .resume-meta {
+  margin-bottom: 2rem;
+}
+
+.resume-page .resume-meta a {
+  margin-right: 1rem;
+  white-space: nowrap;
+}
+
+/* Print / Save as PDF: hide site chrome and helper box */
+@media print {
+  .side-bar,
+  .site-header,
+  .site-footer,
+  .aux-nav,
+  .breadcrumb-nav,
+  .search-input,
+  .main-header,
+  .resume-only-screen,
+  .back-to-top {
+    display: none !important;
+  }
+
+  .main-content-wrap,
+  .main-content,
+  .content {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+
+  body {
+    font-size: 11pt;
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  a {
+    color: #000 !important;
+    text-decoration: none !important;
+  }
+
+  .resume-page {
+    max-width: 100%;
+  }
+
+  .resume-page h1 {
+    margin-top: 0;
+    page-break-after: avoid;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+
+  ul,
+  p {
+    page-break-inside: avoid;
+  }
+}
