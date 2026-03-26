@@ -32,4 +32,9 @@ just_the_docs:
 plugins:
   - jekyll-github-metadata
 
+# Do not turn README into a page at /assets/resume/ (was cluttering nav)
+exclude:
+  - assets/resume/README.md
+  - vendor
+
 # trigger rebuilds on changes to these files

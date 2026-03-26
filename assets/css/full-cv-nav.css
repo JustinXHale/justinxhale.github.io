@@ -1,0 +1,50 @@
+/* Offset anchor scroll so headings aren’t hidden under sticky nav (Full CV only) */
+.resume-page:has(.full-cv-jump) h2[id] {
+  scroll-margin-top: 4.5rem;
+}
+
+/* Horizontal “jump to section” bar for Full CV page */
+.full-cv-jump {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.75rem;
+  row-gap: 0.5rem;
+  margin: 0 0 1.5rem;
+  padding: 0.65rem 0.85rem;
+  border: 1px solid var(--jtd-theme-border-color, #e1e4e8);
+  border-radius: 6px;
+  background: var(--jtd-theme-sidebar-color, #f8f9fa);
+  font-size: 0.875rem;
+  line-height: 1.3;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.full-cv-jump-label {
+  font-weight: 600;
+  color: var(--jtd-theme-text-color, inherit);
+  margin-right: 0.25rem;
+}
+
+.full-cv-jump a {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.full-cv-jump a:hover,
+.full-cv-jump a:focus {
+  background: var(--jtd-theme-link-color, #0d47a1);
+  color: #fff !important;
+  outline: none;
+}
+
+@media print {
+  .full-cv-jump {
+    display: none !important;
+  }
+}

@@ -13,7 +13,7 @@ back_to_top_text: "Back to top"
 I'm a **UX Designer** at Red Hat specializing in **Command-Line Interfaces (CLI)** and developer tools. Passionate about bridging the gap between design and 
 technology, I create intuitive solutions that empower technical teams and enhance workflows in open-source environments.  
 
-[Resume](/resume/) | [Portfolio](./portfolio.md) | [Blog](./blog.md) | [Contact](#contact)  
+[Resumes](/resume/) | [Portfolio](./portfolio.md) | [Blog](./blog.md) | [Contact](#contact)  
 
 > **"I design experiences that keep developers in their flow."** 
 
