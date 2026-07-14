@@ -1,11 +1,12 @@
 ---
 layout: default
 title: "RefereeIQ-Sofía Chatbot"
-parent: Portfolio
-nav_order: 1
+parent: Personal Projects
+grand_parent: Portfolio
+nav_order: 5
 ---
 
-# RefereeIQ — A Conversational AI Coach for Rugby Referees
+# RefereeIQ: A Conversational AI Coach for Rugby Referees
 
 <div style="background: #f5f5f5; padding: 20px; margin-bottom: 30px; border-left: 4px solid #0066cc;">
   <strong>Project Overview</strong><br>
@@ -22,15 +23,15 @@ nav_order: 1
   <figcaption>Sofia's welcome screen sets the coaching tone</figcaption>
 </figure>
 
-Rugby referees manage hundreds of laws, frequent clarifications, and nuanced edge cases. Current learning methods are fragmented—PDFs, forums, mentor advice—making it difficult to develop consistent judgment quickly.
+Rugby referees manage hundreds of laws, frequent clarifications, and nuanced edge cases. Current learning methods are fragmented, PDFs, forums, mentor advice, making it difficult to develop consistent judgment quickly.
 
-**The opportunity:** Create a conversational AI that feels like a mentor, handles multi-turn reasoning, and builds trust through citations and transparency—not just another generic chatbot.
+**The opportunity:** Create a conversational AI that feels like a mentor, handles multi-turn reasoning, and builds trust through citations and transparency, not just another generic chatbot.
 
 ## Solution: Sofia, the AI Referee Coach
 
 I designed and built **RefereeIQ**, a conversational assistant that helps rugby referees reason through the *Laws of the Game* using natural dialogue. Instead of paging through PDFs, referees ask questions and get **grounded answers** with relevant clarifications and official law links, delivered by "**Sofia**."
 
-**Core design principle:** Reasoning-centric UX—blending open-ended conversation with grounding, citations, and explicit fallbacks to earn trust in high-stakes decision contexts.
+**Core design principle:** Reasoning-centric UX, blending open-ended conversation with grounding, citations, and explicit fallbacks to earn trust in high-stakes decision contexts.
 
 ## Impact & Outcomes
 
@@ -44,7 +45,7 @@ I designed and built **RefereeIQ**, a conversational assistant that helps rugby 
 
 > "When it checks the clarification instead of guessing, I trust it more."
 
-**Key success metric:** Trust through transparency—users valued explicit citations and uncertainty handling over confident but vague answers.
+**Key success metric:** Trust through transparency, users valued explicit citations and uncertainty handling over confident but vague answers.
 
 
 ## Design Decisions: Building Trust Through Conversation
@@ -56,7 +57,7 @@ I designed and built **RefereeIQ**, a conversational assistant that helps rugby 
   <figcaption>Sofia maintains context across turns and asks clarifying questions</figcaption>
 </figure>
 
-Rather than treating each question in isolation, Sofia remembers recent conversation turns and can ask follow-up questions. This mirrors how a real coach would work—clarifying the scenario before jumping to an answer.
+Rather than treating each question in isolation, Sofia remembers recent conversation turns and can ask follow-up questions. This mirrors how a real coach would work, clarifying the scenario before jumping to an answer.
 
 **Design choice:** Recent user + Sofia turns are preserved and sent server-side. The system prompt consistently enforces terminology and citation standards aligned with official law language.
 
@@ -77,7 +78,7 @@ When Sofia is uncertain or when official guidance exists, the system retrieves a
 
 ### 3. Tone: Patient Coach, Not Know-It-All
 
-The system prompt frames Sofia as a **patient coach**—law-accurate, explicit when uncertain, and focused on helping referees learn judgment, not just memorize rules.
+The system prompt frames Sofia as a **patient coach**, law-accurate, explicit when uncertain, and focused on helping referees learn judgment, not just memorize rules.
 
 **Design choice:** Lower temperature for factual answers; slightly higher for conversational coaching. Moderation pass on user input for safety.
 
@@ -90,7 +91,7 @@ The system prompt frames Sofia as a **patient coach**—law-accurate, explicit w
   <figcaption>AI-generated multiple-choice questions using official law wording</figcaption>
 </figure>
 
-Beyond chat, Sofia offers daily challenges—5 AI-generated multiple-choice questions (5 points each) with strict constraints: official law wording, one correct answer.
+Beyond chat, Sofia offers daily challenges, 5 AI-generated multiple-choice questions (5 points each) with strict constraints: official law wording, one correct answer.
 
 <figure style="float: right; margin-left: 20px; max-width: 300px;">
   <img src="/portfolio/refereeiq/assets/challengehistory.png" alt="Challenge history tracking" style="width: 100%;">
@@ -131,7 +132,7 @@ Beyond chat, Sofia offers daily challenges—5 AI-generated multiple-choice ques
 
 ### Key Technical Decisions
 
-**Live configurability:** Model, temperature, and system prompts stored in Firestore with code defaults—enabling rapid iteration without redeploys. Critical for tuning AI behavior based on user feedback.
+**Live configurability:** Model, temperature, and system prompts stored in Firestore with code defaults, enabling rapid iteration without redeploys. Critical for tuning AI behavior based on user feedback.
 
 **Selective retrieval:** Clarification lookup triggers only when needed (user request or model uncertainty) to minimize latency and parsing overhead while maintaining UX fluidity.
 
@@ -151,7 +152,7 @@ Targeted retrieval (fetch specific clarifications on-demand) kept conversations 
 
 **3. Live configurability is a superpower**
 
-Storing prompts and model settings in Firestore meant I could tune Sofia's tone and behavior within minutes based on user feedback—no code deploys. This rapid iteration loop was essential for finding the right coaching tone.
+Storing prompts and model settings in Firestore meant I could tune Sofia's tone and behavior within minutes based on user feedback, no code deploys. This rapid iteration loop was essential for finding the right coaching tone.
 
 **4. Fallbacks are features, not bugs**
 
@@ -159,12 +160,21 @@ Designing explicit "let me check" patterns made uncertainty feel helpful rather 
 
 **5. Generalizability to other domains**
 
-This pattern—conversational AI with grounding, citations, and fallbacks—extends beyond rugby. Any domain with authoritative sources (legal docs, SOPs, policies, data dictionaries) could benefit from this UX approach.
+This pattern, conversational AI with grounding, citations, and fallbacks, extends beyond rugby. Any domain with authoritative sources (legal docs, SOPs, policies, data dictionaries) could benefit from this UX approach.
+
+## Evaluation-minded R&D (personal)
+
+Beyond the shipped app, I explored **AI evaluation tooling** to connect product UX with measurable model behavior:
+
+- **promptfoo**: Local eval setup comparing providers against rugby law prompts
+- **GuideLLM**: Documented onboarding friction from a UX perspective using RefereeIQ prompts as a real-world test dataset
+
+This is personal R&D, not Red Hat production work. It informs how I design for **evaluation-minded AI products** (grounding, test harnesses, iteration loops).
 
 ## Relevant for AI/ML Product Roles
 
-- **Reasoning-centric UX:** Shows *how* the AI reasons (citations, fallbacks), not just *what* it answers—applicable to analysis tools, forecasting agents, and data prep assistants
-- **Grounding over confidence:** Verifiable references > vague confidence—maps to data science workflows where assumptions and data sources must be explicit
-- **Rapid experimentation:** Firestore-backed config enabled A/B testing prompts and temperature without deploys—critical for AI product iteration
-- **Cross-functional execution:** Owned full stack (UX, backend, AI integration, deployment)—demonstrates ability to ship AI products independently
+- **Reasoning-centric UX:** Shows *how* the AI reasons (citations, fallbacks), not just *what* it answers, applicable to analysis tools, forecasting agents, and data prep assistants
+- **Grounding over confidence:** Verifiable references > vague confidence, maps to data science workflows where assumptions and data sources must be explicit
+- **Rapid experimentation:** Firestore-backed config enabled A/B testing prompts and temperature without deploys, critical for AI product iteration
+- **Cross-functional execution:** Owned full stack (UX, backend, AI integration, deployment), demonstrates ability to ship AI products independently
 

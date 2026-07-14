@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Bulk Prompting Script
-parent: "Portfolio"
-nav_order: 3
+parent: Red Hat & Enterprise
+grand_parent: Portfolio
+nav_order: 5
 ---
 
 # Bulk Prompting for Command Line Interfaces
@@ -18,7 +19,7 @@ nav_order: 3
 
 ## The Problem
 
-Red Hat OpenShift Service on AWS (ROSA) enables customers to deploy fully-managed OpenShift clusters on AWS infrastructure. However, creating a ROSA Classic Cluster via CLI required users to navigate **30+ sequential prompts**—even when using default and recommended settings.
+Red Hat OpenShift Service on AWS (ROSA) enables customers to deploy fully-managed OpenShift clusters on AWS infrastructure. However, creating a ROSA Classic Cluster via CLI required users to navigate **30+ sequential prompts**, even when using default and recommended settings.
 
 ![GIF of Bulk Prompting Script](/portfolio/bulk-prompting-script/assets/july31-readme-gif.gif)
 *Traditional CLI flow: sequential prompts create friction and cognitive overhead*
@@ -38,7 +39,7 @@ Red Hat OpenShift Service on AWS (ROSA) enables customers to deploy fully-manage
 
 I designed and prototyped a **bulk prompting interface** for the ROSA CLI that allows users to see and configure all required inputs at once, rather than sequentially.
 
-**Core insight:** Let users work like they think—viewing the full configuration space, jumping between fields, and reviewing before execution.
+**Core insight:** Let users work like they think, viewing the full configuration space, jumping between fields, and reviewing before execution.
 
 **Key features:**
 - **Single interactive interface:** All configuration options visible at once
@@ -87,7 +88,7 @@ I designed and prototyped a **bulk prompting interface** for the ROSA CLI that a
 
 ### 3. Prototyping & Iteration
 
-**Process:** Rapid prototyping using AI-assisted development (ChatGPT collaboration for CLI scripting)—before "vibe coding" was a term.
+**Process:** Rapid prototyping using AI-assisted development (ChatGPT collaboration for CLI scripting), before "vibe coding" was a term.
 
 **Iteration focus:**
 - Visual hierarchy in terminal constraints
@@ -104,7 +105,7 @@ I designed and prototyped a **bulk prompting interface** for the ROSA CLI that a
 
 Instead of asking questions one at a time, present all configuration options in a single scrollable interface.
 
-**UX impact:** Users can scan the full scope, prioritize what to configure, and jump between fields—matching how they mentally plan cluster configurations.
+**UX impact:** Users can scan the full scope, prioritize what to configure, and jump between fields, matching how they mentally plan cluster configurations.
 
 **Dynamic summary review**
 
@@ -153,7 +154,7 @@ Showing all options upfront gave users confidence and control. The mental model 
 
 **4. Review steps build trust**
 
-The summary screen became the most valued feature in testing—users appreciated seeing their full configuration before execution.
+The summary screen became the most valued feature in testing, users appreciated seeing their full configuration before execution.
 
 **5. Stakeholder demos matter**
 
@@ -163,8 +164,8 @@ Showing working prototypes (even POCs) to stakeholders builds momentum. The inte
 
 ## Relevant for UX Engineering / AI Product Roles
 
-- **CLI/terminal UX:** Demonstrated ability to design for constrained, text-based interfaces—relevant for developer tools, infrastructure platforms, and data science workflows
-- **AI-assisted development:** Used LLMs for rapid prototyping before it was mainstream—shows comfort with modern development workflows
+- **CLI/terminal UX:** Demonstrated ability to design for constrained, text-based interfaces, relevant for developer tools, infrastructure platforms, and data science workflows
+- **AI-assisted development:** Used LLMs for rapid prototyping before it was mainstream, shows comfort with modern development workflows
 - **Cross-functional collaboration:** Worked directly with engineers and developers to understand needs and validate designs
 - **Enterprise platform design:** Designed for technical users (DevOps, SREs) managing complex infrastructure
 - **Prototyping to production:** Delivered POC that influenced engineering roadmap and prioritization

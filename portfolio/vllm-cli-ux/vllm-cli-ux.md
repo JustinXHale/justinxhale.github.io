@@ -1,11 +1,12 @@
 ---
 layout: default
 title: vLLM CLI UX Enhancement
-parent: Portfolio
-nav_order: 2
+parent: Red Hat & Enterprise
+grand_parent: Portfolio
+nav_order: 3
 ---
 
-# vLLM CLI UX Enhancement — Improving Developer Experience in Open Source
+# vLLM CLI UX Enhancement: Improving Developer Experience in Open Source
 
 <div style="background: #f5f5f5; padding: 20px; margin-bottom: 30px; border-left: 4px solid #0066cc;">
   <strong>Project Overview</strong><br>
@@ -36,7 +37,7 @@ nav_order: 2
 - **Unclear mental model:** Command structure (`vllm serve`, `vllm chat`, `vllm bench`) not reflected in help organization
 - **Missing documentation in help:** Key parameters like `model_tag` undefined in help text
 
-**User impact:** Developers deploying LLM services spent excessive time hunting through documentation, CLI help output, and GitHub issues to understand configuration options—slowing down deployment and increasing errors.
+**User impact:** Developers deploying LLM services spent excessive time hunting through documentation, CLI help output, and GitHub issues to understand configuration options, slowing down deployment and increasing errors.
 
 ---
 
@@ -73,9 +74,9 @@ vllm serve --help=listgroup            # List all available groups
 
 **Shipped:** Fully merged into vLLM upstream ([PR #24903](https://github.com/vllm-project/vllm/pull/24903)) after community approval via RFC process ([Issue #22647](https://github.com/vllm-project/vllm/issues/22647)).
 
-**Community reception:** Presented RFC to vLLM community—"they loved it." Proposal adopted without significant pushback.
+**Community reception:** Presented RFC to vLLM community, "they loved it." Proposal adopted without significant pushback.
 
-**Cross-org collaboration:** Red Hat (UX design + PM), Hugging Face (ML engineering implementation)—demonstrating design influence across organizational boundaries in open source.
+**Cross-org collaboration:** Red Hat (UX design + PM), Hugging Face (ML engineering implementation), demonstrating design influence across organizational boundaries in open source.
 
 **Design validation:** Reused existing CLI patterns from vLLM codebase, making implementation straightforward and familiar to existing users.
 
@@ -99,7 +100,7 @@ vllm serve --help=listgroup            # List all available groups
 - Mapped user mental models vs. current command hierarchy
 
 **Key findings:**
-- Help text took **3.96 seconds** to display—too much information at once
+- Help text took **3.96 seconds** to display, too much information at once
 - Parameters like `model_tag` referenced in usage but undefined in help
 - No clear separation between beginner-friendly and advanced options
 - Tips section buried at bottom; not discoverable until after scrolling
@@ -231,7 +232,7 @@ Community enthusiasm and upstream merge demonstrate impact even without quantita
 
 ## Relevant for UX Engineering / AI Product Roles
 
-- **CLI/developer tools UX:** Demonstrated ability to apply UX principles to terminal interfaces—critical for data science, ML ops, and infrastructure tooling
+- **CLI/developer tools UX:** Demonstrated ability to apply UX principles to terminal interfaces, critical for data science, ML ops, and infrastructure tooling
 - **Open source contribution:** Successfully navigated RFC process, community presentation, and upstream merge in major AI/ML project
 - **Cross-organizational collaboration:** Coordinated design across Red Hat and Hugging Face teams
 - **AI/ML domain expertise:** Contributed to LLM serving infrastructure used in production AI deployments
@@ -243,8 +244,8 @@ Community enthusiasm and upstream merge demonstrate impact even without quantita
 ## Deliverables & Links
 
 **GitHub:**
-- [RFC Issue #22647](https://github.com/vllm-project/vllm/issues/22647) — Initial proposal and community discussion
-- [Merged PR #24903](https://github.com/vllm-project/vllm/pull/24903) — Implementation and code contribution
+- [RFC Issue #22647](https://github.com/vllm-project/vllm/issues/22647): Initial proposal and community discussion
+- [Merged PR #24903](https://github.com/vllm-project/vllm/pull/24903): Implementation and code contribution
 
 **Design artifacts:**
 - Miro board analysis (information architecture, problem framing, proposed solutions)
@@ -252,8 +253,8 @@ Community enthusiasm and upstream merge demonstrate impact even without quantita
 - Community presentation (design rationale and implementation approach)
 
 **Project repository:**
-- [vLLM on GitHub](https://github.com/vllm-project/vllm) — Open-source LLM serving framework
+- [vLLM on GitHub](https://github.com/vllm-project/vllm): Open-source LLM serving framework
 
 ---
 
-**This project demonstrates that UX thinking extends beyond visual interfaces—applying user-centered design to developer tools improves comprehension, reduces errors, and accelerates deployment in production AI systems.**
+**This project demonstrates that UX thinking extends beyond visual interfaces, applying user-centered design to developer tools improves comprehension, reduces errors, and accelerates deployment in production AI systems.**

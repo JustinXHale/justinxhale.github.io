@@ -15,9 +15,10 @@
   
 
     .site-nav > ul.nav-list:first-child > li > a,
+    .site-nav > ul.nav-list:first-child > li > ul > li > a,
     
-    .site-nav > ul.nav-list:first-child > li > ul > li:not(:nth-child(3)) > a,
-    .site-nav > ul.nav-list:first-child > li > ul > li > ul > li a {
+    .site-nav > ul.nav-list:first-child > li > ul > li > ul > li:not(:nth-child(3)) > a,
+    .site-nav > ul.nav-list:first-child > li > ul > li > ul > li > ul > li a {
       background-image: none;
     }
 
@@ -26,14 +27,16 @@
       background-image: none;
     }
 
-    .site-nav > ul.nav-list:first-child > li:nth-child(3) > ul > li:nth-child(3) > a {
+    .site-nav > ul.nav-list:first-child > li:nth-child(3) > ul > li:nth-child(1) > ul > li:nth-child(3) > a {
       font-weight: 600;
       text-decoration: none;
     }.site-nav > ul.nav-list:first-child > li:nth-child(3) > button svg,
-    .site-nav > ul.nav-list:first-child > li:nth-child(3) > ul > li:nth-child(3) > button svg {
+    .site-nav > ul.nav-list:first-child > li:nth-child(3) > ul > li:nth-child(1) > button svg,
+    .site-nav > ul.nav-list:first-child > li:nth-child(3) > ul > li:nth-child(1) > ul > li:nth-child(3) > button svg {
       transform: rotate(-90deg);
     }.site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(3) > ul.nav-list,
-    .site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(3) > ul.nav-list > li.nav-list-item:nth-child(3) > ul.nav-list {
+    .site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(3) > ul.nav-list > li.nav-list-item:nth-child(1) > ul.nav-list,
+    .site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(3) > ul.nav-list > li.nav-list-item:nth-child(1) > ul.nav-list > li.nav-list-item:nth-child(3) > ul.nav-list {
       display: block;
     }
   </style>
@@ -57,8 +60,8 @@
 <meta name="generator" content="Jekyll v3.10.0" />
 <meta property="og:title" content="vLLM CLI UX Enhancement" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="A UX Designer specializing in CLI and developer tools" />
-<meta property="og:description" content="A UX Designer specializing in CLI and developer tools" />
+<meta name="description" content="Senior UX / Product Designer: enterprise platform UX, AI/ML surfaces, design systems, and published products" />
+<meta property="og:description" content="Senior UX / Product Designer: enterprise platform UX, AI/ML surfaces, design systems, and published products" />
 <link rel="canonical" href="http://localhost:4000/portfolio/vllm-cli-ux/vllm-cli-ux/" />
 <meta property="og:url" content="http://localhost:4000/portfolio/vllm-cli-ux/vllm-cli-ux/" />
 <meta property="og:site_name" content="Justin X. Hale’s Portfolio" />
@@ -66,7 +69,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="vLLM CLI UX Enhancement" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"A UX Designer specializing in CLI and developer tools","headline":"vLLM CLI UX Enhancement","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/icon-512.png"}},"url":"http://localhost:4000/portfolio/vllm-cli-ux/vllm-cli-ux/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"Senior UX / Product Designer: enterprise platform UX, AI/ML surfaces, design systems, and published products","headline":"vLLM CLI UX Enhancement","url":"http://localhost:4000/portfolio/vllm-cli-ux/vllm-cli-ux/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -146,7 +149,7 @@
     <header class="side-bar">
   <div class="site-header">
     <a href="/" class="site-title lh-tight">
-  <div class="site-logo" role="img" aria-label="Justin X. Hale's Portfolio"></div>
+  Justin X. Hale's Portfolio
 
 </a>
     <button id="menu-button" class="site-button btn-reset" aria-label="Menu" aria-expanded="false">
@@ -161,9 +164,15 @@
         <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
       </button><a href="/" class="nav-list-link">Justin X. Hale</a><ul class="nav-list"><li class="nav-list-item"><a href="/about/" class="nav-list-link">About Me</a></li><li class="nav-list-item"><a href="/about-me/honors/" class="nav-list-link">Awards/Honors</a></li><li class="nav-list-item"><a href="/get-in-touch/" class="nav-list-link">Get In Touch</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="Resumes submenu" aria-expanded="false">
         <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
-      </button><a href="/resume/" class="nav-list-link">Resumes</a><ul class="nav-list"><li class="nav-list-item"><a href="/resume/standard/" class="nav-list-link">Resume</a></li><li class="nav-list-item"><a href="/resume/full-cv/" class="nav-list-link">Full CV</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="Portfolio submenu" aria-expanded="false">
+      </button><a href="/resume/" class="nav-list-link">Resumes</a><ul class="nav-list"><li class="nav-list-item"><a href="/resume/standard/" class="nav-list-link">Resume</a></li><li class="nav-list-item"><a href="/resume/full-cv/" class="nav-list-link">Case Study Index</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="Portfolio submenu" aria-expanded="false">
         <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
-      </button><a href="/portfolio/" class="nav-list-link">Portfolio</a><ul class="nav-list"><li class="nav-list-item"><a href="/portfolio/reflog/reflog/" class="nav-list-link">RefLog</a></li><li class="nav-list-item"><a href="/portfolio/refereeiq/refereeiq/" class="nav-list-link">RefereeIQ-Sofía Chatbot</a></li><li class="nav-list-item"><a href="/portfolio/vllm-cli-ux/vllm-cli-ux/" class="nav-list-link">vLLM CLI UX Enhancement</a></li><li class="nav-list-item"><a href="/portfolio/interface-driven-ux-red-hat/interface-driven-ux-red-hat/" class="nav-list-link">SaaS Design (at Red Hat)</a></li><li class="nav-list-item"><a href="/portfolio/ui-packages-redhat/ui-packages-redhat/" class="nav-list-link">Red Hat Packages Catalog Redesign</a></li><li class="nav-list-item"><a href="/portfolio/bulk-prompting-script/bulk-prompting-script/" class="nav-list-link">Bulk Prompting Script</a></li><li class="nav-list-item"><a href="/portfolio/rapid-design-thinking/rapid-design-thinking/" class="nav-list-link">Rapid Design Thinking</a></li><li class="nav-list-item"><a href="/portfolio/just-an-email/just-an-email/" class="nav-list-link">It’s Just an Email</a></li></ul></li><li class="nav-list-item"><a href="/blog/" class="nav-list-link">Life & Work (Blog)</a></li></ul>
+      </button><a href="/portfolio/" class="nav-list-link">Portfolio</a><ul class="nav-list"><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="Red Hat & Enterprise submenu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+      </button><a href="/portfolio/red-hat-enterprise/" class="nav-list-link">Red Hat & Enterprise</a><ul class="nav-list"><li class="nav-list-item"><a href="/portfolio/design-comments/design-comments/" class="nav-list-link">design-comments</a></li><li class="nav-list-item"><a href="/portfolio/ui-packages-redhat/ui-packages-redhat/" class="nav-list-link">Red Hat Packages Catalog Redesign</a></li><li class="nav-list-item"><a href="/portfolio/vllm-cli-ux/vllm-cli-ux/" class="nav-list-link">vLLM CLI UX Enhancement</a></li><li class="nav-list-item"><a href="/portfolio/instructlab/instructlab/" class="nav-list-link">InstructLab Interactive Mode</a></li><li class="nav-list-item"><a href="/portfolio/bulk-prompting-script/bulk-prompting-script/" class="nav-list-link">Bulk Prompting Script</a></li><li class="nav-list-item"><a href="/portfolio/interface-driven-ux-red-hat/interface-driven-ux-red-hat/" class="nav-list-link">SaaS Design (at Red Hat)</a></li><li class="nav-list-item"><a href="/portfolio/prototyping-hub/prototyping-hub/" class="nav-list-link">UXD Prototyping Hub</a></li><li class="nav-list-item"><a href="/portfolio/openshift-ai-deploy-wizard/openshift-ai-deploy-wizard/" class="nav-list-link">OpenShift AI Deploy Wizard</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="Personal Projects submenu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+      </button><a href="/portfolio/personal-projects/" class="nav-list-link">Personal Projects</a><ul class="nav-list"><li class="nav-list-item"><a href="/portfolio/product-suite/product-suite/" class="nav-list-link">Published Product Suite</a></li><li class="nav-list-item"><a href="/portfolio/to3/to3/" class="nav-list-link">Tō3</a></li><li class="nav-list-item"><a href="/portfolio/reflected/reflected/" class="nav-list-link">ReflectED</a></li><li class="nav-list-item"><a href="/portfolio/reflog/reflog/" class="nav-list-link">RefLog</a></li><li class="nav-list-item"><a href="/portfolio/refereeiq/refereeiq/" class="nav-list-link">RefereeIQ-Sofía Chatbot</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="Earlier Career submenu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+      </button><a href="/portfolio/earlier-career/" class="nav-list-link">Earlier Career</a><ul class="nav-list"><li class="nav-list-item"><a href="/portfolio/just-an-email/just-an-email/" class="nav-list-link">It’s Just an Email</a></li><li class="nav-list-item"><a href="/portfolio/rapid-design-thinking/rapid-design-thinking/" class="nav-list-link">Rapid Design Thinking</a></li></ul></li></ul></li><li class="nav-list-item"><a href="/blog/" class="nav-list-link">Life & Work (Blog)</a></li></ul>
   
 </nav>
 
@@ -202,6 +211,7 @@
       <nav aria-label="Breadcrumb" class="breadcrumb-nav">
   <ol class="breadcrumb-nav-list">
     <li class="breadcrumb-nav-list-item"><a href="/portfolio/">Portfolio</a></li>
+    <li class="breadcrumb-nav-list-item"><a href="/portfolio/red-hat-enterprise/">Red Hat & Enterprise</a></li>
     <li class="breadcrumb-nav-list-item"><span>vLLM CLI UX Enhancement</span></li>
   </ol>
 </nav>
@@ -210,10 +220,10 @@
       <div id="main-content" class="main-content">
         <main>
           
-            <h1 id="vllm-cli-ux-enhancement--improving-developer-experience-in-open-source">
+            <h1 id="vllm-cli-ux-enhancement-improving-developer-experience-in-open-source">
   
   
-    <a href="#vllm-cli-ux-enhancement--improving-developer-experience-in-open-source" class="anchor-heading" aria-labelledby="vllm-cli-ux-enhancement--improving-developer-experience-in-open-source"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> vLLM CLI UX Enhancement — Improving Developer Experience in Open Source
+    <a href="#vllm-cli-ux-enhancement-improving-developer-experience-in-open-source" class="anchor-heading" aria-labelledby="vllm-cli-ux-enhancement-improving-developer-experience-in-open-source"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> vLLM CLI UX Enhancement: Improving Developer Experience in Open Source
   
   
 </h1>
@@ -256,7 +266,7 @@
   <li><strong>Missing documentation in help:</strong> Key parameters like <code class="language-plaintext highlighter-rouge">model_tag</code> undefined in help text</li>
 </ul>
 
-<p><strong>User impact:</strong> Developers deploying LLM services spent excessive time hunting through documentation, CLI help output, and GitHub issues to understand configuration options—slowing down deployment and increasing errors.</p><hr />
+<p><strong>User impact:</strong> Developers deploying LLM services spent excessive time hunting through documentation, CLI help output, and GitHub issues to understand configuration options, slowing down deployment and increasing errors.</p><hr />
 <h2 id="the-solution">
   
   
@@ -302,9 +312,9 @@ vllm serve <span class="nt">--help</span><span class="o">=</span>listgroup      
 
 <p><strong>Shipped:</strong> Fully merged into vLLM upstream (<a href="https://github.com/vllm-project/vllm/pull/24903">PR #24903</a>) after community approval via RFC process (<a href="https://github.com/vllm-project/vllm/issues/22647">Issue #22647</a>).</p>
 
-<p><strong>Community reception:</strong> Presented RFC to vLLM community—”they loved it.” Proposal adopted without significant pushback.</p>
+<p><strong>Community reception:</strong> Presented RFC to vLLM community, “they loved it.” Proposal adopted without significant pushback.</p>
 
-<p><strong>Cross-org collaboration:</strong> Red Hat (UX design + PM), Hugging Face (ML engineering implementation)—demonstrating design influence across organizational boundaries in open source.</p>
+<p><strong>Cross-org collaboration:</strong> Red Hat (UX design + PM), Hugging Face (ML engineering implementation), demonstrating design influence across organizational boundaries in open source.</p>
 
 <p><strong>Design validation:</strong> Reused existing CLI patterns from vLLM codebase, making implementation straightforward and familiar to existing users.</p>
 
@@ -341,7 +351,7 @@ vllm serve <span class="nt">--help</span><span class="o">=</span>listgroup      
 
 <p><strong>Key findings:</strong></p>
 <ul>
-  <li>Help text took <strong>3.96 seconds</strong> to display—too much information at once</li>
+  <li>Help text took <strong>3.96 seconds</strong> to display, too much information at once</li>
   <li>Parameters like <code class="language-plaintext highlighter-rouge">model_tag</code> referenced in usage but undefined in help</li>
   <li>No clear separation between beginner-friendly and advanced options</li>
   <li>Tips section buried at bottom; not discoverable until after scrolling</li>
@@ -535,7 +545,7 @@ vllm serve <span class="nt">--help</span><span class="o">=</span>CacheConfig   <
     
 
 <ul>
-  <li><strong>CLI/developer tools UX:</strong> Demonstrated ability to apply UX principles to terminal interfaces—critical for data science, ML ops, and infrastructure tooling</li>
+  <li><strong>CLI/developer tools UX:</strong> Demonstrated ability to apply UX principles to terminal interfaces, critical for data science, ML ops, and infrastructure tooling</li>
   <li><strong>Open source contribution:</strong> Successfully navigated RFC process, community presentation, and upstream merge in major AI/ML project</li>
   <li><strong>Cross-organizational collaboration:</strong> Coordinated design across Red Hat and Hugging Face teams</li>
   <li><strong>AI/ML domain expertise:</strong> Contributed to LLM serving infrastructure used in production AI deployments</li>
@@ -553,8 +563,8 @@ vllm serve <span class="nt">--help</span><span class="o">=</span>CacheConfig   <
 
 <p><strong>GitHub:</strong></p>
 <ul>
-  <li><a href="https://github.com/vllm-project/vllm/issues/22647">RFC Issue #22647</a> — Initial proposal and community discussion</li>
-  <li><a href="https://github.com/vllm-project/vllm/pull/24903">Merged PR #24903</a> — Implementation and code contribution</li>
+  <li><a href="https://github.com/vllm-project/vllm/issues/22647">RFC Issue #22647</a>: Initial proposal and community discussion</li>
+  <li><a href="https://github.com/vllm-project/vllm/pull/24903">Merged PR #24903</a>: Implementation and code contribution</li>
 </ul>
 
 <p><strong>Design artifacts:</strong></p>
@@ -566,10 +576,10 @@ vllm serve <span class="nt">--help</span><span class="o">=</span>CacheConfig   <
 
 <p><strong>Project repository:</strong></p>
 <ul>
-  <li><a href="https://github.com/vllm-project/vllm">vLLM on GitHub</a> — Open-source LLM serving framework</li>
+  <li><a href="https://github.com/vllm-project/vllm">vLLM on GitHub</a>: Open-source LLM serving framework</li>
 </ul><hr />
 
-<p><strong>This project demonstrates that UX thinking extends beyond visual interfaces—applying user-centered design to developer tools improves comprehension, reduces errors, and accelerates deployment in production AI systems.</strong></p>
+<p><strong>This project demonstrates that UX thinking extends beyond visual interfaces, applying user-centered design to developer tools improves comprehension, reduces errors, and accelerates deployment in production AI systems.</strong></p>
 
           
 

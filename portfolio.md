@@ -5,39 +5,56 @@ nav_order: 3
 has_children: true
 ---
 
-## Portfolio Highlights
+## Start here
 
-### [RefLog — Designing for Speed, Focus, and Flow](./portfolio/reflog/reflog.md)  
-- **Challenge**: Rugby referees needed a faster, more efficient way to log match events.  
-- **Solution**: Developed RefLog, a mobile app that reduces review time from hours to minutes, emphasizing speed and usability with offline-first functionality.  
-- **Tech**: Flutter.  
+If you only read three pieces:
 
-### [RefereeIQ — A Conversational AI Coach for Rugby Referees](./portfolio/refereeiq/refereeiq.md)
-- **Challenge**: Rugby referees needed a mentor-like assistant to navigate complex laws and clarifications.
-- **Solution**: Built RefereeIQ, a conversational AI coach that provides grounded answers and clarifications, enhancing decision-making and trust.
-- **Tech**: Flutter, OpenAI API, Firestore.
+1. **[design-comments]({{ '/portfolio/design-comments/design-comments/' | relative_url }})** - I closed the commenting gap for coded prototypes. GitHub-backed architecture; PatternFly maintains it.
+2. **[Red Hat Packages catalog]({{ '/portfolio/ui-packages-redhat/ui-packages-redhat/' | relative_url }})** - Shipped to production: unified catalog, faceted IA, one week from audit to deploy.
+3. **[Published product suite]({{ '/portfolio/product-suite/product-suite/' | relative_url }})** - Store and PWA apps with real users, built with AI-assisted solo development.
 
-### [vLLM CLI UX Enhancement](./portfolio/vllm-cli-ux/vllm-cli-ux.md)
-- **Challenge**: vLLM CLI exposed 200+ configuration options with overwhelming help output.
-- **Solution**: Designed and championed enhanced help navigation with progressive disclosure, keyword search, and group-based exploration. Merged upstream via RFC process.
-- **Impact**: Cross-org collaboration (Red Hat + Hugging Face), merged into major open-source LLM serving framework.
-- **Tech**: CLI UX, Miro, GitHub RFC, Open Source.
+For healthcare-adjacent roles, start with [ReflectED]({{ '/portfolio/reflected/reflected/' | relative_url }}) instead of the suite overview.
 
-### [Red Hat Packages Catalog Redesign](./portfolio/ui-packages-redhat/ui-packages-redhat.md)
-- **Challenge**: Fragmented package discovery across two separate ecosystems (Trusted Libraries + AI Components) with limited filtering and poor metadata visibility.
-- **Solution**: Designed and implemented a unified catalog with faceted filtering (7+ metadata dimensions), PatternFly 6 semantic tokens, and design version toggle for gradual rollout.
-- **Impact**: Transformed information architecture from 2 separate pages to 1 unified catalog; improved developer experience with advanced filtering (SLSA provenance, Python version, license, release stage, category).
-- **Tech**: React, TypeScript, PatternFly 6, Enterprise Design Systems, Information Architecture.
+---
 
-### [InstructLab Interactive Mode & Script](https://github.com/JustinXHale/instructlab-interactivemode)  
-- **Challenge**: Enhance the CLI experience for developers interacting with InstructLab.  
-- **Solution**: Created a structured, user-friendly interactive mode, improving onboarding and tool adoption.  
+## Red Hat & Enterprise
 
-### [BulkPrompting Script: Streamlining CLI Bulk Input](https://github.com/JustinXHale/bulkprompting)  
-- **Challenge**: Repetitive CLI workflows caused inefficiency.  
-- **Solution**: Designed and implemented a Python script for automating bulk input, improving usability.  
-- **Tech**: Python, Shell scripting.  
+**[design-comments]({{ '/portfolio/design-comments/design-comments/' | relative_url }})** - In-context feedback on React prototypes. Pins, GitHub Issues, AI summarize.
 
-### [CLI Guidelines: Designing for the Command Line](https://www.uxd-hub.com/entries/design/cli-guidelines)  
-- **Purpose**: Establish clear, actionable guidelines for designing user-friendly and consistent CLI interfaces.  
-- **Impact**: Supports developers and UX teams in delivering seamless command-line experiences.
+**[Red Hat Packages catalog]({{ '/portfolio/ui-packages-redhat/ui-packages-redhat/' | relative_url }})** - Unified Trusted Libraries and AI Components; PatternFly 6; production ship.
+
+**[vLLM CLI UX]({{ '/portfolio/vllm-cli-ux/vllm-cli-ux/' | relative_url }})** - Help redesign for 200+ options; merged upstream.
+
+**[InstructLab interactive mode]({{ '/portfolio/instructlab/instructlab/' | relative_url }})** - Guided CLI onboarding for model training.
+
+**[Bulk prompting (ROSA CLI)]({{ '/portfolio/bulk-prompting-script/bulk-prompting-script/' | relative_url }})** - Fewer sequential prompts in cluster creation (POC).
+
+**[Quay and Konveyor (Red Hat)]({{ '/portfolio/interface-driven-ux-red-hat/interface-driven-ux-red-hat/' | relative_url }})** - Registry admin, vulnerability surfaces, onboarding.
+
+Also in portfolio (not on resume): [UXD Prototyping Hub]({{ '/portfolio/prototyping-hub/prototyping-hub/' | relative_url }}), [OpenShift AI deploy wizard]({{ '/portfolio/openshift-ai-deploy-wizard/openshift-ai-deploy-wizard/' | relative_url }}).
+
+---
+
+## Personal projects
+
+**[Overview]({{ '/portfolio/product-suite/product-suite/' | relative_url }})** - Tō3, RefLog, RefereeIQ, ReflectED, Sevens Manager.
+
+**[Tō3]({{ '/portfolio/to3/to3/' | relative_url }})** - Live voice for event crews (Flutter).
+
+**[ReflectED]({{ '/portfolio/reflected/reflected/' | relative_url }})** - AI reflection coach for educators and coaches.
+
+**[RefLog]({{ '/portfolio/reflog/reflog/' | relative_url }})** - Offline match logging (~70% faster review).
+
+**[RefereeIQ]({{ '/portfolio/refereeiq/refereeiq/' | relative_url }})** - AI law coach with citations.
+
+---
+
+## Earlier career
+
+**[It's Just an Email]({{ '/portfolio/just-an-email/just-an-email/' | relative_url }})** - Integral Care appointment email; research and testing.
+
+**[Rapid Design Thinking]({{ '/portfolio/rapid-design-thinking/rapid-design-thinking/' | relative_url }})** - Facilitated healthcare conference workshop.
+
+---
+
+**[CLI guidelines (external)](https://www.uxd-hub.com/entries/design/cli-guidelines)** - Cross-product CLI standards.

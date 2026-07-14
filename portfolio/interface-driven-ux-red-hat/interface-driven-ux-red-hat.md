@@ -1,13 +1,16 @@
 ---
 layout: default
 title: "SaaS Design (at Red Hat)"
-parent: Portfolio
-nav_order: 2
+parent: Red Hat & Enterprise
+grand_parent: Portfolio
+nav_order: 6
 ---
 
 ## Interface-Driven UX at Red Hat
 
-This portfolio entry highlights a set of UI-focused projects I led or significantly contributed to during my time at Red Hat. Each one reflects my approach to designing for technical users—prioritizing clarity, system alignment, and scalable documentation. These projects span enterprise migrations, onboarding workflows, low-fidelity explorations, and iterative collaboration with PMs and devs.
+Enterprise SaaS for technical users, registry admin, vulnerability surfaces, and onboarding workflows. **Quay.io** work maps to data-dense DevOps UI: repository health, security findings, and role-based admin flows.
+
+This portfolio entry highlights UI-focused projects I led or significantly contributed to during my time at Red Hat.
 
 ---
 
@@ -17,7 +20,7 @@ This portfolio entry highlights a set of UI-focused projects I led or significan
 Migrate the legacy Angular-based Quay UI to PatternFly while embedding it into both OpenShift Console and console.redhat.com.
 
 **My Role:**  
-I led UX for the migration across multiple core flows—repository management, org settings, robot accounts, and more. I aligned the interface with OpenShift conventions, introduced new features like bulk repo actions, and created async visual documentation to support developer implementation.
+I led UX for the migration across multiple core flows, repository management, org settings, robot accounts, and more. I aligned the interface with OpenShift conventions, introduced new features like bulk repo actions, and created async visual documentation to support developer implementation.
 
 **Team:**  
 3 Designers (eventually just me), 2 PMs, Eng. Manager, 4–7 Developers
@@ -47,7 +50,7 @@ Proposed and designed a quick start experience using PatternFly’s framework. W
 Bring a PM’s conceptual sketch for an assessment flow to life, evolving it into a functional UI.
 
 **My Role:**  
-Took early sketches and iterated across multiple versions—balancing feasibility, visual clarity, and user flow. By version 2, the PM described it as “exactly what I was envisioning.” Final design was shared with the broader team for approval.
+Took early sketches and iterated across multiple versions, balancing feasibility, visual clarity, and user flow. By version 2, the PM described it as “exactly what I was envisioning.” Final design was shared with the broader team for approval.
 
 **Team:**  
 1 PM, 1 Dev, UX Content, Peer Reviews

@@ -1,0 +1,15 @@
+# Private manager reviews — local reference only, never commit
+docs/
+
+# Editor / tooling
+.cursor/
+
+# Jekyll build output
+_site/
+
+# Dependencies
+vendor/
+.bundle/
+
+# OS
+.DS_Store

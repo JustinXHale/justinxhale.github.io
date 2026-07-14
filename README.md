@@ -1,45 +1,18 @@
-# 🚀 Justin X. Hale's UX Portfolio
+# Justin X. Hale: UX Portfolio (GitHub Pages)
 
-Welcome to my personal **UX Portfolio** repository! This site showcases my work as a **UX Designer specializing in Command-Line Interfaces (CLI)** and developer-focused tools. I focus on bridging design and development, ensuring seamless user experiences for technical tools.
+Live site: [justinxhale.github.io](https://justinxhale.github.io)
 
-Access my portfolio and blog here: [justinxhale.github.io](https://justinxhale.github.io)
+Jekyll site (Just the Docs) covering enterprise platform UX, design infrastructure (design-comments, Prototyping Hub), and a published product suite.
 
-<!-- This section will include my Table of Contents. In the terminal run [npx markdown-toc -i README.md] to update -->
+## Local development
 
-## 📚 Table of Contents
+```bash
+bundle install
+bundle exec jekyll serve
+```
 
-<!-- toc -->
+## Contact
 
-- [**About the Portfolio**](#about-the-portfolio)
-- [**Key Highlights**](#key-highlights)
-- [**Case Studies/Projects**](#case-studiesprojects)
-- [**Contact**](#contact)
-
-<!-- tocstop -->
-
-## **About the Portfolio**
-This repository hosts my GitHub Pages site: **justinxhale.github.io**. The portfolio includes:  
-- **Case Studies**: My UX design process for developer tools and interactive workflows.  
-- **CLI Guidelines**: Best practices for designing intuitive and consistent Command-Line Interfaces.  
-- **Technical Projects**: Links to code repositories where I contribute UX solutions directly.  
-
-## **Key Highlights**
-- [InstructLab Interactive Mode](https://github.com/JustinXHale/instructlab-interactivemode): Improved onboarding and usability for CLI workflows.  
-- [BulkPrompting](https://github.com/JustinXHale/bulkprompting): A Python script for efficient CLI bulk input.  
-- [CLI Guidelines](https://www.uxd-hub.com/entries/design/cli-guidelines): Comprehensive guidelines for designing user-friendly command-line interfaces.  
-
-## **Case Studies/Projects**
-Explore detailed case studies of my work:  
-- [InstructLab Interactive Mode](https://github.com/JustinXHale/instructlab-knowledge-docs)  
-- [BulkPrompting](https://github.com/JustinXHale/bulkprompting)  
-- [CLI Guidelines](https://www.uxd-hub.com/entries/design/cli-guidelines)
-
-## **Contact**
-Feel free to connect with me:  
-- **Email**: [JustinXHale@gmail.com](mailto:JustinXHale@gmail.com)  
-- **GitHub**: [JustinXHale](https://github.com/JustinXHale)  
-- **LinkedIn**: [linkedin.com/in/justinxhale](#)
-
-**"I design experiences that keep developers in their flow."**
-
-![Page Views](https://komarev.com/ghpvc/?username=yourusername&color=blue)
+- [JustinXHale@gmail.com](mailto:JustinXHale@gmail.com)
+- [LinkedIn](https://www.linkedin.com/in/justinxhale)
+- [GitHub](https://github.com/JustinXHale)

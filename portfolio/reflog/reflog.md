@@ -1,18 +1,20 @@
 ---
 layout: default
 title: "RefLog"
-parent: Portfolio
-nav_order: 1
+parent: Personal Projects
+grand_parent: Portfolio
+nav_order: 4
 ---
 
-# RefLog — Designing for Speed, Focus, and Flow
+# RefLog: Designing for Speed, Focus, and Flow
 
 <div style="background: #f5f5f5; padding: 20px; margin-bottom: 30px; border-left: 4px solid #0066cc;">
   <strong>Project Overview</strong><br>
   <strong>Role:</strong> Solo Product Designer & Developer<br>
   <strong>Timeline:</strong> 4 weeks (idea to App Store launch)<br>
   <strong>Platform:</strong> Flutter (iOS & Android), Firebase, Offline-first<br>
-  <strong>Impact:</strong> Reduced match review time from 5+ hours to 90 minutes. Shipped to iOS App Store and Google Play Store.
+  <strong>Impact:</strong> Reduced match review time from 5+ hours to 90 minutes. Shipped to iOS App Store and Google Play Store.<br>
+  <strong>Workflow UX:</strong> High-stakes field operations under time pressure, patterns applicable to clinical, logistics, and inspection workflows
 </div>
 
 ## The Problem
@@ -26,22 +28,22 @@ As a rugby referee, I spend hours after games rewatching film, coding events, an
 - Code the full 80-minute game using desktop software
 - **Total time: 5+ hours** (including setup, upload, and coding)
 
-**The pain point:** Existing tools assumed reflection happens later—at a desk, with full footage uploaded. But referees need to review quickly, often on mobile, and frequently without reliable internet.
+**The pain point:** Existing tools assumed reflection happens later, at a desk, with full footage uploaded. But referees need to review quickly, often on mobile, and frequently without reliable internet.
 
-> *What if I could code a match in 90 minutes instead of 5 hours—on the device already in my hand?*
+> *What if I could code a match in 90 minutes instead of 5 hours, on the device already in my hand?*
 
 ---
 
 ## The Solution
 
-RefLog is a lightweight, mobile-first app that works alongside your existing streaming or playback device. No downloads, no uploads, no setup—everything happens on the device already in your hand.
+RefLog is a lightweight, mobile-first app that works alongside your existing streaming or playback device. No downloads, no uploads, no setup, everything happens on the device already in your hand.
 
 <figure style="float: right; margin-left: 20px; max-width: 300px;">
   <img src="/portfolio/reflog/assets/reflog-original-match-screen.png" style="width: 100%;" alt="RefLog match screen">
   <figcaption>Early iteration showing the progressive selector in action</figcaption>
 </figure>
 
-**Core insight:** Match the way referees actually think during a game—**phase → team → infraction → sanction**. This mental model became the foundation of the interaction design.
+**Core insight:** Match the way referees actually think during a game, **phase → team → infraction → sanction**. This mental model became the foundation of the interaction design.
 
 **Key features:**
 - Progressive tap-based selector (faster than scrolling lists or forms)
@@ -90,7 +92,7 @@ Early on, I tested three different approaches to event logging:
 
 **The winner:** Progressive selector. It required fewer taps, less cognitive load, and mirrored the natural decision flow during a game.
 
-**Design validation method:** I measured friction in seconds—how long it took to record an event. Every design change was judged against that metric. If it didn't make logging faster or more accurate, it was cut.
+**Design validation method:** I measured friction in seconds, how long it took to record an event. Every design change was judged against that metric. If it didn't make logging faster or more accurate, it was cut.
 
 ### 2. Reducing Micro-Frictions
 
@@ -105,13 +107,13 @@ I focused on moments when attention shifts from the match to the interface. Two 
 
 Users could quickly adjust timestamps without scrubbing through video. Inspired by common video playback habits (skip forward/back 10 seconds).
 
-**UX impact:** Removed the need to pause, scrub, and find the exact moment—just tap to adjust.
+**UX impact:** Removed the need to pause, scrub, and find the exact moment, just tap to adjust.
 
 **Auto-timestamp assist**
 
 When logging a new event, the app automatically steps back a few seconds to anticipate the start of the clipping moment.
 
-**UX impact:** Users don't have to manually rewind before logging—the app does it proactively.
+**UX impact:** Users don't have to manually rewind before logging, the app does it proactively.
 
 **Design principle:** Does this remove a decision, or add one? Is this faster? Is this accurate?
 
@@ -121,7 +123,7 @@ I gave myself one month to take RefLog from idea to store-ready. That constraint
 
 **Offline-first architecture**
 
-Referees work in stadiums, buses, and hotels—often without reliable internet. RefLog had to function fully offline.
+Referees work in stadiums, buses, and hotels, often without reliable internet. RefLog had to function fully offline.
 
 **Technical decision:** Local storage with Firestore for sync (when available).
 
@@ -135,7 +137,7 @@ I avoided authentication in v1 to reduce friction and App Store overhead.
 
 **Dark mode as default**
 
-Many referees review in low-light conditions (locker rooms, buses, hotels). Dark mode wasn't a theme—it was a necessity.
+Many referees review in low-light conditions (locker rooms, buses, hotels). Dark mode wasn't a theme, it was a necessity.
 
 **Design validation:** First user testing revealed users couldn't see the interface on their phones' default dark mode setting. I prioritized dark mode immediately.
 
@@ -148,7 +150,7 @@ Many referees review in low-light conditions (locker rooms, buses, hotels). Dark
 
 Feature flags and configuration stored in Firestore allowed me to enable/disable features remotely without App Store resubmissions.
 
-**UX impact:** Rapid iteration based on user feedback—I could test features with small groups before wider rollout.
+**UX impact:** Rapid iteration based on user feedback, I could test features with small groups before wider rollout.
 
 ### 4. Testing, Feedback, and Adaptation
 
@@ -170,9 +172,9 @@ I built RefLog solo using Flutter, but I leveraged large language models as a co
 - Identifying edge cases I'd missed
 - Thinking through Firestore data structure decisions
 
-**Impact on process:** LLMs didn't replace my design process—they amplified it. I could hold more of the problem in my head and iterate on interaction flow and performance together. It blurred the line between design and development in a productive way.
+**Impact on process:** LLMs didn't replace my design process, they amplified it. I could hold more of the problem in my head and iterate on interaction flow and performance together. It blurred the line between design and development in a productive way.
 
-**Speed benefit:** Rapid cycles of prompting, refining, and testing enabled me to ship in 4 weeks—a timeline that wouldn't have been possible without AI-assisted development.
+**Speed benefit:** Rapid cycles of prompting, refining, and testing enabled me to ship in 4 weeks, a timeline that wouldn't have been possible without AI-assisted development.
 
 ---
 
@@ -186,7 +188,7 @@ I built RefLog solo using Flutter, but I leveraged large language models as a co
 
 **No authentication:** Reduced onboarding friction; added complexity deferred to v2 when clear user need emerges.
 
-**Feature flags via Firestore:** Enabled remote feature toggling without App Store resubmission—critical for rapid iteration.
+**Feature flags via Firestore:** Enabled remote feature toggling without App Store resubmission, critical for rapid iteration.
 
 **Progressive disclosure UI:** Phase → team → infraction → sanction flow implemented as sequential selectors to minimize cognitive load.
 
@@ -196,7 +198,7 @@ I built RefLog solo using Flutter, but I leveraged large language models as a co
 
 **1. Speed and usability are not opposites**
 
-Designing for rapid input requires empathy for how people think under pressure—whether that's a referee making a split-second call or a data scientist iterating through model runs.
+Designing for rapid input requires empathy for how people think under pressure, whether that's a referee making a split-second call or a data scientist iterating through model runs.
 
 **2. Measure friction in time, not clicks**
 
@@ -204,11 +206,11 @@ I optimized for seconds-to-log-event, not just number of taps. Sometimes an extr
 
 **3. Constraints force clarity**
 
-The 4-week deadline meant I couldn't over-engineer. I built what the next match told me to build—each day, I'd use RefLog live, note what broke my focus, and fix that first.
+The 4-week deadline meant I couldn't over-engineer. I built what the next match told me to build, each day, I'd use RefLog live, note what broke my focus, and fix that first.
 
 **4. Secondary use cases validate core design**
 
-When coaches started using RefLog for performance reviews (not match coding), it confirmed that the core UX—speed and clarity—was solving a broader problem.
+When coaches started using RefLog for performance reviews (not match coding), it confirmed that the core UX, speed and clarity, was solving a broader problem.
 
 **5. AI as a design accelerator**
 
@@ -216,17 +218,17 @@ LLMs enabled me to blur the line between design and development productively. I 
 
 **6. Live configuration is a superpower**
 
-Firestore-backed feature flags meant I could iterate on features without App Store delays—essential for solo product development.
+Firestore-backed feature flags meant I could iterate on features without App Store delays, essential for solo product development.
 
 ---
 
 ## Relevant for UX Engineering / AI Product Roles
 
 - **Full-stack execution:** Owned design, development, and deployment end-to-end (Flutter, Firebase, App Store submission)
-- **Speed-focused UX:** Optimized for high-pressure, time-sensitive workflows—applicable to data tools, analysis platforms, and operational dashboards
+- **Speed-focused UX:** Optimized for high-pressure, time-sensitive workflows, applicable to data tools, analysis platforms, and operational dashboards
 - **Offline-first design:** Critical for mobile/field tools and environments with unreliable connectivity
 - **AI-assisted development:** Demonstrated ability to leverage LLMs for rapid prototyping and iteration
-- **Live configuration patterns:** Firestore-backed flags enabled A/B testing and rapid iteration without redeploys—key for AI product experimentation
+- **Live configuration patterns:** Firestore-backed flags enabled A/B testing and rapid iteration without redeploys, key for AI product experimentation
 
 ---
 
@@ -238,7 +240,7 @@ Firestore-backed feature flags meant I could iterate on features without App Sto
 
 ---
 
-RefLog reminded me that good design isn't about adding—it's about removing everything that gets in the way of flow.
+RefLog reminded me that good design isn't about adding, it's about removing everything that gets in the way of flow.
 
 **Deliverables:**
 - [iOS App Store](https://apps.apple.com/us/app/reflog/id6753010016) (globally approved)

@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Rapid Design Thinking
-parent: Portfolio
-nav_order: 4
+parent: Earlier Career
+grand_parent: Portfolio
+nav_order: 2
 ---
 <!-- This section will include my Table of Contents. In the terminal run [npx markdown-toc -i README.md] to update must be in correct directory. -->
 

@@ -14,76 +14,88 @@ has_toc: false
 
 <div class="resume-meta" markdown="1">
 Senior UX / Product Designer  
-(979) 703-0804 | [JustinXHale@gmail.com](mailto:JustinXHale@gmail.com)  
-[linkedin.com/in/justinxhale](https://www.linkedin.com/in/justinxhale) | [justinxhale.github.io](https://justinxhale.github.io)
+(979) 703-0894 | [JustinXHale@gmail.com](mailto:JustinXHale@gmail.com) | [justinxhale.github.io](https://justinxhale.github.io)
 </div>
 
-<nav class="resume-jump" aria-label="Jump to section">
-  <span class="resume-jump-label">Jump:</span>
-  <a href="#professional-summary">Summary</a>
-  <a href="#tech-platforms">Tech</a>
-  <a href="#current-role">Current</a>
-  <a href="#independent-projects">Projects</a>
-  <a href="#professional-experience">Experience</a>
-  <a href="#education">Education</a>
-</nav>
+<p class="resume-print-hint">To save as PDF: use your browser’s <strong>Print</strong> command (⌘P / Ctrl+P) and choose “Save as PDF.” Sidebar and navigation are omitted from the printed page.</p>
 
 ## Professional summary {#professional-summary}
 
-My day-to-day work is enterprise SaaS and developer-facing platforms: multi-tenant systems, RBAC-governed workflows, developer portals, CLI and SDK surfaces, and AI/ML operational products. I partner with engineering and ship in production when provenance, policy, and trust need to show up clearly in the UI. Outside Red Hat I design, build, and ship mobile and AI-forward products (mostly rugby officiating tools), including field testing and concrete time-saved outcomes.
+Product Designer specializing in enterprise SaaS and developer-portal platforms: package catalogs, AI/ML operational surfaces, and multi-step workflows across multi-tenant, RBAC-governed systems. I ship production UI, build design infrastructure for coded prototypes, and reduce structural friction early in a product lifecycle.
 
 ## Technologies & platforms {#tech-platforms}
 
-<p class="resume-tech-keywords">Enterprise SaaS • Multi-tenant systems • RBAC • Authentication • OAuth • API design • Developer portals • CLI tooling • SDK onboarding • AI/ML platforms • RAG workflows • Distributed systems • Multi-cluster environments • Cloud infrastructure • DevOps workflows • OpenShift • Kubernetes • Container registries • React • TypeScript • PatternFly • Flutter • Jupyter Notebooks • GitHub • VS Code • Figma • Miro • Jira</p>
-
-## Current role {#current-role}
-
-### Red Hat - Senior Product / UX Designer  
-*September 2021 - Present*
-
-- Own UX for enterprise SaaS and platform work across multi-cluster contexts, developer portals, AI/ML operational surfaces, and CLI. I embed with engineering and ship UI in production when catalog and policy experiences need to land fast and hold up for admins.
-- Red Hat Packages catalog: unified separate Trusted Libraries and AI Components experiences into one faceted catalog; shipped reusable catalog, filter, and card patterns with accessibility and dark mode on a one-week audit-to-production cadence; information architecture and filtering across seven or more dimensions (SLSA, license, Python compatibility, release stage, hardware variant, and related metadata). [Case study]({{ '/portfolio/ui-packages-redhat/ui-packages-redhat/' | relative_url }})
-- vLLM CLI: led help redesign for more than two hundred configuration options using progressive disclosure plus keyword and grouped navigation; aligned with maintainers through an RFC process; merged upstream for teams running LLMs in production. [Case study]({{ '/portfolio/vllm-cli-ux/vllm-cli-ux/' | relative_url }})
-- CLI and platform UX: embedded in workflows such as bulk prompting and ROSA-style flows; simplified command hierarchies and prompt states (30+ down to roughly twelve core paths); improved naming, sequencing, branching, and error clarity; contributed org-wide CLI standards and [cross-product CLI guidance](https://www.uxd-hub.com/entries/design/cli-guidelines).
-- Scale and enablement: founded UXD Yearbook to onboard more than one hundred UX designers to AI-assisted prototyping; built automated design-documentation workflows; own merge-request and team process practices for the UX team repository.
-
-## Independent projects - Mobile + AI-native UX {#independent-projects}
-
-### RefLog - Rugby referee match logging
-
-- Shipped offline-first, tap-based event logging with field testing during live matches; roughly 70% reduction in post-match review time compared with prior workflows (hours to minutes). Multi-role flows, OAuth sign-in, and configurable feature flags. [Case study]({{ '/portfolio/reflog/reflog/' | relative_url }})
-
-### RefereeIQ - AI-assisted law coaching
-
-- Conversational UX with targeted retrieval of official clarifications, explicit citations, and explicit “no answer” behavior instead of fabricated detail; configurable behavior via a hosted rules layer for rapid iteration. [Case study]({{ '/portfolio/refereeiq/refereeiq/' | relative_url }})
+<p class="resume-tech-keywords">Enterprise SaaS • Multi-tenant Architecture • RBAC • Authentication Flows • OAuth • API Design • Developer Portals • AI/ML Platforms • RAG Workflows • React • TypeScript • PatternFly • Design Systems • CLI/SDK Tooling • OpenShift • Kubernetes • Container Registries • Distributed Systems • GitHub • Figma • Miro • Jira</p>
 
 ## Professional experience {#professional-experience}
 
-### Red Hat - Interaction Designer
+### Red Hat, Inc.  
+*September 2021 – Present*
 
-- Reimagined InstructLab SDK and CLI onboarding for API-driven model-training paths ([InstructLab interactive mode](https://github.com/JustinXHale/instructlab-interactivemode)); improved ROSA and cloud-managed OpenShift CLI consistency, accessibility, and documentation aligned to the org design system.
+#### Senior Product Designer
 
-### Red Hat - Associate User Experience Designer
+- Owned UX across developer portals, AI/ML operational surfaces, package catalogs, and multi-step platform workflows; partnered with engineering to ship production UI used by platform engineers and data teams.
+- Unified Trusted Libraries and AI Components into one faceted catalog; shipped React/TypeScript on PatternFly 6 in one week from audit to production, with 7+ metadata dimensions (SLSA, license, Python version, release stage, hardware variant).
+- Originated design-comments for in-context feedback on coded prototypes (pins, GitHub Issues backend, AI summarize); PatternFly team now maintains; integrated into OpenShift AI prototype.
+- Designed scoped OpenShift AI models and deploy wizard flows on a team UX prototype (MaaS vs AI asset endpoint availability, constraint explanations); aligned roadmap decisions with deployment models, RBAC, and multi-tenant governance.
+- Led vLLM CLI help redesign for 200+ configuration options; drove RFC process and merged upstream with maintainers.
+- Restructured ROSA-style CLI flows from 30+ sequential prompts to ~12 core paths; contributed org-wide CLI UX guidelines adopted within PatternFly.
 
-- Led Quay.io redesign (enterprise container registry and security): repository management, vulnerability surfaces, API-integrated workflows, organization-scoped RBAC; reduced design debt through structured design-system adoption across DevOps workflows.
+#### Interaction Designer
 
-### Integral Care - Digital Media Specialist  
-*September 2019 - August 2021*
+- Reimagined SDK and CLI onboarding flows for InstructLab, improving discoverability across API-driven model training workflows and developer configuration environments.
+- Defined ROSA CLI standardization across cloud-managed OpenShift services, improving consistency across multi-environment configuration surfaces.
+- Championed accessibility and documentation improvements in developer tooling, reducing onboarding friction and support dependency.
+- Contributed reusable system-level components and documentation to PatternFly to improve scalability and cross-product cohesion.
 
-- Applied design thinking and testing to email and digital journeys; improved clarity and engagement; supported state-wide campaign direction with performance tracking.
+#### Associate User Experience Designer
 
-### Community Advancement Network - Communications Specialist  
-*November 2017 - September 2019*
+- Led redesign of Quay.io, an enterprise SaaS container registry and security platform, refining repository management, vulnerability reporting dashboards, API-integrated workflows, and role-based authentication flows across multi-organization teams.
+- Reduced design debt and improved scalability through structured PatternFly adoption, aligning complex DevOps workflows across product surfaces.
 
-- User-centered and accessibility-minded digital and print work; email and social analytics; social campaigns contributed to a 13% traffic lift and 16,000+ new visitors over two years.
+### Integral Care, Digital Media Specialist  
+*September 2019 – August 2021*
 
-### Legacy Ecowear - Founder / Owner
+- Implemented design thinking methods, optimizing company email layouts based on user testing and market research, resulting in a notable increase in click-through rates.
+- Developed and managed a state-wide marketing campaign vision for various digital experiences, ensuring an impactful and user-centric approach.
 
-- Founded and ran a sport and corporate apparel brand: sales, account relationships, DTC and DTB orders, e-commerce catalog and checkout, brand presence, and vendor coordination.
+### Community Advancement Network, Communications Specialist  
+*November 2017 – September 2019*
+
+- Ensured physical and digital deliverables followed user-centered and accessibility practices.
+- Conducted ongoing performance tracking and success metrics for email marketing and social media management.
+- Created and implemented social media campaigns, which resulted in a 13% increase in traffic and over 16,000 new visitors over two years.
+
+## Independent projects {#independent-projects}
+
+### RefLog, Mobile performance logging app for rugby referees  
+*Available on Android and iOS*
+
+- Designed and launched a cross-platform app with multi-role workflows (Referee / Coach modes), scalable data visualizations, and analytics dashboards.
+- Conducted usability testing in high-pressure field environments to optimize task efficiency and cognitive load.
+- Implemented OAuth-based authentication flows (Google/GitHub) and role-based user access patterns for multi-role application environments.
+
+### RefereeIQ, AI-powered learning app for rugby officials
+
+- Designed and implemented RAG-based AI workflows using semantic retrieval and contextual prompting.
+- Defined ingestion, embedding, and knowledge retrieval strategies to support dynamic question interpretation.
+- Built and iterated adaptive onboarding and feedback systems to improve user comprehension and engagement.
+
+### Published product suite, Personal apps (Tō3, RefLog, RefereeIQ, ReflectED, Sevens Manager)
+
+- Design, build, publish, and iterate on multiple App Store, Play Store, and PWA products with field-tested users, using AI-assisted development outside work.
+
+### Legacy Ecowear, Founder & Product Designer
+
+- Designed and managed the UX and UI of an e-commerce storefront, handling end-to-end product configuration, checkout, and customer experience.
+- Defined a cohesive brand system and visual language for apparel catalogs, digital packaging, and custom team orders.
+- Implemented user-centric optimizations to reduce ordering friction and improve product visibility across desktop and mobile.
 
 ## Education {#education}
 
-- Associate of Applied Science - User Experience Design - Austin Community College  
-- Bachelor of Science - Sports Management; minors in Business and Communication - Texas A&M University
+- Associate of Applied Science, Austin Community College, User Experience Design
+- Bachelor of Science, Texas A&M University, Sports Management; minors in Business and Communication
+
+<p class="resume-print-footer">Case studies and deeper project write-ups: <a href="{{ '/portfolio/' | relative_url }}">justinxhale.github.io/portfolio</a></p>
 
 </div>

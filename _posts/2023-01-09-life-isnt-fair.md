@@ -8,7 +8,7 @@ tags: [rugby,sport, leadership]
 # I hate the phase Life isn’t fair when are speaking in the context or sport.
 “Life isn’t always fair” but sports should be…
 
-![2023 Referee Development Camp — Houston, TX](/justinxhale.github.io/posts/Assets/2023%20Referee%20Development%20Camp.jpeg)
+![2023 Referee Development Camp: Houston, TX](/justinxhale.github.io/posts/Assets/2023%20Referee%20Development%20Camp.jpeg)
 
 I didn’t think this would be the first blog I would write, because my thoughts around it aren’t fully composed and I’m not great at expressing my feelings in writing…but here I go.
 

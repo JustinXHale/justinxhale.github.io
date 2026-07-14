@@ -38,6 +38,24 @@
   font-size: 0.9375rem;
 }
 
+/* Screen-only print hint and portfolio footer on resume */
+.resume-print-hint {
+  margin: 0 0 1.25rem;
+  padding: 0.65rem 0.85rem;
+  font-size: 0.875rem;
+  line-height: 1.45;
+  border: 1px solid var(--jtd-theme-border-color, #e1e4e8);
+  border-radius: 4px;
+  background: var(--jtd-theme-sidebar-color, #f8f9fa);
+  text-align: left;
+}
+
+.resume-print-footer {
+  margin-top: 1.5rem;
+  font-size: 0.875rem;
+  color: var(--jtd-theme-text-color-light, #6a737d);
+}
+
 /* Short resume: jump links (screen only; hidden when printing) */
 .resume-page:has(.resume-jump) h2[id] {
   scroll-margin-top: 3.25rem;
@@ -101,7 +119,8 @@
   #main-header,
   footer,
   #back-to-top,
-  .resume-jump {
+  .resume-jump,
+  .resume-print-hint {
     display: none !important;
   }
 
@@ -166,6 +185,20 @@
     white-space: normal !important;
   }
 
+  .resume-print-footer {
+    margin-top: 0.5rem;
+    font-size: 10pt !important;
+    color: #000 !important;
+    text-align: center !important;
+  }
+
+  .resume-print-footer a {
+    color: #0000cc !important;
+    -webkit-text-fill-color: #0000cc !important;
+    text-decoration: underline !important;
+    pointer-events: auto !important;
+  }
+
   .resume-page h2 {
     font-size: 12pt !important;
     font-weight: bold !important;
@@ -190,6 +223,16 @@
     font-style: italic !important;
     margin-top: 0.3rem;
     margin-bottom: 0.1rem;
+    page-break-after: avoid;
+    text-align: left !important;
+  }
+
+  .resume-page h4 {
+    font-size: 10.5pt !important;
+    font-weight: bold !important;
+    font-style: normal !important;
+    margin-top: 0.25rem;
+    margin-bottom: 0.05rem;
     page-break-after: avoid;
     text-align: left !important;
   }
@@ -228,7 +271,7 @@
   }
 
   /*
-   * Links: print should read like a paper resume—no link styling or URL tails
+   * Links: print should read like a paper resume (no link styling or URL tails)
    * in the body. Only the contact block (.resume-meta) stays visibly linked.
    */
   .resume-page a[href^="http"]::after,

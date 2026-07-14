@@ -15,9 +15,10 @@
   
 
     .site-nav > ul.nav-list:first-child > li > a,
+    .site-nav > ul.nav-list:first-child > li > ul > li > a,
     
-    .site-nav > ul.nav-list:first-child > li > ul > li:not(:nth-child(2)) > a,
-    .site-nav > ul.nav-list:first-child > li > ul > li > ul > li a {
+    .site-nav > ul.nav-list:first-child > li > ul > li > ul > li:not(:nth-child(5)) > a,
+    .site-nav > ul.nav-list:first-child > li > ul > li > ul > li > ul > li a {
       background-image: none;
     }
 
@@ -26,14 +27,16 @@
       background-image: none;
     }
 
-    .site-nav > ul.nav-list:first-child > li:nth-child(3) > ul > li:nth-child(2) > a {
+    .site-nav > ul.nav-list:first-child > li:nth-child(3) > ul > li:nth-child(2) > ul > li:nth-child(5) > a {
       font-weight: 600;
       text-decoration: none;
     }.site-nav > ul.nav-list:first-child > li:nth-child(3) > button svg,
-    .site-nav > ul.nav-list:first-child > li:nth-child(3) > ul > li:nth-child(2) > button svg {
+    .site-nav > ul.nav-list:first-child > li:nth-child(3) > ul > li:nth-child(2) > button svg,
+    .site-nav > ul.nav-list:first-child > li:nth-child(3) > ul > li:nth-child(2) > ul > li:nth-child(5) > button svg {
       transform: rotate(-90deg);
     }.site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(3) > ul.nav-list,
-    .site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(3) > ul.nav-list > li.nav-list-item:nth-child(2) > ul.nav-list {
+    .site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(3) > ul.nav-list > li.nav-list-item:nth-child(2) > ul.nav-list,
+    .site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(3) > ul.nav-list > li.nav-list-item:nth-child(2) > ul.nav-list > li.nav-list-item:nth-child(5) > ul.nav-list {
       display: block;
     }
   </style>
@@ -57,8 +60,8 @@
 <meta name="generator" content="Jekyll v3.10.0" />
 <meta property="og:title" content="RefereeIQ-Sofía Chatbot" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="A UX Designer specializing in CLI and developer tools" />
-<meta property="og:description" content="A UX Designer specializing in CLI and developer tools" />
+<meta name="description" content="Senior UX / Product Designer: enterprise platform UX, AI/ML surfaces, design systems, and published products" />
+<meta property="og:description" content="Senior UX / Product Designer: enterprise platform UX, AI/ML surfaces, design systems, and published products" />
 <link rel="canonical" href="http://localhost:4000/portfolio/refereeiq/refereeiq/" />
 <meta property="og:url" content="http://localhost:4000/portfolio/refereeiq/refereeiq/" />
 <meta property="og:site_name" content="Justin X. Hale’s Portfolio" />
@@ -66,7 +69,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="RefereeIQ-Sofía Chatbot" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"A UX Designer specializing in CLI and developer tools","headline":"RefereeIQ-Sofía Chatbot","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/icon-512.png"}},"url":"http://localhost:4000/portfolio/refereeiq/refereeiq/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"Senior UX / Product Designer: enterprise platform UX, AI/ML surfaces, design systems, and published products","headline":"RefereeIQ-Sofía Chatbot","url":"http://localhost:4000/portfolio/refereeiq/refereeiq/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -146,7 +149,7 @@
     <header class="side-bar">
   <div class="site-header">
     <a href="/" class="site-title lh-tight">
-  <div class="site-logo" role="img" aria-label="Justin X. Hale's Portfolio"></div>
+  Justin X. Hale's Portfolio
 
 </a>
     <button id="menu-button" class="site-button btn-reset" aria-label="Menu" aria-expanded="false">
@@ -161,9 +164,15 @@
         <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
       </button><a href="/" class="nav-list-link">Justin X. Hale</a><ul class="nav-list"><li class="nav-list-item"><a href="/about/" class="nav-list-link">About Me</a></li><li class="nav-list-item"><a href="/about-me/honors/" class="nav-list-link">Awards/Honors</a></li><li class="nav-list-item"><a href="/get-in-touch/" class="nav-list-link">Get In Touch</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="Resumes submenu" aria-expanded="false">
         <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
-      </button><a href="/resume/" class="nav-list-link">Resumes</a><ul class="nav-list"><li class="nav-list-item"><a href="/resume/standard/" class="nav-list-link">Resume</a></li><li class="nav-list-item"><a href="/resume/full-cv/" class="nav-list-link">Full CV</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="Portfolio submenu" aria-expanded="false">
+      </button><a href="/resume/" class="nav-list-link">Resumes</a><ul class="nav-list"><li class="nav-list-item"><a href="/resume/standard/" class="nav-list-link">Resume</a></li><li class="nav-list-item"><a href="/resume/full-cv/" class="nav-list-link">Case Study Index</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="Portfolio submenu" aria-expanded="false">
         <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
-      </button><a href="/portfolio/" class="nav-list-link">Portfolio</a><ul class="nav-list"><li class="nav-list-item"><a href="/portfolio/reflog/reflog/" class="nav-list-link">RefLog</a></li><li class="nav-list-item"><a href="/portfolio/refereeiq/refereeiq/" class="nav-list-link">RefereeIQ-Sofía Chatbot</a></li><li class="nav-list-item"><a href="/portfolio/vllm-cli-ux/vllm-cli-ux/" class="nav-list-link">vLLM CLI UX Enhancement</a></li><li class="nav-list-item"><a href="/portfolio/interface-driven-ux-red-hat/interface-driven-ux-red-hat/" class="nav-list-link">SaaS Design (at Red Hat)</a></li><li class="nav-list-item"><a href="/portfolio/ui-packages-redhat/ui-packages-redhat/" class="nav-list-link">Red Hat Packages Catalog Redesign</a></li><li class="nav-list-item"><a href="/portfolio/bulk-prompting-script/bulk-prompting-script/" class="nav-list-link">Bulk Prompting Script</a></li><li class="nav-list-item"><a href="/portfolio/rapid-design-thinking/rapid-design-thinking/" class="nav-list-link">Rapid Design Thinking</a></li><li class="nav-list-item"><a href="/portfolio/just-an-email/just-an-email/" class="nav-list-link">It’s Just an Email</a></li></ul></li><li class="nav-list-item"><a href="/blog/" class="nav-list-link">Life & Work (Blog)</a></li></ul>
+      </button><a href="/portfolio/" class="nav-list-link">Portfolio</a><ul class="nav-list"><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="Red Hat & Enterprise submenu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+      </button><a href="/portfolio/red-hat-enterprise/" class="nav-list-link">Red Hat & Enterprise</a><ul class="nav-list"><li class="nav-list-item"><a href="/portfolio/design-comments/design-comments/" class="nav-list-link">design-comments</a></li><li class="nav-list-item"><a href="/portfolio/ui-packages-redhat/ui-packages-redhat/" class="nav-list-link">Red Hat Packages Catalog Redesign</a></li><li class="nav-list-item"><a href="/portfolio/vllm-cli-ux/vllm-cli-ux/" class="nav-list-link">vLLM CLI UX Enhancement</a></li><li class="nav-list-item"><a href="/portfolio/instructlab/instructlab/" class="nav-list-link">InstructLab Interactive Mode</a></li><li class="nav-list-item"><a href="/portfolio/bulk-prompting-script/bulk-prompting-script/" class="nav-list-link">Bulk Prompting Script</a></li><li class="nav-list-item"><a href="/portfolio/interface-driven-ux-red-hat/interface-driven-ux-red-hat/" class="nav-list-link">SaaS Design (at Red Hat)</a></li><li class="nav-list-item"><a href="/portfolio/prototyping-hub/prototyping-hub/" class="nav-list-link">UXD Prototyping Hub</a></li><li class="nav-list-item"><a href="/portfolio/openshift-ai-deploy-wizard/openshift-ai-deploy-wizard/" class="nav-list-link">OpenShift AI Deploy Wizard</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="Personal Projects submenu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+      </button><a href="/portfolio/personal-projects/" class="nav-list-link">Personal Projects</a><ul class="nav-list"><li class="nav-list-item"><a href="/portfolio/product-suite/product-suite/" class="nav-list-link">Published Product Suite</a></li><li class="nav-list-item"><a href="/portfolio/to3/to3/" class="nav-list-link">Tō3</a></li><li class="nav-list-item"><a href="/portfolio/reflected/reflected/" class="nav-list-link">ReflectED</a></li><li class="nav-list-item"><a href="/portfolio/reflog/reflog/" class="nav-list-link">RefLog</a></li><li class="nav-list-item"><a href="/portfolio/refereeiq/refereeiq/" class="nav-list-link">RefereeIQ-Sofía Chatbot</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="Earlier Career submenu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+      </button><a href="/portfolio/earlier-career/" class="nav-list-link">Earlier Career</a><ul class="nav-list"><li class="nav-list-item"><a href="/portfolio/just-an-email/just-an-email/" class="nav-list-link">It’s Just an Email</a></li><li class="nav-list-item"><a href="/portfolio/rapid-design-thinking/rapid-design-thinking/" class="nav-list-link">Rapid Design Thinking</a></li></ul></li></ul></li><li class="nav-list-item"><a href="/blog/" class="nav-list-link">Life & Work (Blog)</a></li></ul>
   
 </nav>
 
@@ -202,6 +211,7 @@
       <nav aria-label="Breadcrumb" class="breadcrumb-nav">
   <ol class="breadcrumb-nav-list">
     <li class="breadcrumb-nav-list-item"><a href="/portfolio/">Portfolio</a></li>
+    <li class="breadcrumb-nav-list-item"><a href="/portfolio/personal-projects/">Personal Projects</a></li>
     <li class="breadcrumb-nav-list-item"><span>RefereeIQ-Sofía Chatbot</span></li>
   </ol>
 </nav>
@@ -210,10 +220,10 @@
       <div id="main-content" class="main-content">
         <main>
           
-            <h1 id="refereeiq--a-conversational-ai-coach-for-rugby-referees">
+            <h1 id="refereeiq-a-conversational-ai-coach-for-rugby-referees">
   
   
-    <a href="#refereeiq--a-conversational-ai-coach-for-rugby-referees" class="anchor-heading" aria-labelledby="refereeiq--a-conversational-ai-coach-for-rugby-referees"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> RefereeIQ — A Conversational AI Coach for Rugby Referees
+    <a href="#refereeiq-a-conversational-ai-coach-for-rugby-referees" class="anchor-heading" aria-labelledby="refereeiq-a-conversational-ai-coach-for-rugby-referees"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> RefereeIQ: A Conversational AI Coach for Rugby Referees
   
   
 </h1>
@@ -240,9 +250,9 @@
   <figcaption>Sofia's welcome screen sets the coaching tone</figcaption>
 </figure>
 
-<p>Rugby referees manage hundreds of laws, frequent clarifications, and nuanced edge cases. Current learning methods are fragmented—PDFs, forums, mentor advice—making it difficult to develop consistent judgment quickly.</p>
+<p>Rugby referees manage hundreds of laws, frequent clarifications, and nuanced edge cases. Current learning methods are fragmented, PDFs, forums, mentor advice, making it difficult to develop consistent judgment quickly.</p>
 
-<p><strong>The opportunity:</strong> Create a conversational AI that feels like a mentor, handles multi-turn reasoning, and builds trust through citations and transparency—not just another generic chatbot.</p>
+<p><strong>The opportunity:</strong> Create a conversational AI that feels like a mentor, handles multi-turn reasoning, and builds trust through citations and transparency, not just another generic chatbot.</p>
 <h2 id="solution-sofia-the-ai-referee-coach">
   
   
@@ -254,7 +264,7 @@
 
 <p>I designed and built <strong>RefereeIQ</strong>, a conversational assistant that helps rugby referees reason through the <em>Laws of the Game</em> using natural dialogue. Instead of paging through PDFs, referees ask questions and get <strong>grounded answers</strong> with relevant clarifications and official law links, delivered by “<strong>Sofia</strong>.”</p>
 
-<p><strong>Core design principle:</strong> Reasoning-centric UX—blending open-ended conversation with grounding, citations, and explicit fallbacks to earn trust in high-stakes decision contexts.</p>
+<p><strong>Core design principle:</strong> Reasoning-centric UX, blending open-ended conversation with grounding, citations, and explicit fallbacks to earn trust in high-stakes decision contexts.</p>
 <h2 id="impact--outcomes">
   
   
@@ -284,7 +294,7 @@
   <p>“When it checks the clarification instead of guessing, I trust it more.”</p>
 </blockquote>
 
-<p><strong>Key success metric:</strong> Trust through transparency—users valued explicit citations and uncertainty handling over confident but vague answers.</p>
+<p><strong>Key success metric:</strong> Trust through transparency, users valued explicit citations and uncertainty handling over confident but vague answers.</p>
 <h2 id="design-decisions-building-trust-through-conversation">
   
   
@@ -307,7 +317,7 @@
   <figcaption>Sofia maintains context across turns and asks clarifying questions</figcaption>
 </figure>
 
-<p>Rather than treating each question in isolation, Sofia remembers recent conversation turns and can ask follow-up questions. This mirrors how a real coach would work—clarifying the scenario before jumping to an answer.</p>
+<p>Rather than treating each question in isolation, Sofia remembers recent conversation turns and can ask follow-up questions. This mirrors how a real coach would work, clarifying the scenario before jumping to an answer.</p>
 
 <p><strong>Design choice:</strong> Recent user + Sofia turns are preserved and sent server-side. The system prompt consistently enforces terminology and citation standards aligned with official law language.</p>
 
@@ -340,7 +350,7 @@
 </h3>
     
 
-<p>The system prompt frames Sofia as a <strong>patient coach</strong>—law-accurate, explicit when uncertain, and focused on helping referees learn judgment, not just memorize rules.</p>
+<p>The system prompt frames Sofia as a <strong>patient coach</strong>, law-accurate, explicit when uncertain, and focused on helping referees learn judgment, not just memorize rules.</p>
 
 <p><strong>Design choice:</strong> Lower temperature for factual answers; slightly higher for conversational coaching. Moderation pass on user input for safety.</p>
 
@@ -359,7 +369,7 @@
   <figcaption>AI-generated multiple-choice questions using official law wording</figcaption>
 </figure>
 
-<p>Beyond chat, Sofia offers daily challenges—5 AI-generated multiple-choice questions (5 points each) with strict constraints: official law wording, one correct answer.</p>
+<p>Beyond chat, Sofia offers daily challenges, 5 AI-generated multiple-choice questions (5 points each) with strict constraints: official law wording, one correct answer.</p>
 
 <figure style="float: right; margin-left: 20px; max-width: 300px;">
   <img src="/portfolio/refereeiq/assets/challengehistory.png" alt="Challenge history tracking" style="width: 100%;" />
@@ -430,7 +440,7 @@
 </h3>
     
 
-<p><strong>Live configurability:</strong> Model, temperature, and system prompts stored in Firestore with code defaults—enabling rapid iteration without redeploys. Critical for tuning AI behavior based on user feedback.</p>
+<p><strong>Live configurability:</strong> Model, temperature, and system prompts stored in Firestore with code defaults, enabling rapid iteration without redeploys. Critical for tuning AI behavior based on user feedback.</p>
 
 <p><strong>Selective retrieval:</strong> Clarification lookup triggers only when needed (user request or model uncertainty) to minimize latency and parsing overhead while maintaining UX fluidity.</p>
 
@@ -456,7 +466,7 @@
 
 <p><strong>3. Live configurability is a superpower</strong></p>
 
-<p>Storing prompts and model settings in Firestore meant I could tune Sofia’s tone and behavior within minutes based on user feedback—no code deploys. This rapid iteration loop was essential for finding the right coaching tone.</p>
+<p>Storing prompts and model settings in Firestore meant I could tune Sofia’s tone and behavior within minutes based on user feedback, no code deploys. This rapid iteration loop was essential for finding the right coaching tone.</p>
 
 <p><strong>4. Fallbacks are features, not bugs</strong></p>
 
@@ -464,7 +474,24 @@
 
 <p><strong>5. Generalizability to other domains</strong></p>
 
-<p>This pattern—conversational AI with grounding, citations, and fallbacks—extends beyond rugby. Any domain with authoritative sources (legal docs, SOPs, policies, data dictionaries) could benefit from this UX approach.</p>
+<p>This pattern, conversational AI with grounding, citations, and fallbacks, extends beyond rugby. Any domain with authoritative sources (legal docs, SOPs, policies, data dictionaries) could benefit from this UX approach.</p>
+<h2 id="evaluation-minded-rd-personal">
+  
+  
+    <a href="#evaluation-minded-rd-personal" class="anchor-heading" aria-labelledby="evaluation-minded-rd-personal"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Evaluation-minded R&amp;D (personal)
+  
+  
+</h2>
+    
+
+<p>Beyond the shipped app, I explored <strong>AI evaluation tooling</strong> to connect product UX with measurable model behavior:</p>
+
+<ul>
+  <li><strong>promptfoo</strong>: Local eval setup comparing providers against rugby law prompts</li>
+  <li><strong>GuideLLM</strong>: Documented onboarding friction from a UX perspective using RefereeIQ prompts as a real-world test dataset</li>
+</ul>
+
+<p>This is personal R&amp;D, not Red Hat production work. It informs how I design for <strong>evaluation-minded AI products</strong> (grounding, test harnesses, iteration loops).</p>
 <h2 id="relevant-for-aiml-product-roles">
   
   
@@ -475,10 +502,10 @@
     
 
 <ul>
-  <li><strong>Reasoning-centric UX:</strong> Shows <em>how</em> the AI reasons (citations, fallbacks), not just <em>what</em> it answers—applicable to analysis tools, forecasting agents, and data prep assistants</li>
-  <li><strong>Grounding over confidence:</strong> Verifiable references &gt; vague confidence—maps to data science workflows where assumptions and data sources must be explicit</li>
-  <li><strong>Rapid experimentation:</strong> Firestore-backed config enabled A/B testing prompts and temperature without deploys—critical for AI product iteration</li>
-  <li><strong>Cross-functional execution:</strong> Owned full stack (UX, backend, AI integration, deployment)—demonstrates ability to ship AI products independently</li>
+  <li><strong>Reasoning-centric UX:</strong> Shows <em>how</em> the AI reasons (citations, fallbacks), not just <em>what</em> it answers, applicable to analysis tools, forecasting agents, and data prep assistants</li>
+  <li><strong>Grounding over confidence:</strong> Verifiable references &gt; vague confidence, maps to data science workflows where assumptions and data sources must be explicit</li>
+  <li><strong>Rapid experimentation:</strong> Firestore-backed config enabled A/B testing prompts and temperature without deploys, critical for AI product iteration</li>
+  <li><strong>Cross-functional execution:</strong> Owned full stack (UX, backend, AI integration, deployment), demonstrates ability to ship AI products independently</li>
 </ul>
 
           

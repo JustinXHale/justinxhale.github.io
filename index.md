@@ -8,58 +8,53 @@ back_to_top_text: "Back to top"
 ---
 <a id="back-to-top"></a>
 
-# 👋 Welcome to Justin X. Hale's UX Portfolio
+# Welcome to Justin X. Hale's Portfolio
 
-I'm a **UX Designer** at Red Hat specializing in **Command-Line Interfaces (CLI)** and developer tools. Passionate about bridging the gap between design and 
-technology, I create intuitive solutions that empower technical teams and enhance workflows in open-source environments.  
+I'm a Senior UX / Product Designer at Red Hat. I work on enterprise platform and developer-portal experiences: package catalogs, AI/ML operational surfaces, and CLI/SDK tooling. I partner with engineering and ship production UI when that is the fastest way to get to clarity.
 
-[Resumes](/resume/) | [Portfolio](./portfolio.md) | [Blog](./blog.md) | [Contact](#contact)  
+At Red Hat I originated [design-comments]({{ '/portfolio/design-comments/design-comments/' | relative_url }}) (now maintained by PatternFly) for in-context feedback on coded prototypes. Outside work I design, build, and publish [mobile and PWA products]({{ '/portfolio/product-suite/product-suite/' | relative_url }}) with real users.
 
-> **"I design experiences that keep developers in their flow."** 
+[Resumes](/resume/) (print from browser) | [Portfolio](./portfolio.md) | [Blog](./blog.md) | [Contact](#contact)
+
+> I design systems people can trust under pressure, from production AI platforms to field workflows.
 
 <img src="https://ghchart.rshah.org/JustinXHale" alt="GitHub Contributions Chart">
 
 ---
 
-## Portfolio Highlights
+## Selected work
 
-### [RefLog](./portfolio/reflog/reflog.md)
-- Challenge: Rugby referees needed a faster, more efficient way to log match events.
-- Solution: Developed RefLog, a mobile app that reduces review time from hours to minutes, emphasizing speed and usability with offline-first functionality.
-- Tech: Flutter.
+### [design-comments](./portfolio/design-comments/design-comments.md)
 
-### [RefereeIQ](./portfolio/refereeiq/refereeiq.md)
-- Challenge: Rugby referees needed a mentor-like assistant to navigate complex laws and clarifications.
-- Solution: Built RefereeIQ, a conversational AI coach that provides grounded answers and clarifications, enhancing decision-making and trust.
-- Tech: Flutter, OpenAI API, Firestore.
+As design moved off Figma onto coded prototypes, UXD lost in-context commenting. I architected design-comments (pins, GitHub Issues backend, AI summarize). I originated it; PatternFly now maintains it.
 
-### [InstructLab Interactive Mode](https://github.com/JustinXHale/instructlab-interactivemode)
-- Challenge: Enhance the CLI experience for developers interacting with InstructLab.
-- Solution: Created a structured, user-friendly interactive mode, improving onboarding and tool adoption.
-- Tech: Python, Shell scripting, Figma
+### [Red Hat Packages Catalog](./portfolio/ui-packages-redhat/ui-packages-redhat.md)
 
-### [BulkPrompting: Streamlining CLI Bulk Input](https://github.com/JustinXHale/bulkprompting)  
-- Challenge: Repetitive CLI workflows caused inefficiency.
-- Solution: Designed and implemented a Python script for automating bulk input, improving usability.
-- Tech: Python, Shell scripting.
+Trusted Libraries and AI Components lived in separate experiences. I unified them into one faceted catalog and shipped it in React/TypeScript on PatternFly 6 in a week.
 
-### [CLI Guidelines: Designing for the Command Line](https://www.uxd-hub.com/entries/design/cli-guidelines)  
-- Purpose: Establish clear, actionable guidelines for designing user-friendly and consistent CLI interfaces.
-- Impact: Supports developers and UX teams in delivering seamless command-line experiences.
+### [Published product suite](./portfolio/product-suite/product-suite.md)
 
-[View Full Portfolio →](./portfolio.md)
+Tō3, RefLog, RefereeIQ, ReflectED, and Sevens Manager: store and PWA apps I design, build, and field-test with real users.
+
+### [vLLM CLI UX](./portfolio/vllm-cli-ux/vllm-cli-ux.md)
+
+Redesigned help for 200+ configuration options; merged upstream after an RFC with maintainers.
+
+[View full portfolio →](./portfolio.md)
 
 ---
 
 ## Skills
-**Professional**: Strategic Design Thinking | Open Source UX | Agile Collaboration | Mentorship
-**Technical**: GitHub | CLI Tools | Figma | PatternFly | Markdown | Jira
+
+**Professional:** Strategic design thinking | Systems design | Design ops | Open source UX | Agile collaboration | Mentorship
+
+**Technical:** Enterprise SaaS | React/TypeScript | PatternFly | AI/ML platforms | CLI/SDK | Flutter | Figma | GitHub | User research | Production shipping
 
 ---
 
 ## Contact
-Feel free to reach out—I’d love to connect!  
-[Email Me](mailto:justinxhale@gmail.com) | [LinkedIn](https://www.linkedin.com/in/justinxhale) | [GitHub](https://github.com/justinxhale)
+
+[Email](mailto:justinxhale@gmail.com) | [LinkedIn](https://www.linkedin.com/in/justinxhale) | [GitHub](https://github.com/justinxhale)
 
 ---
 

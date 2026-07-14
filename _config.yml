@@ -1,6 +1,6 @@
 # Site basics
 title: "Justin X. Hale's Portfolio"
-description: "A UX Designer specializing in CLI and developer tools"
+description: "Senior UX / Product Designer: enterprise platform UX, AI/ML surfaces, design systems, and published products"
 remote_theme: "just-the-docs/just-the-docs"
 
 # IMPORTANT for project pages (your repo is not a user/org site)
@@ -8,8 +8,7 @@ url: "https://justinxhale.github.io"
 baseurl: ""
 
 # Look & feel (optional)
-logo: "/assets/icon-512.png"     # optional; appears in the header
-favicon_ico: "/assets/icon-512.png"
+# logo and favicon omitted until assets/icon-512.png is added
 
 # Navigation / behavior
 permalink: pretty
@@ -19,14 +18,7 @@ aux_links_new_tab: true
 back_to_top: true
 back_to_top_text: "Back to top"
 
-# Footer links (optional)
-just_the_docs:
-  footer:
-    links:
-      - text: "Privacy Policy"
-        url: "/privacy-policy/"
-      - text: "Support"
-        url: "/support/"
+# Footer links removed (stub pages not yet created)
 
 # Plugins
 plugins:
@@ -34,6 +26,7 @@ plugins:
 
 # Do not turn README into a page at /assets/resume/ (was cluttering nav)
 exclude:
+  - docs
   - assets/resume/README.md
   - vendor
 

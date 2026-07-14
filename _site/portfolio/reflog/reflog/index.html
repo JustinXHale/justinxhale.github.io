@@ -15,9 +15,10 @@
   
 
     .site-nav > ul.nav-list:first-child > li > a,
+    .site-nav > ul.nav-list:first-child > li > ul > li > a,
     
-    .site-nav > ul.nav-list:first-child > li > ul > li:not(:nth-child(1)) > a,
-    .site-nav > ul.nav-list:first-child > li > ul > li > ul > li a {
+    .site-nav > ul.nav-list:first-child > li > ul > li > ul > li:not(:nth-child(4)) > a,
+    .site-nav > ul.nav-list:first-child > li > ul > li > ul > li > ul > li a {
       background-image: none;
     }
 
@@ -26,14 +27,16 @@
       background-image: none;
     }
 
-    .site-nav > ul.nav-list:first-child > li:nth-child(3) > ul > li:nth-child(1) > a {
+    .site-nav > ul.nav-list:first-child > li:nth-child(3) > ul > li:nth-child(2) > ul > li:nth-child(4) > a {
       font-weight: 600;
       text-decoration: none;
     }.site-nav > ul.nav-list:first-child > li:nth-child(3) > button svg,
-    .site-nav > ul.nav-list:first-child > li:nth-child(3) > ul > li:nth-child(1) > button svg {
+    .site-nav > ul.nav-list:first-child > li:nth-child(3) > ul > li:nth-child(2) > button svg,
+    .site-nav > ul.nav-list:first-child > li:nth-child(3) > ul > li:nth-child(2) > ul > li:nth-child(4) > button svg {
       transform: rotate(-90deg);
     }.site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(3) > ul.nav-list,
-    .site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(3) > ul.nav-list > li.nav-list-item:nth-child(1) > ul.nav-list {
+    .site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(3) > ul.nav-list > li.nav-list-item:nth-child(2) > ul.nav-list,
+    .site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(3) > ul.nav-list > li.nav-list-item:nth-child(2) > ul.nav-list > li.nav-list-item:nth-child(4) > ul.nav-list {
       display: block;
     }
   </style>
@@ -57,8 +60,8 @@
 <meta name="generator" content="Jekyll v3.10.0" />
 <meta property="og:title" content="RefLog" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="A UX Designer specializing in CLI and developer tools" />
-<meta property="og:description" content="A UX Designer specializing in CLI and developer tools" />
+<meta name="description" content="Senior UX / Product Designer: enterprise platform UX, AI/ML surfaces, design systems, and published products" />
+<meta property="og:description" content="Senior UX / Product Designer: enterprise platform UX, AI/ML surfaces, design systems, and published products" />
 <link rel="canonical" href="http://localhost:4000/portfolio/reflog/reflog/" />
 <meta property="og:url" content="http://localhost:4000/portfolio/reflog/reflog/" />
 <meta property="og:site_name" content="Justin X. Hale’s Portfolio" />
@@ -66,7 +69,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="RefLog" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"A UX Designer specializing in CLI and developer tools","headline":"RefLog","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/icon-512.png"}},"url":"http://localhost:4000/portfolio/reflog/reflog/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"Senior UX / Product Designer: enterprise platform UX, AI/ML surfaces, design systems, and published products","headline":"RefLog","url":"http://localhost:4000/portfolio/reflog/reflog/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -146,7 +149,7 @@
     <header class="side-bar">
   <div class="site-header">
     <a href="/" class="site-title lh-tight">
-  <div class="site-logo" role="img" aria-label="Justin X. Hale's Portfolio"></div>
+  Justin X. Hale's Portfolio
 
 </a>
     <button id="menu-button" class="site-button btn-reset" aria-label="Menu" aria-expanded="false">
@@ -161,9 +164,15 @@
         <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
       </button><a href="/" class="nav-list-link">Justin X. Hale</a><ul class="nav-list"><li class="nav-list-item"><a href="/about/" class="nav-list-link">About Me</a></li><li class="nav-list-item"><a href="/about-me/honors/" class="nav-list-link">Awards/Honors</a></li><li class="nav-list-item"><a href="/get-in-touch/" class="nav-list-link">Get In Touch</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="Resumes submenu" aria-expanded="false">
         <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
-      </button><a href="/resume/" class="nav-list-link">Resumes</a><ul class="nav-list"><li class="nav-list-item"><a href="/resume/standard/" class="nav-list-link">Resume</a></li><li class="nav-list-item"><a href="/resume/full-cv/" class="nav-list-link">Full CV</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="Portfolio submenu" aria-expanded="false">
+      </button><a href="/resume/" class="nav-list-link">Resumes</a><ul class="nav-list"><li class="nav-list-item"><a href="/resume/standard/" class="nav-list-link">Resume</a></li><li class="nav-list-item"><a href="/resume/full-cv/" class="nav-list-link">Case Study Index</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="Portfolio submenu" aria-expanded="false">
         <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
-      </button><a href="/portfolio/" class="nav-list-link">Portfolio</a><ul class="nav-list"><li class="nav-list-item"><a href="/portfolio/reflog/reflog/" class="nav-list-link">RefLog</a></li><li class="nav-list-item"><a href="/portfolio/refereeiq/refereeiq/" class="nav-list-link">RefereeIQ-Sofía Chatbot</a></li><li class="nav-list-item"><a href="/portfolio/vllm-cli-ux/vllm-cli-ux/" class="nav-list-link">vLLM CLI UX Enhancement</a></li><li class="nav-list-item"><a href="/portfolio/interface-driven-ux-red-hat/interface-driven-ux-red-hat/" class="nav-list-link">SaaS Design (at Red Hat)</a></li><li class="nav-list-item"><a href="/portfolio/ui-packages-redhat/ui-packages-redhat/" class="nav-list-link">Red Hat Packages Catalog Redesign</a></li><li class="nav-list-item"><a href="/portfolio/bulk-prompting-script/bulk-prompting-script/" class="nav-list-link">Bulk Prompting Script</a></li><li class="nav-list-item"><a href="/portfolio/rapid-design-thinking/rapid-design-thinking/" class="nav-list-link">Rapid Design Thinking</a></li><li class="nav-list-item"><a href="/portfolio/just-an-email/just-an-email/" class="nav-list-link">It’s Just an Email</a></li></ul></li><li class="nav-list-item"><a href="/blog/" class="nav-list-link">Life & Work (Blog)</a></li></ul>
+      </button><a href="/portfolio/" class="nav-list-link">Portfolio</a><ul class="nav-list"><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="Red Hat & Enterprise submenu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+      </button><a href="/portfolio/red-hat-enterprise/" class="nav-list-link">Red Hat & Enterprise</a><ul class="nav-list"><li class="nav-list-item"><a href="/portfolio/design-comments/design-comments/" class="nav-list-link">design-comments</a></li><li class="nav-list-item"><a href="/portfolio/ui-packages-redhat/ui-packages-redhat/" class="nav-list-link">Red Hat Packages Catalog Redesign</a></li><li class="nav-list-item"><a href="/portfolio/vllm-cli-ux/vllm-cli-ux/" class="nav-list-link">vLLM CLI UX Enhancement</a></li><li class="nav-list-item"><a href="/portfolio/instructlab/instructlab/" class="nav-list-link">InstructLab Interactive Mode</a></li><li class="nav-list-item"><a href="/portfolio/bulk-prompting-script/bulk-prompting-script/" class="nav-list-link">Bulk Prompting Script</a></li><li class="nav-list-item"><a href="/portfolio/interface-driven-ux-red-hat/interface-driven-ux-red-hat/" class="nav-list-link">SaaS Design (at Red Hat)</a></li><li class="nav-list-item"><a href="/portfolio/prototyping-hub/prototyping-hub/" class="nav-list-link">UXD Prototyping Hub</a></li><li class="nav-list-item"><a href="/portfolio/openshift-ai-deploy-wizard/openshift-ai-deploy-wizard/" class="nav-list-link">OpenShift AI Deploy Wizard</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="Personal Projects submenu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+      </button><a href="/portfolio/personal-projects/" class="nav-list-link">Personal Projects</a><ul class="nav-list"><li class="nav-list-item"><a href="/portfolio/product-suite/product-suite/" class="nav-list-link">Published Product Suite</a></li><li class="nav-list-item"><a href="/portfolio/to3/to3/" class="nav-list-link">Tō3</a></li><li class="nav-list-item"><a href="/portfolio/reflected/reflected/" class="nav-list-link">ReflectED</a></li><li class="nav-list-item"><a href="/portfolio/reflog/reflog/" class="nav-list-link">RefLog</a></li><li class="nav-list-item"><a href="/portfolio/refereeiq/refereeiq/" class="nav-list-link">RefereeIQ-Sofía Chatbot</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="Earlier Career submenu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+      </button><a href="/portfolio/earlier-career/" class="nav-list-link">Earlier Career</a><ul class="nav-list"><li class="nav-list-item"><a href="/portfolio/just-an-email/just-an-email/" class="nav-list-link">It’s Just an Email</a></li><li class="nav-list-item"><a href="/portfolio/rapid-design-thinking/rapid-design-thinking/" class="nav-list-link">Rapid Design Thinking</a></li></ul></li></ul></li><li class="nav-list-item"><a href="/blog/" class="nav-list-link">Life & Work (Blog)</a></li></ul>
   
 </nav>
 
@@ -202,6 +211,7 @@
       <nav aria-label="Breadcrumb" class="breadcrumb-nav">
   <ol class="breadcrumb-nav-list">
     <li class="breadcrumb-nav-list-item"><a href="/portfolio/">Portfolio</a></li>
+    <li class="breadcrumb-nav-list-item"><a href="/portfolio/personal-projects/">Personal Projects</a></li>
     <li class="breadcrumb-nav-list-item"><span>RefLog</span></li>
   </ol>
 </nav>
@@ -210,10 +220,10 @@
       <div id="main-content" class="main-content">
         <main>
           
-            <h1 id="reflog--designing-for-speed-focus-and-flow">
+            <h1 id="reflog-designing-for-speed-focus-and-flow">
   
   
-    <a href="#reflog--designing-for-speed-focus-and-flow" class="anchor-heading" aria-labelledby="reflog--designing-for-speed-focus-and-flow"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> RefLog — Designing for Speed, Focus, and Flow
+    <a href="#reflog-designing-for-speed-focus-and-flow" class="anchor-heading" aria-labelledby="reflog-designing-for-speed-focus-and-flow"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> RefLog: Designing for Speed, Focus, and Flow
   
   
 </h1>
@@ -224,7 +234,8 @@
   <strong>Role:</strong> Solo Product Designer &amp; Developer<br />
   <strong>Timeline:</strong> 4 weeks (idea to App Store launch)<br />
   <strong>Platform:</strong> Flutter (iOS &amp; Android), Firebase, Offline-first<br />
-  <strong>Impact:</strong> Reduced match review time from 5+ hours to 90 minutes. Shipped to iOS App Store and Google Play Store.
+  <strong>Impact:</strong> Reduced match review time from 5+ hours to 90 minutes. Shipped to iOS App Store and Google Play Store.<br />
+  <strong>Workflow UX:</strong> High-stakes field operations under time pressure, patterns applicable to clinical, logistics, and inspection workflows
 </div>
 <h2 id="the-problem">
   
@@ -246,10 +257,10 @@
   <li><strong>Total time: 5+ hours</strong> (including setup, upload, and coding)</li>
 </ul>
 
-<p><strong>The pain point:</strong> Existing tools assumed reflection happens later—at a desk, with full footage uploaded. But referees need to review quickly, often on mobile, and frequently without reliable internet.</p>
+<p><strong>The pain point:</strong> Existing tools assumed reflection happens later, at a desk, with full footage uploaded. But referees need to review quickly, often on mobile, and frequently without reliable internet.</p>
 
 <blockquote>
-  <p><em>What if I could code a match in 90 minutes instead of 5 hours—on the device already in my hand?</em></p>
+  <p><em>What if I could code a match in 90 minutes instead of 5 hours, on the device already in my hand?</em></p>
 </blockquote><hr />
 <h2 id="the-solution">
   
@@ -260,14 +271,14 @@
 </h2>
     
 
-<p>RefLog is a lightweight, mobile-first app that works alongside your existing streaming or playback device. No downloads, no uploads, no setup—everything happens on the device already in your hand.</p>
+<p>RefLog is a lightweight, mobile-first app that works alongside your existing streaming or playback device. No downloads, no uploads, no setup, everything happens on the device already in your hand.</p>
 
 <figure style="float: right; margin-left: 20px; max-width: 300px;">
   <img src="/portfolio/reflog/assets/reflog-original-match-screen.png" style="width: 100%;" alt="RefLog match screen" />
   <figcaption>Early iteration showing the progressive selector in action</figcaption>
 </figure>
 
-<p><strong>Core insight:</strong> Match the way referees actually think during a game—<strong>phase → team → infraction → sanction</strong>. This mental model became the foundation of the interaction design.</p>
+<p><strong>Core insight:</strong> Match the way referees actually think during a game, <strong>phase → team → infraction → sanction</strong>. This mental model became the foundation of the interaction design.</p>
 
 <p><strong>Key features:</strong></p>
 <ul>
@@ -336,7 +347,7 @@
 
 <p><strong>The winner:</strong> Progressive selector. It required fewer taps, less cognitive load, and mirrored the natural decision flow during a game.</p>
 
-<p><strong>Design validation method:</strong> I measured friction in seconds—how long it took to record an event. Every design change was judged against that metric. If it didn’t make logging faster or more accurate, it was cut.</p>
+<p><strong>Design validation method:</strong> I measured friction in seconds, how long it took to record an event. Every design change was judged against that metric. If it didn’t make logging faster or more accurate, it was cut.</p>
 <h3 id="2-reducing-micro-frictions">
   
   
@@ -357,13 +368,13 @@
 
 <p>Users could quickly adjust timestamps without scrubbing through video. Inspired by common video playback habits (skip forward/back 10 seconds).</p>
 
-<p><strong>UX impact:</strong> Removed the need to pause, scrub, and find the exact moment—just tap to adjust.</p>
+<p><strong>UX impact:</strong> Removed the need to pause, scrub, and find the exact moment, just tap to adjust.</p>
 
 <p><strong>Auto-timestamp assist</strong></p>
 
 <p>When logging a new event, the app automatically steps back a few seconds to anticipate the start of the clipping moment.</p>
 
-<p><strong>UX impact:</strong> Users don’t have to manually rewind before logging—the app does it proactively.</p>
+<p><strong>UX impact:</strong> Users don’t have to manually rewind before logging, the app does it proactively.</p>
 
 <p><strong>Design principle:</strong> Does this remove a decision, or add one? Is this faster? Is this accurate?</p>
 <h3 id="3-designing-within-constraints">
@@ -379,7 +390,7 @@
 
 <p><strong>Offline-first architecture</strong></p>
 
-<p>Referees work in stadiums, buses, and hotels—often without reliable internet. RefLog had to function fully offline.</p>
+<p>Referees work in stadiums, buses, and hotels, often without reliable internet. RefLog had to function fully offline.</p>
 
 <p><strong>Technical decision:</strong> Local storage with Firestore for sync (when available).</p>
 
@@ -393,7 +404,7 @@
 
 <p><strong>Dark mode as default</strong></p>
 
-<p>Many referees review in low-light conditions (locker rooms, buses, hotels). Dark mode wasn’t a theme—it was a necessity.</p>
+<p>Many referees review in low-light conditions (locker rooms, buses, hotels). Dark mode wasn’t a theme, it was a necessity.</p>
 
 <p><strong>Design validation:</strong> First user testing revealed users couldn’t see the interface on their phones’ default dark mode setting. I prioritized dark mode immediately.</p>
 
@@ -406,7 +417,7 @@
 
 <p>Feature flags and configuration stored in Firestore allowed me to enable/disable features remotely without App Store resubmissions.</p>
 
-<p><strong>UX impact:</strong> Rapid iteration based on user feedback—I could test features with small groups before wider rollout.</p>
+<p><strong>UX impact:</strong> Rapid iteration based on user feedback, I could test features with small groups before wider rollout.</p>
 <h3 id="4-testing-feedback-and-adaptation">
   
   
@@ -440,9 +451,9 @@
   <li>Thinking through Firestore data structure decisions</li>
 </ul>
 
-<p><strong>Impact on process:</strong> LLMs didn’t replace my design process—they amplified it. I could hold more of the problem in my head and iterate on interaction flow and performance together. It blurred the line between design and development in a productive way.</p>
+<p><strong>Impact on process:</strong> LLMs didn’t replace my design process, they amplified it. I could hold more of the problem in my head and iterate on interaction flow and performance together. It blurred the line between design and development in a productive way.</p>
 
-<p><strong>Speed benefit:</strong> Rapid cycles of prompting, refining, and testing enabled me to ship in 4 weeks—a timeline that wouldn’t have been possible without AI-assisted development.</p><hr />
+<p><strong>Speed benefit:</strong> Rapid cycles of prompting, refining, and testing enabled me to ship in 4 weeks, a timeline that wouldn’t have been possible without AI-assisted development.</p><hr />
 <h2 id="technical-architecture">
   
   
@@ -466,7 +477,7 @@
 
 <p><strong>No authentication:</strong> Reduced onboarding friction; added complexity deferred to v2 when clear user need emerges.</p>
 
-<p><strong>Feature flags via Firestore:</strong> Enabled remote feature toggling without App Store resubmission—critical for rapid iteration.</p>
+<p><strong>Feature flags via Firestore:</strong> Enabled remote feature toggling without App Store resubmission, critical for rapid iteration.</p>
 
 <p><strong>Progressive disclosure UI:</strong> Phase → team → infraction → sanction flow implemented as sequential selectors to minimize cognitive load.</p><hr />
 <h2 id="key-learnings">
@@ -480,7 +491,7 @@
 
 <p><strong>1. Speed and usability are not opposites</strong></p>
 
-<p>Designing for rapid input requires empathy for how people think under pressure—whether that’s a referee making a split-second call or a data scientist iterating through model runs.</p>
+<p>Designing for rapid input requires empathy for how people think under pressure, whether that’s a referee making a split-second call or a data scientist iterating through model runs.</p>
 
 <p><strong>2. Measure friction in time, not clicks</strong></p>
 
@@ -488,11 +499,11 @@
 
 <p><strong>3. Constraints force clarity</strong></p>
 
-<p>The 4-week deadline meant I couldn’t over-engineer. I built what the next match told me to build—each day, I’d use RefLog live, note what broke my focus, and fix that first.</p>
+<p>The 4-week deadline meant I couldn’t over-engineer. I built what the next match told me to build, each day, I’d use RefLog live, note what broke my focus, and fix that first.</p>
 
 <p><strong>4. Secondary use cases validate core design</strong></p>
 
-<p>When coaches started using RefLog for performance reviews (not match coding), it confirmed that the core UX—speed and clarity—was solving a broader problem.</p>
+<p>When coaches started using RefLog for performance reviews (not match coding), it confirmed that the core UX, speed and clarity, was solving a broader problem.</p>
 
 <p><strong>5. AI as a design accelerator</strong></p>
 
@@ -500,7 +511,7 @@
 
 <p><strong>6. Live configuration is a superpower</strong></p>
 
-<p>Firestore-backed feature flags meant I could iterate on features without App Store delays—essential for solo product development.</p><hr />
+<p>Firestore-backed feature flags meant I could iterate on features without App Store delays, essential for solo product development.</p><hr />
 <h2 id="relevant-for-ux-engineering--ai-product-roles">
   
   
@@ -512,10 +523,10 @@
 
 <ul>
   <li><strong>Full-stack execution:</strong> Owned design, development, and deployment end-to-end (Flutter, Firebase, App Store submission)</li>
-  <li><strong>Speed-focused UX:</strong> Optimized for high-pressure, time-sensitive workflows—applicable to data tools, analysis platforms, and operational dashboards</li>
+  <li><strong>Speed-focused UX:</strong> Optimized for high-pressure, time-sensitive workflows, applicable to data tools, analysis platforms, and operational dashboards</li>
   <li><strong>Offline-first design:</strong> Critical for mobile/field tools and environments with unreliable connectivity</li>
   <li><strong>AI-assisted development:</strong> Demonstrated ability to leverage LLMs for rapid prototyping and iteration</li>
-  <li><strong>Live configuration patterns:</strong> Firestore-backed flags enabled A/B testing and rapid iteration without redeploys—key for AI product experimentation</li>
+  <li><strong>Live configuration patterns:</strong> Firestore-backed flags enabled A/B testing and rapid iteration without redeploys, key for AI product experimentation</li>
 </ul><hr />
 <h2 id="whats-next">
   
@@ -532,7 +543,7 @@
   <li>Exploring <strong>syncing and analytics</strong> once clear user value is defined (avoiding premature complexity)</li>
 </ul><hr />
 
-<p>RefLog reminded me that good design isn’t about adding—it’s about removing everything that gets in the way of flow.</p>
+<p>RefLog reminded me that good design isn’t about adding, it’s about removing everything that gets in the way of flow.</p>
 
 <p><strong>Deliverables:</strong></p>
 <ul>

@@ -1,8 +1,9 @@
 ---
 layout: default
 title: It’s Just an Email
-parent: Portfolio
-nav_order: 5
+parent: Earlier Career
+grand_parent: Portfolio
+nav_order: 1
 ---
 <!-- This section will include my Table of Contents. In the terminal run [npx markdown-toc -i README.md] to update must be in correct directory. -->
 

@@ -1,7 +1,7 @@
 {"0": {
     "doc": "About Me",
     "title": "About Me",
-    "content": "Hi, I’m Justin X. Hale, a UX designer at Red Hat passionate about crafting thoughtful, user-centered experiences. My journey into UX has been anything but traditional. It started with a love for problem-solving and a curiosity for how design can make life easier—whether that’s creating seamless workflows for developers or simplifying complex systems. I currently work at Red Hat, where I focus on improving developer tools, particularly in the Command Line Interface (CLI) space. I love digging into how people interact with technology and finding ways to make those interactions smoother and more intuitive. For me, it’s about understanding the user’s perspective and turning that into designs that truly empower them. When I’m not immersed in the world of UX, you can often find me on the rugby pitch as a referee. Rugby is one of my greatest passions, and being a referee gives me a unique perspective on leadership, quick decision-making, and respect for teamwork—all of which tie back to how I approach design. Outside of work and rugby, I’m a husband and a dad to a wonderful daughter. Family is at the heart of everything I do, and they inspire me to keep pushing boundaries in both my personal and professional life. If I had to sum myself up: I’m a curious problem-solver, a team player, and someone who thrives on collaboration and growth. Whether it’s working on a new UX challenge or officiating a high-stakes rugby match, I’m all about bringing my best to the table. Justin’s Family . ",
+    "content": "Hi, I’m Justin X. Hale, a Senior UX / Product Designer at Red Hat. I work on enterprise platform and developer-portal experiences and ship production UI when that is the fastest path to clarity. As design moved from Figma to coded prototypes, I started building tools the org did not have yet. I originated design-comments (PatternFly maintains it now) for structured feedback on running UI. Outside Red Hat I publish a suite of real products with field-tested users. When I’m not designing, I’m often on the rugby pitch as a referee. Rugby taught me to make clear calls under pressure and to respect the team around me. Both show up in how I design complex workflows. I’m a husband and dad. Family keeps me grounded. If I had to sum it up: curious problem-solver, systems thinker, and collaborator who cares about what ships, not just what gets mocked up. ",
     "url": "/about/",
     
     "relUrl": "/about/"
@@ -22,7 +22,7 @@
   },"3": {
     "doc": "Life & Work (Blog)",
     "title": "Life & Work (Blog)",
-    "content": "Welcome to Life &amp; Work, where I share stories from my journey as a UX designer, rugby referee, and lifelong learner. From professional insights to personal reflections, this blog explores the lessons, ideas, and moments that inspire growth. I hope you find something here that resonates or sparks new ideas—thanks for visiting! . ",
+    "content": "Welcome to Life &amp; Work, where I share stories from my journey as a UX designer, rugby referee, and lifelong learner. From professional insights to personal reflections, this blog explores the lessons, ideas, and moments that inspire growth. I hope you find something here that resonates or sparks new ideas, thanks for visiting! . ",
     "url": "/blog/",
     
     "relUrl": "/blog/"
@@ -36,14 +36,14 @@
   },"5": {
     "doc": "Bulk Prompting Script",
     "title": "The Problem",
-    "content": "Red Hat OpenShift Service on AWS (ROSA) enables customers to deploy fully-managed OpenShift clusters on AWS infrastructure. However, creating a ROSA Classic Cluster via CLI required users to navigate 30+ sequential prompts—even when using default and recommended settings. Traditional CLI flow: sequential prompts create friction and cognitive overhead . The pain points: . | Cognitive overhead: Users must hold configuration state in their heads across 30+ sequential questions | No visibility: Can’t see all required inputs upfront or understand the full scope | Error-prone: Making a mistake deep in the flow requires restarting from scratch | Time-consuming: Even experienced users spend significant time stepping through prompts | No review step: No way to verify configuration before execution | . User impact: DevOps engineers, SREs, and platform engineers creating clusters repeatedly found the sequential prompt flow inefficient and frustrating. ",
+    "content": "Red Hat OpenShift Service on AWS (ROSA) enables customers to deploy fully-managed OpenShift clusters on AWS infrastructure. However, creating a ROSA Classic Cluster via CLI required users to navigate 30+ sequential prompts, even when using default and recommended settings. Traditional CLI flow: sequential prompts create friction and cognitive overhead . The pain points: . | Cognitive overhead: Users must hold configuration state in their heads across 30+ sequential questions | No visibility: Can’t see all required inputs upfront or understand the full scope | Error-prone: Making a mistake deep in the flow requires restarting from scratch | Time-consuming: Even experienced users spend significant time stepping through prompts | No review step: No way to verify configuration before execution | . User impact: DevOps engineers, SREs, and platform engineers creating clusters repeatedly found the sequential prompt flow inefficient and frustrating. ",
     "url": "/portfolio/bulk-prompting-script/bulk-prompting-script/#the-problem",
     
     "relUrl": "/portfolio/bulk-prompting-script/bulk-prompting-script/#the-problem"
   },"6": {
     "doc": "Bulk Prompting Script",
     "title": "The Solution",
-    "content": "I designed and prototyped a bulk prompting interface for the ROSA CLI that allows users to see and configure all required inputs at once, rather than sequentially. Core insight: Let users work like they think—viewing the full configuration space, jumping between fields, and reviewing before execution. Key features: . | Single interactive interface: All configuration options visible at once | Non-linear navigation: Users can move backward/forward freely to adjust any input | Dynamic configuration: Loop-based selection for related settings | Summary review: Complete configuration preview before execution | Visual feedback: Color-coded states and symbols for better clarity | Smart defaults: Pre-configured recommended settings to reduce decision fatigue | . Result: Reduced configuration steps from 30+ sequential prompts → 12-15 bulk inputs with full visibility and control. ",
+    "content": "I designed and prototyped a bulk prompting interface for the ROSA CLI that allows users to see and configure all required inputs at once, rather than sequentially. Core insight: Let users work like they think, viewing the full configuration space, jumping between fields, and reviewing before execution. Key features: . | Single interactive interface: All configuration options visible at once | Non-linear navigation: Users can move backward/forward freely to adjust any input | Dynamic configuration: Loop-based selection for related settings | Summary review: Complete configuration preview before execution | Visual feedback: Color-coded states and symbols for better clarity | Smart defaults: Pre-configured recommended settings to reduce decision fatigue | . Result: Reduced configuration steps from 30+ sequential prompts → 12-15 bulk inputs with full visibility and control. ",
     "url": "/portfolio/bulk-prompting-script/bulk-prompting-script/#the-solution",
     
     "relUrl": "/portfolio/bulk-prompting-script/bulk-prompting-script/#the-solution"
@@ -57,7 +57,7 @@
   },"8": {
     "doc": "Bulk Prompting Script",
     "title": "Design Process",
-    "content": "1. Research &amp; Discovery . Learning the domain: . | Interviewed engineers and developers using ROSA CLI regularly | Read ROSA documentation to understand cluster creation requirements | Observed users stepping through the 30+ prompt flow to identify friction points | . Key insight from users: “I wish I could see everything upfront and just fill in what I need to change from defaults.” . 2. Exploring the Solution Space . Constraints: . | Must work within CLI environment (no GUI) | Must support both novice and experienced users | Must integrate with existing ROSA CLI codebase | Must maintain backward compatibility | . Design approach: Interactive TUI (Text User Interface) that mimics form-based input patterns familiar from web UIs, adapted for terminal environments. 3. Prototyping &amp; Iteration . Process: Rapid prototyping using AI-assisted development (ChatGPT collaboration for CLI scripting)—before “vibe coding” was a term. Iteration focus: . | Visual hierarchy in terminal constraints | Navigation patterns (arrow keys, tabs, shortcuts) | Error states and validation feedback | Summary/review screen design | Color scheme for accessibility in different terminal themes | . Testing approach: Tested prototypes with engineers and developers, gathered feedback on usability and mental model alignment, iterated on navigation and visual feedback. 4. Key Design Decisions . Bulk input vs. sequential prompts . Instead of asking questions one at a time, present all configuration options in a single scrollable interface. UX impact: Users can scan the full scope, prioritize what to configure, and jump between fields—matching how they mentally plan cluster configurations. Dynamic summary review . Before execution, show a complete summary of all selected/configured options with the ability to go back and modify. UX impact: Catches errors before execution, builds user confidence, reduces failed cluster creations. Visual feedback via color and symbols . Use terminal colors and symbols (✓, ✗, ⚠) to indicate status, validation, and required vs. optional fields. UX impact: Improves scannability in text-only environment; reduces cognitive load by encoding information visually. ",
+    "content": "1. Research &amp; Discovery . Learning the domain: . | Interviewed engineers and developers using ROSA CLI regularly | Read ROSA documentation to understand cluster creation requirements | Observed users stepping through the 30+ prompt flow to identify friction points | . Key insight from users: “I wish I could see everything upfront and just fill in what I need to change from defaults.” . 2. Exploring the Solution Space . Constraints: . | Must work within CLI environment (no GUI) | Must support both novice and experienced users | Must integrate with existing ROSA CLI codebase | Must maintain backward compatibility | . Design approach: Interactive TUI (Text User Interface) that mimics form-based input patterns familiar from web UIs, adapted for terminal environments. 3. Prototyping &amp; Iteration . Process: Rapid prototyping using AI-assisted development (ChatGPT collaboration for CLI scripting), before “vibe coding” was a term. Iteration focus: . | Visual hierarchy in terminal constraints | Navigation patterns (arrow keys, tabs, shortcuts) | Error states and validation feedback | Summary/review screen design | Color scheme for accessibility in different terminal themes | . Testing approach: Tested prototypes with engineers and developers, gathered feedback on usability and mental model alignment, iterated on navigation and visual feedback. 4. Key Design Decisions . Bulk input vs. sequential prompts . Instead of asking questions one at a time, present all configuration options in a single scrollable interface. UX impact: Users can scan the full scope, prioritize what to configure, and jump between fields, matching how they mentally plan cluster configurations. Dynamic summary review . Before execution, show a complete summary of all selected/configured options with the ability to go back and modify. UX impact: Catches errors before execution, builds user confidence, reduces failed cluster creations. Visual feedback via color and symbols . Use terminal colors and symbols (✓, ✗, ⚠) to indicate status, validation, and required vs. optional fields. UX impact: Improves scannability in text-only environment; reduces cognitive load by encoding information visually. ",
     "url": "/portfolio/bulk-prompting-script/bulk-prompting-script/#design-process",
     
     "relUrl": "/portfolio/bulk-prompting-script/bulk-prompting-script/#design-process"
@@ -71,14 +71,14 @@
   },"10": {
     "doc": "Bulk Prompting Script",
     "title": "Key Learnings",
-    "content": "1. CLI UX is still UX . Terminal interfaces suffer from the same usability problems as GUIs. Applying form design principles (visibility, feedback, error prevention) improved CLI experience dramatically. 2. AI-assisted prototyping enables rapid UX exploration . Using ChatGPT for CLI scripting allowed me to test interaction patterns quickly without deep CLI framework expertise. The speed of iteration improved design quality. 3. Visibility reduces cognitive load . Showing all options upfront gave users confidence and control. The mental model shift from “answer questions” to “fill out a form” reduced errors and increased efficiency. 4. Review steps build trust . The summary screen became the most valued feature in testing—users appreciated seeing their full configuration before execution. 5. Stakeholder demos matter . Showing working prototypes (even POCs) to stakeholders builds momentum. The interactive demo was more convincing than slides explaining the concept. ",
+    "content": "1. CLI UX is still UX . Terminal interfaces suffer from the same usability problems as GUIs. Applying form design principles (visibility, feedback, error prevention) improved CLI experience dramatically. 2. AI-assisted prototyping enables rapid UX exploration . Using ChatGPT for CLI scripting allowed me to test interaction patterns quickly without deep CLI framework expertise. The speed of iteration improved design quality. 3. Visibility reduces cognitive load . Showing all options upfront gave users confidence and control. The mental model shift from “answer questions” to “fill out a form” reduced errors and increased efficiency. 4. Review steps build trust . The summary screen became the most valued feature in testing, users appreciated seeing their full configuration before execution. 5. Stakeholder demos matter . Showing working prototypes (even POCs) to stakeholders builds momentum. The interactive demo was more convincing than slides explaining the concept. ",
     "url": "/portfolio/bulk-prompting-script/bulk-prompting-script/#key-learnings",
     
     "relUrl": "/portfolio/bulk-prompting-script/bulk-prompting-script/#key-learnings"
   },"11": {
     "doc": "Bulk Prompting Script",
     "title": "Relevant for UX Engineering / AI Product Roles",
-    "content": ". | CLI/terminal UX: Demonstrated ability to design for constrained, text-based interfaces—relevant for developer tools, infrastructure platforms, and data science workflows | AI-assisted development: Used LLMs for rapid prototyping before it was mainstream—shows comfort with modern development workflows | Cross-functional collaboration: Worked directly with engineers and developers to understand needs and validate designs | Enterprise platform design: Designed for technical users (DevOps, SREs) managing complex infrastructure | Prototyping to production: Delivered POC that influenced engineering roadmap and prioritization | . ",
+    "content": ". | CLI/terminal UX: Demonstrated ability to design for constrained, text-based interfaces, relevant for developer tools, infrastructure platforms, and data science workflows | AI-assisted development: Used LLMs for rapid prototyping before it was mainstream, shows comfort with modern development workflows | Cross-functional collaboration: Worked directly with engineers and developers to understand needs and validate designs | Enterprise platform design: Designed for technical users (DevOps, SREs) managing complex infrastructure | Prototyping to production: Delivered POC that influenced engineering roadmap and prioritization | . ",
     "url": "/portfolio/bulk-prompting-script/bulk-prompting-script/#relevant-for-ux-engineering--ai-product-roles",
     
     "relUrl": "/portfolio/bulk-prompting-script/bulk-prompting-script/#relevant-for-ux-engineering--ai-product-roles"
@@ -167,657 +167,1084 @@
     
     "relUrl": "/how-to/create_gh_portfolio/"
   },"24": {
-    "doc": "Full CV",
-    "title": "Justin X. Hale",
-    "content": "Senior UX / Product Designer (979) 703-0804 | JustinXHale@gmail.com linkedin.com/in/justinxhale | justinxhale.github.io . Full CV - extended narrative and project depth. For a concise version for applications, see the resume. Jump to: Summary Tech Experience Projects Education ",
-    "url": "/resume/full-cv/#justin-x-hale",
+    "doc": "design-comments",
+    "title": "design-comments: In-Context Feedback for Coded Prototypes",
+    "content": "Project Overview Role: Originator &amp; architect (Red Hat UXD) Product: design-comments npm package Maintenance: PatternFly team now maintains the package; I originated the architecture and shipped the first integrated version Impact: Reusable commenting overlay adopted across UXD prototypes; integrated into OpenShift AI prototype (RHOAI 3.4) ",
+    "url": "/portfolio/design-comments/design-comments/#design-comments-in-context-feedback-for-coded-prototypes",
     
-    "relUrl": "/resume/full-cv/#justin-x-hale"
+    "relUrl": "/portfolio/design-comments/design-comments/#design-comments-in-context-feedback-for-coded-prototypes"
   },"25": {
-    "doc": "Full CV",
-    "title": "Professional summary",
-    "content": "My primary work is enterprise SaaS and developer-facing platforms: multi-tenant systems, high-stakes operational workflows, and surfaces where platform engineers, security, and data teams live (multi-cluster contexts, developer portals, CLI and SDK paths, AI/ML operational UIs). I ship in production when that is the fastest way to align with engineering. I also care about trustworthy AI-assisted UX (grounding, citations, recoverability, clarity over novelty). Outside Red Hat I own independent mobile and AI-forward products end to end (rugby officiating apps), including field testing and measurable outcomes. Patterns from those operational, connectivity-constrained contexts carry over to logistics-style journeys when that is the role I am discussing. This document expands on the resume with case-level detail, independent projects, and earlier roles so recruiters and hiring managers can go deep on scope and impact. ",
-    "url": "/resume/full-cv/#professional-summary",
+    "doc": "design-comments",
+    "title": "The problem",
+    "content": "As design moved from Figma to AI-assisted coded prototypes, UXD lost what Figma had made routine: in-context commenting, async critique, and traceable feedback tied to specific UI. Engineers, PMs, and designers reviewed running apps in scattered links and Slack threads. There was no way to pin feedback to components or sync discussion state. ",
+    "url": "/portfolio/design-comments/design-comments/#the-problem",
     
-    "relUrl": "/resume/full-cv/#professional-summary"
+    "relUrl": "/portfolio/design-comments/design-comments/#the-problem"
   },"26": {
-    "doc": "Full CV",
-    "title": "Technologies &amp; platforms",
-    "content": "Enterprise SaaS • Multi-tenant systems • RBAC • Authentication • OAuth • API design • Developer portals • CLI tooling • SDK onboarding • AI/ML platforms • RAG workflows • Distributed systems • Multi-cluster environments • Cloud infrastructure • DevOps workflows • OpenShift • Kubernetes • Container registries • React • TypeScript • PatternFly • Flutter • OpenAI API • Google Cloud Functions • Firestore • Jupyter Notebooks • GitHub • VS Code • Figma • Miro • Jira . ",
-    "url": "/resume/full-cv/#tech-platforms",
+    "doc": "design-comments",
+    "title": "The insight",
+    "content": "Stakeholders do not need another static file. They need feedback on running UI with enough structure that designers can act on it without losing context. ",
+    "url": "/portfolio/design-comments/design-comments/#the-insight",
     
-    "relUrl": "/resume/full-cv/#tech-platforms"
+    "relUrl": "/portfolio/design-comments/design-comments/#the-insight"
   },"27": {
-    "doc": "Full CV",
-    "title": "Professional experience",
-    "content": "Red Hat - Senior Product/UX Designer . September 2021 - Present . AI/ML operational surfaces + enterprise SaaS . | Own UX for enterprise SaaS and platform experiences spanning multi-cluster contexts, developer portals, AI/ML operational surfaces, and CLI tooling used by platform engineers and data teams, often designing side-by-side with engineering for scalable UIs where front-end constraints matter. | . Recent shipping work: Red Hat Packages catalog (production code) . | Unified Trusted Libraries and AI Components into one discoverable, faceted catalog; designed and shipped reusable catalog, filters, and card patterns in React/TypeScript on PatternFly 6 with accessibility and dark mode in one week from UX audit to production deployment; IA driven by user tasks to support trust and provenance signals (SLSA, license, Python compatibility). Case study | Transformed information architecture from two separate ecosystems into one unified catalog with seven or more metadata dimensions for advanced filtering (SLSA provenance, Python version, license, release stage, hardware variant). | . Open source UX contribution: vLLM CLI . | Drove vLLM CLI help redesign (progressive disclosure, keyword and group-based navigation for 200+ config options); built consensus through RFC process with open source maintainers; merged upstream serving thousands of developers deploying LLMs in production (example of iterating with technical communities toward adoption). Case study | . CLI workflows and platform UX . | Embedded in CLI workflows to reduce architectural friction, for example bulk prompting and ROSA-style flows: fewer sequential steps, clearer review and recovery (Bulk prompting). | Influenced command structure, naming, and interaction sequencing so mental models match backend state and constraints. | Partnered with engineering to reduce unnecessary branching, clarify error propagation, and lower cognitive load on multi-step configuration in cluster-style environments. | CLI UX guidance: Contributed to PatternFly-aligned CLI standards and broader CLI guidelines for enterprise products. | Aligned roadmap conversations on AI/ML and platform initiatives with deployment models, RBAC, auth, multi-tenant governance, and environment-based configuration lifecycles. | . AI enablement and design operations . | Built UXD Yearbook: AI enablement training program that onboards entire Red Hat UX team (100+ designers) to AI-assisted prototyping with Cursor, PatternFly MCP, and GitLab workflows, moving the team from “Foundational to Proficient” through guided, hands-on exercises. | Created automated design documentation system (Cursor rules + skills) that captures design decisions, auto-creates feature folders, and integrates design history into context panels, reducing manual documentation overhead and preserving design rationale for AI-assisted iteration. | Own merge request management for UX team repo; maintain team processes and AI-enabled workflows at scale. | . ",
-    "url": "/resume/full-cv/#professional-experience",
+    "doc": "design-comments",
+    "title": "What I designed",
+    "content": "design-comments is a floating comment overlay for React apps. I architected it end to end: . | In-context pins: Option+click placement, hover preview, pins anchor to elements and follow scroll/resize | Component detection: React component names, types, props, and tree paths captured with each thread | GitHub Issues as backend: Threads sync to GitHub Issues with component metadata; lifecycle mirrors issue open/close | Jira linking: Optional ticket links per page or section | AI summarize: Collapsible summaries for all threads, current page, or a single thread (cached to avoid repeat API calls) | Designer-friendly setup: npx design-comments init for PatternFly React Seed projects; OAuth setup modal for fork deployments | . Floating comment widget with thread list and in-context pins Component metadata captured automatically with each pin ",
+    "url": "/portfolio/design-comments/design-comments/#what-i-designed",
     
-    "relUrl": "/resume/full-cv/#professional-experience"
+    "relUrl": "/portfolio/design-comments/design-comments/#what-i-designed"
   },"28": {
-    "doc": "Full CV",
-    "title": "Independent projects - Mobile + AI-native UX",
-    "content": "RefLog - Mobile match logging (rugby referees) . Context: Rugby referees needed faster, more reliable match event logging for post-game review and assessment. Existing workflows involved hours of manual video review and paper notes with frequent errors and delays. What I shipped: . | Designed and shipped Flutter app (iOS and Android): offline-first, progressive tap-based event logging, time controls aligned to real match review workflows. Multi-role workflows (Referee and Coach modes), OAuth-based sign-in (Google/GitHub), and role-based access patterns. | Impact: Roughly 70% reduction in review time versus prior workflow (hours to minutes); improved accuracy and consistency for referee assessments. | Solo design and implementation; field testing with referees during live matches informed iterative improvements in high-stakes operational context with connectivity constraints and cascading impacts (patterns applicable to field operations, inspections, supply chain checkpoints); Firestore for config and feature flags to enable rapid deployment of UX refinements. Case study | . RefereeIQ - AI-assisted law coaching . Context: Rugby referees needed mentor-like assistance navigating complex, frequently updated laws and official clarifications. Existing resources were fragmented (PDFs, videos, forums) with no trustworthy Q&amp;A system. What I shipped: . | Designed and shipped AI-native mobile app with trust-forward conversational UX: multi-turn dialogue with targeted retrieval of official World Rugby clarifications, explicit citations to source documents, and graceful uncertainty handling (for example, “I don’t have an official clarification on this” instead of hallucinated answers). Patterns directly applicable to high-stakes operational contexts where trustworthiness and traceability matter. | Flutter client; Cloud Functions, OpenAI API; configurable prompt system via Firestore for rapid iteration on conversational patterns (parallel to design ops for AI behavior). | User feedback: Referees described it as “having a mentor in your pocket.” Trust-forward patterns for high-stakes decisions apply to logistics operators, dispatchers, and supply chain roles that need AI transparency and recoverability. Case study | . Legacy Ecowear - Apparel (founder / owner) . | Founder and owner of a performance apparel brand. Led sales, account relationships, and day-to-day operations, including DTC and team or bulk orders. | Hands-on with e-commerce, catalog and checkout, brand presence, and vendor coordination. This was an owner-operator business (sales and operations leadership), not a dedicated in-house product design role. | . Red Hat - Interaction Designer (earlier roles) . InstructLab: AI/ML SDK and CLI onboarding . | Reimagined SDK and CLI onboarding for API-driven model-training workflows and developer configuration paths, focused on reducing setup friction and aligning mental models with backend training pipeline constraints (InstructLab interactive mode). | . ROSA / OpenShift services: CLI standardization . | Helped standardize CLI patterns across cloud-managed OpenShift experiences; championed accessibility and documentation in developer tooling; contributed reusable patterns and docs toward PatternFly cohesion. | . Red Hat - Associate User Experience Designer . Quay.io: Enterprise container registry . | Led Quay.io redesign: enterprise container registry and security platform across repository management, vulnerability surfaces, API-integrated workflows, and role-based flows across organizations. | Reduced design debt through structured PatternFly adoption across DevOps workflows. | . Integral Care - Digital Media Specialist . September 2019 - August 2021 . | Applied design thinking and testing to email and digital journeys; improved clarity and engagement through user-centered iteration. | Supported state-wide campaign and digital experience direction with measurable performance tracking. | . Community Advancement Network - Communications Specialist . November 2017 - September 2019 . | Digital and physical deliverables with accessibility and user-centered practices in mind. | Email and social performance tracking; campaigns that measurably increased traffic and reach. | . ",
-    "url": "/resume/full-cv/#independent-projects",
+    "doc": "design-comments",
+    "title": "How it fits together",
+    "content": "This was not a one-off screen. I identified an org-wide tooling gap (commenting on coded prototypes) and shipped a reusable product: . | Publish work: Designers host prototypes on a single URL (Prototyping Hub) | Collect feedback: Stakeholders pin comments on live UI via design-comments | Track resolution: GitHub Issues carry state from discussion to close to sync | . The PatternFly team now maintains design-comments; the package integrates with PatternFly React Seed via npm install design-comments. ",
+    "url": "/portfolio/design-comments/design-comments/#how-it-fits-together",
     
-    "relUrl": "/resume/full-cv/#independent-projects"
+    "relUrl": "/portfolio/design-comments/design-comments/#how-it-fits-together"
   },"29": {
-    "doc": "Full CV",
-    "title": "Education",
-    "content": ". | Associate of Applied Science - User Experience Design - Austin Community College | Bachelor of Science - Sports Management; minors in Business and Communication - Texas A&amp;M University | . References available on request. ",
-    "url": "/resume/full-cv/#education",
+    "doc": "design-comments",
+    "title": "OpenShift AI integration (RHOAI 3.4)",
+    "content": "I integrated the commenting system into the OpenShift AI UXD prototype as a Discussions tab in the context panel: . | Two-level panel: Feature context vs Discussions (prototype-wide threads) | GitLab issue lifecycle alignment (close/reopen/delete mirrors issue state) | Summarize with collapsible inline cards; designer OAuth onboarding for fork deployments | Sign-in from thread detail when unauthenticated | . This deployment is one consumer of the architecture, not the product itself. ",
+    "url": "/portfolio/design-comments/design-comments/#openshift-ai-integration-rhoai-34",
     
-    "relUrl": "/resume/full-cv/#education"
+    "relUrl": "/portfolio/design-comments/design-comments/#openshift-ai-integration-rhoai-34"
   },"30": {
-    "doc": "Full CV",
-    "title": "Full CV",
+    "doc": "design-comments",
+    "title": "Outcomes",
+    "content": ". | Reusable npm package published and documented on GitHub | PatternFly adoption: maintained by the PatternFly team for UXD prototype workflows | OpenShift AI prototype: integrated Discussions for stakeholder review on coded UI | Reduced friction: designers no longer rely on Figma-only critique for AI-assisted builds | . ",
+    "url": "/portfolio/design-comments/design-comments/#outcomes",
+    
+    "relUrl": "/portfolio/design-comments/design-comments/#outcomes"
+  },"31": {
+    "doc": "design-comments",
+    "title": "Related work",
+    "content": ". | Prototyping Hub: single URL where designers publish coded prototypes for review | OpenShift AI deploy wizard: another surface in the same prototype ecosystem | . ",
+    "url": "/portfolio/design-comments/design-comments/#related-work",
+    
+    "relUrl": "/portfolio/design-comments/design-comments/#related-work"
+  },"32": {
+    "doc": "design-comments",
+    "title": "design-comments",
+    "content": " ",
+    "url": "/portfolio/design-comments/design-comments/",
+    
+    "relUrl": "/portfolio/design-comments/design-comments/"
+  },"33": {
+    "doc": "Case Study Index",
+    "title": "Case study index",
+    "content": "For applications, use the resume and print it from your browser (⌘P / Ctrl+P → Save as PDF). This page links to deeper write-ups that are not on the one-page resume. ",
+    "url": "/resume/full-cv/#case-study-index",
+    
+    "relUrl": "/resume/full-cv/#case-study-index"
+  },"34": {
+    "doc": "Case Study Index",
+    "title": "Red Hat &amp; Enterprise",
+    "content": ". | design-comments - In-context feedback on coded prototypes; PatternFly-maintained | Red Hat Packages catalog - Unified catalog shipped to production | vLLM CLI UX - Help redesign merged upstream | InstructLab interactive mode - Guided CLI onboarding | Quay and Konveyor - Registry admin and vulnerability surfaces | . ",
+    "url": "/resume/full-cv/#red-hat--enterprise",
+    
+    "relUrl": "/resume/full-cv/#red-hat--enterprise"
+  },"35": {
+    "doc": "Case Study Index",
+    "title": "Personal projects",
+    "content": ". | Product suite overview | RefLog · RefereeIQ · ReflectED · Tō3 | . ",
+    "url": "/resume/full-cv/#personal-projects",
+    
+    "relUrl": "/resume/full-cv/#personal-projects"
+  },"36": {
+    "doc": "Case Study Index",
+    "title": "Case Study Index",
     "content": " ",
     "url": "/resume/full-cv/",
     
     "relUrl": "/resume/full-cv/"
-  },"31": {
-    "doc": "Get In Touch",
-    "title": "Get in Touch",
-    "content": ". | Email: JustinXHale@gmail.com | GitHub: JustinXHale | LinkedIn: linkedin.com/in/justinxhale | . ",
-    "url": "/get-in-touch/#get-in-touch",
-    
-    "relUrl": "/get-in-touch/#get-in-touch"
-  },"32": {
+  },"37": {
     "doc": "Get In Touch",
     "title": "Get In Touch",
-    "content": " ",
+    "content": "I’m open to senior product/UX roles in platform tooling, AI operational products, and workflow-heavy domains. Email: JustinXHale@gmail.com LinkedIn: linkedin.com/in/justinxhale GitHub: github.com/JustinXHale . ",
     "url": "/get-in-touch/",
     
     "relUrl": "/get-in-touch/"
-  },"33": {
+  },"38": {
+    "doc": "Get In Touch",
+    "title": "Apply-ready links",
+    "content": ". | Resume (print to PDF) · Case studies · Portfolio | Portfolio | . ",
+    "url": "/get-in-touch/#apply-ready-links",
+    
+    "relUrl": "/get-in-touch/#apply-ready-links"
+  },"39": {
+    "doc": "Get In Touch",
+    "title": "Good starting points",
+    "content": ". | design-comments | Red Hat Packages catalog | Published product suite | . ",
+    "url": "/get-in-touch/#good-starting-points",
+    
+    "relUrl": "/get-in-touch/#good-starting-points"
+  },"40": {
     "doc": "Awards/Honors",
     "title": "Design Contest",
     "content": "3rd Place - Community College Innovation Challenge . OASIS uses machine learning to identify signs of acute stress during officer-civilian interactions and automates the footage review process. Press Release OASIS Presentation . Finalist &amp; Best Storyteller (24hr Design Challenge) . Built out the onboarding process for a smart collar solution for dog owners. Final Submission (YouTube) . 1st Place - Austin Design-A-Thon . Address low student engagement &amp; rising failure rates by gamifying AISD’s online learning portal while improving its information architecture. Final Presentation (Youtube) . ",
     "url": "/about-me/honors/#design-contest",
     
     "relUrl": "/about-me/honors/#design-contest"
-  },"34": {
+  },"41": {
     "doc": "Awards/Honors",
     "title": "Peer Recognition (Red Hat Rewards)",
-    "content": "UXD Reward . “Justin, as you are moving off of the OpenShift Design team we wanted to say thank you for all that you contributed to our team. We appreciate the way you approach your work and your ability to collaborate with others. We look forward to when our paths will cross again! - Matt Carleton, Manager, Software Engineering /Peter Kreuser,Principal Interaction Designer . Red Hat Multiplier (Collaborate) . “Thanks so much for sharing the command line design work you did, and for taking the time to walk through it with me 1:1. It was a real inspiration and eye opener for me to see that someone had dove in wholeheartedly to the extent that you did. Thanks again! You inspired me to get my hands dirty with the RHEL Lightspeed command line assistant work, and I appreciate it!” - John Carr, Senior Interaction Designer . “Hey Justin! It was a pleasure getting to work with you on Konveyor this year. I really appreciate your approachability, adaptability and communication. Your design sync meetings are more productive than most meetings I’ve attended, and you’ve done a great job handling the tricky push-and-pull with PM and devs as the team iterated on your designs. I look forward to working with you more in the future.” -Mike Turley,Senior UXD Front-end Developer . “Leading the Quay User Experience. Thank you for your UX works, and especially for analysis of what’s missing in Quay 3.9 UI and creating the spreadsheet that formed the basis of our 3.10 plans.” -Oleg Bulatov, Principle Software Engineer . “For helping to identify what steps Quay needs to take to achieve parity between its old and new UI. Justin, Thanks so much for breaking down the outstanding work to achieve parity in Quay. The detailed deck and sheet are worth their weight in gold.” -Dave O’Connor,Manager, Engineering . “Thank you for your contribution for the new Quay UI. You’ve done a phenomenal job with the new Quay UI mocks. Thank you for having a short turn around time on the mocks and for even shorter response time on Slack. Thank you for all your work!” -Sunanda Dadi,Senior Software Engineer . Team Advocate (Amplify Strengths) . “Justin started on the RHEL AI team several months ago. He immediately rolled up his sleeves and started to dig in and learn the very complex technology. He is very self motivated and did this with little guidance. As he has learned new things, he has shared them with other UXD team members. He documents everything he does so that others can learn from him. Justin has also made name for himself on the engineering side by attending open source meetings, sharing design ideas and collaborating through open channels. Justin’s collaborative nature has had a very positive impact on our whole team as we navigate this new product and product team.” -Beau Morley,Principal UX Designer . “AWESOMENESS. Thank you VERY MUCH for helping me in my journey into InstructLab. Take this award as a token of my appreciation.” -,Senior Principal Chief Architect . Team Advocate (Focus of Team) . “A big thank you to the designers and researchers who contribute their time an energy to enhancing PatternFly and thereby strengthening the user experience across Red Hat products. It is through your efforts that PatternFly remains the cornerstone of our product design toolkit. Thank you for your contributions to PatternFly design throughout the year! Your efforts are always appreciated and it’s a pleasure to work with you on this project.” -Matt Carrano, Principal Software Engineer . “I want to recognize Justin for going above and beyond to help me troubleshoot and set up InstructLab using my CLI—something I have very little experience doing. Justin’s willingness to meet with me, patiently work through issues, and take the time to explain the what and why behind the process was incredibly helpful. Justin also created an impressive Miro board to document the setup process which shows his dedication to supporting colleagues and improving workflows. His effort has not only helped me, but will make the setup process smoother for everyone in the future. Justin, thank you for all your help and your outstanding contribution to the InstructLab CLI onboarding experience. Super impressive work you are doing!” -Maria Denisco,User Experience Designer . ",
+    "content": "UXD Reward . “Justin, as you are moving off of the OpenShift Design team we wanted to say thank you for all that you contributed to our team. We appreciate the way you approach your work and your ability to collaborate with others. We look forward to when our paths will cross again! - Matt Carleton, Manager, Software Engineering /Peter Kreuser,Principal Interaction Designer . Red Hat Multiplier (Collaborate) . “Thanks so much for sharing the command line design work you did, and for taking the time to walk through it with me 1:1. It was a real inspiration and eye opener for me to see that someone had dove in wholeheartedly to the extent that you did. Thanks again! You inspired me to get my hands dirty with the RHEL Lightspeed command line assistant work, and I appreciate it!” - John Carr, Senior Interaction Designer . “Hey Justin! It was a pleasure getting to work with you on Konveyor this year. I really appreciate your approachability, adaptability and communication. Your design sync meetings are more productive than most meetings I’ve attended, and you’ve done a great job handling the tricky push-and-pull with PM and devs as the team iterated on your designs. I look forward to working with you more in the future.” -Mike Turley,Senior UXD Front-end Developer . “Leading the Quay User Experience. Thank you for your UX works, and especially for analysis of what’s missing in Quay 3.9 UI and creating the spreadsheet that formed the basis of our 3.10 plans.” -Oleg Bulatov, Principle Software Engineer . “For helping to identify what steps Quay needs to take to achieve parity between its old and new UI. Justin, Thanks so much for breaking down the outstanding work to achieve parity in Quay. The detailed deck and sheet are worth their weight in gold.” -Dave O’Connor,Manager, Engineering . “Thank you for your contribution for the new Quay UI. You’ve done a phenomenal job with the new Quay UI mocks. Thank you for having a short turn around time on the mocks and for even shorter response time on Slack. Thank you for all your work!” -Sunanda Dadi,Senior Software Engineer . Team Advocate (Amplify Strengths) . “Justin started on the RHEL AI team several months ago. He immediately rolled up his sleeves and started to dig in and learn the very complex technology. He is very self motivated and did this with little guidance. As he has learned new things, he has shared them with other UXD team members. He documents everything he does so that others can learn from him. Justin has also made name for himself on the engineering side by attending open source meetings, sharing design ideas and collaborating through open channels. Justin’s collaborative nature has had a very positive impact on our whole team as we navigate this new product and product team.” -Beau Morley,Principal UX Designer . “AWESOMENESS. Thank you VERY MUCH for helping me in my journey into InstructLab. Take this award as a token of my appreciation.” -,Senior Principal Chief Architect . Team Advocate (Focus of Team) . “A big thank you to the designers and researchers who contribute their time an energy to enhancing PatternFly and thereby strengthening the user experience across Red Hat products. It is through your efforts that PatternFly remains the cornerstone of our product design toolkit. Thank you for your contributions to PatternFly design throughout the year! Your efforts are always appreciated and it’s a pleasure to work with you on this project.” -Matt Carrano, Principal Software Engineer . “I want to recognize Justin for going above and beyond to help me troubleshoot and set up InstructLab using my CLI, something I have very little experience doing. Justin’s willingness to meet with me, patiently work through issues, and take the time to explain the what and why behind the process was incredibly helpful. Justin also created an impressive Miro board to document the setup process which shows his dedication to supporting colleagues and improving workflows. His effort has not only helped me, but will make the setup process smoother for everyone in the future. Justin, thank you for all your help and your outstanding contribution to the InstructLab CLI onboarding experience. Super impressive work you are doing!” -Maria Denisco,User Experience Designer . ",
     "url": "/about-me/honors/#peer-recognition-red-hat-rewards",
     
     "relUrl": "/about-me/honors/#peer-recognition-red-hat-rewards"
-  },"35": {
+  },"42": {
     "doc": "Awards/Honors",
     "title": "Awards/Honors",
     "content": " ",
     "url": "/about-me/honors/",
     
     "relUrl": "/about-me/honors/"
-  },"36": {
+  },"43": {
+    "doc": "Red Hat & Enterprise",
+    "title": "Red Hat & Enterprise",
+    "content": "Platform, developer-portal, and CLI work at Red Hat: production ships, open-source contributions, and design infrastructure for coded prototypes. ",
+    "url": "/portfolio/red-hat-enterprise/",
+    
+    "relUrl": "/portfolio/red-hat-enterprise/"
+  },"44": {
     "doc": "Resumes",
     "title": "Justin X. Hale",
-    "content": "Senior UX / Product Designer (979) 703-0804 | JustinXHale@gmail.com linkedin.com/in/justinxhale | justinxhale.github.io . Jump: Summary Tech Current Projects Experience Education ",
+    "content": "Senior UX / Product Designer (979) 703-0894 | JustinXHale@gmail.com | justinxhale.github.io . To save as PDF: use your browser’s Print command (⌘P / Ctrl+P) and choose “Save as PDF.” Sidebar and navigation are omitted from the printed page. ",
     "url": "/resume/#justin-x-hale",
     
     "relUrl": "/resume/#justin-x-hale"
-  },"37": {
+  },"45": {
     "doc": "Resumes",
     "title": "Professional summary",
-    "content": "My day-to-day work is enterprise SaaS and developer-facing platforms: multi-tenant systems, RBAC-governed workflows, developer portals, CLI and SDK surfaces, and AI/ML operational products. I partner with engineering and ship in production when provenance, policy, and trust need to show up clearly in the UI. Outside Red Hat I design, build, and ship mobile and AI-forward products (mostly rugby officiating tools), including field testing and concrete time-saved outcomes. ",
+    "content": "Product Designer specializing in enterprise SaaS and developer-portal platforms: package catalogs, AI/ML operational surfaces, and multi-step workflows across multi-tenant, RBAC-governed systems. I ship production UI, build design infrastructure for coded prototypes, and reduce structural friction early in a product lifecycle. ",
     "url": "/resume/#professional-summary",
     
     "relUrl": "/resume/#professional-summary"
-  },"38": {
+  },"46": {
     "doc": "Resumes",
     "title": "Technologies &amp; platforms",
-    "content": "Enterprise SaaS • Multi-tenant systems • RBAC • Authentication • OAuth • API design • Developer portals • CLI tooling • SDK onboarding • AI/ML platforms • RAG workflows • Distributed systems • Multi-cluster environments • Cloud infrastructure • DevOps workflows • OpenShift • Kubernetes • Container registries • React • TypeScript • PatternFly • Flutter • Jupyter Notebooks • GitHub • VS Code • Figma • Miro • Jira . ",
+    "content": "Enterprise SaaS • Multi-tenant Architecture • RBAC • Authentication Flows • OAuth • API Design • Developer Portals • AI/ML Platforms • RAG Workflows • React • TypeScript • PatternFly • Design Systems • CLI/SDK Tooling • OpenShift • Kubernetes • Container Registries • Distributed Systems • GitHub • Figma • Miro • Jira . ",
     "url": "/resume/#tech-platforms",
     
     "relUrl": "/resume/#tech-platforms"
-  },"39": {
-    "doc": "Resumes",
-    "title": "Current role",
-    "content": "Red Hat - Senior Product / UX Designer . September 2021 - Present . | Own UX for enterprise SaaS and platform work across multi-cluster contexts, developer portals, AI/ML operational surfaces, and CLI. I embed with engineering and ship UI in production when catalog and policy experiences need to land fast and hold up for admins. | Red Hat Packages catalog: unified separate Trusted Libraries and AI Components experiences into one faceted catalog; shipped reusable catalog, filter, and card patterns with accessibility and dark mode on a one-week audit-to-production cadence; information architecture and filtering across seven or more dimensions (SLSA, license, Python compatibility, release stage, hardware variant, and related metadata). Case study | vLLM CLI: led help redesign for more than two hundred configuration options using progressive disclosure plus keyword and grouped navigation; aligned with maintainers through an RFC process; merged upstream for teams running LLMs in production. Case study | CLI and platform UX: embedded in workflows such as bulk prompting and ROSA-style flows; simplified command hierarchies and prompt states (30+ down to roughly twelve core paths); improved naming, sequencing, branching, and error clarity; contributed org-wide CLI standards and cross-product CLI guidance. | Scale and enablement: founded UXD Yearbook to onboard more than one hundred UX designers to AI-assisted prototyping; built automated design-documentation workflows; own merge-request and team process practices for the UX team repository. | . ",
-    "url": "/resume/#current-role",
-    
-    "relUrl": "/resume/#current-role"
-  },"40": {
-    "doc": "Resumes",
-    "title": "Independent projects - Mobile + AI-native UX",
-    "content": "RefLog - Rugby referee match logging . | Shipped offline-first, tap-based event logging with field testing during live matches; roughly 70% reduction in post-match review time compared with prior workflows (hours to minutes). Multi-role flows, OAuth sign-in, and configurable feature flags. Case study | . RefereeIQ - AI-assisted law coaching . | Conversational UX with targeted retrieval of official clarifications, explicit citations, and explicit “no answer” behavior instead of fabricated detail; configurable behavior via a hosted rules layer for rapid iteration. Case study | . ",
-    "url": "/resume/#independent-projects",
-    
-    "relUrl": "/resume/#independent-projects"
-  },"41": {
+  },"47": {
     "doc": "Resumes",
     "title": "Professional experience",
-    "content": "Red Hat - Interaction Designer . | Reimagined InstructLab SDK and CLI onboarding for API-driven model-training paths (InstructLab interactive mode); improved ROSA and cloud-managed OpenShift CLI consistency, accessibility, and documentation aligned to the org design system. | . Red Hat - Associate User Experience Designer . | Led Quay.io redesign (enterprise container registry and security): repository management, vulnerability surfaces, API-integrated workflows, organization-scoped RBAC; reduced design debt through structured design-system adoption across DevOps workflows. | . Integral Care - Digital Media Specialist . September 2019 - August 2021 . | Applied design thinking and testing to email and digital journeys; improved clarity and engagement; supported state-wide campaign direction with performance tracking. | . Community Advancement Network - Communications Specialist . November 2017 - September 2019 . | User-centered and accessibility-minded digital and print work; email and social analytics; social campaigns contributed to a 13% traffic lift and 16,000+ new visitors over two years. | . Legacy Ecowear - Founder / Owner . | Founded and ran a sport and corporate apparel brand: sales, account relationships, DTC and DTB orders, e-commerce catalog and checkout, brand presence, and vendor coordination. | . ",
+    "content": "Red Hat, Inc. September 2021 – Present . Senior Product Designer . | Owned UX across developer portals, AI/ML operational surfaces, package catalogs, and multi-step platform workflows; partnered with engineering to ship production UI used by platform engineers and data teams. | Unified Trusted Libraries and AI Components into one faceted catalog; shipped React/TypeScript on PatternFly 6 in one week from audit to production, with 7+ metadata dimensions (SLSA, license, Python version, release stage, hardware variant). | Originated design-comments for in-context feedback on coded prototypes (pins, GitHub Issues backend, AI summarize); PatternFly team now maintains; integrated into OpenShift AI prototype. | Designed scoped OpenShift AI models and deploy wizard flows on a team UX prototype (MaaS vs AI asset endpoint availability, constraint explanations); aligned roadmap decisions with deployment models, RBAC, and multi-tenant governance. | Led vLLM CLI help redesign for 200+ configuration options; drove RFC process and merged upstream with maintainers. | Restructured ROSA-style CLI flows from 30+ sequential prompts to ~12 core paths; contributed org-wide CLI UX guidelines adopted within PatternFly. | . Interaction Designer . | Reimagined SDK and CLI onboarding flows for InstructLab, improving discoverability across API-driven model training workflows and developer configuration environments. | Defined ROSA CLI standardization across cloud-managed OpenShift services, improving consistency across multi-environment configuration surfaces. | Championed accessibility and documentation improvements in developer tooling, reducing onboarding friction and support dependency. | Contributed reusable system-level components and documentation to PatternFly to improve scalability and cross-product cohesion. | . Associate User Experience Designer . | Led redesign of Quay.io, an enterprise SaaS container registry and security platform, refining repository management, vulnerability reporting dashboards, API-integrated workflows, and role-based authentication flows across multi-organization teams. | Reduced design debt and improved scalability through structured PatternFly adoption, aligning complex DevOps workflows across product surfaces. | . Integral Care, Digital Media Specialist . September 2019 – August 2021 . | Implemented design thinking methods, optimizing company email layouts based on user testing and market research, resulting in a notable increase in click-through rates. | Developed and managed a state-wide marketing campaign vision for various digital experiences, ensuring an impactful and user-centric approach. | . Community Advancement Network, Communications Specialist . November 2017 – September 2019 . | Ensured physical and digital deliverables followed user-centered and accessibility practices. | Conducted ongoing performance tracking and success metrics for email marketing and social media management. | Created and implemented social media campaigns, which resulted in a 13% increase in traffic and over 16,000 new visitors over two years. | . ",
     "url": "/resume/#professional-experience",
     
     "relUrl": "/resume/#professional-experience"
-  },"42": {
+  },"48": {
+    "doc": "Resumes",
+    "title": "Independent projects",
+    "content": "RefLog, Mobile performance logging app for rugby referees . Available on Android and iOS . | Designed and launched a cross-platform app with multi-role workflows (Referee / Coach modes), scalable data visualizations, and analytics dashboards. | Conducted usability testing in high-pressure field environments to optimize task efficiency and cognitive load. | Implemented OAuth-based authentication flows (Google/GitHub) and role-based user access patterns for multi-role application environments. | . RefereeIQ, AI-powered learning app for rugby officials . | Designed and implemented RAG-based AI workflows using semantic retrieval and contextual prompting. | Defined ingestion, embedding, and knowledge retrieval strategies to support dynamic question interpretation. | Built and iterated adaptive onboarding and feedback systems to improve user comprehension and engagement. | . Published product suite, Personal apps (Tō3, RefLog, RefereeIQ, ReflectED, Sevens Manager) . | Design, build, publish, and iterate on multiple App Store, Play Store, and PWA products with field-tested users, using AI-assisted development outside work. | . Legacy Ecowear, Founder &amp; Product Designer . | Designed and managed the UX and UI of an e-commerce storefront, handling end-to-end product configuration, checkout, and customer experience. | Defined a cohesive brand system and visual language for apparel catalogs, digital packaging, and custom team orders. | Implemented user-centric optimizations to reduce ordering friction and improve product visibility across desktop and mobile. | . ",
+    "url": "/resume/#independent-projects",
+    
+    "relUrl": "/resume/#independent-projects"
+  },"49": {
     "doc": "Resumes",
     "title": "Education",
-    "content": ". | Associate of Applied Science - User Experience Design - Austin Community College | Bachelor of Science - Sports Management; minors in Business and Communication - Texas A&amp;M University | . ",
+    "content": ". | Associate of Applied Science, Austin Community College, User Experience Design | Bachelor of Science, Texas A&amp;M University, Sports Management; minors in Business and Communication | . Case studies and deeper project write-ups: justinxhale.github.io/portfolio . ",
     "url": "/resume/#education",
     
     "relUrl": "/resume/#education"
-  },"43": {
+  },"50": {
     "doc": "Resumes",
     "title": "Resumes",
     "content": " ",
     "url": "/resume/",
     
     "relUrl": "/resume/"
-  },"44": {
-    "doc": "Justin X. Hale",
-    "title": "👋 Welcome to Justin X. Hale’s UX Portfolio",
-    "content": "I’m a UX Designer at Red Hat specializing in Command-Line Interfaces (CLI) and developer tools. Passionate about bridging the gap between design and technology, I create intuitive solutions that empower technical teams and enhance workflows in open-source environments. | Resumes | Portfolio | Blog | Contact | . “I design experiences that keep developers in their flow.” . ",
-    "url": "/#-welcome-to-justin-x-hales-ux-portfolio",
+  },"51": {
+    "doc": "Earlier Career",
+    "title": "Earlier Career",
+    "content": "Healthcare and nonprofit work from earlier in my career, before Red Hat. ",
+    "url": "/portfolio/earlier-career/",
     
-    "relUrl": "/#-welcome-to-justin-x-hales-ux-portfolio"
-  },"45": {
+    "relUrl": "/portfolio/earlier-career/"
+  },"52": {
     "doc": "Justin X. Hale",
-    "title": "Portfolio Highlights",
-    "content": "RefLog . | Challenge: Rugby referees needed a faster, more efficient way to log match events. | Solution: Developed RefLog, a mobile app that reduces review time from hours to minutes, emphasizing speed and usability with offline-first functionality. | Tech: Flutter. | . RefereeIQ . | Challenge: Rugby referees needed a mentor-like assistant to navigate complex laws and clarifications. | Solution: Built RefereeIQ, a conversational AI coach that provides grounded answers and clarifications, enhancing decision-making and trust. | Tech: Flutter, OpenAI API, Firestore. | . InstructLab Interactive Mode . | Challenge: Enhance the CLI experience for developers interacting with InstructLab. | Solution: Created a structured, user-friendly interactive mode, improving onboarding and tool adoption. | Tech: Python, Shell scripting, Figma | . BulkPrompting: Streamlining CLI Bulk Input . | Challenge: Repetitive CLI workflows caused inefficiency. | Solution: Designed and implemented a Python script for automating bulk input, improving usability. | Tech: Python, Shell scripting. | . CLI Guidelines: Designing for the Command Line . | Purpose: Establish clear, actionable guidelines for designing user-friendly and consistent CLI interfaces. | Impact: Supports developers and UX teams in delivering seamless command-line experiences. | . View Full Portfolio → . ",
-    "url": "/#portfolio-highlights",
+    "title": "Welcome to Justin X. Hale’s Portfolio",
+    "content": "I’m a Senior UX / Product Designer at Red Hat. I work on enterprise platform and developer-portal experiences: package catalogs, AI/ML operational surfaces, and CLI/SDK tooling. I partner with engineering and ship production UI when that is the fastest way to get to clarity. At Red Hat I originated design-comments (now maintained by PatternFly) for in-context feedback on coded prototypes. Outside work I design, build, and publish mobile and PWA products with real users. | Resumes (print from browser) | Portfolio | Blog | Contact | . I design systems people can trust under pressure, from production AI platforms to field workflows. ",
+    "url": "/#welcome-to-justin-x-hales-portfolio",
     
-    "relUrl": "/#portfolio-highlights"
-  },"46": {
+    "relUrl": "/#welcome-to-justin-x-hales-portfolio"
+  },"53": {
+    "doc": "Justin X. Hale",
+    "title": "Selected work",
+    "content": "design-comments . As design moved off Figma onto coded prototypes, UXD lost in-context commenting. I architected design-comments (pins, GitHub Issues backend, AI summarize). I originated it; PatternFly now maintains it. Red Hat Packages Catalog . Trusted Libraries and AI Components lived in separate experiences. I unified them into one faceted catalog and shipped it in React/TypeScript on PatternFly 6 in a week. Published product suite . Tō3, RefLog, RefereeIQ, ReflectED, and Sevens Manager: store and PWA apps I design, build, and field-test with real users. vLLM CLI UX . Redesigned help for 200+ configuration options; merged upstream after an RFC with maintainers. View full portfolio → . ",
+    "url": "/#selected-work",
+    
+    "relUrl": "/#selected-work"
+  },"54": {
     "doc": "Justin X. Hale",
     "title": "Skills",
-    "content": "Professional: Strategic Design Thinking | Open Source UX | Agile Collaboration | Mentorship Technical: GitHub | CLI Tools | Figma | PatternFly | Markdown | Jira . ",
+    "content": "| Professional: Strategic design thinking | Systems design | Design ops | Open source UX | Agile collaboration | Mentorship | . | Technical: Enterprise SaaS | React/TypeScript | PatternFly | AI/ML platforms | CLI/SDK | Flutter | Figma | GitHub | User research | Production shipping | . ",
     "url": "/#skills",
     
     "relUrl": "/#skills"
-  },"47": {
+  },"55": {
     "doc": "Justin X. Hale",
     "title": "Contact",
-    "content": "Feel free to reach out—I’d love to connect! Email Me | LinkedIn | GitHub . ^ Back to Top . ",
+    "content": "| Email | LinkedIn | GitHub | . ^ Back to Top . ",
     "url": "/#contact",
     
     "relUrl": "/#contact"
-  },"48": {
+  },"56": {
     "doc": "Justin X. Hale",
     "title": "Justin X. Hale",
     "content": ". ",
     "url": "/",
     
     "relUrl": "/"
-  },"49": {
+  },"57": {
+    "doc": "Personal Projects",
+    "title": "Personal Projects",
+    "content": "Apps I design, build, and publish outside work: store and PWA products with real users and field-tested workflows. ",
+    "url": "/portfolio/personal-projects/",
+    
+    "relUrl": "/portfolio/personal-projects/"
+  },"58": {
     "doc": "Installing Jekyll for GitHub Pages",
     "title": "Installing Jekyll for GitHub Pages",
     "content": "clone your repo . git clone https://github.com/JustinXHale/justinxhale.github.io.git cd justinxhale.github.io tocuh index.md touch _config.yml . top of _config.yaml add . --- layout: default title: \"Justin X. Hale's Portfolio\" theme: jekyll-theme-leap-day --- . push &amp; commit to github . create _posts create assets create assets/css touch assets/css/styles.css . test locally steps creat Gemfile gem install bundler add to gemfile . source \"https://rubygems.org\" gem \"github-pages\", group: :jekyll_plugins . bundle install . | Before you can use Jekyll to create a GitHub Pages site, you must install Jekyll and Git. For more information, see Installation in the Jekyll documentation and Set up Git. ``` git clone https://github.com/git/git . | Need to install Ruby to work with Jekyll | https://www.ruby-lang.org/en/documentation/installation/ | . ruby -v . ",
     "url": "/how-to/install-jekyll-steps/",
     
     "relUrl": "/how-to/install-jekyll-steps/"
-  },"50": {
+  },"59": {
+    "doc": "InstructLab Interactive Mode",
+    "title": "InstructLab: CLI Onboarding for Model Training",
+    "content": "Project Overview Role: Interaction Designer (Red Hat) Focus: SDK and CLI onboarding for API-driven model-training workflows Artifact: InstructLab interactive mode Impact: Reduced setup friction for novice users; step-by-step guided installation ",
+    "url": "/portfolio/instructlab/instructlab/#instructlab-cli-onboarding-for-model-training",
+    
+    "relUrl": "/portfolio/instructlab/instructlab/#instructlab-cli-onboarding-for-model-training"
+  },"60": {
+    "doc": "InstructLab Interactive Mode",
+    "title": "The problem",
+    "content": "InstructLab’s CLI exposed a powerful but intimidating setup path for developers new to model training. Users faced prerequisite checks, configuration steps, and backend pipeline concepts without a guided mental model. That led to abandoned installs and support requests. ",
+    "url": "/portfolio/instructlab/instructlab/#the-problem",
+    
+    "relUrl": "/portfolio/instructlab/instructlab/#the-problem"
+  },"61": {
+    "doc": "InstructLab Interactive Mode",
+    "title": "The solution",
+    "content": "I reimagined SDK and CLI onboarding as a structured interactive mode: a step-by-step guide through installation and configuration, aligned with how the training pipeline actually works. Key design moves: . | Progressive steps for prerequisites, install, and configuration | Language and sequencing matched to backend constraints (not generic wizard filler) | Documented flows in Miro for stakeholder and engineer alignment | Open-source artifact others can run locally (interactive mode repo) | . ",
+    "url": "/portfolio/instructlab/instructlab/#the-solution",
+    
+    "relUrl": "/portfolio/instructlab/instructlab/#the-solution"
+  },"62": {
+    "doc": "InstructLab Interactive Mode",
+    "title": "Outcomes",
+    "content": ". | Reduced onboarding friction for novice InstructLab users | Peer recognition: colleagues cited the work for troubleshooting and team onboarding | Open source contribution: reusable pattern for CLI-guided setup in AI/ML tooling | . ",
+    "url": "/portfolio/instructlab/instructlab/#outcomes",
+    
+    "relUrl": "/portfolio/instructlab/instructlab/#outcomes"
+  },"63": {
+    "doc": "InstructLab Interactive Mode",
+    "title": "Related work",
+    "content": ". | vLLM CLI UX: another open-source CLI UX contribution | CLI guidelines: org-wide standards I contributed to | . ",
+    "url": "/portfolio/instructlab/instructlab/#related-work",
+    
+    "relUrl": "/portfolio/instructlab/instructlab/#related-work"
+  },"64": {
+    "doc": "InstructLab Interactive Mode",
+    "title": "InstructLab Interactive Mode",
+    "content": " ",
+    "url": "/portfolio/instructlab/instructlab/",
+    
+    "relUrl": "/portfolio/instructlab/instructlab/"
+  },"65": {
     "doc": "SaaS Design (at Red Hat)",
     "title": "Interface-Driven UX at Red Hat",
-    "content": "This portfolio entry highlights a set of UI-focused projects I led or significantly contributed to during my time at Red Hat. Each one reflects my approach to designing for technical users—prioritizing clarity, system alignment, and scalable documentation. These projects span enterprise migrations, onboarding workflows, low-fidelity explorations, and iterative collaboration with PMs and devs. Quay.io Redesign &amp; Migration . Challenge: Migrate the legacy Angular-based Quay UI to PatternFly while embedding it into both OpenShift Console and console.redhat.com. My Role: I led UX for the migration across multiple core flows—repository management, org settings, robot accounts, and more. I aligned the interface with OpenShift conventions, introduced new features like bulk repo actions, and created async visual documentation to support developer implementation. Team: 3 Designers (eventually just me), 2 PMs, Eng. Manager, 4–7 Developers . Deck: . View Slides . Konveyor Quick Start Onboarding . Challenge: Improve onboarding in the Konveyor app modernization toolkit. Users often felt lost after landing in the UI. My Role: Proposed and designed a quick start experience using PatternFly’s framework. Worked closely with content design, frontend engineering, and the PF team to scope, shape, and deliver the first version. Team: 1 PM, 1 Dev, UX Content Designer, PatternFly Contributor . PM-Led Vision → UX Realization (Assessments UX) . Challenge: Bring a PM’s conceptual sketch for an assessment flow to life, evolving it into a functional UI. My Role: Took early sketches and iterated across multiple versions—balancing feasibility, visual clarity, and user flow. By version 2, the PM described it as “exactly what I was envisioning.” Final design was shared with the broader team for approval. Team: 1 PM, 1 Dev, UX Content, Peer Reviews . SLA (Lo-Fi) Exploration . Challenge: Present nuanced support tier options (Red Hat Premium, Partner Support, Self-Support) in a clean, scalable way. My Role: Designed an early low-fidelity layout for SLA selection using Figma. Focused on chunking dense support descriptions and aligning dropdowns, tier logic, and required fields. Why It Matters: Not every problem needs high-fidelity to move forward. This lo-fi prototype helped align stakeholders early in the process. ",
+    "content": "Enterprise SaaS for technical users, registry admin, vulnerability surfaces, and onboarding workflows. Quay.io work maps to data-dense DevOps UI: repository health, security findings, and role-based admin flows. This portfolio entry highlights UI-focused projects I led or significantly contributed to during my time at Red Hat. Quay.io Redesign &amp; Migration . Challenge: Migrate the legacy Angular-based Quay UI to PatternFly while embedding it into both OpenShift Console and console.redhat.com. My Role: I led UX for the migration across multiple core flows, repository management, org settings, robot accounts, and more. I aligned the interface with OpenShift conventions, introduced new features like bulk repo actions, and created async visual documentation to support developer implementation. Team: 3 Designers (eventually just me), 2 PMs, Eng. Manager, 4–7 Developers . Deck: . View Slides . Konveyor Quick Start Onboarding . Challenge: Improve onboarding in the Konveyor app modernization toolkit. Users often felt lost after landing in the UI. My Role: Proposed and designed a quick start experience using PatternFly’s framework. Worked closely with content design, frontend engineering, and the PF team to scope, shape, and deliver the first version. Team: 1 PM, 1 Dev, UX Content Designer, PatternFly Contributor . PM-Led Vision → UX Realization (Assessments UX) . Challenge: Bring a PM’s conceptual sketch for an assessment flow to life, evolving it into a functional UI. My Role: Took early sketches and iterated across multiple versions, balancing feasibility, visual clarity, and user flow. By version 2, the PM described it as “exactly what I was envisioning.” Final design was shared with the broader team for approval. Team: 1 PM, 1 Dev, UX Content, Peer Reviews . SLA (Lo-Fi) Exploration . Challenge: Present nuanced support tier options (Red Hat Premium, Partner Support, Self-Support) in a clean, scalable way. My Role: Designed an early low-fidelity layout for SLA selection using Figma. Focused on chunking dense support descriptions and aligning dropdowns, tier logic, and required fields. Why It Matters: Not every problem needs high-fidelity to move forward. This lo-fi prototype helped align stakeholders early in the process. ",
     "url": "/portfolio/interface-driven-ux-red-hat/interface-driven-ux-red-hat/#interface-driven-ux-at-red-hat",
     
     "relUrl": "/portfolio/interface-driven-ux-red-hat/interface-driven-ux-red-hat/#interface-driven-ux-at-red-hat"
-  },"51": {
+  },"66": {
     "doc": "SaaS Design (at Red Hat)",
     "title": "SaaS Design (at Red Hat)",
     "content": " ",
     "url": "/portfolio/interface-driven-ux-red-hat/interface-driven-ux-red-hat/",
     
     "relUrl": "/portfolio/interface-driven-ux-red-hat/interface-driven-ux-red-hat/"
-  },"52": {
+  },"67": {
     "doc": "It’s Just an Email",
     "title": "📚 Table of Contents",
     "content": ". | It’s Just an Email . | Overview | Background | Problem(s) | Solution | My Role . | Emphasize | . | Interviews . | Guiding Questions | . | Define . | Client Journey | . | Ideate . | Initial Sketches | . | Prototype . | Color Visualization | Wireframes . | Solicit Opinion | . | . | Test \\&amp; Iterate . | Coding the Email | We’re almost done. | . | Project Learnings . | Key Takeaways | . | Deliverables . | Before | After | Dark Mode | . | . | . ",
     "url": "/portfolio/just-an-email/just-an-email/#-table-of-contents",
     
     "relUrl": "/portfolio/just-an-email/just-an-email/#-table-of-contents"
-  },"53": {
+  },"68": {
     "doc": "It’s Just an Email",
     "title": "It’s Just an Email",
     "content": "Case study read time: 6–10 minutes . ",
     "url": "/portfolio/just-an-email/just-an-email/#its-just-an-email",
     
     "relUrl": "/portfolio/just-an-email/just-an-email/#its-just-an-email"
-  },"54": {
+  },"69": {
     "doc": "It’s Just an Email",
     "title": "Overview",
     "content": ". | Project Scope: 4 weeks | Project Type: Assignment | Role: UX Design, UI Design, Copywriter, Light HTML Coder | Tools: Paper, Pencil, Figma, Miro, Photoshop, Brackets, WebAIM Contrast Checker | UX Techniques: Stakeholder interviews, Secondary Research, Customer Flow, Sketching, Wireframing | Participants: Integral Staff, Application Development | . ",
     "url": "/portfolio/just-an-email/just-an-email/#overview",
     
     "relUrl": "/portfolio/just-an-email/just-an-email/#overview"
-  },"55": {
+  },"70": {
     "doc": "It’s Just an Email",
     "title": "Background",
     "content": "Integral Care supports the health and well-being of adults and children living with mental illness, substance use disorder, and intellectual and developmental disabilities. This non-profit supported over half a million people in 2020, and as it expanded its telehealth services, they wanted to improve customer retention and satisfaction with their emails. ",
     "url": "/portfolio/just-an-email/just-an-email/#background",
     
     "relUrl": "/portfolio/just-an-email/just-an-email/#background"
-  },"56": {
+  },"71": {
     "doc": "It’s Just an Email",
     "title": "Problem(s)",
     "content": "Clients receive a lot of information in their initial and only email. Feedback from Integral staff revealed the following issues: . | Email is long and complicated | Content is confusing to understand | Difficulty retrieving email before/during appointments | . ",
     "url": "/portfolio/just-an-email/just-an-email/#problems",
     
     "relUrl": "/portfolio/just-an-email/just-an-email/#problems"
-  },"57": {
+  },"72": {
     "doc": "It’s Just an Email",
     "title": "Solution",
     "content": "Developed a responsive HTML email template that integrates with the client’s mail client, allowing users to save appointments and reminders directly to their native calendar. ",
     "url": "/portfolio/just-an-email/just-an-email/#solution",
     
     "relUrl": "/portfolio/just-an-email/just-an-email/#solution"
-  },"58": {
+  },"73": {
     "doc": "It’s Just an Email",
     "title": "My Role",
     "content": "Emphasize . I managed most aspects of the project, from initial stakeholder interviews to ideation, prototyping, user testing, and coding, before handing it off to the application developer for final implementation. ",
     "url": "/portfolio/just-an-email/just-an-email/#my-role",
     
     "relUrl": "/portfolio/just-an-email/just-an-email/#my-role"
-  },"59": {
+  },"74": {
     "doc": "It’s Just an Email",
     "title": "Interviews",
     "content": "During the discovery phase, I conducted interviews with the Director of Clinical Services and the Program Manager Supervisor of the Call Center to better understand the problem. Guiding Questions . | What is the process your user goes through before receiving an email? | What is the purpose of the email? | What do you want to accomplish with the email? | Who receives the email? | Is there a follow-up email? | What have customers told you about the email? | Demographics of clients | . ",
     "url": "/portfolio/just-an-email/just-an-email/#interviews",
     
     "relUrl": "/portfolio/just-an-email/just-an-email/#interviews"
-  },"60": {
+  },"75": {
     "doc": "It’s Just an Email",
     "title": "Define",
     "content": "Client Journey . To visualize how clients find and interact with the service, I created a Customer Journey Map to understand their pain points and provide a bird’s-eye view for stakeholders. ",
     "url": "/portfolio/just-an-email/just-an-email/#define",
     
     "relUrl": "/portfolio/just-an-email/just-an-email/#define"
-  },"61": {
+  },"76": {
     "doc": "It’s Just an Email",
     "title": "Ideate",
     "content": "Initial Sketches . I started with hand-drawn sketches to brainstorm ideas before transitioning to digital tools. I also conducted desktop research to analyze email templates used by other organizations. . ",
     "url": "/portfolio/just-an-email/just-an-email/#ideate",
     
     "relUrl": "/portfolio/just-an-email/just-an-email/#ideate"
-  },"62": {
+  },"77": {
     "doc": "It’s Just an Email",
     "title": "Prototype",
     "content": "Color Visualization . To better understand the number of touchpoints in the email, I created a color-coded visualization of the content. This helped stakeholders see the distribution of information at a glance. Color Decoder: . | Grey: Text | Dark Blue: Notice | Light Blue: H1 or Link | Red: H1 | Purple: Link | . Figma Board . Wireframes . Based on sketches, I created high-fidelity wireframes for desktop and mobile views. Required Components: . | Microsoft Teams meeting information | Help video | Crisis helpline phone number | . Recommended Additions: . | Shorten email content from 2,220+ characters to under 600 | Add-to-calendar feature | Call-to-reschedule button | Helpline button with direct dial prompts | . Solicit Opinion . After I completed the mockup I connected with the Senior Creative Designer asked a trusted co-worker about their option of the layout. Together we decided on some element and layout changes that saved space and highlighted some key areas. (You’ll see in the next section 🙂 ) . ",
     "url": "/portfolio/just-an-email/just-an-email/#prototype",
     
     "relUrl": "/portfolio/just-an-email/just-an-email/#prototype"
-  },"63": {
+  },"78": {
     "doc": "It’s Just an Email",
     "title": "Test &amp; Iterate",
     "content": "Coding the Email . Given the tight 4-week deadline, I coded the email in HTML using VSCode to expedite the process. This saved time for the MIS team and allowed faster implementation. Feedback: “This is great. This saves a lot of time!” – Andrew, Applications Developer . Using my code, the application developer completed a project that would have taken one week in just 30 minutes. Dynamic Microsoft Teams links and calendar integration streamlined the user experience. We’re almost done. Using my code, the application developer was able to take a project that would have taken at least one week and pushed it out in 30 minutes! Using dynamic Microsoft Teams links and the client’s native email client for their appointment, allowed us to remove another button, giving the client choices to click on. Thanks, Hick Hyman! . ",
     "url": "/portfolio/just-an-email/just-an-email/#test--iterate",
     
     "relUrl": "/portfolio/just-an-email/just-an-email/#test--iterate"
-  },"64": {
+  },"79": {
     "doc": "It’s Just an Email",
     "title": "Project Learnings",
     "content": "Key Takeaways . | Less Is More: Simplicity improves user engagement. | Accessibility Matters: Font sizes, color contrast, and alt text were prioritized. | Collaboration is Key: Working closely with stakeholders enhanced the final product. | . ",
     "url": "/portfolio/just-an-email/just-an-email/#project-learnings",
     
     "relUrl": "/portfolio/just-an-email/just-an-email/#project-learnings"
-  },"65": {
+  },"80": {
     "doc": "It’s Just an Email",
     "title": "Deliverables",
     "content": "Before . The original email was lengthy, unclear, and not user-friendly. After . The redesigned email was concise, accessible, and responsive, featuring dynamic functionality like calendar integration and direct-dial buttons. Dark Mode . ",
     "url": "/portfolio/just-an-email/just-an-email/#deliverables",
     
     "relUrl": "/portfolio/just-an-email/just-an-email/#deliverables"
-  },"66": {
+  },"81": {
     "doc": "It’s Just an Email",
     "title": "It’s Just an Email",
     "content": " ",
     "url": "/portfolio/just-an-email/just-an-email/",
     
     "relUrl": "/portfolio/just-an-email/just-an-email/"
-  },"67": {
-    "doc": "Portfolio",
-    "title": "Portfolio Highlights",
-    "content": "RefLog — Designing for Speed, Focus, and Flow . | Challenge: Rugby referees needed a faster, more efficient way to log match events. | Solution: Developed RefLog, a mobile app that reduces review time from hours to minutes, emphasizing speed and usability with offline-first functionality. | Tech: Flutter. | . RefereeIQ — A Conversational AI Coach for Rugby Referees . | Challenge: Rugby referees needed a mentor-like assistant to navigate complex laws and clarifications. | Solution: Built RefereeIQ, a conversational AI coach that provides grounded answers and clarifications, enhancing decision-making and trust. | Tech: Flutter, OpenAI API, Firestore. | . vLLM CLI UX Enhancement . | Challenge: vLLM CLI exposed 200+ configuration options with overwhelming help output. | Solution: Designed and championed enhanced help navigation with progressive disclosure, keyword search, and group-based exploration. Merged upstream via RFC process. | Impact: Cross-org collaboration (Red Hat + Hugging Face), merged into major open-source LLM serving framework. | Tech: CLI UX, Miro, GitHub RFC, Open Source. | . Red Hat Packages Catalog Redesign . | Challenge: Fragmented package discovery across two separate ecosystems (Trusted Libraries + AI Components) with limited filtering and poor metadata visibility. | Solution: Designed and implemented a unified catalog with faceted filtering (7+ metadata dimensions), PatternFly 6 semantic tokens, and design version toggle for gradual rollout. | Impact: Transformed information architecture from 2 separate pages to 1 unified catalog; improved developer experience with advanced filtering (SLSA provenance, Python version, license, release stage, category). | Tech: React, TypeScript, PatternFly 6, Enterprise Design Systems, Information Architecture. | . InstructLab Interactive Mode &amp; Script . | Challenge: Enhance the CLI experience for developers interacting with InstructLab. | Solution: Created a structured, user-friendly interactive mode, improving onboarding and tool adoption. | . BulkPrompting Script: Streamlining CLI Bulk Input . | Challenge: Repetitive CLI workflows caused inefficiency. | Solution: Designed and implemented a Python script for automating bulk input, improving usability. | Tech: Python, Shell scripting. | . CLI Guidelines: Designing for the Command Line . | Purpose: Establish clear, actionable guidelines for designing user-friendly and consistent CLI interfaces. | Impact: Supports developers and UX teams in delivering seamless command-line experiences. | . ",
-    "url": "/portfolio/#portfolio-highlights",
+  },"82": {
+    "doc": "OpenShift AI Deploy Wizard",
+    "title": "OpenShift AI: Models &amp; Deploy Wizard",
+    "content": "Project Overview Role: UX Designer on the OpenShift AI UXD team Scope: Models → Deployments surfaces and Deploy model wizard within a team prototype (not the full OpenShift AI platform) Artifact: Design prototype for stakeholder review and iteration Focus: MaaS vs AI asset endpoint availability, deployment table UX, wizard constraint explanations UX Designer on the OpenShift AI UXD team. I owned design for Models → Deployments and the Deploy model wizard within a team prototype. I did not own evaluations, prompt registry, playground, or observability surfaces (other designers did). ",
+    "url": "/portfolio/openshift-ai-deploy-wizard/openshift-ai-deploy-wizard/#openshift-ai-models--deploy-wizard",
     
-    "relUrl": "/portfolio/#portfolio-highlights"
-  },"68": {
+    "relUrl": "/portfolio/openshift-ai-deploy-wizard/openshift-ai-deploy-wizard/#openshift-ai-models--deploy-wizard"
+  },"83": {
+    "doc": "OpenShift AI Deploy Wizard",
+    "title": "The problem",
+    "content": "Platform engineers and data teams deploying models needed to understand how a deployment would be published: as an AI asset endpoint, as MaaS, both, or neither. They had to do that without misconfiguring gateway or authentication settings. The deployments table and deploy wizard had to reflect backend constraints honestly while staying scannable under operational pressure. ",
+    "url": "/portfolio/openshift-ai-deploy-wizard/openshift-ai-deploy-wizard/#the-problem",
+    
+    "relUrl": "/portfolio/openshift-ai-deploy-wizard/openshift-ai-deploy-wizard/#the-problem"
+  },"84": {
+    "doc": "OpenShift AI Deploy Wizard",
+    "title": "What I designed",
+    "content": "Unified deployments table . | Single table for internal and external models when the external-models flag is on | Availability labels: AI asset endpoint and/or MaaS (orange PatternFly labels) | Status column aligned to KServe guidelines (Ready, Failed, Starting, Stopping, etc.) | Column order matched production LLMInferenceService expectations | Manage availability kebab action updates labels on existing rows | . Deploy model wizard . | Summary step previews availability labels before deploy | Wizard completion adds a row to Deployments with labels matching Publish as AI asset endpoint and Publish as MaaS selections from Advanced settings | MaaS lock explanations (RHOAIUX-2317): when MaaS is selected, Gateway selection and Token authentication stay visible but disabled, with FormGroupLabelHelp popovers and disabled-tooltip pattern explaining why | Register external model modal parity with wizard (disabled Project and Model availability checkboxes matching deploy flow) | . Design process . Decisions are documented in structured design-history artifacts (e.g. RHOAIUX-2309, RHOAIUX-2317): availability inline next to deployment name, mock data covering both/AAE-only/MaaS-only/neither states, and progressive disclosure in Advanced settings. ",
+    "url": "/portfolio/openshift-ai-deploy-wizard/openshift-ai-deploy-wizard/#what-i-designed",
+    
+    "relUrl": "/portfolio/openshift-ai-deploy-wizard/openshift-ai-deploy-wizard/#what-i-designed"
+  },"85": {
+    "doc": "OpenShift AI Deploy Wizard",
+    "title": "Outcomes",
+    "content": ". | Clearer mental model for availability types before and after deploy | Constraint-forward UX: users see why controls lock instead of silent disabled fields | Stakeholder alignment: prototype used for review with PM and engineering on deployment flows | Scoped ownership: table and wizard patterns ready for engineering handoff within my surface area | . ",
+    "url": "/portfolio/openshift-ai-deploy-wizard/openshift-ai-deploy-wizard/#outcomes",
+    
+    "relUrl": "/portfolio/openshift-ai-deploy-wizard/openshift-ai-deploy-wizard/#outcomes"
+  },"86": {
+    "doc": "OpenShift AI Deploy Wizard",
+    "title": "Related work",
+    "content": ". | design-comments: stakeholder feedback on the same prototype ecosystem | Red Hat Packages catalog: another production-adjacent catalog surface I shipped to production | . ",
+    "url": "/portfolio/openshift-ai-deploy-wizard/openshift-ai-deploy-wizard/#related-work",
+    
+    "relUrl": "/portfolio/openshift-ai-deploy-wizard/openshift-ai-deploy-wizard/#related-work"
+  },"87": {
+    "doc": "OpenShift AI Deploy Wizard",
+    "title": "OpenShift AI Deploy Wizard",
+    "content": " ",
+    "url": "/portfolio/openshift-ai-deploy-wizard/openshift-ai-deploy-wizard/",
+    
+    "relUrl": "/portfolio/openshift-ai-deploy-wizard/openshift-ai-deploy-wizard/"
+  },"88": {
+    "doc": "Portfolio",
+    "title": "Start here",
+    "content": "If you only read three pieces: . | design-comments - I closed the commenting gap for coded prototypes. GitHub-backed architecture; PatternFly maintains it. | Red Hat Packages catalog - Shipped to production: unified catalog, faceted IA, one week from audit to deploy. | Published product suite - Store and PWA apps with real users, built with AI-assisted solo development. | . For healthcare-adjacent roles, start with ReflectED instead of the suite overview. ",
+    "url": "/portfolio/#start-here",
+    
+    "relUrl": "/portfolio/#start-here"
+  },"89": {
+    "doc": "Portfolio",
+    "title": "Red Hat &amp; Enterprise",
+    "content": "design-comments - In-context feedback on React prototypes. Pins, GitHub Issues, AI summarize. Red Hat Packages catalog - Unified Trusted Libraries and AI Components; PatternFly 6; production ship. vLLM CLI UX - Help redesign for 200+ options; merged upstream. InstructLab interactive mode - Guided CLI onboarding for model training. Bulk prompting (ROSA CLI) - Fewer sequential prompts in cluster creation (POC). Quay and Konveyor (Red Hat) - Registry admin, vulnerability surfaces, onboarding. Also in portfolio (not on resume): UXD Prototyping Hub, OpenShift AI deploy wizard. ",
+    "url": "/portfolio/#red-hat--enterprise",
+    
+    "relUrl": "/portfolio/#red-hat--enterprise"
+  },"90": {
+    "doc": "Portfolio",
+    "title": "Personal projects",
+    "content": "Overview - Tō3, RefLog, RefereeIQ, ReflectED, Sevens Manager. Tō3 - Live voice for event crews (Flutter). ReflectED - AI reflection coach for educators and coaches. RefLog - Offline match logging (~70% faster review). RefereeIQ - AI law coach with citations. ",
+    "url": "/portfolio/#personal-projects",
+    
+    "relUrl": "/portfolio/#personal-projects"
+  },"91": {
+    "doc": "Portfolio",
+    "title": "Earlier career",
+    "content": "It’s Just an Email - Integral Care appointment email; research and testing. Rapid Design Thinking - Facilitated healthcare conference workshop. CLI guidelines (external) - Cross-product CLI standards. ",
+    "url": "/portfolio/#earlier-career",
+    
+    "relUrl": "/portfolio/#earlier-career"
+  },"92": {
     "doc": "Portfolio",
     "title": "Portfolio",
     "content": " ",
     "url": "/portfolio/",
     
     "relUrl": "/portfolio/"
-  },"69": {
+  },"93": {
+    "doc": "Published Product Suite",
+    "title": "Published Product Suite: Real Users, AI-Assisted Build",
+    "content": "Overview Role: Solo designer-developer across all apps Approach: AI-assisted design and implementation outside work (same workflow I use at Red Hat) Proof: Multiple shipped PWAs and store apps with field testing and real users Individual apps are useful; the suite is the story. I design, build, publish, and iterate on a family of products using agentic coding and AI tooling in daily life, not only in enterprise work. ",
+    "url": "/portfolio/product-suite/product-suite/#published-product-suite-real-users-ai-assisted-build",
+    
+    "relUrl": "/portfolio/product-suite/product-suite/#published-product-suite-real-users-ai-assisted-build"
+  },"94": {
+    "doc": "Published Product Suite",
+    "title": "Why a suite matters",
+    "content": "Each app solves a narrow problem. Together they show: . | End-to-end ownership: research → design → build → publish → field test | Platform range: Flutter native, PWAs, AI-native coaching apps | Real users: rugby officials, coaches, educators, event crews | Trust patterns: offline-first, citations, framework-aligned AI output | . ",
+    "url": "/portfolio/product-suite/product-suite/#why-a-suite-matters",
+    
+    "relUrl": "/portfolio/product-suite/product-suite/#why-a-suite-matters"
+  },"95": {
+    "doc": "Published Product Suite",
+    "title": "The apps",
+    "content": "| App | What it does | Platform | Case study | . | Tō3 (formerly RefOpenMic) | Live voice for event crews | Flutter / app stores | Deep dive | . | RefLog | Offline match event logging for referees | iOS + Android | Deep dive | . | RefereeIQ | Trust-forward AI law coach | Flutter / Android | Deep dive | . | ReflectED | AI reflection coach for educators and coaches | PWA / Next.js | Deep dive | . | Sevens Manager | Live match clock and stats updates during sevens games | PWA, local-first (IndexedDB) | Suite member (no standalone case study) | . ",
+    "url": "/portfolio/product-suite/product-suite/#the-apps",
+    
+    "relUrl": "/portfolio/product-suite/product-suite/#the-apps"
+  },"96": {
+    "doc": "Published Product Suite",
+    "title": "Shared patterns across the suite",
+    "content": ". | Field-tested UX: Built for use under time pressure (matches, classrooms, live events) | AI with guardrails: Citations, explicit uncertainty, framework-aligned reports (not generic chat) | Configurable behavior: Feature flags, remote config, prompt layers for rapid iteration | Publish for real: App Store, Play Store, and installable PWAs (not mockups) | . ",
+    "url": "/portfolio/product-suite/product-suite/#shared-patterns-across-the-suite",
+    
+    "relUrl": "/portfolio/product-suite/product-suite/#shared-patterns-across-the-suite"
+  },"97": {
+    "doc": "Published Product Suite",
+    "title": "Outcomes",
+    "content": ". | ~70% reduction in post-match review time (RefLog vs prior workflows) | Trust-forward AI: users value citations and “no answer” behavior over confident hallucination (RefereeIQ) | Practitioner workflows: lesson/session plans required before analyze (ReflectED) | Live operational tools: voice and stats during real events (Tō3, Sevens Manager) | . ",
+    "url": "/portfolio/product-suite/product-suite/#outcomes",
+    
+    "relUrl": "/portfolio/product-suite/product-suite/#outcomes"
+  },"98": {
+    "doc": "Published Product Suite",
+    "title": "Related Red Hat work",
+    "content": "The same instinct shows up at work: design-comments, Prototyping Hub, and ui-packages production ship. ",
+    "url": "/portfolio/product-suite/product-suite/#related-red-hat-work",
+    
+    "relUrl": "/portfolio/product-suite/product-suite/#related-red-hat-work"
+  },"99": {
+    "doc": "Published Product Suite",
+    "title": "Published Product Suite",
+    "content": " ",
+    "url": "/portfolio/product-suite/product-suite/",
+    
+    "relUrl": "/portfolio/product-suite/product-suite/"
+  },"100": {
+    "doc": "UXD Prototyping Hub",
+    "title": "UXD Prototyping Hub: One URL for Stakeholder Review",
+    "content": "Project Overview Role: Creator &amp; maintainer (Red Hat UXD) Stack: React, TypeScript, PatternFly, GitLab Pages Users: Engineers, PMs, designers, and stakeholders reviewing coded prototypes Outcome: Single public destination replacing scattered per-experiment repo links ",
+    "url": "/portfolio/prototyping-hub/prototyping-hub/#uxd-prototyping-hub-one-url-for-stakeholder-review",
+    
+    "relUrl": "/portfolio/prototyping-hub/prototyping-hub/#uxd-prototyping-hub-one-url-for-stakeholder-review"
+  },"101": {
+    "doc": "UXD Prototyping Hub",
+    "title": "The problem",
+    "content": "UXD was doing more AI-assisted prototyping. Each experiment tended to get its own repo and GitLab Pages URL. That created friction for everyone: . | Designers managed too many links and deploy pipelines | Stakeholders did not know which URL was current | Engineers lost track of which prototype matched which discussion | . GitLab IT policy also limits multiple top-level URLs under one project, so spinning up a new repo per experiment did not scale. ",
+    "url": "/portfolio/prototyping-hub/prototyping-hub/#the-problem",
+    
+    "relUrl": "/portfolio/prototyping-hub/prototyping-hub/#the-problem"
+  },"102": {
+    "doc": "UXD Prototyping Hub",
+    "title": "The solution",
+    "content": "I built a Prototyping Hub: one GitLab repo, one Pages URL, many prototypes behind it. How it works: . | /: Landing hub with cards (title, blurb, Open prototype button) | Routes: Each prototype is a React route under the same app (/yaml-standards, /git-self-help, /guidellm, …) | Registry: registry.ts drives the card catalog; add a row + route to ship a new prototype | Shared shell: PatternFly masthead; brand link returns to the hub | Lifecycle: When a prototype is ready for a product, it graduates to the upstream repo | . ",
+    "url": "/portfolio/prototyping-hub/prototyping-hub/#the-solution",
+    
+    "relUrl": "/portfolio/prototyping-hub/prototyping-hub/#the-solution"
+  },"103": {
+    "doc": "UXD Prototyping Hub",
+    "title": "Example prototypes on the hub",
+    "content": "| Prototype | Purpose | . | YAML standards | OpenShift AI YAML phase standards (preview, escape hatch, synchronized editor) | . | Git self-help | UXD Git and Cursor cheatsheet for designers | . | GuideLLM CLI onboarding | guidellm start hub: smoke, quick start, guided flows | . ",
+    "url": "/portfolio/prototyping-hub/prototyping-hub/#example-prototypes-on-the-hub",
+    
+    "relUrl": "/portfolio/prototyping-hub/prototyping-hub/#example-prototypes-on-the-hub"
+  },"104": {
+    "doc": "UXD Prototyping Hub",
+    "title": "Pairing with design-comments",
+    "content": "The hub answers “Where is the work?” design-comments answers “How do we give feedback on it?” . Together they close a gap Figma used to cover: publish coded UI and collect structured critique without returning to static files. ",
+    "url": "/portfolio/prototyping-hub/prototyping-hub/#pairing-with-design-comments",
+    
+    "relUrl": "/portfolio/prototyping-hub/prototyping-hub/#pairing-with-design-comments"
+  },"105": {
+    "doc": "UXD Prototyping Hub",
+    "title": "Outcomes",
+    "content": ". | One bookmark for stakeholders reviewing UXD coded work | Lower designer overhead: one CI pipeline, one registry, one deploy pattern | Faster iteration: new prototypes ship as routes, not new infrastructure | Org pattern: other designers can fork the hub model for their own prototype catalogs | . ",
+    "url": "/portfolio/prototyping-hub/prototyping-hub/#outcomes",
+    
+    "relUrl": "/portfolio/prototyping-hub/prototyping-hub/#outcomes"
+  },"106": {
+    "doc": "UXD Prototyping Hub",
+    "title": "Related work",
+    "content": ". | design-comments: in-context feedback on prototypes hosted here or elsewhere | OpenShift AI deploy wizard: product-area work informed by hub-hosted explorations | . ",
+    "url": "/portfolio/prototyping-hub/prototyping-hub/#related-work",
+    
+    "relUrl": "/portfolio/prototyping-hub/prototyping-hub/#related-work"
+  },"107": {
+    "doc": "UXD Prototyping Hub",
+    "title": "UXD Prototyping Hub",
+    "content": " ",
+    "url": "/portfolio/prototyping-hub/prototyping-hub/",
+    
+    "relUrl": "/portfolio/prototyping-hub/prototyping-hub/"
+  },"108": {
     "doc": "Rapid Design Thinking",
     "title": "📚 Table of Contents",
     "content": ". | Case Study: Introducing “Rapid” Design Thinking to Brainstorm . | Overview | Background | Problems | Solution | My Role | Workshop Breakdown . | Part 1: Challenge Statement: 7 minutes of Rapid Ideation | Part 2: Presentation: 10 minutes | Part 3: Vote \\&amp; Organize: 4 minutes | Part 4: How Might We (HMW): 7 minutes | Part 5: Back to Ideation \\&amp; Voting: 7 minutes | Part 6: Prioritization: 3 minutes | Part 7: Effort/Impact Scale: 5 minutes | Part 8: Actionable Items: 10 minutes | . | Project Learnings | . | . ",
     "url": "/portfolio/rapid-design-thinking/rapid-design-thinking/#-table-of-contents",
     
     "relUrl": "/portfolio/rapid-design-thinking/rapid-design-thinking/#-table-of-contents"
-  },"70": {
+  },"109": {
     "doc": "Rapid Design Thinking",
     "title": "Case Study: Introducing “Rapid” Design Thinking to Brainstorm",
     "content": "Read time: 5–8 minutes . ",
     "url": "/portfolio/rapid-design-thinking/rapid-design-thinking/#case-study-introducing-rapid-design-thinking-to-brainstorm",
     
     "relUrl": "/portfolio/rapid-design-thinking/rapid-design-thinking/#case-study-introducing-rapid-design-thinking-to-brainstorm"
-  },"71": {
+  },"110": {
     "doc": "Rapid Design Thinking",
     "title": "Overview",
     "content": ". | Project Scope: 1 hour | Project Type: Brainstorming, Teaching | Role: UX Researcher, Presenter, Facilitator | Tools: Miro, Microsoft Teams, Timer | UX Techniques: How Might We (HMW), Rapid Ideation, Effort/Impact Scale | Participants: Integral Staff Communications Division (12 People), including the Chief Strategist (CSO) and Director of Communications. | . ",
     "url": "/portfolio/rapid-design-thinking/rapid-design-thinking/#overview",
     
     "relUrl": "/portfolio/rapid-design-thinking/rapid-design-thinking/#overview"
-  },"72": {
+  },"111": {
     "doc": "Rapid Design Thinking",
     "title": "Background",
     "content": "The inaugural conference, held in November 2000, was the first in Texas and only the third in the United States to focus on the healthcare needs of African Americans. The event was created to confront systemic and cultural biases that have historically limited healthcare access for African Americans. Hosted by Integral Care, Travis County’s Local Mental Health and Intellectual and Developmental Disability Authority, the conference aims to provide tools and resources to build well-being and create a foundation for physical and mental health, enabling individuals to reach their full potential. ",
     "url": "/portfolio/rapid-design-thinking/rapid-design-thinking/#background",
     
     "relUrl": "/portfolio/rapid-design-thinking/rapid-design-thinking/#background"
-  },"73": {
+  },"112": {
     "doc": "Rapid Design Thinking",
     "title": "Problems",
     "content": "Staff members were tasked with leading a department meeting on any topic that might benefit or interest the team. While the team was mostly extroverted, this created challenges in brainstorming, as introverts often felt less comfortable speaking up. The extroverts tended to dominate discussions, overshadowing quieter participants. To address this, I focused on a brainstorming activity that introduced design thinking principles and asynchronous software (Miro) to provide equal participation opportunities. ",
     "url": "/portfolio/rapid-design-thinking/rapid-design-thinking/#problems",
     
     "relUrl": "/portfolio/rapid-design-thinking/rapid-design-thinking/#problems"
-  },"74": {
+  },"113": {
     "doc": "Rapid Design Thinking",
     "title": "Solution",
     "content": "Introduce design thinking techniques and tools like Miro to facilitate brainstorming and ideation, ensuring all voices are heard. ",
     "url": "/portfolio/rapid-design-thinking/rapid-design-thinking/#solution",
     
     "relUrl": "/portfolio/rapid-design-thinking/rapid-design-thinking/#solution"
-  },"75": {
+  },"114": {
     "doc": "Rapid Design Thinking",
     "title": "My Role",
     "content": "I conceptualized and facilitated the workshop, guiding the team through each phase of the design-thinking process. ",
     "url": "/portfolio/rapid-design-thinking/rapid-design-thinking/#my-role",
     
     "relUrl": "/portfolio/rapid-design-thinking/rapid-design-thinking/#my-role"
-  },"76": {
+  },"115": {
     "doc": "Rapid Design Thinking",
     "title": "Workshop Breakdown",
     "content": "Part 1: Challenge Statement: 7 minutes of Rapid Ideation . The team brainstormed problems and challenges for the Central Texas African-American Family Support Conference (CTAAFSC), which would be virtual for the first time. Participants used sticky notes to generate as many ideas as possible without discussion. | Outcome: . | 70 ideas were generated. | Encouraged the team to think from a user experience perspective. | . | . Part 2: Presentation: 10 minutes . – “You have 5 seconds!” Each participant had 5–10 seconds to present their ideas. This format allowed extroverts to share freely while minimizing pressure on introverts. | Outcome: . | Opened the floor for diverse perspectives. | Prevented premature problem-solving. | . | . Part 3: Vote &amp; Organize: 4 minutes . Participants were given two red dots to vote for their favorite ideas. After voting, the top four ideas were organized. | Outcome: . | Focused the team on key challenges without discussion. | . | . Part 4: How Might We (HMW): 7 minutes . The team reframed the top challenges into How Might We (HMW) questions to shift the focus from problems to solutions. | Outcome: . | Generated actionable questions, e.g., “How might we educate users on the platform?” | . | . Part 5: Back to Ideation &amp; Voting: 7 minutes . Using the HMW questions, the team brainstormed solutions. Each participant had 5–10 seconds to present their ideas, followed by voting. | Outcome: . | 35 solutions generated. | . | . Part 6: Prioritization: 3 minutes . Solutions were grouped and prioritized using an affinity mapping approach. | Outcome: . | Top 5 solutions identified. | . | . Part 7: Effort/Impact Scale: 5 minutes . The team evaluated the top solutions on an effort/impact matrix to determine feasibility and effectiveness. | Outcome: . | Clear understanding of viable solutions. | . | . Part 8: Actionable Items: 10 minutes . The final step involved creating actionable tasks for the selected solutions. | Outcome: . | A live chatbox was implemented, addressing: . | Help desk functionality. | FAQs. | Live tutorials. | . | . | . ",
     "url": "/portfolio/rapid-design-thinking/rapid-design-thinking/#workshop-breakdown",
     
     "relUrl": "/portfolio/rapid-design-thinking/rapid-design-thinking/#workshop-breakdown"
-  },"77": {
+  },"116": {
     "doc": "Rapid Design Thinking",
     "title": "Project Learnings",
     "content": ". | Inclusivity in brainstorming: Some of the best solutions came from quieter team members. Providing structured activities ensures everyone’s ideas are heard. | Time management: Design thinking workshops can run over time. Building in buffer time is critical for success. | . ",
     "url": "/portfolio/rapid-design-thinking/rapid-design-thinking/#project-learnings",
     
     "relUrl": "/portfolio/rapid-design-thinking/rapid-design-thinking/#project-learnings"
-  },"78": {
+  },"117": {
     "doc": "Rapid Design Thinking",
     "title": "Rapid Design Thinking",
     "content": " ",
     "url": "/portfolio/rapid-design-thinking/rapid-design-thinking/",
     
     "relUrl": "/portfolio/rapid-design-thinking/rapid-design-thinking/"
-  },"79": {
+  },"118": {
     "doc": "RefereeIQ-Sofía Chatbot",
-    "title": "RefereeIQ — A Conversational AI Coach for Rugby Referees",
+    "title": "RefereeIQ: A Conversational AI Coach for Rugby Referees",
     "content": "Project Overview Role: Product Designer &amp; Developer (end-to-end) Timeline: Personal project, iterative development Platform: Flutter (Android), Firebase Cloud Functions, OpenAI API Impact: Shipped cross-platform AI coaching tool used by rugby referees for scenario-based learning ",
-    "url": "/portfolio/refereeiq/refereeiq/#refereeiq--a-conversational-ai-coach-for-rugby-referees",
+    "url": "/portfolio/refereeiq/refereeiq/#refereeiq-a-conversational-ai-coach-for-rugby-referees",
     
-    "relUrl": "/portfolio/refereeiq/refereeiq/#refereeiq--a-conversational-ai-coach-for-rugby-referees"
-  },"80": {
+    "relUrl": "/portfolio/refereeiq/refereeiq/#refereeiq-a-conversational-ai-coach-for-rugby-referees"
+  },"119": {
     "doc": "RefereeIQ-Sofía Chatbot",
     "title": "The Challenge",
-    "content": "Sofia's welcome screen sets the coaching tone Rugby referees manage hundreds of laws, frequent clarifications, and nuanced edge cases. Current learning methods are fragmented—PDFs, forums, mentor advice—making it difficult to develop consistent judgment quickly. The opportunity: Create a conversational AI that feels like a mentor, handles multi-turn reasoning, and builds trust through citations and transparency—not just another generic chatbot. ",
+    "content": "Sofia's welcome screen sets the coaching tone Rugby referees manage hundreds of laws, frequent clarifications, and nuanced edge cases. Current learning methods are fragmented, PDFs, forums, mentor advice, making it difficult to develop consistent judgment quickly. The opportunity: Create a conversational AI that feels like a mentor, handles multi-turn reasoning, and builds trust through citations and transparency, not just another generic chatbot. ",
     "url": "/portfolio/refereeiq/refereeiq/#the-challenge",
     
     "relUrl": "/portfolio/refereeiq/refereeiq/#the-challenge"
-  },"81": {
+  },"120": {
     "doc": "RefereeIQ-Sofía Chatbot",
     "title": "Solution: Sofia, the AI Referee Coach",
-    "content": "I designed and built RefereeIQ, a conversational assistant that helps rugby referees reason through the Laws of the Game using natural dialogue. Instead of paging through PDFs, referees ask questions and get grounded answers with relevant clarifications and official law links, delivered by “Sofia.” . Core design principle: Reasoning-centric UX—blending open-ended conversation with grounding, citations, and explicit fallbacks to earn trust in high-stakes decision contexts. ",
+    "content": "I designed and built RefereeIQ, a conversational assistant that helps rugby referees reason through the Laws of the Game using natural dialogue. Instead of paging through PDFs, referees ask questions and get grounded answers with relevant clarifications and official law links, delivered by “Sofia.” . Core design principle: Reasoning-centric UX, blending open-ended conversation with grounding, citations, and explicit fallbacks to earn trust in high-stakes decision contexts. ",
     "url": "/portfolio/refereeiq/refereeiq/#solution-sofia-the-ai-referee-coach",
     
     "relUrl": "/portfolio/refereeiq/refereeiq/#solution-sofia-the-ai-referee-coach"
-  },"82": {
+  },"121": {
     "doc": "RefereeIQ-Sofía Chatbot",
     "title": "Impact &amp; Outcomes",
-    "content": "Shipped: Cross-platform Android release with working chat experience and daily AI-generated challenges. Usage: Referees and coaches actively used Sofia for scenario-based learning and law clarification. User Feedback . “Seeing the exact clarification link is faster than hunting PDFs.” . “When it checks the clarification instead of guessing, I trust it more.” . Key success metric: Trust through transparency—users valued explicit citations and uncertainty handling over confident but vague answers. ",
+    "content": "Shipped: Cross-platform Android release with working chat experience and daily AI-generated challenges. Usage: Referees and coaches actively used Sofia for scenario-based learning and law clarification. User Feedback . “Seeing the exact clarification link is faster than hunting PDFs.” . “When it checks the clarification instead of guessing, I trust it more.” . Key success metric: Trust through transparency, users valued explicit citations and uncertainty handling over confident but vague answers. ",
     "url": "/portfolio/refereeiq/refereeiq/#impact--outcomes",
     
     "relUrl": "/portfolio/refereeiq/refereeiq/#impact--outcomes"
-  },"83": {
+  },"122": {
     "doc": "RefereeIQ-Sofía Chatbot",
     "title": "Design Decisions: Building Trust Through Conversation",
-    "content": "1. Multi-Turn Reasoning with Context . Sofia maintains context across turns and asks clarifying questions Rather than treating each question in isolation, Sofia remembers recent conversation turns and can ask follow-up questions. This mirrors how a real coach would work—clarifying the scenario before jumping to an answer. Design choice: Recent user + Sofia turns are preserved and sent server-side. The system prompt consistently enforces terminology and citation standards aligned with official law language. UX impact: Referees can have natural back-and-forth dialogues without restarting context, leading to more nuanced answers. 2. Grounding with Citations (Not Just Confidence) . Answers include direct links to official World Rugby clarifications When Sofia is uncertain or when official guidance exists, the system retrieves and cites World Rugby Law Clarifications directly. Instead of hallucinating confident answers, Sofia says “Let’s check the latest clarification on this topic” and provides excerpts + links. Technical implementation: Backend scrapes the official clarifications index, detects when a clarification is relevant, fetches and parses the page (title + sections), then injects excerpts into the model context for Sofia to cite. UX impact: Users trust the answers because they can verify the source. This transparency builds confidence in the AI coach. 3. Tone: Patient Coach, Not Know-It-All . The system prompt frames Sofia as a patient coach—law-accurate, explicit when uncertain, and focused on helping referees learn judgment, not just memorize rules. Design choice: Lower temperature for factual answers; slightly higher for conversational coaching. Moderation pass on user input for safety. UX impact: Referees report the experience feels more like talking to a mentor than querying a database. 4. Daily Challenges for Active Learning . AI-generated multiple-choice questions using official law wording Beyond chat, Sofia offers daily challenges—5 AI-generated multiple-choice questions (5 points each) with strict constraints: official law wording, one correct answer. Progress tracking motivates continued learning Technical implementation: Scheduled Cloud Function generates questions daily, stored in Firestore. The UI tracks history and scores. UX impact: Gamification encourages regular engagement; referees use it for pre-match warm-up. ",
+    "content": "1. Multi-Turn Reasoning with Context . Sofia maintains context across turns and asks clarifying questions Rather than treating each question in isolation, Sofia remembers recent conversation turns and can ask follow-up questions. This mirrors how a real coach would work, clarifying the scenario before jumping to an answer. Design choice: Recent user + Sofia turns are preserved and sent server-side. The system prompt consistently enforces terminology and citation standards aligned with official law language. UX impact: Referees can have natural back-and-forth dialogues without restarting context, leading to more nuanced answers. 2. Grounding with Citations (Not Just Confidence) . Answers include direct links to official World Rugby clarifications When Sofia is uncertain or when official guidance exists, the system retrieves and cites World Rugby Law Clarifications directly. Instead of hallucinating confident answers, Sofia says “Let’s check the latest clarification on this topic” and provides excerpts + links. Technical implementation: Backend scrapes the official clarifications index, detects when a clarification is relevant, fetches and parses the page (title + sections), then injects excerpts into the model context for Sofia to cite. UX impact: Users trust the answers because they can verify the source. This transparency builds confidence in the AI coach. 3. Tone: Patient Coach, Not Know-It-All . The system prompt frames Sofia as a patient coach, law-accurate, explicit when uncertain, and focused on helping referees learn judgment, not just memorize rules. Design choice: Lower temperature for factual answers; slightly higher for conversational coaching. Moderation pass on user input for safety. UX impact: Referees report the experience feels more like talking to a mentor than querying a database. 4. Daily Challenges for Active Learning . AI-generated multiple-choice questions using official law wording Beyond chat, Sofia offers daily challenges, 5 AI-generated multiple-choice questions (5 points each) with strict constraints: official law wording, one correct answer. Progress tracking motivates continued learning Technical implementation: Scheduled Cloud Function generates questions daily, stored in Firestore. The UI tracks history and scores. UX impact: Gamification encourages regular engagement; referees use it for pre-match warm-up. ",
     "url": "/portfolio/refereeiq/refereeiq/#design-decisions-building-trust-through-conversation",
     
     "relUrl": "/portfolio/refereeiq/refereeiq/#design-decisions-building-trust-through-conversation"
-  },"84": {
+  },"123": {
     "doc": "RefereeIQ-Sofía Chatbot",
     "title": "What’s Real vs. Exploratory",
     "content": "Shipped &amp; live: . | Chat → Cloud Function → OpenAI with focused Sofia system prompt | Grounding via targeted retrieval of official World Rugby clarifications (not full RAG/vector store) | Configurable AI behavior via Firestore (model, temperature, prompts) for live tuning without redeploys | Daily challenge generator with strict law-aligned constraints | Flutter chat UI with markdown rendering and in-app link launching | . Future improvements: . | Full RAG pipeline with embeddings-backed store for laws + clarifications + competition regulations | Scoped sources by competition/region | Evaluation harness for prompt regression testing | Usage telemetry (when/why retrieval fires, uncertainty rates, citation patterns) | . ",
     "url": "/portfolio/refereeiq/refereeiq/#whats-real-vs-exploratory",
     
     "relUrl": "/portfolio/refereeiq/refereeiq/#whats-real-vs-exploratory"
-  },"85": {
+  },"124": {
     "doc": "RefereeIQ-Sofía Chatbot",
     "title": "Technical Architecture",
-    "content": "Flutter app (chat UI, daily challenges, history tracking) → Cloud Functions (chat handler, moderation, clarification retrieval, scheduled content generation) → OpenAI API (Sofia responses) + Firestore (configuration overrides, challenge storage) . Chat Flow . | User message → moderation pass | Build Sofia system prompt + recent conversation context | Detect when official clarification would help | Fetch &amp; parse World Rugby clarification pages (title + sections) | Assemble messages with excerpts/URLs for model context | OpenAI chat completion | Return grounded answer with citations | . Key Technical Decisions . Live configurability: Model, temperature, and system prompts stored in Firestore with code defaults—enabling rapid iteration without redeploys. Critical for tuning AI behavior based on user feedback. Selective retrieval: Clarification lookup triggers only when needed (user request or model uncertainty) to minimize latency and parsing overhead while maintaining UX fluidity. Cost optimization: Compact system prompts, tuned temperature per task (lower for factual Q&amp;A, higher for conversational coaching), bounded max tokens for concise answers. Safety: Server-side moderation pass on user input before model calls; guardrails in system prompt. ",
+    "content": "Flutter app (chat UI, daily challenges, history tracking) → Cloud Functions (chat handler, moderation, clarification retrieval, scheduled content generation) → OpenAI API (Sofia responses) + Firestore (configuration overrides, challenge storage) . Chat Flow . | User message → moderation pass | Build Sofia system prompt + recent conversation context | Detect when official clarification would help | Fetch &amp; parse World Rugby clarification pages (title + sections) | Assemble messages with excerpts/URLs for model context | OpenAI chat completion | Return grounded answer with citations | . Key Technical Decisions . Live configurability: Model, temperature, and system prompts stored in Firestore with code defaults, enabling rapid iteration without redeploys. Critical for tuning AI behavior based on user feedback. Selective retrieval: Clarification lookup triggers only when needed (user request or model uncertainty) to minimize latency and parsing overhead while maintaining UX fluidity. Cost optimization: Compact system prompts, tuned temperature per task (lower for factual Q&amp;A, higher for conversational coaching), bounded max tokens for concise answers. Safety: Server-side moderation pass on user input before model calls; guardrails in system prompt. ",
     "url": "/portfolio/refereeiq/refereeiq/#technical-architecture",
     
     "relUrl": "/portfolio/refereeiq/refereeiq/#technical-architecture"
-  },"86": {
+  },"125": {
     "doc": "RefereeIQ-Sofía Chatbot",
     "title": "Key Learnings",
-    "content": "1. Trust requires transparency, not just accuracy . Users trusted Sofia more when she explicitly said “I’m checking the official clarification” rather than sounding confident. In AI UX, showing the reasoning path matters as much as the answer. 2. Grounding architecture affects UX directly . Targeted retrieval (fetch specific clarifications on-demand) kept conversations fluid with low latency. A full RAG system would have added complexity without proportional UX benefit for this use case. 3. Live configurability is a superpower . Storing prompts and model settings in Firestore meant I could tune Sofia’s tone and behavior within minutes based on user feedback—no code deploys. This rapid iteration loop was essential for finding the right coaching tone. 4. Fallbacks are features, not bugs . Designing explicit “let me check” patterns made uncertainty feel helpful rather than broken. In high-stakes domains (laws, medical, legal), admitting uncertainty builds more trust than fake confidence. 5. Generalizability to other domains . This pattern—conversational AI with grounding, citations, and fallbacks—extends beyond rugby. Any domain with authoritative sources (legal docs, SOPs, policies, data dictionaries) could benefit from this UX approach. ",
+    "content": "1. Trust requires transparency, not just accuracy . Users trusted Sofia more when she explicitly said “I’m checking the official clarification” rather than sounding confident. In AI UX, showing the reasoning path matters as much as the answer. 2. Grounding architecture affects UX directly . Targeted retrieval (fetch specific clarifications on-demand) kept conversations fluid with low latency. A full RAG system would have added complexity without proportional UX benefit for this use case. 3. Live configurability is a superpower . Storing prompts and model settings in Firestore meant I could tune Sofia’s tone and behavior within minutes based on user feedback, no code deploys. This rapid iteration loop was essential for finding the right coaching tone. 4. Fallbacks are features, not bugs . Designing explicit “let me check” patterns made uncertainty feel helpful rather than broken. In high-stakes domains (laws, medical, legal), admitting uncertainty builds more trust than fake confidence. 5. Generalizability to other domains . This pattern, conversational AI with grounding, citations, and fallbacks, extends beyond rugby. Any domain with authoritative sources (legal docs, SOPs, policies, data dictionaries) could benefit from this UX approach. ",
     "url": "/portfolio/refereeiq/refereeiq/#key-learnings",
     
     "relUrl": "/portfolio/refereeiq/refereeiq/#key-learnings"
-  },"87": {
+  },"126": {
+    "doc": "RefereeIQ-Sofía Chatbot",
+    "title": "Evaluation-minded R&amp;D (personal)",
+    "content": "Beyond the shipped app, I explored AI evaluation tooling to connect product UX with measurable model behavior: . | promptfoo: Local eval setup comparing providers against rugby law prompts | GuideLLM: Documented onboarding friction from a UX perspective using RefereeIQ prompts as a real-world test dataset | . This is personal R&amp;D, not Red Hat production work. It informs how I design for evaluation-minded AI products (grounding, test harnesses, iteration loops). ",
+    "url": "/portfolio/refereeiq/refereeiq/#evaluation-minded-rd-personal",
+    
+    "relUrl": "/portfolio/refereeiq/refereeiq/#evaluation-minded-rd-personal"
+  },"127": {
     "doc": "RefereeIQ-Sofía Chatbot",
     "title": "Relevant for AI/ML Product Roles",
-    "content": ". | Reasoning-centric UX: Shows how the AI reasons (citations, fallbacks), not just what it answers—applicable to analysis tools, forecasting agents, and data prep assistants | Grounding over confidence: Verifiable references &gt; vague confidence—maps to data science workflows where assumptions and data sources must be explicit | Rapid experimentation: Firestore-backed config enabled A/B testing prompts and temperature without deploys—critical for AI product iteration | Cross-functional execution: Owned full stack (UX, backend, AI integration, deployment)—demonstrates ability to ship AI products independently | . ",
+    "content": ". | Reasoning-centric UX: Shows how the AI reasons (citations, fallbacks), not just what it answers, applicable to analysis tools, forecasting agents, and data prep assistants | Grounding over confidence: Verifiable references &gt; vague confidence, maps to data science workflows where assumptions and data sources must be explicit | Rapid experimentation: Firestore-backed config enabled A/B testing prompts and temperature without deploys, critical for AI product iteration | Cross-functional execution: Owned full stack (UX, backend, AI integration, deployment), demonstrates ability to ship AI products independently | . ",
     "url": "/portfolio/refereeiq/refereeiq/#relevant-for-aiml-product-roles",
     
     "relUrl": "/portfolio/refereeiq/refereeiq/#relevant-for-aiml-product-roles"
-  },"88": {
+  },"128": {
     "doc": "RefereeIQ-Sofía Chatbot",
     "title": "RefereeIQ-Sofía Chatbot",
     "content": " ",
     "url": "/portfolio/refereeiq/refereeiq/",
     
     "relUrl": "/portfolio/refereeiq/refereeiq/"
-  },"89": {
-    "doc": "RefLog",
-    "title": "RefLog — Designing for Speed, Focus, and Flow",
-    "content": "Project Overview Role: Solo Product Designer &amp; Developer Timeline: 4 weeks (idea to App Store launch) Platform: Flutter (iOS &amp; Android), Firebase, Offline-first Impact: Reduced match review time from 5+ hours to 90 minutes. Shipped to iOS App Store and Google Play Store. ",
-    "url": "/portfolio/reflog/reflog/#reflog--designing-for-speed-focus-and-flow",
+  },"129": {
+    "doc": "ReflectED",
+    "title": "ReflectED: AI Reflection Coach for Educators and Coaches",
+    "content": "Project Overview Role: Product designer &amp; developer (solo) Platform: PWA / Next.js Tagline: Teach. Reflect. Grow. Impact: Framework-aligned coaching reports from session transcripts; daily feedback without surveillance ",
+    "url": "/portfolio/reflected/reflected/#reflected-ai-reflection-coach-for-educators-and-coaches",
     
-    "relUrl": "/portfolio/reflog/reflog/#reflog--designing-for-speed-focus-and-flow"
-  },"90": {
+    "relUrl": "/portfolio/reflected/reflected/#reflected-ai-reflection-coach-for-educators-and-coaches"
+  },"130": {
+    "doc": "ReflectED",
+    "title": "The problem",
+    "content": "Teachers, coaches, and trainers rarely get frequent observation feedback. Evaluations are often subjective, delayed, and limited to a few sessions per year. Practitioners need evidence-based coaching at scale, not another generic chatbot. ",
+    "url": "/portfolio/reflected/reflected/#the-problem",
+    
+    "relUrl": "/portfolio/reflected/reflected/#the-problem"
+  },"131": {
+    "doc": "ReflectED",
+    "title": "The solution",
+    "content": "ReflectED reads a session transcript, compares what happened to what was planned (when a plan exists), and returns a supportive, evidence-based coaching report. It is like having a master coach review every session. Subcategories (MVP): . | Vertical | User | Framework | . | Education | Classroom teacher | Danielson or Marzano | . | Sport | Club or school coach | ISCF or USOPC QCF | . ",
+    "url": "/portfolio/reflected/reflected/#the-solution",
+    
+    "relUrl": "/portfolio/reflected/reflected/#the-solution"
+  },"132": {
+    "doc": "ReflectED",
+    "title": "Primary flow (transcript-first)",
+    "content": ". | Record in native Voice Memos (or similar) during the session | Transcribe after the session | Open ReflectED; set event date, subcategory, session plan, goal chips | Upload transcript (.txt); hour-long sessions are too large to paste reliably | Reflect: AI generates framework-aligned report saved to history | . Education: Lesson plan required before analyze (learning objective, timed segments, focus areas). Sport: Session plan required unless opted out via No session plan. ",
+    "url": "/portfolio/reflected/reflected/#primary-flow-transcript-first",
+    
+    "relUrl": "/portfolio/reflected/reflected/#primary-flow-transcript-first"
+  },"133": {
+    "doc": "ReflectED",
+    "title": "Design decisions",
+    "content": ". | Snapshot vs full report: Coaching report opens on Snapshot tab (score, identity profile, headline growth focus); full rubric detail on Coaching report tab | Draft workflow: Multiple session drafts in localStorage; Continue draft / Start new session on /session | Evidence from transcript: “From your session” quotes for bright spots and growth signals | ReflectED voice: Supportive coaching tone regardless of framework (Danielson, Marzano, sport QCF) | . ",
+    "url": "/portfolio/reflected/reflected/#design-decisions",
+    
+    "relUrl": "/portfolio/reflected/reflected/#design-decisions"
+  },"134": {
+    "doc": "ReflectED",
+    "title": "Outcomes",
+    "content": ". | Practitioner workflow UX: plan required before analyze mirrors clinical and operational “chart before action” patterns | Structured AI output: rubric scores, identity profile, actionable next steps (not unstructured chat) | Real iteration: design-history driven feature evolution (drafts, filters, delete flows) | . ",
+    "url": "/portfolio/reflected/reflected/#outcomes",
+    
+    "relUrl": "/portfolio/reflected/reflected/#outcomes"
+  },"135": {
+    "doc": "ReflectED",
+    "title": "Part of the suite",
+    "content": "ReflectED is one app in my published product suite, alongside Tō3, RefLog, and RefereeIQ. ",
+    "url": "/portfolio/reflected/reflected/#part-of-the-suite",
+    
+    "relUrl": "/portfolio/reflected/reflected/#part-of-the-suite"
+  },"136": {
+    "doc": "ReflectED",
+    "title": "ReflectED",
+    "content": " ",
+    "url": "/portfolio/reflected/reflected/",
+    
+    "relUrl": "/portfolio/reflected/reflected/"
+  },"137": {
+    "doc": "RefLog",
+    "title": "RefLog: Designing for Speed, Focus, and Flow",
+    "content": "Project Overview Role: Solo Product Designer &amp; Developer Timeline: 4 weeks (idea to App Store launch) Platform: Flutter (iOS &amp; Android), Firebase, Offline-first Impact: Reduced match review time from 5+ hours to 90 minutes. Shipped to iOS App Store and Google Play Store. Workflow UX: High-stakes field operations under time pressure, patterns applicable to clinical, logistics, and inspection workflows ",
+    "url": "/portfolio/reflog/reflog/#reflog-designing-for-speed-focus-and-flow",
+    
+    "relUrl": "/portfolio/reflog/reflog/#reflog-designing-for-speed-focus-and-flow"
+  },"138": {
     "doc": "RefLog",
     "title": "The Problem",
-    "content": "As a rugby referee, I spend hours after games rewatching film, coding events, and analyzing decisions. The traditional process was cumbersome: . Old workflow: . | Download match footage | Compress video files | Upload to web platform | Code the full 80-minute game using desktop software | Total time: 5+ hours (including setup, upload, and coding) | . The pain point: Existing tools assumed reflection happens later—at a desk, with full footage uploaded. But referees need to review quickly, often on mobile, and frequently without reliable internet. What if I could code a match in 90 minutes instead of 5 hours—on the device already in my hand? . ",
+    "content": "As a rugby referee, I spend hours after games rewatching film, coding events, and analyzing decisions. The traditional process was cumbersome: . Old workflow: . | Download match footage | Compress video files | Upload to web platform | Code the full 80-minute game using desktop software | Total time: 5+ hours (including setup, upload, and coding) | . The pain point: Existing tools assumed reflection happens later, at a desk, with full footage uploaded. But referees need to review quickly, often on mobile, and frequently without reliable internet. What if I could code a match in 90 minutes instead of 5 hours, on the device already in my hand? . ",
     "url": "/portfolio/reflog/reflog/#the-problem",
     
     "relUrl": "/portfolio/reflog/reflog/#the-problem"
-  },"91": {
+  },"139": {
     "doc": "RefLog",
     "title": "The Solution",
-    "content": "RefLog is a lightweight, mobile-first app that works alongside your existing streaming or playback device. No downloads, no uploads, no setup—everything happens on the device already in your hand. Early iteration showing the progressive selector in action Core insight: Match the way referees actually think during a game—phase → team → infraction → sanction. This mental model became the foundation of the interaction design. Key features: . | Progressive tap-based selector (faster than scrolling lists or forms) | ±10s time controls for quick timestamp adjustments | Auto-timestamp assist (steps back a few seconds automatically) | Offline-first architecture (stadiums, buses, hotels) | Local storage with instant export | Dark mode for low-light review sessions | . ",
+    "content": "RefLog is a lightweight, mobile-first app that works alongside your existing streaming or playback device. No downloads, no uploads, no setup, everything happens on the device already in your hand. Early iteration showing the progressive selector in action Core insight: Match the way referees actually think during a game, phase → team → infraction → sanction. This mental model became the foundation of the interaction design. Key features: . | Progressive tap-based selector (faster than scrolling lists or forms) | ±10s time controls for quick timestamp adjustments | Auto-timestamp assist (steps back a few seconds automatically) | Offline-first architecture (stadiums, buses, hotels) | Local storage with instant export | Dark mode for low-light review sessions | . ",
     "url": "/portfolio/reflog/reflog/#the-solution",
     
     "relUrl": "/portfolio/reflog/reflog/#the-solution"
-  },"92": {
+  },"140": {
     "doc": "RefLog",
     "title": "Impact &amp; Outcomes",
     "content": "Shipped: Live on iOS App Store and Google Play Store after 4 weeks of development. Time savings: Reduced total review time from 5+ hours → 90 minutes (70% reduction). Adoption: Early users described it as “a clean, fast way to log and review” with secondary use cases emerging organically (coaches using it for performance reviews, not just match coding). Published links: . | iOS App Store (globally approved) | Google Play Store (pending global approval) | RefLog Site | . RefLog on the iOS App Store RefLog on Google Play Store . ",
     "url": "/portfolio/reflog/reflog/#impact--outcomes",
     
     "relUrl": "/portfolio/reflog/reflog/#impact--outcomes"
-  },"93": {
+  },"141": {
     "doc": "RefLog",
     "title": "Design Process: From Idea to Shipped Product",
-    "content": "1. Exploring Interaction Models . Early on, I tested three different approaches to event logging: . | Scrolling lists: Too slow, required too much reading and searching | Color-coded grids: Fast tapping, but visually chaotic and hard to scan | Progressive selector (phase → team → infraction → sanction): Intuitive, minimal, aligned with referee thinking | . The winner: Progressive selector. It required fewer taps, less cognitive load, and mirrored the natural decision flow during a game. Design validation method: I measured friction in seconds—how long it took to record an event. Every design change was judged against that metric. If it didn’t make logging faster or more accurate, it was cut. 2. Reducing Micro-Frictions . I focused on moments when attention shifts from the match to the interface. Two UX patterns emerged: . ±10s time controls . Simple ±10s controls for quick timestamp adjustments Users could quickly adjust timestamps without scrubbing through video. Inspired by common video playback habits (skip forward/back 10 seconds). UX impact: Removed the need to pause, scrub, and find the exact moment—just tap to adjust. Auto-timestamp assist . When logging a new event, the app automatically steps back a few seconds to anticipate the start of the clipping moment. UX impact: Users don’t have to manually rewind before logging—the app does it proactively. Design principle: Does this remove a decision, or add one? Is this faster? Is this accurate? . 3. Designing Within Constraints . I gave myself one month to take RefLog from idea to store-ready. That constraint forced clarity. Offline-first architecture . Referees work in stadiums, buses, and hotels—often without reliable internet. RefLog had to function fully offline. Technical decision: Local storage with Firestore for sync (when available). UX impact: No “loading” states, no upload failures, no dependency on connectivity. No login/authentication . I avoided authentication in v1 to reduce friction and App Store overhead. UX impact: Open app → start logging immediately. Zero onboarding friction. Dark mode as default . Many referees review in low-light conditions (locker rooms, buses, hotels). Dark mode wasn’t a theme—it was a necessity. Design validation: First user testing revealed users couldn’t see the interface on their phones’ default dark mode setting. I prioritized dark mode immediately. Firestore-backed feature flags for rapid iteration without redeploys Live configuration via Firestore . Feature flags and configuration stored in Firestore allowed me to enable/disable features remotely without App Store resubmissions. UX impact: Rapid iteration based on user feedback—I could test features with small groups before wider rollout. 4. Testing, Feedback, and Adaptation . Once RefLog stabilized, I shared it with referees and coaches. Their feedback revealed unexpected use cases. Coach Mode discovery: One coach mentioned using the app not to code matches, but to take notes on referees’ performance during reviews. This sparked an exploration into a dedicated “Coach Mode” for review and annotation without full match-coding flow. Design principle reinforced: When you design for speed and clarity, secondary use cases emerge naturally. ",
+    "content": "1. Exploring Interaction Models . Early on, I tested three different approaches to event logging: . | Scrolling lists: Too slow, required too much reading and searching | Color-coded grids: Fast tapping, but visually chaotic and hard to scan | Progressive selector (phase → team → infraction → sanction): Intuitive, minimal, aligned with referee thinking | . The winner: Progressive selector. It required fewer taps, less cognitive load, and mirrored the natural decision flow during a game. Design validation method: I measured friction in seconds, how long it took to record an event. Every design change was judged against that metric. If it didn’t make logging faster or more accurate, it was cut. 2. Reducing Micro-Frictions . I focused on moments when attention shifts from the match to the interface. Two UX patterns emerged: . ±10s time controls . Simple ±10s controls for quick timestamp adjustments Users could quickly adjust timestamps without scrubbing through video. Inspired by common video playback habits (skip forward/back 10 seconds). UX impact: Removed the need to pause, scrub, and find the exact moment, just tap to adjust. Auto-timestamp assist . When logging a new event, the app automatically steps back a few seconds to anticipate the start of the clipping moment. UX impact: Users don’t have to manually rewind before logging, the app does it proactively. Design principle: Does this remove a decision, or add one? Is this faster? Is this accurate? . 3. Designing Within Constraints . I gave myself one month to take RefLog from idea to store-ready. That constraint forced clarity. Offline-first architecture . Referees work in stadiums, buses, and hotels, often without reliable internet. RefLog had to function fully offline. Technical decision: Local storage with Firestore for sync (when available). UX impact: No “loading” states, no upload failures, no dependency on connectivity. No login/authentication . I avoided authentication in v1 to reduce friction and App Store overhead. UX impact: Open app → start logging immediately. Zero onboarding friction. Dark mode as default . Many referees review in low-light conditions (locker rooms, buses, hotels). Dark mode wasn’t a theme, it was a necessity. Design validation: First user testing revealed users couldn’t see the interface on their phones’ default dark mode setting. I prioritized dark mode immediately. Firestore-backed feature flags for rapid iteration without redeploys Live configuration via Firestore . Feature flags and configuration stored in Firestore allowed me to enable/disable features remotely without App Store resubmissions. UX impact: Rapid iteration based on user feedback, I could test features with small groups before wider rollout. 4. Testing, Feedback, and Adaptation . Once RefLog stabilized, I shared it with referees and coaches. Their feedback revealed unexpected use cases. Coach Mode discovery: One coach mentioned using the app not to code matches, but to take notes on referees’ performance during reviews. This sparked an exploration into a dedicated “Coach Mode” for review and annotation without full match-coding flow. Design principle reinforced: When you design for speed and clarity, secondary use cases emerge naturally. ",
     "url": "/portfolio/reflog/reflog/#design-process-from-idea-to-shipped-product",
     
     "relUrl": "/portfolio/reflog/reflog/#design-process-from-idea-to-shipped-product"
-  },"94": {
+  },"142": {
     "doc": "RefLog",
     "title": "Rapid Prototyping with AI Tools",
-    "content": "I built RefLog solo using Flutter, but I leveraged large language models as a coding copilot throughout development. How I used LLMs: . | Debugging Flutter issues and refactoring components | Reasoning about architecture and state management trade-offs | Identifying edge cases I’d missed | Thinking through Firestore data structure decisions | . Impact on process: LLMs didn’t replace my design process—they amplified it. I could hold more of the problem in my head and iterate on interaction flow and performance together. It blurred the line between design and development in a productive way. Speed benefit: Rapid cycles of prompting, refining, and testing enabled me to ship in 4 weeks—a timeline that wouldn’t have been possible without AI-assisted development. ",
+    "content": "I built RefLog solo using Flutter, but I leveraged large language models as a coding copilot throughout development. How I used LLMs: . | Debugging Flutter issues and refactoring components | Reasoning about architecture and state management trade-offs | Identifying edge cases I’d missed | Thinking through Firestore data structure decisions | . Impact on process: LLMs didn’t replace my design process, they amplified it. I could hold more of the problem in my head and iterate on interaction flow and performance together. It blurred the line between design and development in a productive way. Speed benefit: Rapid cycles of prompting, refining, and testing enabled me to ship in 4 weeks, a timeline that wouldn’t have been possible without AI-assisted development. ",
     "url": "/portfolio/reflog/reflog/#rapid-prototyping-with-ai-tools",
     
     "relUrl": "/portfolio/reflog/reflog/#rapid-prototyping-with-ai-tools"
-  },"95": {
+  },"143": {
     "doc": "RefLog",
     "title": "Technical Architecture",
-    "content": "Flutter app (iOS &amp; Android) → Local storage (offline-first) → Firestore (feature flags, remote config, optional sync) . Key Technical Decisions . Offline-first: All match data stored locally; Firestore used only for configuration and optional backup. No authentication: Reduced onboarding friction; added complexity deferred to v2 when clear user need emerges. Feature flags via Firestore: Enabled remote feature toggling without App Store resubmission—critical for rapid iteration. Progressive disclosure UI: Phase → team → infraction → sanction flow implemented as sequential selectors to minimize cognitive load. ",
+    "content": "Flutter app (iOS &amp; Android) → Local storage (offline-first) → Firestore (feature flags, remote config, optional sync) . Key Technical Decisions . Offline-first: All match data stored locally; Firestore used only for configuration and optional backup. No authentication: Reduced onboarding friction; added complexity deferred to v2 when clear user need emerges. Feature flags via Firestore: Enabled remote feature toggling without App Store resubmission, critical for rapid iteration. Progressive disclosure UI: Phase → team → infraction → sanction flow implemented as sequential selectors to minimize cognitive load. ",
     "url": "/portfolio/reflog/reflog/#technical-architecture",
     
     "relUrl": "/portfolio/reflog/reflog/#technical-architecture"
-  },"96": {
+  },"144": {
     "doc": "RefLog",
     "title": "Key Learnings",
-    "content": "1. Speed and usability are not opposites . Designing for rapid input requires empathy for how people think under pressure—whether that’s a referee making a split-second call or a data scientist iterating through model runs. 2. Measure friction in time, not clicks . I optimized for seconds-to-log-event, not just number of taps. Sometimes an extra tap that saved cognitive load was worth it. 3. Constraints force clarity . The 4-week deadline meant I couldn’t over-engineer. I built what the next match told me to build—each day, I’d use RefLog live, note what broke my focus, and fix that first. 4. Secondary use cases validate core design . When coaches started using RefLog for performance reviews (not match coding), it confirmed that the core UX—speed and clarity—was solving a broader problem. 5. AI as a design accelerator . LLMs enabled me to blur the line between design and development productively. I could prototype, test, and ship faster than traditional designer-developer handoff workflows. 6. Live configuration is a superpower . Firestore-backed feature flags meant I could iterate on features without App Store delays—essential for solo product development. ",
+    "content": "1. Speed and usability are not opposites . Designing for rapid input requires empathy for how people think under pressure, whether that’s a referee making a split-second call or a data scientist iterating through model runs. 2. Measure friction in time, not clicks . I optimized for seconds-to-log-event, not just number of taps. Sometimes an extra tap that saved cognitive load was worth it. 3. Constraints force clarity . The 4-week deadline meant I couldn’t over-engineer. I built what the next match told me to build, each day, I’d use RefLog live, note what broke my focus, and fix that first. 4. Secondary use cases validate core design . When coaches started using RefLog for performance reviews (not match coding), it confirmed that the core UX, speed and clarity, was solving a broader problem. 5. AI as a design accelerator . LLMs enabled me to blur the line between design and development productively. I could prototype, test, and ship faster than traditional designer-developer handoff workflows. 6. Live configuration is a superpower . Firestore-backed feature flags meant I could iterate on features without App Store delays, essential for solo product development. ",
     "url": "/portfolio/reflog/reflog/#key-learnings",
     
     "relUrl": "/portfolio/reflog/reflog/#key-learnings"
-  },"97": {
+  },"145": {
     "doc": "RefLog",
     "title": "Relevant for UX Engineering / AI Product Roles",
-    "content": ". | Full-stack execution: Owned design, development, and deployment end-to-end (Flutter, Firebase, App Store submission) | Speed-focused UX: Optimized for high-pressure, time-sensitive workflows—applicable to data tools, analysis platforms, and operational dashboards | Offline-first design: Critical for mobile/field tools and environments with unreliable connectivity | AI-assisted development: Demonstrated ability to leverage LLMs for rapid prototyping and iteration | Live configuration patterns: Firestore-backed flags enabled A/B testing and rapid iteration without redeploys—key for AI product experimentation | . ",
+    "content": ". | Full-stack execution: Owned design, development, and deployment end-to-end (Flutter, Firebase, App Store submission) | Speed-focused UX: Optimized for high-pressure, time-sensitive workflows, applicable to data tools, analysis platforms, and operational dashboards | Offline-first design: Critical for mobile/field tools and environments with unreliable connectivity | AI-assisted development: Demonstrated ability to leverage LLMs for rapid prototyping and iteration | Live configuration patterns: Firestore-backed flags enabled A/B testing and rapid iteration without redeploys, key for AI product experimentation | . ",
     "url": "/portfolio/reflog/reflog/#relevant-for-ux-engineering--ai-product-roles",
     
     "relUrl": "/portfolio/reflog/reflog/#relevant-for-ux-engineering--ai-product-roles"
-  },"98": {
+  },"146": {
     "doc": "RefLog",
     "title": "What’s Next",
-    "content": ". | Expanding Coach Mode for performance reviews and annotated feedback | Introducing remote templates for referee societies to standardize event taxonomies | Exploring syncing and analytics once clear user value is defined (avoiding premature complexity) | . RefLog reminded me that good design isn’t about adding—it’s about removing everything that gets in the way of flow. Deliverables: . | iOS App Store (globally approved) | Google Play Store (globally approved) | RefLog Site | . ",
+    "content": ". | Expanding Coach Mode for performance reviews and annotated feedback | Introducing remote templates for referee societies to standardize event taxonomies | Exploring syncing and analytics once clear user value is defined (avoiding premature complexity) | . RefLog reminded me that good design isn’t about adding, it’s about removing everything that gets in the way of flow. Deliverables: . | iOS App Store (globally approved) | Google Play Store (globally approved) | RefLog Site | . ",
     "url": "/portfolio/reflog/reflog/#whats-next",
     
     "relUrl": "/portfolio/reflog/reflog/#whats-next"
-  },"99": {
+  },"147": {
     "doc": "RefLog",
     "title": "RefLog",
     "content": " ",
     "url": "/portfolio/reflog/reflog/",
     
     "relUrl": "/portfolio/reflog/reflog/"
-  },"100": {
+  },"148": {
     "doc": "Resume",
     "title": "Resume",
     "content": "Go to the resume. ",
     "url": "/resume/standard/",
     
     "relUrl": "/resume/standard/"
-  },"101": {
+  },"149": {
+    "doc": "Tō3",
+    "title": "Tō3: Live Voice for Event Crews",
+    "content": "Project Overview Role: Product designer &amp; developer (solo) Platform: Flutter (iOS + Android) Former name: RefOpenMic, renamed to Tō3 as the product matured Tagline: Live. Clear. Simple. ",
+    "url": "/portfolio/to3/to3/#t%C5%8D3-live-voice-for-event-crews",
+    
+    "relUrl": "/portfolio/to3/to3/#tō3-live-voice-for-event-crews"
+  },"150": {
+    "doc": "Tō3",
+    "title": "The problem",
+    "content": "Event crews (referees, staff, volunteers) need live voice communication at the venue without desktop complexity or expensive radio infrastructure. Controls must work in bright sun, dark halls, and one-handed on a phone. ",
+    "url": "/portfolio/to3/to3/#the-problem",
+    
+    "relUrl": "/portfolio/to3/to3/#the-problem"
+  },"151": {
+    "doc": "Tō3",
+    "title": "The solution",
+    "content": "Tō3 provides free live voice for events: open a room, tap to join, stay with your crew. Core capabilities: . | Live audio: Real-time voice with simple mute controls | Events &amp; sessions: Create events, add sessions, see hosts and listeners | Sign in: Email or Google; same account across devices | Notifications: Optional alerts when a followed session goes live | High contrast UI: Black and white, readable in any lighting | Venue-first: Run everything from your phone; no desktop required | . ",
+    "url": "/portfolio/to3/to3/#the-solution",
+    
+    "relUrl": "/portfolio/to3/to3/#the-solution"
+  },"152": {
+    "doc": "Tō3",
+    "title": "Design principles",
+    "content": ". | Mic when it matters: Microphone for live rooms; mute when not talking | Simple hierarchy: Events → sessions → live room; minimal steps to join | Free to host and join: Low barrier for community and volunteer crews | . ",
+    "url": "/portfolio/to3/to3/#design-principles",
+    
+    "relUrl": "/portfolio/to3/to3/#design-principles"
+  },"153": {
+    "doc": "Tō3",
+    "title": "Outcomes",
+    "content": ". | Shipped Flutter app with store-ready marketing assets | Extends my product work beyond rugby officiating into event operations | Built with the same AI-assisted solo workflow as my other suite apps | . ",
+    "url": "/portfolio/to3/to3/#outcomes",
+    
+    "relUrl": "/portfolio/to3/to3/#outcomes"
+  },"154": {
+    "doc": "Tō3",
+    "title": "Part of the suite",
+    "content": "Tō3 is one app in my published product suite. Previously marketed as RefOpenMic; Tō3 is the current product name (to3 in Flutter pubspec.yaml). ",
+    "url": "/portfolio/to3/to3/#part-of-the-suite",
+    
+    "relUrl": "/portfolio/to3/to3/#part-of-the-suite"
+  },"155": {
+    "doc": "Tō3",
+    "title": "Tō3",
+    "content": " ",
+    "url": "/portfolio/to3/to3/",
+    
+    "relUrl": "/portfolio/to3/to3/"
+  },"156": {
     "doc": "Red Hat Packages Catalog Redesign",
     "title": "Red Hat Packages Catalog Redesign",
     "content": "Project Overview Role: UX Designer Timeline: 1 week (March 2026) Organization: Red Hat Stakeholders: PM, engineering leads, senior product managers Outcome: Combined Trusted Libraries and Red Hat AI Components into one catalog view with faceted filtering, migrated the UI to PatternFly 6 semantic tokens, and shipped to production. I designed and implemented the experience (implementation supported by Claude/Cursor). ",
     "url": "/portfolio/ui-packages-redhat/ui-packages-redhat/",
     
     "relUrl": "/portfolio/ui-packages-redhat/ui-packages-redhat/"
-  },"102": {
+  },"157": {
     "doc": "Red Hat Packages Catalog Redesign",
     "title": "The situation",
-    "content": "Red Hat’s package site had two separate entry points: Trusted Libraries (SLSA Level 3 secure packages) and Red Hat AI Components (hardware-accelerated ML packages). To see what was in each, you had to leave one experience and open the other. There was no way to filter by Python version, license, release stage, or build variant—metadata that developers actually use to choose packages. Data scientists and ML engineers couldn’t easily see the full landscape or compare across both sources. I started with a UX audit focused on flow, feel, and alignment: what is the user trying to accomplish, and what path do they have to take to get there? The audit board below helped me map the current experience and where it broke down. UX audit board: mapping user goals and paths to identify gaps in flow and alignment Before: Trusted Libraries and AI Components were separate, disconnected experiences . ",
+    "content": "Red Hat’s package site had two separate entry points: Trusted Libraries (SLSA Level 3 secure packages) and Red Hat AI Components (hardware-accelerated ML packages). To see what was in each, you had to leave one experience and open the other. There was no way to filter by Python version, license, release stage, or build variant, metadata that developers actually use to choose packages. Data scientists and ML engineers couldn’t easily see the full landscape or compare across both sources. I started with a UX audit focused on flow, feel, and alignment: what is the user trying to accomplish, and what path do they have to take to get there? The audit board below helped me map the current experience and where it broke down. UX audit board: mapping user goals and paths to identify gaps in flow and alignment Before: Trusted Libraries and AI Components were separate, disconnected experiences . ",
     "url": "/portfolio/ui-packages-redhat/ui-packages-redhat/#the-situation",
     
     "relUrl": "/portfolio/ui-packages-redhat/ui-packages-redhat/#the-situation"
-  },"103": {
+  },"158": {
     "doc": "Red Hat Packages Catalog Redesign",
     "title": "What I did",
-    "content": "The core shift was to organize the catalog around how people search—by capabilities, constraints, and trust—instead of how the backend is split (Trusted vs. AI). I moved to a single catalog with a source toggle and faceted filters so users could explore both ecosystems from one place. Unified catalog. One view with a left sidebar for filters and a main area for the package gallery. Filters are grouped by context: AI Components get build variant and product version; Trusted Libraries get Python version, SLSA Level 3, license, release stage, and category. That way it’s clear which filters apply to which packages. Search (“Find by name”) works across both sources. Unified catalog: faceted filters, source toggle, and card-based gallery Source-aware cards. Cards don’t show the same fields for every package. Trusted Libraries cards emphasize author, license, and SLSA badge; AI Components cards emphasize build variant, product version, Python version, and hardware (CPU/GPU). Different users care about different things—provenance vs. compatibility—so the card content follows that. Same pattern on repo and detail pages. When you drill into a repository index (e.g. main), the same catalog layout and filters apply. On package details I added an Index card in the sidebar so source, build variant, and product version are visible without digging through tabs. Before: repo list with minimal metadata and table layout After: repo view uses the same catalog layout and filters Package details: Index card in sidebar shows source, build variant, and product version Design system and accessibility. The UI was on legacy PatternFly with hardcoded colors that didn’t work in dark mode. I migrated to PatternFly 6 semantic tokens for color, type, and spacing so the catalog respects light/dark theme and stays consistent with other Red Hat products. Fixes included the catalog icon (was red-on-red, now readable), heading colors (no longer link-like), and filter sidebar contrast. Hardest part. Deciding what to show and what to cut. The goal was a clear primary path without hiding information that edge users need—e.g. release stage, category, SLSA—so I surfaced those in filters and on cards in a way that doesn’t overwhelm the main flow. ",
+    "content": "The core shift was to organize the catalog around how people search, by capabilities, constraints, and trust, instead of how the backend is split (Trusted vs. AI). I moved to a single catalog with a source toggle and faceted filters so users could explore both ecosystems from one place. Unified catalog. One view with a left sidebar for filters and a main area for the package gallery. Filters are grouped by context: AI Components get build variant and product version; Trusted Libraries get Python version, SLSA Level 3, license, release stage, and category. That way it’s clear which filters apply to which packages. Search (“Find by name”) works across both sources. Unified catalog: faceted filters, source toggle, and card-based gallery Source-aware cards. Cards don’t show the same fields for every package. Trusted Libraries cards emphasize author, license, and SLSA badge; AI Components cards emphasize build variant, product version, Python version, and hardware (CPU/GPU). Different users care about different things, provenance vs. compatibility, so the card content follows that. Same pattern on repo and detail pages. When you drill into a repository index (e.g. main), the same catalog layout and filters apply. On package details I added an Index card in the sidebar so source, build variant, and product version are visible without digging through tabs. Before: repo list with minimal metadata and table layout After: repo view uses the same catalog layout and filters Package details: Index card in sidebar shows source, build variant, and product version Design system and accessibility. The UI was on legacy PatternFly with hardcoded colors that didn’t work in dark mode. I migrated to PatternFly 6 semantic tokens for color, type, and spacing so the catalog respects light/dark theme and stays consistent with other Red Hat products. Fixes included the catalog icon (was red-on-red, now readable), heading colors (no longer link-like), and filter sidebar contrast. Hardest part. Deciding what to show and what to cut. The goal was a clear primary path without hiding information that edge users need, e.g. release stage, category, SLSA, so I surfaced those in filters and on cards in a way that doesn’t overwhelm the main flow. ",
     "url": "/portfolio/ui-packages-redhat/ui-packages-redhat/#what-i-did",
     
     "relUrl": "/portfolio/ui-packages-redhat/ui-packages-redhat/#what-i-did"
-  },"104": {
+  },"159": {
     "doc": "Red Hat Packages Catalog Redesign",
     "title": "How it was built",
     "content": "Stack: React, TypeScript, PatternFly 6, Vite. Filters use PatternFly’s searchable multi-select dropdowns with typeahead (e.g. type “Apache” to find Apache-2.0). Metadata filters (license, Python version, release stage) run client-side after batch-fetching metadata for the list (capped at 100 packages) to keep things fast without extra API calls. Filter state lives in the URL so filtered views are shareable and bookmarkable. Reusable pieces I designed and implemented: UnifiedFilterSidebar, FilterDropdown, UnifiedPackageCard, SourceBadge, PackageMetadataChips, plus a useFilterParams hook for URL sync. Spacing uses a small unifiedSpacing.ts module so catalog, repo, and detail views share the same vertical rhythm. ",
     "url": "/portfolio/ui-packages-redhat/ui-packages-redhat/#how-it-was-built",
     
     "relUrl": "/portfolio/ui-packages-redhat/ui-packages-redhat/#how-it-was-built"
-  },"105": {
+  },"160": {
     "doc": "Red Hat Packages Catalog Redesign",
     "title": "What I’d do differently",
-    "content": "Metadata should drive the IA, not the backend. The old UI mirrored two APIs. The new one is organized around what users need to decide: SLSA level, hardware variant, Python compatibility, license. That made the catalog actually useful for discovery. Prioritization is the job. Figuring out what’s essential vs. nice-to-have, while still leaving room for edge-case info, was the main design challenge. I’d do that framing earlier next time—being explicit about “primary path” vs. “available but not dominant.” . PatternFly semantic tokens were worth the migration. Fixing legacy tokens and hex colors took time, but dark mode and maintainability improved a lot. Aligning with the rest of Red Hat’s design system also makes it easier for other teams to reuse these patterns. ",
+    "content": "Metadata should drive the IA, not the backend. The old UI mirrored two APIs. The new one is organized around what users need to decide: SLSA level, hardware variant, Python compatibility, license. That made the catalog actually useful for discovery. Prioritization is the job. Figuring out what’s essential vs. nice-to-have, while still leaving room for edge-case info, was the main design challenge. I’d do that framing earlier next time, being explicit about “primary path” vs. “available but not dominant.” . PatternFly semantic tokens were worth the migration. Fixing legacy tokens and hex colors took time, but dark mode and maintainability improved a lot. Aligning with the rest of Red Hat’s design system also makes it easier for other teams to reuse these patterns. ",
     "url": "/portfolio/ui-packages-redhat/ui-packages-redhat/#what-id-do-differently",
     
     "relUrl": "/portfolio/ui-packages-redhat/ui-packages-redhat/#what-id-do-differently"
-  },"106": {
+  },"161": {
     "doc": "Red Hat Packages Catalog Redesign",
     "title": "Deliverables &amp; links",
-    "content": "GitHub: ui-packages.redhat.com (private) — feat: unified design - catalog, filters, masthead search, package details . Design artifacts: Design history · Feature mapping · Design guidelines . Production: ui-packages.redhat.com (Red Hat SSO required) . ",
+    "content": "GitHub: ui-packages.redhat.com (private): feat: unified design - catalog, filters, masthead search, package details . Design artifacts: Design history · Feature mapping · Design guidelines . Production: ui-packages.redhat.com (Red Hat SSO required) . ",
     "url": "/portfolio/ui-packages-redhat/ui-packages-redhat/#deliverables--links",
     
     "relUrl": "/portfolio/ui-packages-redhat/ui-packages-redhat/#deliverables--links"
-  },"107": {
-    "doc": "vLLM CLI UX Enhancement",
-    "title": "vLLM CLI UX Enhancement — Improving Developer Experience in Open Source",
-    "content": "Project Overview Role: UX Designer (Red Hat) Timeline: 6 weeks (2 sprints, active work in 1 sprint) Collaboration: ML Engineer (Hugging Face), Product Manager (Red Hat) Impact: Merged upstream into vLLM open-source project. Enhanced help navigation system adopted by major LLM serving framework. ",
-    "url": "/portfolio/vllm-cli-ux/vllm-cli-ux/#vllm-cli-ux-enhancement--improving-developer-experience-in-open-source",
+  },"162": {
+    "doc": "UXD Yearbook",
+    "title": "UXD Yearbook: AI Enablement Program (In Progress)",
+    "content": "Project Overview Role: Founder &amp; program lead (Red Hat UXD) Goal: Give UX designers a safe, structured on-ramp to AI-assisted prototyping Status: Program initiated; org-wide rollout did not fully land Gallery: Internal GitLab Pages (VPN-only; not publicly viewable) ",
+    "url": "/portfolio/uxd-yearbook/uxd-yearbook/#uxd-yearbook-ai-enablement-program-in-progress",
     
-    "relUrl": "/portfolio/vllm-cli-ux/vllm-cli-ux/#vllm-cli-ux-enhancement--improving-developer-experience-in-open-source"
-  },"108": {
+    "relUrl": "/portfolio/uxd-yearbook/uxd-yearbook/#uxd-yearbook-ai-enablement-program-in-progress"
+  },"163": {
+    "doc": "UXD Yearbook",
+    "title": "The problem",
+    "content": "Red Hat UXD adopted AI-assisted prototyping (Cursor, PatternFly MCP, GitLab workflows) faster than the org had a safe, shared on-ramp. Designers needed a structured path, not ad hoc Slack threads, to learn vibe coding without breaking production repos. ",
+    "url": "/portfolio/uxd-yearbook/uxd-yearbook/#the-problem",
+    
+    "relUrl": "/portfolio/uxd-yearbook/uxd-yearbook/#the-problem"
+  },"164": {
+    "doc": "UXD Yearbook",
+    "title": "What I built",
+    "content": "I founded UXD Yearbook: a living, coded directory concept where designers complete a 6-stage journey by merging their own bio card: . | Authentication &amp; environment (Cursor license, PatternFly MCP) | Forking &amp; branching in GitLab | Vibe coding: AI interview generates member folder and JSON | System alignment: verify card in local gallery | Push to personal branch | Merge request: peer review; join the team gallery | . The project doubles as training infrastructure and a team directory. Designers learn the toolchain by shipping something real. ",
+    "url": "/portfolio/uxd-yearbook/uxd-yearbook/#what-i-built",
+    
+    "relUrl": "/portfolio/uxd-yearbook/uxd-yearbook/#what-i-built"
+  },"165": {
+    "doc": "UXD Yearbook",
+    "title": "Where it stands",
+    "content": ". | Program designed and initiated, but the goal of org-wide participation did not fully materialize | Gallery lives on internal Red Hat infrastructure (VPN required), so it is not part of this public portfolio | Patterns still inform my other UXD infrastructure work: Prototyping Hub and design-comments | . ",
+    "url": "/portfolio/uxd-yearbook/uxd-yearbook/#where-it-stands",
+    
+    "relUrl": "/portfolio/uxd-yearbook/uxd-yearbook/#where-it-stands"
+  },"166": {
+    "doc": "UXD Yearbook",
+    "title": "Related work",
+    "content": ". | design-comments: tooling gap closed for feedback on coded prototypes | Red Hat Packages catalog: example of shipping production UI with AI-assisted implementation | . ",
+    "url": "/portfolio/uxd-yearbook/uxd-yearbook/#related-work",
+    
+    "relUrl": "/portfolio/uxd-yearbook/uxd-yearbook/#related-work"
+  },"167": {
+    "doc": "UXD Yearbook",
+    "title": "UXD Yearbook",
+    "content": " ",
+    "url": "/portfolio/uxd-yearbook/uxd-yearbook/",
+    
+    "relUrl": "/portfolio/uxd-yearbook/uxd-yearbook/"
+  },"168": {
+    "doc": "vLLM CLI UX Enhancement",
+    "title": "vLLM CLI UX Enhancement: Improving Developer Experience in Open Source",
+    "content": "Project Overview Role: UX Designer (Red Hat) Timeline: 6 weeks (2 sprints, active work in 1 sprint) Collaboration: ML Engineer (Hugging Face), Product Manager (Red Hat) Impact: Merged upstream into vLLM open-source project. Enhanced help navigation system adopted by major LLM serving framework. ",
+    "url": "/portfolio/vllm-cli-ux/vllm-cli-ux/#vllm-cli-ux-enhancement-improving-developer-experience-in-open-source",
+    
+    "relUrl": "/portfolio/vllm-cli-ux/vllm-cli-ux/#vllm-cli-ux-enhancement-improving-developer-experience-in-open-source"
+  },"169": {
     "doc": "vLLM CLI UX Enhancement",
     "title": "The Problem",
-    "content": "vLLM is a widely-used open-source framework for serving large language models at scale. While powerful, its command-line interface exposed overwhelming complexity that created significant friction for users. The original `vllm serve --help` output: 3.96 seconds to display, hundreds of unsegmented options Core issues identified: . Initial problem framing and focus areas . | Cognitive overload: Users faced 30+ configuration groups (ModelConfig, ParallelConfig, CacheConfig, etc.) with no clear hierarchy | Poor discoverability: Critical options buried in walls of text; no way to explore groups or search by keyword | Unclear mental model: Command structure (vllm serve, vllm chat, vllm bench) not reflected in help organization | Missing documentation in help: Key parameters like model_tag undefined in help text | . User impact: Developers deploying LLM services spent excessive time hunting through documentation, CLI help output, and GitHub issues to understand configuration options—slowing down deployment and increasing errors. ",
+    "content": "vLLM is a widely-used open-source framework for serving large language models at scale. While powerful, its command-line interface exposed overwhelming complexity that created significant friction for users. The original `vllm serve --help` output: 3.96 seconds to display, hundreds of unsegmented options Core issues identified: . Initial problem framing and focus areas . | Cognitive overload: Users faced 30+ configuration groups (ModelConfig, ParallelConfig, CacheConfig, etc.) with no clear hierarchy | Poor discoverability: Critical options buried in walls of text; no way to explore groups or search by keyword | Unclear mental model: Command structure (vllm serve, vllm chat, vllm bench) not reflected in help organization | Missing documentation in help: Key parameters like model_tag undefined in help text | . User impact: Developers deploying LLM services spent excessive time hunting through documentation, CLI help output, and GitHub issues to understand configuration options, slowing down deployment and increasing errors. ",
     "url": "/portfolio/vllm-cli-ux/vllm-cli-ux/#the-problem",
     
     "relUrl": "/portfolio/vllm-cli-ux/vllm-cli-ux/#the-problem"
-  },"109": {
+  },"170": {
     "doc": "vLLM CLI UX Enhancement",
     "title": "The Solution",
     "content": "I designed and championed an enhanced help navigation system that introduced progressive disclosure and structured exploration to the vLLM CLI. Core insight: Users don’t need to see all 200+ options at once. They need to progressively discover configuration groups, search by keyword, and get context-specific help. Key features implemented: . # Enhanced help navigation vllm serve --help=ModelConfig # View a specific config group vllm serve --help=max-num-seqs # Search for a specific argument vllm serve --help=max # Search by keyword vllm serve --help=listgroup # List all available groups . Enhanced help navigation design: progressive disclosure with keyword search and group exploration Design improvements: . | Progressive disclosure: Users start with high-level overview, drill down into specific groups | Keyword search: Find flags by partial match (e.g., --help=cache shows all cache-related options) | Group exploration: List all available config groups without overwhelming output | Contextual examples: Show concrete examples for common patterns | . ",
     "url": "/portfolio/vllm-cli-ux/vllm-cli-ux/#the-solution",
     
     "relUrl": "/portfolio/vllm-cli-ux/vllm-cli-ux/#the-solution"
-  },"110": {
+  },"171": {
     "doc": "vLLM CLI UX Enhancement",
     "title": "Impact &amp; Outcomes",
-    "content": "Shipped: Fully merged into vLLM upstream (PR #24903) after community approval via RFC process (Issue #22647). Community reception: Presented RFC to vLLM community—”they loved it.” Proposal adopted without significant pushback. Cross-org collaboration: Red Hat (UX design + PM), Hugging Face (ML engineering implementation)—demonstrating design influence across organizational boundaries in open source. Design validation: Reused existing CLI patterns from vLLM codebase, making implementation straightforward and familiar to existing users. Long-term impact: Enhanced help system now serves thousands of vLLM users deploying LLMs in production environments. ",
+    "content": "Shipped: Fully merged into vLLM upstream (PR #24903) after community approval via RFC process (Issue #22647). Community reception: Presented RFC to vLLM community, “they loved it.” Proposal adopted without significant pushback. Cross-org collaboration: Red Hat (UX design + PM), Hugging Face (ML engineering implementation), demonstrating design influence across organizational boundaries in open source. Design validation: Reused existing CLI patterns from vLLM codebase, making implementation straightforward and familiar to existing users. Long-term impact: Enhanced help system now serves thousands of vLLM users deploying LLMs in production environments. ",
     "url": "/portfolio/vllm-cli-ux/vllm-cli-ux/#impact--outcomes",
     
     "relUrl": "/portfolio/vllm-cli-ux/vllm-cli-ux/#impact--outcomes"
-  },"111": {
+  },"172": {
     "doc": "vLLM CLI UX Enhancement",
     "title": "Design Process",
-    "content": "1. Problem Discovery &amp; Analysis . Questions surfaced during CLI analysis: undefined parameters, unclear patterns Research approach: . | Analyzed vllm --help, vllm serve --help, vllm chat --help outputs | Exported help text (994 lines for vllm serve) for detailed review | Identified cognitive friction points: setup friction, CLI structure, help sufficiency | Mapped user mental models vs. current command hierarchy | . Key findings: . | Help text took 3.96 seconds to display—too much information at once | Parameters like model_tag referenced in usage but undefined in help | No clear separation between beginner-friendly and advanced options | Tips section buried at bottom; not discoverable until after scrolling | . 2. Information Architecture Redesign . Approach: Create Miro board to map current state, identify patterns, propose structure. Design principles: . | What’s working: Preserve existing grouping patterns users recognize | What’s unclear: Separate quick wins from systemic improvements | Deliverable focus: Prioritize high-impact, low-effort changes first | . Pattern reuse decision: Instead of reinventing help structure, I identified existing --help=&lt;topic&gt; patterns already in parts of the vLLM CLI and proposed extending them consistently across all commands. UX impact: Familiarity reduced implementation complexity and user learning curve. 3. RFC (Request for Comments) Process . Open source engagement: Created GitHub issue (#22647) proposing enhanced help system. Presentation to community: Presented design rationale, examples, and implementation approach to vLLM maintainers and contributors. Feedback incorporation: Refined proposal based on community input, emphasizing usability over aesthetics to align with engineering-driven culture. Key success factor: Framed changes around user comprehension and discoverability rather than visual design, resonating with technical audience. 4. Cross-Org Collaboration . Team structure: . | Justin (Red Hat): UX design, RFC authoring, community presentation | ML Engineer (Hugging Face): Implementation and code contribution | PM (Red Hat): Product alignment and stakeholder coordination | . Design handoff: Provided detailed specifications, examples, and rationale in GitHub RFC. ML engineer implemented without requiring extensive back-and-forth. Timeline: UX work completed in 1 sprint; remaining 5 weeks spent in review, implementation, and merge process. ",
+    "content": "1. Problem Discovery &amp; Analysis . Questions surfaced during CLI analysis: undefined parameters, unclear patterns Research approach: . | Analyzed vllm --help, vllm serve --help, vllm chat --help outputs | Exported help text (994 lines for vllm serve) for detailed review | Identified cognitive friction points: setup friction, CLI structure, help sufficiency | Mapped user mental models vs. current command hierarchy | . Key findings: . | Help text took 3.96 seconds to display, too much information at once | Parameters like model_tag referenced in usage but undefined in help | No clear separation between beginner-friendly and advanced options | Tips section buried at bottom; not discoverable until after scrolling | . 2. Information Architecture Redesign . Approach: Create Miro board to map current state, identify patterns, propose structure. Design principles: . | What’s working: Preserve existing grouping patterns users recognize | What’s unclear: Separate quick wins from systemic improvements | Deliverable focus: Prioritize high-impact, low-effort changes first | . Pattern reuse decision: Instead of reinventing help structure, I identified existing --help=&lt;topic&gt; patterns already in parts of the vLLM CLI and proposed extending them consistently across all commands. UX impact: Familiarity reduced implementation complexity and user learning curve. 3. RFC (Request for Comments) Process . Open source engagement: Created GitHub issue (#22647) proposing enhanced help system. Presentation to community: Presented design rationale, examples, and implementation approach to vLLM maintainers and contributors. Feedback incorporation: Refined proposal based on community input, emphasizing usability over aesthetics to align with engineering-driven culture. Key success factor: Framed changes around user comprehension and discoverability rather than visual design, resonating with technical audience. 4. Cross-Org Collaboration . Team structure: . | Justin (Red Hat): UX design, RFC authoring, community presentation | ML Engineer (Hugging Face): Implementation and code contribution | PM (Red Hat): Product alignment and stakeholder coordination | . Design handoff: Provided detailed specifications, examples, and rationale in GitHub RFC. ML engineer implemented without requiring extensive back-and-forth. Timeline: UX work completed in 1 sprint; remaining 5 weeks spent in review, implementation, and merge process. ",
     "url": "/portfolio/vllm-cli-ux/vllm-cli-ux/#design-process",
     
     "relUrl": "/portfolio/vllm-cli-ux/vllm-cli-ux/#design-process"
-  },"112": {
+  },"173": {
     "doc": "vLLM CLI UX Enhancement",
     "title": "Key Design Decisions",
     "content": "1. Progressive Disclosure Over Overwhelming Completeness . Old approach: Show all 200+ flags at once in --help. New approach: Start with overview, let users drill down by group or keyword. UX impact: Users can quickly assess relevant options without cognitive overload. Advanced users still access everything via --help=listgroup. 2. Keyword Search for Faster Discovery . Instead of forcing users to know exact flag names or scroll through grouped output, enable partial matching: . vllm serve --help=max # Shows: max-model-len, max-num-seqs, max-logprobs, max-loras, etc. UX impact: Supports exploratory workflows where users remember concepts but not exact flag names. 3. Group-Based Navigation . Config groups already existed in codebase (ModelConfig, CacheConfig, ParallelConfig). I made them first-class navigation paths: . vllm serve --help=ModelConfig # Show only model-related flags vllm serve --help=CacheConfig # Show only cache-related flags . UX impact: Users learn configuration domains systematically rather than hunting through mixed lists. 4. Enhanced Tip Section . Old design: Tips buried at bottom of 994-line help output. New design: Make tips prominent and actionable immediately. Improved tip section with concrete navigation examples UX impact: Users discover advanced help features immediately instead of after frustration. ",
     "url": "/portfolio/vllm-cli-ux/vllm-cli-ux/#key-design-decisions",
     
     "relUrl": "/portfolio/vllm-cli-ux/vllm-cli-ux/#key-design-decisions"
-  },"113": {
+  },"174": {
     "doc": "vLLM CLI UX Enhancement",
     "title": "Technical Implementation",
     "content": "Architecture: Extended existing argparse help infrastructure with custom formatter supporting group and keyword queries. Pattern reuse: Identified --help=&lt;topic&gt; pattern already used inconsistently in vLLM CLI; proposed standardizing and expanding it. Implementation partner: ML Engineer from Hugging Face implemented core functionality based on RFC specs. Code contribution: PR #24903 merged with full enhanced help system. Design principle: Reusing familiar patterns minimized user learning curve and implementation complexity. ",
     "url": "/portfolio/vllm-cli-ux/vllm-cli-ux/#technical-implementation",
     
     "relUrl": "/portfolio/vllm-cli-ux/vllm-cli-ux/#technical-implementation"
-  },"114": {
+  },"175": {
     "doc": "vLLM CLI UX Enhancement",
     "title": "Key Learnings",
     "content": "1. Open source UX requires community buy-in . Technical communities value usability when framed as user comprehension and efficiency, not aesthetics. The RFC process built consensus before implementation, ensuring smooth adoption. 2. Pattern reuse accelerates adoption . Extending existing CLI patterns rather than inventing new ones reduced implementation effort and user confusion. Familiarity is a UX advantage. 3. Progressive disclosure works in terminals too . CLI users face the same cognitive overload as GUI users. Applying progressive disclosure principles (group-based navigation, keyword search) improved discoverability without sacrificing power. 4. Cross-org collaboration requires clear artifacts . Working across Red Hat and Hugging Face required well-documented RFCs, clear examples, and rationale. GitHub issues served as shared design specs. 5. Quick wins validate broader changes . Enhanced tips section and --help=&lt;keyword&gt; were low-effort, high-impact changes that built trust for larger structural improvements. 6. Metrics aren’t always required for impact . Community enthusiasm and upstream merge demonstrate impact even without quantitative usage data. Qualitative feedback (“they loved it”) validated design direction. ",
     "url": "/portfolio/vllm-cli-ux/vllm-cli-ux/#key-learnings",
     
     "relUrl": "/portfolio/vllm-cli-ux/vllm-cli-ux/#key-learnings"
-  },"115": {
+  },"176": {
     "doc": "vLLM CLI UX Enhancement",
     "title": "Relevant for UX Engineering / AI Product Roles",
-    "content": ". | CLI/developer tools UX: Demonstrated ability to apply UX principles to terminal interfaces—critical for data science, ML ops, and infrastructure tooling | Open source contribution: Successfully navigated RFC process, community presentation, and upstream merge in major AI/ML project | Cross-organizational collaboration: Coordinated design across Red Hat and Hugging Face teams | AI/ML domain expertise: Contributed to LLM serving infrastructure used in production AI deployments | UX advocacy in technical environments: Framed design changes around usability and comprehension to resonate with engineering-driven culture | Information architecture: Redesigned complex CLI help system with 200+ options into navigable, progressive disclosure system | . ",
+    "content": ". | CLI/developer tools UX: Demonstrated ability to apply UX principles to terminal interfaces, critical for data science, ML ops, and infrastructure tooling | Open source contribution: Successfully navigated RFC process, community presentation, and upstream merge in major AI/ML project | Cross-organizational collaboration: Coordinated design across Red Hat and Hugging Face teams | AI/ML domain expertise: Contributed to LLM serving infrastructure used in production AI deployments | UX advocacy in technical environments: Framed design changes around usability and comprehension to resonate with engineering-driven culture | Information architecture: Redesigned complex CLI help system with 200+ options into navigable, progressive disclosure system | . ",
     "url": "/portfolio/vllm-cli-ux/vllm-cli-ux/#relevant-for-ux-engineering--ai-product-roles",
     
     "relUrl": "/portfolio/vllm-cli-ux/vllm-cli-ux/#relevant-for-ux-engineering--ai-product-roles"
-  },"116": {
+  },"177": {
     "doc": "vLLM CLI UX Enhancement",
     "title": "Deliverables &amp; Links",
-    "content": "GitHub: . | RFC Issue #22647 — Initial proposal and community discussion | Merged PR #24903 — Implementation and code contribution | . Design artifacts: . | Miro board analysis (information architecture, problem framing, proposed solutions) | RFC documentation (GitHub issue with detailed specifications and examples) | Community presentation (design rationale and implementation approach) | . Project repository: . | vLLM on GitHub — Open-source LLM serving framework | . This project demonstrates that UX thinking extends beyond visual interfaces—applying user-centered design to developer tools improves comprehension, reduces errors, and accelerates deployment in production AI systems. ",
+    "content": "GitHub: . | RFC Issue #22647: Initial proposal and community discussion | Merged PR #24903: Implementation and code contribution | . Design artifacts: . | Miro board analysis (information architecture, problem framing, proposed solutions) | RFC documentation (GitHub issue with detailed specifications and examples) | Community presentation (design rationale and implementation approach) | . Project repository: . | vLLM on GitHub: Open-source LLM serving framework | . This project demonstrates that UX thinking extends beyond visual interfaces, applying user-centered design to developer tools improves comprehension, reduces errors, and accelerates deployment in production AI systems. ",
     "url": "/portfolio/vllm-cli-ux/vllm-cli-ux/#deliverables--links",
     
     "relUrl": "/portfolio/vllm-cli-ux/vllm-cli-ux/#deliverables--links"
-  },"117": {
+  },"178": {
     "doc": "vLLM CLI UX Enhancement",
     "title": "vLLM CLI UX Enhancement",
     "content": " ",

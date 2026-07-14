@@ -15,9 +15,10 @@
   
 
     .site-nav > ul.nav-list:first-child > li > a,
+    .site-nav > ul.nav-list:first-child > li > ul > li > a,
     
-    .site-nav > ul.nav-list:first-child > li > ul > li:not(:nth-child(5)) > a,
-    .site-nav > ul.nav-list:first-child > li > ul > li > ul > li a {
+    .site-nav > ul.nav-list:first-child > li > ul > li > ul > li:not(:nth-child(2)) > a,
+    .site-nav > ul.nav-list:first-child > li > ul > li > ul > li > ul > li a {
       background-image: none;
     }
 
@@ -26,14 +27,16 @@
       background-image: none;
     }
 
-    .site-nav > ul.nav-list:first-child > li:nth-child(3) > ul > li:nth-child(5) > a {
+    .site-nav > ul.nav-list:first-child > li:nth-child(3) > ul > li:nth-child(1) > ul > li:nth-child(2) > a {
       font-weight: 600;
       text-decoration: none;
     }.site-nav > ul.nav-list:first-child > li:nth-child(3) > button svg,
-    .site-nav > ul.nav-list:first-child > li:nth-child(3) > ul > li:nth-child(5) > button svg {
+    .site-nav > ul.nav-list:first-child > li:nth-child(3) > ul > li:nth-child(1) > button svg,
+    .site-nav > ul.nav-list:first-child > li:nth-child(3) > ul > li:nth-child(1) > ul > li:nth-child(2) > button svg {
       transform: rotate(-90deg);
     }.site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(3) > ul.nav-list,
-    .site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(3) > ul.nav-list > li.nav-list-item:nth-child(5) > ul.nav-list {
+    .site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(3) > ul.nav-list > li.nav-list-item:nth-child(1) > ul.nav-list,
+    .site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(3) > ul.nav-list > li.nav-list-item:nth-child(1) > ul.nav-list > li.nav-list-item:nth-child(2) > ul.nav-list {
       display: block;
     }
   </style>
@@ -57,8 +60,8 @@
 <meta name="generator" content="Jekyll v3.10.0" />
 <meta property="og:title" content="Red Hat Packages Catalog Redesign" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="A UX Designer specializing in CLI and developer tools" />
-<meta property="og:description" content="A UX Designer specializing in CLI and developer tools" />
+<meta name="description" content="Senior UX / Product Designer: enterprise platform UX, AI/ML surfaces, design systems, and published products" />
+<meta property="og:description" content="Senior UX / Product Designer: enterprise platform UX, AI/ML surfaces, design systems, and published products" />
 <link rel="canonical" href="http://localhost:4000/portfolio/ui-packages-redhat/ui-packages-redhat/" />
 <meta property="og:url" content="http://localhost:4000/portfolio/ui-packages-redhat/ui-packages-redhat/" />
 <meta property="og:site_name" content="Justin X. Hale’s Portfolio" />
@@ -66,7 +69,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Red Hat Packages Catalog Redesign" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"A UX Designer specializing in CLI and developer tools","headline":"Red Hat Packages Catalog Redesign","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/icon-512.png"}},"url":"http://localhost:4000/portfolio/ui-packages-redhat/ui-packages-redhat/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"Senior UX / Product Designer: enterprise platform UX, AI/ML surfaces, design systems, and published products","headline":"Red Hat Packages Catalog Redesign","url":"http://localhost:4000/portfolio/ui-packages-redhat/ui-packages-redhat/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -146,7 +149,7 @@
     <header class="side-bar">
   <div class="site-header">
     <a href="/" class="site-title lh-tight">
-  <div class="site-logo" role="img" aria-label="Justin X. Hale's Portfolio"></div>
+  Justin X. Hale's Portfolio
 
 </a>
     <button id="menu-button" class="site-button btn-reset" aria-label="Menu" aria-expanded="false">
@@ -161,9 +164,15 @@
         <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
       </button><a href="/" class="nav-list-link">Justin X. Hale</a><ul class="nav-list"><li class="nav-list-item"><a href="/about/" class="nav-list-link">About Me</a></li><li class="nav-list-item"><a href="/about-me/honors/" class="nav-list-link">Awards/Honors</a></li><li class="nav-list-item"><a href="/get-in-touch/" class="nav-list-link">Get In Touch</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="Resumes submenu" aria-expanded="false">
         <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
-      </button><a href="/resume/" class="nav-list-link">Resumes</a><ul class="nav-list"><li class="nav-list-item"><a href="/resume/standard/" class="nav-list-link">Resume</a></li><li class="nav-list-item"><a href="/resume/full-cv/" class="nav-list-link">Full CV</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="Portfolio submenu" aria-expanded="false">
+      </button><a href="/resume/" class="nav-list-link">Resumes</a><ul class="nav-list"><li class="nav-list-item"><a href="/resume/standard/" class="nav-list-link">Resume</a></li><li class="nav-list-item"><a href="/resume/full-cv/" class="nav-list-link">Case Study Index</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="Portfolio submenu" aria-expanded="false">
         <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
-      </button><a href="/portfolio/" class="nav-list-link">Portfolio</a><ul class="nav-list"><li class="nav-list-item"><a href="/portfolio/reflog/reflog/" class="nav-list-link">RefLog</a></li><li class="nav-list-item"><a href="/portfolio/refereeiq/refereeiq/" class="nav-list-link">RefereeIQ-Sofía Chatbot</a></li><li class="nav-list-item"><a href="/portfolio/vllm-cli-ux/vllm-cli-ux/" class="nav-list-link">vLLM CLI UX Enhancement</a></li><li class="nav-list-item"><a href="/portfolio/interface-driven-ux-red-hat/interface-driven-ux-red-hat/" class="nav-list-link">SaaS Design (at Red Hat)</a></li><li class="nav-list-item"><a href="/portfolio/ui-packages-redhat/ui-packages-redhat/" class="nav-list-link">Red Hat Packages Catalog Redesign</a></li><li class="nav-list-item"><a href="/portfolio/bulk-prompting-script/bulk-prompting-script/" class="nav-list-link">Bulk Prompting Script</a></li><li class="nav-list-item"><a href="/portfolio/rapid-design-thinking/rapid-design-thinking/" class="nav-list-link">Rapid Design Thinking</a></li><li class="nav-list-item"><a href="/portfolio/just-an-email/just-an-email/" class="nav-list-link">It’s Just an Email</a></li></ul></li><li class="nav-list-item"><a href="/blog/" class="nav-list-link">Life & Work (Blog)</a></li></ul>
+      </button><a href="/portfolio/" class="nav-list-link">Portfolio</a><ul class="nav-list"><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="Red Hat & Enterprise submenu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+      </button><a href="/portfolio/red-hat-enterprise/" class="nav-list-link">Red Hat & Enterprise</a><ul class="nav-list"><li class="nav-list-item"><a href="/portfolio/design-comments/design-comments/" class="nav-list-link">design-comments</a></li><li class="nav-list-item"><a href="/portfolio/ui-packages-redhat/ui-packages-redhat/" class="nav-list-link">Red Hat Packages Catalog Redesign</a></li><li class="nav-list-item"><a href="/portfolio/vllm-cli-ux/vllm-cli-ux/" class="nav-list-link">vLLM CLI UX Enhancement</a></li><li class="nav-list-item"><a href="/portfolio/instructlab/instructlab/" class="nav-list-link">InstructLab Interactive Mode</a></li><li class="nav-list-item"><a href="/portfolio/bulk-prompting-script/bulk-prompting-script/" class="nav-list-link">Bulk Prompting Script</a></li><li class="nav-list-item"><a href="/portfolio/interface-driven-ux-red-hat/interface-driven-ux-red-hat/" class="nav-list-link">SaaS Design (at Red Hat)</a></li><li class="nav-list-item"><a href="/portfolio/prototyping-hub/prototyping-hub/" class="nav-list-link">UXD Prototyping Hub</a></li><li class="nav-list-item"><a href="/portfolio/openshift-ai-deploy-wizard/openshift-ai-deploy-wizard/" class="nav-list-link">OpenShift AI Deploy Wizard</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="Personal Projects submenu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+      </button><a href="/portfolio/personal-projects/" class="nav-list-link">Personal Projects</a><ul class="nav-list"><li class="nav-list-item"><a href="/portfolio/product-suite/product-suite/" class="nav-list-link">Published Product Suite</a></li><li class="nav-list-item"><a href="/portfolio/to3/to3/" class="nav-list-link">Tō3</a></li><li class="nav-list-item"><a href="/portfolio/reflected/reflected/" class="nav-list-link">ReflectED</a></li><li class="nav-list-item"><a href="/portfolio/reflog/reflog/" class="nav-list-link">RefLog</a></li><li class="nav-list-item"><a href="/portfolio/refereeiq/refereeiq/" class="nav-list-link">RefereeIQ-Sofía Chatbot</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="Earlier Career submenu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+      </button><a href="/portfolio/earlier-career/" class="nav-list-link">Earlier Career</a><ul class="nav-list"><li class="nav-list-item"><a href="/portfolio/just-an-email/just-an-email/" class="nav-list-link">It’s Just an Email</a></li><li class="nav-list-item"><a href="/portfolio/rapid-design-thinking/rapid-design-thinking/" class="nav-list-link">Rapid Design Thinking</a></li></ul></li></ul></li><li class="nav-list-item"><a href="/blog/" class="nav-list-link">Life & Work (Blog)</a></li></ul>
   
 </nav>
 
@@ -202,6 +211,7 @@
       <nav aria-label="Breadcrumb" class="breadcrumb-nav">
   <ol class="breadcrumb-nav-list">
     <li class="breadcrumb-nav-list-item"><a href="/portfolio/">Portfolio</a></li>
+    <li class="breadcrumb-nav-list-item"><a href="/portfolio/red-hat-enterprise/">Red Hat & Enterprise</a></li>
     <li class="breadcrumb-nav-list-item"><span>Red Hat Packages Catalog Redesign</span></li>
   </ol>
 </nav>
@@ -236,7 +246,7 @@
 </h2>
     
 
-<p>Red Hat’s package site had two separate entry points: <strong>Trusted Libraries</strong> (SLSA Level 3 secure packages) and <strong>Red Hat AI Components</strong> (hardware-accelerated ML packages). To see what was in each, you had to leave one experience and open the other. There was no way to filter by Python version, license, release stage, or build variant—metadata that developers actually use to choose packages. Data scientists and ML engineers couldn’t easily see the full landscape or compare across both sources.</p>
+<p>Red Hat’s package site had two separate entry points: <strong>Trusted Libraries</strong> (SLSA Level 3 secure packages) and <strong>Red Hat AI Components</strong> (hardware-accelerated ML packages). To see what was in each, you had to leave one experience and open the other. There was no way to filter by Python version, license, release stage, or build variant, metadata that developers actually use to choose packages. Data scientists and ML engineers couldn’t easily see the full landscape or compare across both sources.</p>
 
 <p>I started with a UX audit focused on flow, feel, and alignment: what is the user trying to accomplish, and what path do they have to take to get there? The audit board below helped me map the current experience and where it broke down.</p>
 
@@ -258,7 +268,7 @@
 </h2>
     
 
-<p>The core shift was to organize the catalog around how people search—by capabilities, constraints, and trust—instead of how the backend is split (Trusted vs. AI). I moved to a single catalog with a source toggle and faceted filters so users could explore both ecosystems from one place.</p>
+<p>The core shift was to organize the catalog around how people search, by capabilities, constraints, and trust, instead of how the backend is split (Trusted vs. AI). I moved to a single catalog with a source toggle and faceted filters so users could explore both ecosystems from one place.</p>
 
 <p><strong>Unified catalog.</strong> One view with a left sidebar for filters and a main area for the package gallery. Filters are grouped by context: AI Components get build variant and product version; Trusted Libraries get Python version, SLSA Level 3, license, release stage, and category. That way it’s clear which filters apply to which packages. Search (“Find by name”) works across both sources.</p>
 
@@ -267,7 +277,7 @@
   <figcaption>Unified catalog: faceted filters, source toggle, and card-based gallery</figcaption>
 </figure>
 
-<p><strong>Source-aware cards.</strong> Cards don’t show the same fields for every package. Trusted Libraries cards emphasize author, license, and SLSA badge; AI Components cards emphasize build variant, product version, Python version, and hardware (CPU/GPU). Different users care about different things—provenance vs. compatibility—so the card content follows that.</p>
+<p><strong>Source-aware cards.</strong> Cards don’t show the same fields for every package. Trusted Libraries cards emphasize author, license, and SLSA badge; AI Components cards emphasize build variant, product version, Python version, and hardware (CPU/GPU). Different users care about different things, provenance vs. compatibility, so the card content follows that.</p>
 
 <p><strong>Same pattern on repo and detail pages.</strong> When you drill into a repository index (e.g. <code class="language-plaintext highlighter-rouge">main</code>), the same catalog layout and filters apply. On package details I added an Index card in the sidebar so source, build variant, and product version are visible without digging through tabs.</p>
 
@@ -288,7 +298,7 @@
 
 <p><strong>Design system and accessibility.</strong> The UI was on legacy PatternFly with hardcoded colors that didn’t work in dark mode. I migrated to PatternFly 6 semantic tokens for color, type, and spacing so the catalog respects light/dark theme and stays consistent with other Red Hat products. Fixes included the catalog icon (was red-on-red, now readable), heading colors (no longer link-like), and filter sidebar contrast.</p>
 
-<p><strong>Hardest part.</strong> Deciding what to show and what to cut. The goal was a clear primary path without hiding information that edge users need—e.g. release stage, category, SLSA—so I surfaced those in filters and on cards in a way that doesn’t overwhelm the main flow.</p><hr />
+<p><strong>Hardest part.</strong> Deciding what to show and what to cut. The goal was a clear primary path without hiding information that edge users need, e.g. release stage, category, SLSA, so I surfaced those in filters and on cards in a way that doesn’t overwhelm the main flow.</p><hr />
 <h2 id="how-it-was-built">
   
   
@@ -314,7 +324,7 @@
 
 <p><strong>Metadata should drive the IA, not the backend.</strong> The old UI mirrored two APIs. The new one is organized around what users need to decide: SLSA level, hardware variant, Python compatibility, license. That made the catalog actually useful for discovery.</p>
 
-<p><strong>Prioritization is the job.</strong> Figuring out what’s essential vs. nice-to-have, while still leaving room for edge-case info, was the main design challenge. I’d do that framing earlier next time—being explicit about “primary path” vs. “available but not dominant.”</p>
+<p><strong>Prioritization is the job.</strong> Figuring out what’s essential vs. nice-to-have, while still leaving room for edge-case info, was the main design challenge. I’d do that framing earlier next time, being explicit about “primary path” vs. “available but not dominant.”</p>
 
 <p><strong>PatternFly semantic tokens were worth the migration.</strong> Fixing legacy tokens and hex colors took time, but dark mode and maintainability improved a lot. Aligning with the rest of Red Hat’s design system also makes it easier for other teams to reuse these patterns.</p><hr />
 <h2 id="deliverables--links">
@@ -326,7 +336,7 @@
 </h2>
     
 
-<p><strong>GitHub:</strong> <a href="https://github.com/RedHatProductSecurity/ui-packages.redhat.com">ui-packages.redhat.com</a> (private) — <a href="https://github.com/RedHatProductSecurity/ui-packages.redhat.com/commit/703eb7b">feat: unified design - catalog, filters, masthead search, package details</a></p>
+<p><strong>GitHub:</strong> <a href="https://github.com/RedHatProductSecurity/ui-packages.redhat.com">ui-packages.redhat.com</a> (private): <a href="https://github.com/RedHatProductSecurity/ui-packages.redhat.com/commit/703eb7b">feat: unified design - catalog, filters, masthead search, package details</a></p>
 
 <p><strong>Design artifacts:</strong> <a href="https://github.com/RedHatProductSecurity/ui-packages.redhat.com/blob/main/.design/features/package-search-unified/design-history.md">Design history</a> · <a href="https://github.com/RedHatProductSecurity/ui-packages.redhat.com/blob/main/.design/feature-mapping.md">Feature mapping</a> · <a href="https://github.com/RedHatProductSecurity/ui-packages.redhat.com/blob/main/.design/README.md">Design guidelines</a></p>
 

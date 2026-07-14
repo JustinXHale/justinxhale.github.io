@@ -15,9 +15,10 @@
   
 
     .site-nav > ul.nav-list:first-child > li > a,
+    .site-nav > ul.nav-list:first-child > li > ul > li > a,
     
-    .site-nav > ul.nav-list:first-child > li > ul > li:not(:nth-child(6)) > a,
-    .site-nav > ul.nav-list:first-child > li > ul > li > ul > li a {
+    .site-nav > ul.nav-list:first-child > li > ul > li > ul > li:not(:nth-child(5)) > a,
+    .site-nav > ul.nav-list:first-child > li > ul > li > ul > li > ul > li a {
       background-image: none;
     }
 
@@ -26,14 +27,16 @@
       background-image: none;
     }
 
-    .site-nav > ul.nav-list:first-child > li:nth-child(3) > ul > li:nth-child(6) > a {
+    .site-nav > ul.nav-list:first-child > li:nth-child(3) > ul > li:nth-child(1) > ul > li:nth-child(5) > a {
       font-weight: 600;
       text-decoration: none;
     }.site-nav > ul.nav-list:first-child > li:nth-child(3) > button svg,
-    .site-nav > ul.nav-list:first-child > li:nth-child(3) > ul > li:nth-child(6) > button svg {
+    .site-nav > ul.nav-list:first-child > li:nth-child(3) > ul > li:nth-child(1) > button svg,
+    .site-nav > ul.nav-list:first-child > li:nth-child(3) > ul > li:nth-child(1) > ul > li:nth-child(5) > button svg {
       transform: rotate(-90deg);
     }.site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(3) > ul.nav-list,
-    .site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(3) > ul.nav-list > li.nav-list-item:nth-child(6) > ul.nav-list {
+    .site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(3) > ul.nav-list > li.nav-list-item:nth-child(1) > ul.nav-list,
+    .site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(3) > ul.nav-list > li.nav-list-item:nth-child(1) > ul.nav-list > li.nav-list-item:nth-child(5) > ul.nav-list {
       display: block;
     }
   </style>
@@ -57,8 +60,8 @@
 <meta name="generator" content="Jekyll v3.10.0" />
 <meta property="og:title" content="Bulk Prompting Script" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="A UX Designer specializing in CLI and developer tools" />
-<meta property="og:description" content="A UX Designer specializing in CLI and developer tools" />
+<meta name="description" content="Senior UX / Product Designer: enterprise platform UX, AI/ML surfaces, design systems, and published products" />
+<meta property="og:description" content="Senior UX / Product Designer: enterprise platform UX, AI/ML surfaces, design systems, and published products" />
 <link rel="canonical" href="http://localhost:4000/portfolio/bulk-prompting-script/bulk-prompting-script/" />
 <meta property="og:url" content="http://localhost:4000/portfolio/bulk-prompting-script/bulk-prompting-script/" />
 <meta property="og:site_name" content="Justin X. Hale’s Portfolio" />
@@ -66,7 +69,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Bulk Prompting Script" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"A UX Designer specializing in CLI and developer tools","headline":"Bulk Prompting Script","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/icon-512.png"}},"url":"http://localhost:4000/portfolio/bulk-prompting-script/bulk-prompting-script/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"Senior UX / Product Designer: enterprise platform UX, AI/ML surfaces, design systems, and published products","headline":"Bulk Prompting Script","url":"http://localhost:4000/portfolio/bulk-prompting-script/bulk-prompting-script/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -146,7 +149,7 @@
     <header class="side-bar">
   <div class="site-header">
     <a href="/" class="site-title lh-tight">
-  <div class="site-logo" role="img" aria-label="Justin X. Hale's Portfolio"></div>
+  Justin X. Hale's Portfolio
 
 </a>
     <button id="menu-button" class="site-button btn-reset" aria-label="Menu" aria-expanded="false">
@@ -161,9 +164,15 @@
         <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
       </button><a href="/" class="nav-list-link">Justin X. Hale</a><ul class="nav-list"><li class="nav-list-item"><a href="/about/" class="nav-list-link">About Me</a></li><li class="nav-list-item"><a href="/about-me/honors/" class="nav-list-link">Awards/Honors</a></li><li class="nav-list-item"><a href="/get-in-touch/" class="nav-list-link">Get In Touch</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="Resumes submenu" aria-expanded="false">
         <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
-      </button><a href="/resume/" class="nav-list-link">Resumes</a><ul class="nav-list"><li class="nav-list-item"><a href="/resume/standard/" class="nav-list-link">Resume</a></li><li class="nav-list-item"><a href="/resume/full-cv/" class="nav-list-link">Full CV</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="Portfolio submenu" aria-expanded="false">
+      </button><a href="/resume/" class="nav-list-link">Resumes</a><ul class="nav-list"><li class="nav-list-item"><a href="/resume/standard/" class="nav-list-link">Resume</a></li><li class="nav-list-item"><a href="/resume/full-cv/" class="nav-list-link">Case Study Index</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="Portfolio submenu" aria-expanded="false">
         <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
-      </button><a href="/portfolio/" class="nav-list-link">Portfolio</a><ul class="nav-list"><li class="nav-list-item"><a href="/portfolio/reflog/reflog/" class="nav-list-link">RefLog</a></li><li class="nav-list-item"><a href="/portfolio/refereeiq/refereeiq/" class="nav-list-link">RefereeIQ-Sofía Chatbot</a></li><li class="nav-list-item"><a href="/portfolio/vllm-cli-ux/vllm-cli-ux/" class="nav-list-link">vLLM CLI UX Enhancement</a></li><li class="nav-list-item"><a href="/portfolio/interface-driven-ux-red-hat/interface-driven-ux-red-hat/" class="nav-list-link">SaaS Design (at Red Hat)</a></li><li class="nav-list-item"><a href="/portfolio/ui-packages-redhat/ui-packages-redhat/" class="nav-list-link">Red Hat Packages Catalog Redesign</a></li><li class="nav-list-item"><a href="/portfolio/bulk-prompting-script/bulk-prompting-script/" class="nav-list-link">Bulk Prompting Script</a></li><li class="nav-list-item"><a href="/portfolio/rapid-design-thinking/rapid-design-thinking/" class="nav-list-link">Rapid Design Thinking</a></li><li class="nav-list-item"><a href="/portfolio/just-an-email/just-an-email/" class="nav-list-link">It’s Just an Email</a></li></ul></li><li class="nav-list-item"><a href="/blog/" class="nav-list-link">Life & Work (Blog)</a></li></ul>
+      </button><a href="/portfolio/" class="nav-list-link">Portfolio</a><ul class="nav-list"><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="Red Hat & Enterprise submenu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+      </button><a href="/portfolio/red-hat-enterprise/" class="nav-list-link">Red Hat & Enterprise</a><ul class="nav-list"><li class="nav-list-item"><a href="/portfolio/design-comments/design-comments/" class="nav-list-link">design-comments</a></li><li class="nav-list-item"><a href="/portfolio/ui-packages-redhat/ui-packages-redhat/" class="nav-list-link">Red Hat Packages Catalog Redesign</a></li><li class="nav-list-item"><a href="/portfolio/vllm-cli-ux/vllm-cli-ux/" class="nav-list-link">vLLM CLI UX Enhancement</a></li><li class="nav-list-item"><a href="/portfolio/instructlab/instructlab/" class="nav-list-link">InstructLab Interactive Mode</a></li><li class="nav-list-item"><a href="/portfolio/bulk-prompting-script/bulk-prompting-script/" class="nav-list-link">Bulk Prompting Script</a></li><li class="nav-list-item"><a href="/portfolio/interface-driven-ux-red-hat/interface-driven-ux-red-hat/" class="nav-list-link">SaaS Design (at Red Hat)</a></li><li class="nav-list-item"><a href="/portfolio/prototyping-hub/prototyping-hub/" class="nav-list-link">UXD Prototyping Hub</a></li><li class="nav-list-item"><a href="/portfolio/openshift-ai-deploy-wizard/openshift-ai-deploy-wizard/" class="nav-list-link">OpenShift AI Deploy Wizard</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="Personal Projects submenu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+      </button><a href="/portfolio/personal-projects/" class="nav-list-link">Personal Projects</a><ul class="nav-list"><li class="nav-list-item"><a href="/portfolio/product-suite/product-suite/" class="nav-list-link">Published Product Suite</a></li><li class="nav-list-item"><a href="/portfolio/to3/to3/" class="nav-list-link">Tō3</a></li><li class="nav-list-item"><a href="/portfolio/reflected/reflected/" class="nav-list-link">ReflectED</a></li><li class="nav-list-item"><a href="/portfolio/reflog/reflog/" class="nav-list-link">RefLog</a></li><li class="nav-list-item"><a href="/portfolio/refereeiq/refereeiq/" class="nav-list-link">RefereeIQ-Sofía Chatbot</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="Earlier Career submenu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+      </button><a href="/portfolio/earlier-career/" class="nav-list-link">Earlier Career</a><ul class="nav-list"><li class="nav-list-item"><a href="/portfolio/just-an-email/just-an-email/" class="nav-list-link">It’s Just an Email</a></li><li class="nav-list-item"><a href="/portfolio/rapid-design-thinking/rapid-design-thinking/" class="nav-list-link">Rapid Design Thinking</a></li></ul></li></ul></li><li class="nav-list-item"><a href="/blog/" class="nav-list-link">Life & Work (Blog)</a></li></ul>
   
 </nav>
 
@@ -202,6 +211,7 @@
       <nav aria-label="Breadcrumb" class="breadcrumb-nav">
   <ol class="breadcrumb-nav-list">
     <li class="breadcrumb-nav-list-item"><a href="/portfolio/">Portfolio</a></li>
+    <li class="breadcrumb-nav-list-item"><a href="/portfolio/red-hat-enterprise/">Red Hat & Enterprise</a></li>
     <li class="breadcrumb-nav-list-item"><span>Bulk Prompting Script</span></li>
   </ol>
 </nav>
@@ -236,7 +246,7 @@
 </h2>
     
 
-<p>Red Hat OpenShift Service on AWS (ROSA) enables customers to deploy fully-managed OpenShift clusters on AWS infrastructure. However, creating a ROSA Classic Cluster via CLI required users to navigate <strong>30+ sequential prompts</strong>—even when using default and recommended settings.</p>
+<p>Red Hat OpenShift Service on AWS (ROSA) enables customers to deploy fully-managed OpenShift clusters on AWS infrastructure. However, creating a ROSA Classic Cluster via CLI required users to navigate <strong>30+ sequential prompts</strong>, even when using default and recommended settings.</p>
 
 <p><img src="/portfolio/bulk-prompting-script/assets/july31-readme-gif.gif" alt="GIF of Bulk Prompting Script" />
 <em>Traditional CLI flow: sequential prompts create friction and cognitive overhead</em></p>
@@ -262,7 +272,7 @@
 
 <p>I designed and prototyped a <strong>bulk prompting interface</strong> for the ROSA CLI that allows users to see and configure all required inputs at once, rather than sequentially.</p>
 
-<p><strong>Core insight:</strong> Let users work like they think—viewing the full configuration space, jumping between fields, and reviewing before execution.</p>
+<p><strong>Core insight:</strong> Let users work like they think, viewing the full configuration space, jumping between fields, and reviewing before execution.</p>
 
 <p><strong>Key features:</strong></p>
 <ul>
@@ -343,7 +353,7 @@
 </h3>
     
 
-<p><strong>Process:</strong> Rapid prototyping using AI-assisted development (ChatGPT collaboration for CLI scripting)—before “vibe coding” was a term.</p>
+<p><strong>Process:</strong> Rapid prototyping using AI-assisted development (ChatGPT collaboration for CLI scripting), before “vibe coding” was a term.</p>
 
 <p><strong>Iteration focus:</strong></p>
 <ul>
@@ -368,7 +378,7 @@
 
 <p>Instead of asking questions one at a time, present all configuration options in a single scrollable interface.</p>
 
-<p><strong>UX impact:</strong> Users can scan the full scope, prioritize what to configure, and jump between fields—matching how they mentally plan cluster configurations.</p>
+<p><strong>UX impact:</strong> Users can scan the full scope, prioritize what to configure, and jump between fields, matching how they mentally plan cluster configurations.</p>
 
 <p><strong>Dynamic summary review</strong></p>
 
@@ -427,7 +437,7 @@
 
 <p><strong>4. Review steps build trust</strong></p>
 
-<p>The summary screen became the most valued feature in testing—users appreciated seeing their full configuration before execution.</p>
+<p>The summary screen became the most valued feature in testing, users appreciated seeing their full configuration before execution.</p>
 
 <p><strong>5. Stakeholder demos matter</strong></p>
 
@@ -442,8 +452,8 @@
     
 
 <ul>
-  <li><strong>CLI/terminal UX:</strong> Demonstrated ability to design for constrained, text-based interfaces—relevant for developer tools, infrastructure platforms, and data science workflows</li>
-  <li><strong>AI-assisted development:</strong> Used LLMs for rapid prototyping before it was mainstream—shows comfort with modern development workflows</li>
+  <li><strong>CLI/terminal UX:</strong> Demonstrated ability to design for constrained, text-based interfaces, relevant for developer tools, infrastructure platforms, and data science workflows</li>
+  <li><strong>AI-assisted development:</strong> Used LLMs for rapid prototyping before it was mainstream, shows comfort with modern development workflows</li>
   <li><strong>Cross-functional collaboration:</strong> Worked directly with engineers and developers to understand needs and validate designs</li>
   <li><strong>Enterprise platform design:</strong> Designed for technical users (DevOps, SREs) managing complex infrastructure</li>
   <li><strong>Prototyping to production:</strong> Delivered POC that influenced engineering roadmap and prioritization</li>
