@@ -9,9 +9,9 @@ has_children: true
 
 If you only read three pieces:
 
-1. **[design-comments]({{ '/portfolio/design-comments/design-comments/' | relative_url }})** - I closed the commenting gap for coded prototypes. GitHub-backed architecture; PatternFly maintains it.
-2. **[Red Hat Packages catalog]({{ '/portfolio/ui-packages-redhat/ui-packages-redhat/' | relative_url }})** - Shipped to production: unified catalog, faceted IA, one week from audit to deploy.
-3. **[Published product suite]({{ '/portfolio/product-suite/product-suite/' | relative_url }})** - Store and PWA apps with real users, built with AI-assisted solo development.
+1. **[Tō3]({{ '/portfolio/to3/to3/' | relative_url }})** - Production LiveKit voice product: rooms, JWT publish/subscribe grants, connection preflight, WebRTC/audio debugging.
+2. **[design-comments]({{ '/portfolio/design-comments/design-comments/' | relative_url }})** - Closed the commenting gap for coded prototypes. GitHub-backed architecture; PatternFly maintains it.
+3. **[Published product suite]({{ '/portfolio/product-suite/product-suite/' | relative_url }})** - Live apps for sports officials and event crews (schedule → travel → voice → review), built with AI-assisted solo development.
 
 For healthcare-adjacent roles, start with [ReflectED]({{ '/portfolio/reflected/reflected/' | relative_url }}) instead of the suite overview.
 
@@ -21,7 +21,7 @@ For healthcare-adjacent roles, start with [ReflectED]({{ '/portfolio/reflected/r
 
 **[design-comments]({{ '/portfolio/design-comments/design-comments/' | relative_url }})** - In-context feedback on React prototypes. Pins, GitHub Issues, AI summarize.
 
-**[Red Hat Packages catalog]({{ '/portfolio/ui-packages-redhat/ui-packages-redhat/' | relative_url }})** - Unified Trusted Libraries and AI Components; PatternFly 6; production ship.
+**[Red Hat Packages catalog]({{ '/portfolio/ui-packages-redhat/ui-packages-redhat/' | relative_url }})** - Unified Trusted Libraries and AI Components; PatternFly 6; coded prototype (not yet production).
 
 **[vLLM CLI UX]({{ '/portfolio/vllm-cli-ux/vllm-cli-ux/' | relative_url }})** - Help redesign for 200+ options; merged upstream.
 
@@ -37,9 +37,9 @@ Also in portfolio (not on resume): [UXD Prototyping Hub]({{ '/portfolio/prototyp
 
 ## Personal projects
 
-**[Overview]({{ '/portfolio/product-suite/product-suite/' | relative_url }})** - Tō3, RefLog, RefereeIQ, ReflectED, Sevens Manager.
+**[Overview]({{ '/portfolio/product-suite/product-suite/' | relative_url }})** - Tō3, MatchReadyTX, Match Calendar, RefLog, RefereeIQ, ReflectED, Sevens Manager.
 
-**[Tō3]({{ '/portfolio/to3/to3/' | relative_url }})** - Live voice for event crews (Flutter).
+**[Tō3]({{ '/portfolio/to3/to3/' | relative_url }})** - LiveKit-powered live voice for event crews (Flutter).
 
 **[ReflectED]({{ '/portfolio/reflected/reflected/' | relative_url }})** - AI reflection coach for educators and coaches.
 

@@ -13,7 +13,7 @@ has_toc: false
 # Justin X. Hale
 
 <div class="resume-meta" markdown="1">
-Senior UX / Product Designer  
+Senior Product Designer  
 (979) 703-0894 | [JustinXHale@gmail.com](mailto:JustinXHale@gmail.com) | [justinxhale.github.io](https://justinxhale.github.io)
 </div>
 
@@ -21,11 +21,13 @@ Senior UX / Product Designer
 
 ## Professional summary {#professional-summary}
 
-Product Designer specializing in enterprise SaaS and developer-portal platforms: package catalogs, AI/ML operational surfaces, and multi-step workflows across multi-tenant, RBAC-governed systems. I ship production UI, build design infrastructure for coded prototypes, and reduce structural friction early in a product lifecycle.
+Product designer for developer tools, AI platform operations, and multi-step systems. I turn opaque runtime failures (logs, events, bad configs) into interfaces engineers can scan and act on. I build coded prototypes and ship personal products with React, TypeScript, Flutter, and AI-assisted workflows (Cursor). I also built a production LiveKit voice product using rooms, JWT grants, and connection preflight.
 
 ## Technologies & platforms {#tech-platforms}
 
-<p class="resume-tech-keywords">Enterprise SaaS • Multi-tenant Architecture • RBAC • Authentication Flows • OAuth • API Design • Developer Portals • AI/ML Platforms • RAG Workflows • React • TypeScript • PatternFly • Design Systems • CLI/SDK Tooling • OpenShift • Kubernetes • Container Registries • Distributed Systems • GitHub • Figma • Miro • Jira</p>
+<p class="resume-tech-keywords"><strong>Design &amp; UX:</strong> Interaction design, developer experience, design systems, data visualization, prototyping, Figma, PatternFly, Miro<br>
+<strong>Development &amp; AI:</strong> React, TypeScript, Flutter, Dart, Cursor, Gemini Notebooks, GitHub, PR workflows, API integration<br>
+<strong>Platforms &amp; domains:</strong> LiveKit (rooms, JWT grants, connection preflight), WebRTC / real-time audio, AI/ML platforms, model serving &amp; LLM deployment, developer portals, CLI/SDK tooling, observability &amp; logging UX, Kubernetes event/log debugging, OpenShift / OpenShift AI, container registries (Quay), multi-tenant RBAC, distributed systems</p>
 
 ## Professional experience {#professional-experience}
 
@@ -34,62 +36,48 @@ Product Designer specializing in enterprise SaaS and developer-portal platforms:
 
 #### Senior Product Designer
 
-- Owned UX across developer portals, AI/ML operational surfaces, package catalogs, and multi-step platform workflows; partnered with engineering to ship production UI used by platform engineers and data teams.
-- Unified Trusted Libraries and AI Components into one faceted catalog; shipped React/TypeScript on PatternFly 6 in one week from audit to production, with 7+ metadata dimensions (SLSA, license, Python version, release stage, hardware variant).
-- Originated design-comments for in-context feedback on coded prototypes (pins, GitHub Issues backend, AI summarize); PatternFly team now maintains; integrated into OpenShift AI prototype.
-- Designed scoped OpenShift AI models and deploy wizard flows on a team UX prototype (MaaS vs AI asset endpoint availability, constraint explanations); aligned roadmap decisions with deployment models, RBAC, and multi-tenant governance.
-- Led vLLM CLI help redesign for 200+ configuration options; drove RFC process and merged upstream with maintainers.
-- Restructured ROSA-style CLI flows from 30+ sequential prompts to ~12 core paths; contributed org-wide CLI UX guidelines adopted within PatternFly.
+*(Title evolved Associate UX Designer → Interaction Designer → Senior Product Designer as the role expanded across OpenShift, Quay, and OpenShift AI.)*
 
-#### Interaction Designer
+- Own UX for OpenShift AI surfaces that platform engineers and data teams use: model serving, deployment flows, and package catalogs shaped by real backend constraints.
+- Assumed design ownership of OpenShift AI Model Serving after the previous Principal left; mapped multi-step deployment dependencies and backend capability gaps into staged flows and decision UX so Engineering and PM could align UI options with what the platform can actually support.
+- Designed deployment recovery UX so failures show real backend reasons instead of generic “Starting” or “Ready” states, with clean stop, edit, and retry paths (prioritized for a 2027 release).
+- Designed a clearer deployments table for monitoring active instances, hardware use, and endpoint availability (prioritized for a 2027 release).
+- Designed a diagnostic side-drawer that turns Kubernetes event timelines and container logs (e.g. OOMKilled) into recovery steps people can follow.
+- Prototyped a unified Trusted Libraries and AI Components catalog in React/TypeScript on PatternFly 6 in one week (faceted metadata including SLSA, license, Python version, release stage, hardware variant); not yet in production.
+- Created a code-based design feedback tool (contextual pins, GitHub Issues integration, AI-assisted summaries); subsequently adopted and maintained by PatternFly and used in OpenShift AI prototypes.
+- Led vLLM CLI help redesign for 200+ options; ran the RFC and merged upstream with maintainers.
+- Cut ROSA-style CLI flows from 30+ sequential prompts to about 12 core paths; contributed CLI UX guidelines adopted in PatternFly.
+- Use Cursor and Gemini Notebooks in day-to-day design (adapting components in code, pulling specs and transcripts into one place) and share those workflows with teammates.
 
-- Reimagined SDK and CLI onboarding flows for InstructLab, improving discoverability across API-driven model training workflows and developer configuration environments.
-- Defined ROSA CLI standardization across cloud-managed OpenShift services, improving consistency across multi-environment configuration surfaces.
-- Championed accessibility and documentation improvements in developer tooling, reducing onboarding friction and support dependency.
-- Contributed reusable system-level components and documentation to PatternFly to improve scalability and cross-product cohesion.
+#### Interaction Designer / Associate User Experience Designer
 
-#### Associate User Experience Designer
+- Reworked InstructLab SDK and CLI onboarding for API-driven model training; standardized ROSA CLI patterns across cloud-managed OpenShift services.
+- Led Quay.io redesign: vulnerability dashboards, API-integrated workflows, and RBAC across multi-org teams; reduced design debt through PatternFly adoption.
 
-- Led redesign of Quay.io, an enterprise SaaS container registry and security platform, refining repository management, vulnerability reporting dashboards, API-integrated workflows, and role-based authentication flows across multi-organization teams.
-- Reduced design debt and improved scalability through structured PatternFly adoption, aligning complex DevOps workflows across product surfaces.
+### Independent product work: Tō3 (refOpenMic)  
+*Founder & Product Designer | 2023 – Present*
 
-### Integral Care, Digital Media Specialist  
-*September 2019 – August 2021*
-
-- Implemented design thinking methods, optimizing company email layouts based on user testing and market research, resulting in a notable increase in click-through rates.
-- Developed and managed a state-wide marketing campaign vision for various digital experiences, ensuring an impactful and user-centric approach.
-
-### Community Advancement Network, Communications Specialist  
-*November 2017 – September 2019*
-
-- Ensured physical and digital deliverables followed user-centered and accessibility practices.
-- Conducted ongoing performance tracking and success metrics for email marketing and social media management.
-- Created and implemented social media campaigns, which resulted in a 13% increase in traffic and over 16,000 new visitors over two years.
+- Designed and launched a real-time voice app on LiveKit so sports officials and event crews can talk over phones and Bluetooth headsets with low-latency full-duplex audio.
+- Integrated LiveKit rooms and role-based access with server-issued JWTs (publish vs. subscribe), plus a connection-test room so hosts can validate devices before going live.
+- Designed live-room UI for connection health, speaking activity, and mute/admin controls that stay readable under field pressure.
+- Diagnosed WebRTC, audio-session, and platform-specific failures (including iOS stack limits) through iterative field and device testing.
+- Built and maintain the app with Cursor, AI-assisted workflows, and GitHub.
 
 ## Independent projects {#independent-projects}
 
-### RefLog, Mobile performance logging app for rugby referees  
-*Available on Android and iOS*
+Independently design and ship a suite of live products for sports officials (App Store, Play Store, and PWAs), spanning schedule → travel prep → live voice → post-match review:
 
-- Designed and launched a cross-platform app with multi-role workflows (Referee / Coach modes), scalable data visualizations, and analytics dashboards.
-- Conducted usability testing in high-pressure field environments to optimize task efficiency and cognitive load.
-- Implemented OAuth-based authentication flows (Google/GitHub) and role-based user access patterns for multi-role application environments.
+**MatchReadyTX + Match Calendar (live PWAs):** Built a one-way assignment sync from MatchReadyTX (org scheduling) into Match Calendar (personal schedule/travel), with stable external IDs and merge rules that preserve user-owned fields. Added AeroDataBox flight lookup in Match Calendar so officials can import real flight segments into match timelines.
 
-### RefereeIQ, AI-powered learning app for rugby officials
+**RefLog:** Cross-platform match logging with multi-role workflows and analytics dashboards; usability tested in the field under time pressure.
 
-- Designed and implemented RAG-based AI workflows using semantic retrieval and contextual prompting.
-- Defined ingestion, embedding, and knowledge retrieval strategies to support dynamic question interpretation.
-- Built and iterated adaptive onboarding and feedback systems to improve user comprehension and engagement.
+**RefereeIQ:** RAG-based AI coaching with semantic retrieval and cited answers for officials.
 
-### Published product suite, Personal apps (Tō3, RefLog, RefereeIQ, ReflectED, Sevens Manager)
+## Earlier experience
 
-- Design, build, publish, and iterate on multiple App Store, Play Store, and PWA products with field-tested users, using AI-assisted development outside work.
+**Integral Care:** Digital Media Specialist (2019–2021): research-backed email and digital campaign UX.
 
-### Legacy Ecowear, Founder & Product Designer
-
-- Designed and managed the UX and UI of an e-commerce storefront, handling end-to-end product configuration, checkout, and customer experience.
-- Defined a cohesive brand system and visual language for apparel catalogs, digital packaging, and custom team orders.
-- Implemented user-centric optimizations to reduce ordering friction and improve product visibility across desktop and mobile.
+**Community Advancement Network:** Communications Specialist (2017–2019): accessible deliverables; campaigns that drove +13% traffic and 16k+ new visitors over two years.
 
 ## Education {#education}
 

@@ -14,7 +14,7 @@ nav_order: 2
   <strong>Timeline:</strong> 1 week (March 2026)<br>
   <strong>Organization:</strong> Red Hat<br>
   <strong>Stakeholders:</strong> PM, engineering leads, senior product managers<br>
-  <strong>Outcome:</strong> Combined Trusted Libraries and Red Hat AI Components into one catalog view with faceted filtering, migrated the UI to PatternFly 6 semantic tokens, and shipped to production. I designed and implemented the experience (implementation supported by Claude/Cursor).
+  <strong>Outcome:</strong> Combined Trusted Libraries and Red Hat AI Components into one catalog view with faceted filtering, migrated the UI to PatternFly 6 semantic tokens, and implemented it as a coded React/TypeScript prototype in one week. Not yet the live production catalog. Implementation supported by Claude/Cursor.
 </div>
 
 ## The situation
@@ -97,4 +97,4 @@ Reusable pieces I designed and implemented: `UnifiedFilterSidebar`, `FilterDropd
 
 **Design artifacts:** [Design history](https://github.com/RedHatProductSecurity/ui-packages.redhat.com/blob/main/.design/features/package-search-unified/design-history.md) · [Feature mapping](https://github.com/RedHatProductSecurity/ui-packages.redhat.com/blob/main/.design/feature-mapping.md) · [Design guidelines](https://github.com/RedHatProductSecurity/ui-packages.redhat.com/blob/main/.design/README.md)
 
-**Production:** [ui-packages.redhat.com](https://ui-packages.redhat.com) (Red Hat SSO required)
+**Existing production site (pre-unified catalog):** [ui-packages.redhat.com](https://ui-packages.redhat.com) (Red Hat SSO required). The unified catalog work above lives as a coded prototype / PR, not the live experience yet.

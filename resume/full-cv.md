@@ -19,7 +19,8 @@ This page links to deeper write-ups that are not on the one-page resume.
 ## Red Hat & Enterprise
 
 - [design-comments]({{ '/portfolio/design-comments/design-comments/' | relative_url }}) - In-context feedback on coded prototypes; PatternFly-maintained
-- [Red Hat Packages catalog]({{ '/portfolio/ui-packages-redhat/ui-packages-redhat/' | relative_url }}) - Unified catalog shipped to production
+- [Red Hat Packages catalog]({{ '/portfolio/ui-packages-redhat/ui-packages-redhat/' | relative_url }}) - Unified catalog coded prototype
+- [Tō3]({{ '/portfolio/to3/to3/' | relative_url }}) - LiveKit-powered live voice for event crews
 - [vLLM CLI UX]({{ '/portfolio/vllm-cli-ux/vllm-cli-ux/' | relative_url }}) - Help redesign merged upstream
 - [InstructLab interactive mode]({{ '/portfolio/instructlab/instructlab/' | relative_url }}) - Guided CLI onboarding
 - [Quay and Konveyor]({{ '/portfolio/interface-driven-ux-red-hat/interface-driven-ux-red-hat/' | relative_url }}) - Registry admin and vulnerability surfaces

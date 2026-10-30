@@ -53,4 +53,4 @@ Decisions are documented in structured design-history artifacts (e.g. RHOAIUX-23
 ## Related work
 
 - [design-comments]({{ '/portfolio/design-comments/design-comments/' | relative_url }}): stakeholder feedback on the same prototype ecosystem
-- [Red Hat Packages catalog]({{ '/portfolio/ui-packages-redhat/ui-packages-redhat/' | relative_url }}): another production-adjacent catalog surface I shipped to production
+- [Red Hat Packages catalog]({{ '/portfolio/ui-packages-redhat/ui-packages-redhat/' | relative_url }}): unified catalog coded prototype (React/TypeScript on PatternFly 6)
