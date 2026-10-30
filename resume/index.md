@@ -21,13 +21,13 @@ Senior Product Designer
 
 ## Professional summary {#professional-summary}
 
-Product designer for developer tools, AI platform operations, and multi-step systems. I turn opaque runtime failures (logs, events, bad configs) into interfaces engineers can scan and act on. I build coded prototypes and ship personal products with React, TypeScript, Flutter, and AI-assisted workflows (Cursor). I also built a production LiveKit voice product using rooms, JWT grants, and connection preflight.
+Product designer for developer tools, AI platform operations, and multi-step systems. I turn opaque runtime failures (logs, events, bad configs) into interfaces engineers can scan and act on. I build coded prototypes and ship personal products with React, TypeScript, Flutter, and AI-assisted development workflows (Cursor, Codex, Claude Code). I also built a production LiveKit voice product using rooms, JWT grants, and connection preflight.
 
 ## Technologies & platforms {#tech-platforms}
 
-<p class="resume-tech-keywords"><strong>Design &amp; UX:</strong> Interaction design, developer experience, design systems, data visualization, prototyping, Figma, PatternFly, Miro<br>
+<p class="resume-tech-keywords"><strong>Design &amp; UX:</strong> Interaction design, developer experience, accessibility, design systems, data visualization, prototyping, Figma, PatternFly, Miro<br>
 <strong>Development &amp; AI:</strong> React, TypeScript, Flutter, Dart, Cursor, Gemini Notebooks, GitHub, PR workflows, API integration<br>
-<strong>Platforms &amp; domains:</strong> LiveKit (rooms, JWT grants, connection preflight), WebRTC / real-time audio, AI/ML platforms, model serving &amp; LLM deployment, developer portals, CLI/SDK tooling, observability &amp; logging UX, Kubernetes event/log debugging, OpenShift / OpenShift AI, container registries (Quay), multi-tenant RBAC, distributed systems</p>
+<strong>Platforms &amp; domains:</strong> LiveKit, WebRTC, AI/ML platforms, model serving, developer tooling, observability UX, Kubernetes, OpenShift, Quay, multi-tenant platforms, RBAC, distributed systems</p>
 
 ## Professional experience {#professional-experience}
 
@@ -38,30 +38,24 @@ Product designer for developer tools, AI platform operations, and multi-step sys
 
 *(Title evolved Associate UX Designer → Interaction Designer → Senior Product Designer as the role expanded across OpenShift, Quay, and OpenShift AI.)*
 
-- Own UX for OpenShift AI surfaces that platform engineers and data teams use: model serving, deployment flows, and package catalogs shaped by real backend constraints.
-- Assumed design ownership of OpenShift AI Model Serving after the previous Principal left; mapped multi-step deployment dependencies and backend capability gaps into staged flows and decision UX so Engineering and PM could align UI options with what the platform can actually support.
+- Assumed design ownership of OpenShift AI Model Serving, translating deployment dependencies, multi-tenant constraints, and backend capabilities into actionable workflows aligned with Engineering and Product Management.
 - Designed deployment recovery UX so failures show real backend reasons instead of generic “Starting” or “Ready” states, with clean stop, edit, and retry paths (prioritized for a 2027 release).
-- Designed a clearer deployments table for monitoring active instances, hardware use, and endpoint availability (prioritized for a 2027 release).
-- Designed a diagnostic side-drawer that turns Kubernetes event timelines and container logs (e.g. OOMKilled) into recovery steps people can follow.
 - Prototyped a unified Trusted Libraries and AI Components catalog in React/TypeScript on PatternFly 6 in one week (faceted metadata including SLSA, license, Python version, release stage, hardware variant); not yet in production.
 - Created a code-based design feedback tool (contextual pins, GitHub Issues integration, AI-assisted summaries); subsequently adopted and maintained by PatternFly and used in OpenShift AI prototypes.
 - Led vLLM CLI help redesign for 200+ options; ran the RFC and merged upstream with maintainers.
-- Cut ROSA-style CLI flows from 30+ sequential prompts to about 12 core paths; contributed CLI UX guidelines adopted in PatternFly.
-- Use Cursor and Gemini Notebooks in day-to-day design (adapting components in code, pulling specs and transcripts into one place) and share those workflows with teammates.
 
 #### Interaction Designer / Associate User Experience Designer
 
+- Cut ROSA-style CLI flows from 30+ sequential prompts to about 12 core paths; authored CLI UX guidelines (including accessibility and state patterns) adopted in PatternFly.
 - Reworked InstructLab SDK and CLI onboarding for API-driven model training; standardized ROSA CLI patterns across cloud-managed OpenShift services.
-- Led Quay.io redesign: vulnerability dashboards, API-integrated workflows, and RBAC across multi-org teams; reduced design debt through PatternFly adoption.
+- Led Quay.io redesign for a multi-tenant container registry: vulnerability dashboards, API-integrated workflows, and RBAC across multi-organization teams; reduced design debt through PatternFly adoption.
 
 ### Independent product work: Tō3 (refOpenMic)  
 *Founder & Product Designer | 2023 – Present*
 
 - Designed and launched a real-time voice app on LiveKit so sports officials and event crews can talk over phones and Bluetooth headsets with low-latency full-duplex audio.
 - Integrated LiveKit rooms and role-based access with server-issued JWTs (publish vs. subscribe), plus a connection-test room so hosts can validate devices before going live.
-- Designed live-room UI for connection health, speaking activity, and mute/admin controls that stay readable under field pressure.
 - Diagnosed WebRTC, audio-session, and platform-specific failures (including iOS stack limits) through iterative field and device testing.
-- Built and maintain the app with Cursor, AI-assisted workflows, and GitHub.
 
 ## Independent projects {#independent-projects}
 
