@@ -31,7 +31,7 @@ Each app solves a narrow problem. Together they show:
 
 | App | What it does | Platform | Case study |
 |-----|--------------|----------|------------|
-| **[Tō3]({{ '/portfolio/to3/to3/' | relative_url }})** (formerly RefOpenMic) | LiveKit-powered live voice for event crews | Flutter / app stores | [Deep dive]({{ '/portfolio/to3/to3/' | relative_url }}) |
+| **[Tō3]({{ '/portfolio/to3/to3/' | relative_url }})** | LiveKit-powered live voice for event crews | Flutter / app stores | [Deep dive]({{ '/portfolio/to3/to3/' | relative_url }}) |
 | **MatchReadyTX** | Org match scheduling for assigners, officials, team admins (Sheet as schedule source of truth; fees/perks in-app) | Live PWA (`matchreadytx.web.app`) | Suite member |
 | **Match Calendar** | Personal schedule/travel for officials; one-way sync from MatchReadyTX; AeroDataBox flight import into timelines | Live PWA (`matchcalendar.web.app`) | Suite member |
 | **[RefLog]({{ '/portfolio/reflog/reflog/' | relative_url }})** | Offline match event logging for referees | iOS + Android | [Deep dive]({{ '/portfolio/reflog/reflog/' | relative_url }}) |

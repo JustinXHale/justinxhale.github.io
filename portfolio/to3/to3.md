@@ -13,7 +13,6 @@ nav_order: 2
   <strong>Role:</strong> Product designer &amp; developer (solo)<br>
   <strong>Platform:</strong> Flutter (iOS + Android); earlier React PWA prototype<br>
   <strong>Realtime:</strong> LiveKit (rooms, JWT grants, Flutter SDK)<br>
-  <strong>Former name:</strong> RefOpenMic, renamed to Tō3 as the product matured<br>
   <strong>Tagline:</strong> Live. Clear. Simple.
 </div>
 
@@ -69,4 +68,4 @@ Solo designer-developer workflow with Cursor and AI-assisted coding, GitHub, Flu
 
 ## Part of the suite
 
-Tō3 is one app in my [published product suite]({{ '/portfolio/product-suite/product-suite/' | relative_url }}) for sports officials and event crews (schedule → travel → live voice → review). Previously marketed as RefOpenMic; **Tō3** is the current product name.
+Tō3 is one app in my [published product suite]({{ '/portfolio/product-suite/product-suite/' | relative_url }}) for sports officials and event crews (schedule → travel → live voice → review).

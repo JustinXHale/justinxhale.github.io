@@ -14,7 +14,7 @@ full_cv_page: true
 
 For applications, use the [resume]({{ '/resume/' | relative_url }}) and print it from your browser (⌘P / Ctrl+P → Save as PDF).
 
-This page links to deeper write-ups that are not on the one-page resume.
+This page links to deeper write-ups that are not on the one-page resume. Targeted application resumes (if any) are not linked from navigation.
 
 ## Red Hat & Enterprise
 

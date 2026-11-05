@@ -21,13 +21,13 @@ Senior Product Designer
 
 ## Professional summary {#professional-summary}
 
-Product designer for developer tools, AI platform operations, and multi-step systems. I turn opaque runtime failures (logs, events, bad configs) into interfaces engineers can scan and act on. I build coded prototypes and ship personal products with React, TypeScript, Flutter, and AI-assisted development workflows (Cursor, Codex, Claude Code). I also built a production LiveKit voice product using rooms, JWT grants, and connection preflight.
+Senior Product Designer for developer tools and AI platform operations. I turn opaque runtime failures (logs, events, bad configs) into interfaces engineers can scan and act on. At Red Hat I own OpenShift AI model-serving UX, ship coded prototypes in React/TypeScript, and contribute upstream to CLI tooling. Outside work I design and ship a suite of live products for sports officials, including real-time voice and multi-app schedule/travel systems, using AI-assisted development (Cursor, Codex, Claude Code).
 
 ## Technologies & platforms {#tech-platforms}
 
 <p class="resume-tech-keywords"><strong>Design &amp; UX:</strong> Interaction design, developer experience, accessibility, design systems, data visualization, prototyping, Figma, PatternFly, Miro<br>
 <strong>Development &amp; AI:</strong> React, TypeScript, Flutter, Dart, Cursor, Gemini Notebooks, GitHub, PR workflows, API integration<br>
-<strong>Platforms &amp; domains:</strong> LiveKit, WebRTC, AI/ML platforms, model serving, developer tooling, observability UX, Kubernetes, OpenShift, Quay, multi-tenant platforms, RBAC, distributed systems</p>
+<strong>Platforms &amp; domains:</strong> AI/ML platforms, model serving, developer tooling, observability UX, CLI/SDK, Kubernetes, OpenShift, Quay, multi-tenant platforms, RBAC, WebRTC / real-time audio, distributed systems</p>
 
 ## Professional experience {#professional-experience}
 
@@ -50,22 +50,18 @@ Product designer for developer tools, AI platform operations, and multi-step sys
 - Reworked InstructLab SDK and CLI onboarding for API-driven model training; standardized ROSA CLI patterns across cloud-managed OpenShift services.
 - Led Quay.io redesign for a multi-tenant container registry: vulnerability dashboards, API-integrated workflows, and RBAC across multi-organization teams; reduced design debt through PatternFly adoption.
 
-### Independent product work: Tō3 (refOpenMic)  
+### Independent product work  
 *Founder & Product Designer | 2023 – Present*
 
-- Designed and launched a real-time voice app on LiveKit so sports officials and event crews can talk over phones and Bluetooth headsets with low-latency full-duplex audio.
-- Integrated LiveKit rooms and role-based access with server-issued JWTs (publish vs. subscribe), plus a connection-test room so hosts can validate devices before going live.
-- Diagnosed WebRTC, audio-session, and platform-specific failures (including iOS stack limits) through iterative field and device testing.
+Independently design and ship a suite of live products for sports officials (App Store, Play Store, and PWAs), spanning schedule → travel prep → live voice → post-match review.
 
-## Independent projects {#independent-projects}
+**Tō3:** Real-time voice for event crews on LiveKit (Flutter); server-issued JWTs for publish vs. subscribe; connection-test rooms; WebRTC and audio-session debugging in the field.
 
-Independently design and ship a suite of live products for sports officials (App Store, Play Store, and PWAs), spanning schedule → travel prep → live voice → post-match review:
+**MatchReadyTX + Match Calendar (live PWAs):** One-way assignment sync from org scheduling into a personal schedule/travel app, with merge rules that preserve user-owned fields; AeroDataBox flight import into match timelines.
 
-**MatchReadyTX + Match Calendar (live PWAs):** Built a one-way assignment sync from MatchReadyTX (org scheduling) into Match Calendar (personal schedule/travel), with stable external IDs and merge rules that preserve user-owned fields. Added AeroDataBox flight lookup in Match Calendar so officials can import real flight segments into match timelines.
+**RefLog:** Cross-platform match logging with multi-role workflows and analytics dashboards; field usability testing under time pressure (~70% faster post-match review vs prior workflows).
 
-**RefLog:** Cross-platform match logging with multi-role workflows and analytics dashboards; usability tested in the field under time pressure.
-
-**RefereeIQ:** RAG-based AI coaching with semantic retrieval and cited answers for officials.
+**RefereeIQ:** RAG-based AI coaching with semantic retrieval and cited answers; manual prompt and response-quality testing against rugby law references.
 
 ## Earlier experience
 
