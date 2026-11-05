@@ -237,6 +237,12 @@
     text-align: left !important;
   }
 
+  /* Keep employer blocks from splitting across pages when possible */
+  .resume-keep-together {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
   .resume-page p {
     text-align: left !important;
     margin-top: 0.1rem;
