@@ -21,7 +21,7 @@ Senior Product Designer
 
 ## Professional summary {#professional-summary}
 
-Senior Product Designer for developer tools and AI platform operations. I turn opaque runtime failures (logs, events, bad configs) into interfaces engineers can scan and act on. At Red Hat I own OpenShift AI model-serving UX, ship coded prototypes in React/TypeScript, and contribute upstream to CLI tooling. Outside work I design and ship a suite of live products for sports officials, including real-time voice and multi-app schedule/travel systems, using AI-assisted development (Cursor, Codex, Claude Code).
+I design developer tools and AI platforms, often in areas where the product direction and technical constraints are still taking shape. My day-to-day work involves learning how the system works, collaborating with engineers and product managers, and building prototypes that help the team make decisions. I turn that work into clear product direction and reusable interaction patterns for CLIs, notebooks, and model-serving experiences. Outside Red Hat, I build and launch my own products for sports officials, including real-time voice, scheduling, travel, and post-match review tools.
 
 ## Technologies & platforms {#tech-platforms}
 
@@ -38,11 +38,12 @@ Senior Product Designer for developer tools and AI platform operations. I turn o
 
 *(Title evolved Associate UX Designer → Interaction Designer → Senior Product Designer as the role expanded across OpenShift, Quay, and OpenShift AI.)*
 
-- Assumed design ownership of OpenShift AI Model Serving, translating deployment dependencies, multi-tenant constraints, and backend capabilities into actionable workflows aligned with Engineering and Product Management.
+- Took ownership of OpenShift AI Model Serving after a Principal Designer transitioned off the domain, quickly building the technical context and cross-functional trust needed to keep roadmap work moving.
+- Mapped backend API dependencies and multi-step deployment logic to define future Model Serving workflows, including opinionated catalog deployments and guided “Help Me Decide” paths.
 - Designed deployment recovery UX so failures show real backend reasons instead of generic “Starting” or “Ready” states, with clean stop, edit, and retry paths (prioritized for a 2027 release).
 - Prototyped a unified Trusted Libraries and AI Components catalog in React/TypeScript on PatternFly 6 in one week (faceted metadata including SLSA, license, Python version, release stage, hardware variant); not yet in production.
 - Created a code-based design feedback tool (contextual pins, GitHub Issues integration, AI-assisted summaries); subsequently adopted and maintained by PatternFly and used in OpenShift AI prototypes.
-- Led vLLM CLI help redesign for 200+ options; ran the RFC and merged upstream with maintainers.
+- Led CLI work from hands-on research through upstream contribution: created a golden-path GuideLLM mock and specification, then redesigned vLLM help for 200+ options and merged the changes with maintainers.
 
 #### Interaction Designer / Associate User Experience Designer
 

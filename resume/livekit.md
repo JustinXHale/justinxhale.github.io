@@ -21,20 +21,20 @@ Senior Product Designer
 
 ## Professional summary
 
-Product designer for developer tools and AI platform operations. I turn opaque runtime failures (logs, events, bad configs) into interfaces engineers can scan and act on. I build coded prototypes and ship personal products with React, TypeScript, Flutter, and AI-assisted workflows (Cursor, Codex, Claude Code). Outside work I built Tō3, a production LiveKit voice app for event crews.
+I design developer tools and AI platforms, often in areas where the product direction and technical constraints are still taking shape. My day-to-day work involves learning how the system works, collaborating with engineers and product managers, and building prototypes that help the team make decisions. I turn that work into clear product direction and reusable interaction patterns for CLIs, notebooks, and model-serving experiences. Outside Red Hat, I build and launch my own products, including Tō3, a LiveKit voice app for sports officials and event crews.
 
-## Closest matches for this role
+## Why my experience fits
 
-1. **OpenShift AI Model Serving:** deployment recovery, multi-tenant constraints, honest failure states  
-2. **Tō3 (LiveKit):** production realtime voice, role-based access, device validation, connection diagnostics  
-3. **Quay multi-tenant registry:** dense data, RBAC, vulnerability and ops dashboards  
+1. **OpenShift AI Model Serving:** Took ownership of a complex domain and used architecture mapping and coded prototypes to shape future workflows and deployment recovery.
+2. **Tō3:** Built and launched a real-time voice app with LiveKit, including role-based access, device checks, and connection diagnostics.
+3. **Quay:** Designed data-heavy workflows, vulnerability dashboards, and role-based access for a multi-tenant container registry.
 
 ## LiveKit experience
 
-- Built and launched **Tō3**, a production voice collaboration app on LiveKit for sports officials and event crews.
-- Designed role-based access so hosts can speak and listeners stay listen-only, using server-issued access tokens.
-- Designed onboarding, device checks, and a connection-test room so hosts can verify audio before going live.
-- Troubleshot connection and audio failures on mobile during real events and field testing.
+- Built and launched **Tō3**, a LiveKit voice app for sports officials and event crews.
+- Used server-issued access tokens to let hosts speak while keeping listeners in listen-only mode.
+- Designed onboarding, device checks, and a test room where hosts can confirm their audio before going live.
+- Diagnosed mobile connection and audio failures during field tests and live events.
 
 ## Technologies & platforms
 
@@ -55,28 +55,28 @@ Product designer for developer tools and AI platform operations. I turn opaque r
 
 *(Title evolved Associate UX Designer → Interaction Designer → Senior Product Designer across OpenShift, Quay, and OpenShift AI.)*
 
-- Assumed design ownership of OpenShift AI Model Serving, translating deployment dependencies, multi-tenant constraints, and backend capabilities into workflows with Engineering and Product Management.
-- Designed deployment recovery UX so failures show real backend reasons instead of generic “Starting” or “Ready” states, with clean stop, edit, and retry paths (prioritized for a 2027 release).
-- Prototyped a unified Trusted Libraries and AI Components catalog in React/TypeScript on PatternFly 6 in one week, with faceted filters for SLSA, license, Python version, release stage, and hardware.
-- Created a code-based design feedback tool (pins, GitHub Issues, AI summaries); PatternFly now maintains it and OpenShift AI prototypes use it.
-- Led vLLM CLI help redesign for 200+ options; ran the RFC and merged upstream with maintainers.
-- Led UX team discussions on AI adoption in design workflows (tooling, prompting practices, and how we share learnings across the team).
+- Took ownership of OpenShift AI Model Serving after a Principal Designer transitioned off the domain, quickly building the technical context and cross-functional trust needed to keep roadmap work moving.
+- Mapped backend API dependencies and multi-step deployment logic to define future Model Serving workflows, including opinionated catalog deployments and guided “Help Me Decide” paths.
+- Designed recovery paths that show why a deployment failed instead of leaving users with generic “Starting” or “Ready” states. Users can then stop, edit, and retry the deployment (prioritized for a 2027 release).
+- Built a working prototype for a unified Trusted Libraries and AI Components catalog in one week using React, TypeScript, and PatternFly 6. The catalog helps developers filter by SLSA level, license, Python version, release stage, and hardware.
+- Created a code-based feedback tool that lets reviewers pin comments to a prototype, create GitHub issues, and summarize feedback with AI. PatternFly now maintains the tool, and OpenShift AI teams use it in their prototypes.
+- Led CLI work from hands-on research through upstream contribution. I created a golden-path GuideLLM mock and specification, then redesigned vLLM help for more than 200 options and merged the changes with maintainers.
 
 #### Interaction Designer / Associate User Experience Designer
 
-- Cut ROSA-style CLI flows from 30+ sequential prompts to about 12 core paths; authored CLI UX guidelines (accessibility and state patterns) adopted in PatternFly.
-- Reworked InstructLab SDK and CLI onboarding for API-driven model training; standardized ROSA CLI patterns across cloud-managed OpenShift services.
-- Led Quay.io redesign for a multi-tenant container registry: vulnerability dashboards, API workflows, and RBAC across multi-organization teams.
+- Redesigned ROSA-style CLI flows, replacing more than 30 sequential prompts with about 12 focused paths. I also wrote CLI accessibility and state guidelines that PatternFly adopted.
+- Reworked the InstructLab SDK and CLI onboarding for API-driven model training, and standardized ROSA CLI patterns across cloud-managed OpenShift services.
+- Led the Quay.io redesign for a multi-tenant container registry, including vulnerability dashboards, API workflows, and role-based access across organizations.
 
 </div>
 
 ## Selected independent projects
 
-Suite of live products for sports officials (stores and PWAs): schedule → travel → live voice → review.
+I also design and ship a suite of mobile apps and PWAs for sports officials, covering the full match-day workflow from scheduling and travel to live voice and post-match review.
 
-**MatchReadyTX + Match Calendar:** One-way sync of assignments into a personal schedule/travel app; flight lookup into match timelines.  
-**RefLog:** Match logging with analytics dashboards; field testing under time pressure (~70% faster post-match review).  
-**RefereeIQ:** RAG coaching with citations; manual prompt and answer-quality testing against rugby law references.
+- **MatchReadyTX + Match Calendar:** Sync assignments into a personal schedule and travel app, with flight details added to each match timeline.
+- **RefLog:** A match-logging app with analytics dashboards. Field testing under time pressure reduced post-match review time by about 70%.
+- **RefereeIQ:** An AI coaching tool that retrieves relevant rugby laws and cites its sources. I manually test prompts and answer quality against the original law references.
 
 ## Earlier experience
 
